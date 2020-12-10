@@ -234,7 +234,7 @@
 
 <script>
 
-import Header from '@/components/landing-page/Header/indexHeader';
+import Header from '@/components/landing-page/header/indexHeader';
 
 export default {
    data: () => ({
