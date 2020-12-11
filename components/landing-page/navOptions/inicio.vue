@@ -4,10 +4,6 @@
         :class="[ cssResponve, cssNotResponisve ]">
             Inicio
     </nuxt-link>
-
-
-<!-- class= -->
-
   </li>
 </template>
 <script>
