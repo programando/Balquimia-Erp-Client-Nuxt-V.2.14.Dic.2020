@@ -2,7 +2,7 @@
   <!-- Icono svg del menu hamburguesa -->
   <label
     for="menu-togle"
-    class="cursor-pointer md:hidden block border border-gray-300 rounded-full p-2 col-start-7 col-end-8 mr-4"
+    class="cursor-pointer lg:hidden block border border-gray-300 rounded-full p-2 col-start-7 col-end-8 mr-4"
   >
     <svg
       class="h-6 w-6"

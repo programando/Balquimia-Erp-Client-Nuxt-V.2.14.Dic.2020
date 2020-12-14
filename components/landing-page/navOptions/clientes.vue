@@ -6,7 +6,7 @@
               
           <p :class="[ cssResponsiveP,cssNotResponsiveP ]">Acceso clientes</p>
           <img
-            class="h-3"
+            class=""
             src="/images/landing-page/header/icono-flecha.png"
             alt="bandera"
           />

@@ -1,226 +1,57 @@
 <template>
-  <div >
-
+  <div>
     <Header></Header>
 
-    <div class="mx-auto">
-      <img
-        src="/images/landing-page/header/arr.png"
-        alt="arr1"
-        class="mx-auto md:mx-8 w-52 h-8 -mt-2"
-      />
-    </div>
-
-     <!-- imagen de fondo del primer slider -->
-    <div class="contenedor">
-      <div class="slider-contenedor">
+    <!-- slider -->
+    <div class="contenedor max-h-screen">
+      <div class="slider-contenedor leading-tight mt-16 lg:mt-20">
         <div
-          class="contenido-slider min-h-sceen bg-no-repeat bg-cover bg-center -mt-8"
+          class="contenido-slider bg-no-repeat bg-cover bg-center"
           style="background-image: url(/images/landing-page/slider/slide3.webp)"
         >
           <!-- imagen de fondo de malla -->
           <div
-            class="bg-no-repeat bg-cover bg-center"
+            class="bg-no-repeat bg-cover "
             style="background-image: url(/images/landing-page/slider/malla1.webp)"
           >
-            <div class="min-h-screen py-64 px-10 md:px-20">
-              <div class="-ml-8">
+            <div
+              class="px-16 py-64 lg:py-64 lg:px-48 mt-40 lg:mt-20 min-h-screen"
+            >
+              <div class="-ml-20 md:-ml-16 -mt-32">
                 <div
-                  class="boder border-b-2 border-yellow-500 w-16 inline-block mr-2"
+                  class="boder border-b-2 border-yellow-500 w-12 lg:w-16 inline-block ml-3 lg:-ml-4  "
                 ></div>
                 <p
-                  class="text-yellow-500 font-semibold inline text-xs uppercase md:text-sm"
+                  class="text-yellow-500 font-semibold inline text-xs  uppercase md:text-sm ml-6 lg:ml-4 "
                 >
                   Balquimia Chemical Solution
                 </p>
               </div>
               <h1
-                class="text-white m-4 text-3xl md:text-5xl font-semibold pr-10"
+                class="text-white ml-2  md:ml-8 md:mt-5 md:mb-3 lg:ml-0  text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold lg:pr-36 xl:pr-56"
               >
                 Respeto al medio ambiente
               </h1>
-              <p class="text-white m-4 md:text-lg">
+              <p
+                class="text-white m-2 md:my-2 md:ml-8  md:text-base lg:text-lg lg:w-2/3 lg:ml-0 "
+              >
                 Nuestra experiencia durante más de dos décadas le garantizan la
                 óptima implementación y manejo de nuestros productos
               </p>
               <div
-                class="bg-yellow-700 transition duration-700 ease-in-out hover:bg-indigo-900 text-white w-56 mx-4 px-3 py-2"
+                class="bg-yellow-700 transition duration-700 ease-in-out hover:bg-indigo-900 text-white w-2/3 sm:w-1/2  md:w-2/5 lg:w-6/12 xl:w-4/12 mx-2 md:ml-8 px-3 py-2 lg:mt-4 lg:ml-0 "
               >
                 <a href="#" class="flex justify-center items-center">
-                  <p class="mr-4 font-medium text-base md:text-lg md:px-6">
+                  <p
+                    class="mr-4 font-medium text-base md:text-lg lg:text-xl md:px-6"
+                  >
                     Politicas de Calidad
                   </p>
-                  <img class="h-5" src="/images/landing-page/slider/icono-flecha.png" alt="bandera" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="contenido-slider min-h-sceen bg-no-repeat bg-cover bg-center -mt-8"
-          style="background-image: url(/images/landing-page/slider/slide4.webp)"
-        >
-          <!-- imagen de fondo de malla -->
-          <div
-            class="bg-no-repeat bg-cover bg-center"
-            style="background-image: url(/images/landing-page/slider/malla1.webp)"
-          >
-            <div class="min-h-screen py-56 px-10 md:px-20">
-              <div class="-ml-8">
-                <div
-                  class="boder border-b-2 border-yellow-500 w-16 inline-block mr-2"
-                ></div>
-                <p
-                  class="text-yellow-500 font-semibold inline text-xs uppercase md:text-sm"
-                >
-                  Salud Industrial
-                </p>
-              </div>
-              <h1
-                class="text-white m-4 text-3xl md:text-5xl font-semibold pr-10"
-              >
-                Ofrecemos una amplia gama de desinfectantes para garantizar la
-                inocuidad en sus procesos
-              </h1>
-              <p class="text-white m-4 md:text-lg">
-                Nos respalda nuestro equipo interdisciplinario con amplia
-                experiencia
-              </p>
-              <div
-                class="bg-yellow-700 transition duration-700 ease-in-out hover:bg-indigo-900 text-white w-48 mx-4 px-3 py-2"
-              >
-                <a href="#" class="flex justify-center items-center">
-                  <p class="mr-4 font-medium text-base md:text-lg md:px-6">
-                    Conocenós
-                  </p>
-                  <img class="h-5" src="/images/landing-page/slider/icono-flecha.png" alt="bandera" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="contenido-slider min-h-sceen bg-no-repeat bg-cover bg-center -mt-8"
-          style="background-image: url(/images/landing-page/slider/slide1.webp)"
-        >
-          <!-- imagen de fondo de malla -->
-          <div
-            class="bg-no-repeat bg-cover bg-center"
-            style="background-image: url(/images/landing-page/slider/malla1.webp)"
-          >
-            <div class="min-h-screen py-56 px-10 md:px-20">
-              <div class="-ml-8">
-                <div
-                  class="boder border-b-2 border-yellow-500 w-16 inline-block mr-2"
-                ></div>
-                <p
-                  class="text-yellow-500 font-semibold inline text-xs uppercase md:text-sm"
-                >
-                  Soluciones Quimicas
-                </p>
-              </div>
-              <h1
-                class="text-white m-4 text-3xl md:text-5xl font-semibold pr-10"
-              >
-                Innovación y desarrollo de acuerdo a sus necesidades puntuales
-              </h1>
-              <p class="text-white m-4 md:text-lg">
-                Fabricamos productos químicos especializados en desinfección,
-                mantenimiento y limpieza industrial
-              </p>
-              <div
-                class="bg-yellow-700 transition duration-700 ease-in-out hover:bg-indigo-900 text-white w-48 mx-4 px-3 py-2"
-              >
-                <a href="#" class="flex justify-center items-center">
-                  <p class="mr-4 font-medium text-base md:text-lg md:px-6">
-                    Conocenós
-                  </p>
-                  <img class="h-5" src="/images/landing-page/slider/icono-flecha.png" alt="bandera" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="contenido-slider min-h-sceen bg-no-repeat bg-cover bg-center -mt-8"
-          style="background-image: url(/images/landing-page/slider/slide2.webp)"
-        >
-          <!-- imagen de fondo de malla -->
-          <div
-            class="bg-no-repeat bg-cover bg-center"
-            style="background-image: url(/images/landing-page/slider/malla1.webp)"
-          >
-            <div class="min-h-screen py-56 px-10 md:px-20">
-              <div class="-ml-8">
-                <div
-                  class="boder border-b-2 border-yellow-500 w-16 inline-block mr-2"
-                ></div>
-                <p
-                  class="text-yellow-500 font-semibold inline text-xs uppercase md:text-sm"
-                >
-                  Tienda Virtual
-                </p>
-              </div>
-              <h1
-                class="text-white m-4 text-3xl md:text-5xl font-semibold pr-10"
-              >
-                Ofrecemos un portafolio con más de un centenar de productos en
-                diversos sectores
-              </h1>
-              <p class="text-white m-4 md:text-lg">
-                Participamos en los procesos productivos ofreciendo eficacia y
-                economí
-              </p>
-              <div
-                class="bg-yellow-700 transition duration-700 ease-in-out hover:bg-indigo-900 text-white w-48 mx-4 px-3 py-2"
-              >
-                <a href="#" class="flex justify-center items-center">
-                  <p class="mr-4 font-medium text-base md:text-lg md:px-6">
-                    Sectores Industriales
-                  </p>
-                  <img class="h-5" src="/images/landing-page/slider/icono-flecha.png" alt="bandera" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="contenido-slider min-h-sceen bg-no-repeat bg-cover bg-center -mt-8"
-          style="background-image: url(/images/landing-page/slider/slide3.webp)"
-        >
-          <!-- imagen de fondo de malla -->
-          <div
-            class="bg-no-repeat bg-cover bg-center"
-            style="background-image: url(/images/landing-page/slider/malla1.webp)"
-          >
-            <div class="min-h-screen py-64 px-10 md:px-20">
-              <div class="-ml-8">
-                <div
-                  class="boder border-b-2 border-yellow-500 w-16 inline-block mr-2"
-                ></div>
-                <p
-                  class="text-yellow-500 font-semibold inline text-xs uppercase md:text-sm"
-                >
-                  Balquimia Chemical Solution
-                </p>
-              </div>
-              <h1
-                class="text-white m-4 text-3xl md:text-5xl font-semibold pr-10"
-              >
-                Respeto al medio ambiente
-              </h1>
-              <p class="text-white m-4 md:text-lg">
-                Nuestra experiencia durante más de dos décadas le garantizan la
-                óptima implementación y manejo de nuestros productos
-              </p>
-              <div
-                class="bg-yellow-700 transition duration-700 ease-in-out hover:bg-indigo-900 text-white w-56 mx-4 px-3 py-2"
-              >
-                <a href="#" class="flex justify-center items-center">
-                  <p class="mr-4 font-medium text-base md:text-lg md:px-6">
-                    Politicas de Calidad
-                  </p>
-                  <img class="h-5" src="/images/landing-page/slider/icono-flecha.png" alt="bandera" />
+                  <img
+                    class="h-5"
+                    src="/images/landing-page/slider/icono-flecha.png"
+                    alt="bandera"
+                  />
                 </a>
               </div>
             </div>
@@ -229,75 +60,73 @@
       </div>
     </div>
 
+    <!-- aside -->
+    <Aside></Aside>
+
+    <!-- section -->
+    <Section></Section>
   </div>
 </template>
 
 <script>
-
-import Header from '@/components/landing-page/header/indexHeader';
-
+import Header from "@/components/landing-page/header/indexHeader";
+import Aside from "@/components/landing-page/aside/aside";
+import Section from "@/components/landing-page/section/section";
 export default {
-   data: () => ({
-        intervalo       : 3000,
-        contador        : 1,
-        width           : 0,
-        slider          : '',
-        sliderIndividual: ''
-    }),
-    components : { Header },
-    mounted() {
-        this.sliderPlay();
+  // data: () => ({
+  //   intervalo: 3000,
+  //   contador: 1,
+  //   width: 0,
+  //   slider: "",
+  //   sliderIndividual: ""
+  // }),
+  components: { Header },
+  mounted() {
+    this.sliderPlay();
+  },
+
+  methods: {
+    sliderPlay() {
+      this.sliderIndividual = "";
+      this.slider = document.querySelector(".slider-contenedor");
+      this.sliderIndividual = document.querySelectorAll(".contenido-slider");
+      this.width = this.sliderIndividual[0].clientWidth;
+
+      //this.clientResize();
+      setInterval(() => {
+        this.slideMove();
+      }, this.intervalo);
     },
-    
-    methods: {
-        sliderPlay() {
-            this.sliderIndividual='';
-            this.slider           = document.querySelector(".slider-contenedor");
-            this.sliderIndividual = document.querySelectorAll(".contenido-slider");
-            this.width            = this.sliderIndividual[0].clientWidth;
-            
-            //this.clientResize(); 
-              setInterval(() => {
-                  this.slideMove();  
-                  }, this.intervalo);         
-        },
-        clientResize() {   
-          window.addEventListener('resize', ()=>{
-              this.width  = sliderIndividual[0].clientWidth;
-          })
-        },
+    clientResize() {
+      window.addEventListener("resize", () => {
+        this.width = sliderIndividual[0].clientWidth;
+      });
+    },
 
-        slideMove() {
-          
-              this.slider.style.transform ="translate("+(-this.width*this.contador) +"px)";
-              this.slider.style.transition = "transform .8s";
-              this.contador ++;      
-  
-          if ( this.contador === this.sliderIndividual.length){
- 
-              setTimeout (() => {
-                    this.slider.style.transform ="translate(0px)";
-                    this.slider.style.transition = "transform .0s";
-                    this.contador = 1;
-              },1500);
+    slideMove() {
+      this.slider.style.transform =
+        "translate(" + -this.width * this.contador + "px)";
+      this.slider.style.transition = "transform .8s";
+      this.contador++;
 
-          }
-        }
-        
-        
+      if (this.contador === this.sliderIndividual.length) {
+        setTimeout(() => {
+          this.slider.style.transform = "translate(0px)";
+          this.slider.style.transition = "transform .0s";
+          this.contador = 1;
+        }, 1500);
+      }
     }
-
-
-}
+  }
+};
 </script>
 
-
 <style>
-  #menu-togle:checked + #menu {
-    display: block;
-  }
+#menu-togle:checked + #menu {
+  display: block;
+}
 
-  
+/* slider */
 .contenedor {
   overflow: hidden;
 }
@@ -312,8 +141,9 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 40px;
+
   flex-shrink: 0;
 }
+
 
 </style>

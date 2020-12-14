@@ -1,46 +1,67 @@
 <template>
-
-  <div>
-      <header class="fixed w-full mb-2 bg-white z-10">
-        <!-- Icono de la empresa -->
-        <div class="grid grid-cols-3 md:flex md:justify-between items-center">
-
-          <nuxt-link class="col-start-2 col-end-3 ml-8 md:ml-4 mt-2"
-            to="/">       
-              <img class="" src="/images/landing-page/header/balquimia-logo.png" alt="logo" />
-          </nuxt-link>
-
-          <!-- Navbar en pantalla completa, en pantalla pequeña esta oculto -->
-          <div class="hidden md:flex bg-white">
-            <NavFullScreen></NavFullScreen>
+  <div class="fixed z-10 w-full ">
+    <header class="bg-white">
+      <!-- Icono de la empresa -->
+      <div class=" -mt-3 flex  justify-center  lg:flex lg:justify-between  lg:mt:0  lg:py-0 ">
+        <nuxt-link class="flex-grow lg:flex-grow-0 flex justify-center" to="/">
+          <div class="">
+            <img
+              class="h-20 logo lg:ml-10 lg:h-auto"
+              src="/images/landing-page/header/balquimia-logo.png"
+              alt="logo"
+            />
           </div>
+        </nuxt-link>
 
-          <!-- Icono svg del menu hamburguesa -->
-            <HamburguerIcon></HamburguerIcon>
-
+        <!-- Navbar en pantalla completa, en pantalla pequeña esta oculto -->
+        <div class="hidden lg:flex bg-white">
+          <NavFullScreen></NavFullScreen>
         </div>
 
-        <!-- un checkbox para detectar mediante CSS cuando ocultar o desplegar el menu hambueguesa -->
-        <input type="checkbox" class="hidden" id="menu-togle" />
+        <!-- Icono svg del menu hamburguesa -->
+        <div class="lg:hidden pt-6  ">
+          <HamburguerIcon></HamburguerIcon>
+      </div>
+      </div>
+      
+      <!-- un checkbox para detectar mediante CSS cuando ocultar o desplegar el menu hambueguesa -->
+      <input type="checkbox" class="hidden" id="menu-togle" />
 
-        <!-- Navbar en pantallas pequeñas y medianas -->
-        <div class="hidden md:hidden md:items-center md:w-auto w-full px-8 mb-4 fixed"
-            id="menu">
-              <NavResponsive></NavResponsive>
-        </div>
-      </header>
+      <!-- Navbar en pantallas pequeñas y medianas -->
+      <div class="hidden lg:hidden w-full fixed " id="menu">
+        <NavResponsive></NavResponsive>
+      </div>
+    </header>
+    <div class="flex justify-center lg:block lg:ml-4">
+      <img
+        src="/images/landing-page/header/arr.png"
+        alt="arr1"
+        class=" lg:mt-0 w-52 h-10  "
+      />
+    </div>
   </div>
-    
 </template>
 
 <script>
-    import NavFullScreen  from '@/components/landing-page/header/navFullScreen';
-    import NavResponsive  from '@/components/landing-page/header/navResponsive';
-    import HamburguerIcon from '@/components/landing-page/navOptions/hamburguerIcon';
-    export default {
-      data: () => ({
-
-      }),
-      components : { NavFullScreen, HamburguerIcon, NavResponsive },
-    }
+import NavFullScreen from "@/components/landing-page/header/navFullScreen";
+import NavResponsive from "@/components/landing-page/header/navResponsive";
+import HamburguerIcon from "@/components/landing-page/navOptions/hamburguerIcon";
+export default {
+  data: () => ({}),
+  components: { NavFullScreen, HamburguerIcon, NavResponsive }
+};
 </script>
+
+<style scoped>
+ .logo {
+  position: relative;
+  top: 20px;
+  z-index: 100;
+} 
+
+.logo-full {
+  
+  
+  left: 40px;
+} 
+</style>
