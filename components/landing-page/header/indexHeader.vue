@@ -2,8 +2,8 @@
   <div class="fixed z-10 w-full ">
     <header class="bg-white">
       <!-- Icono de la empresa -->
-      <div class=" -mt-3 flex  justify-center  lg:flex lg:justify-between  lg:mt:0  lg:py-0 ">
-        <nuxt-link class="flex-grow lg:flex-grow-0 flex justify-center" to="/">
+      <div class="flex justify-center -mt-3 lg:flex lg:justify-between lg:mt:0 lg:py-0">
+        <nuxt-link class="flex justify-center flex-grow lg:flex-grow-0" to="/">
           <div class="">
             <img
               class="h-20 logo lg:ml-10 lg:h-auto"
@@ -14,12 +14,12 @@
         </nuxt-link>
 
         <!-- Navbar en pantalla completa, en pantalla pequeña esta oculto -->
-        <div class="hidden lg:flex bg-white">
+        <div class="hidden bg-white lg:flex">
           <NavFullScreen></NavFullScreen>
         </div>
 
         <!-- Icono svg del menu hamburguesa -->
-        <div class="lg:hidden pt-6  ">
+        <div class="pt-6 lg:hidden ">
           <HamburguerIcon></HamburguerIcon>
       </div>
       </div>
@@ -28,7 +28,7 @@
       <input type="checkbox" class="hidden" id="menu-togle" />
 
       <!-- Navbar en pantallas pequeñas y medianas -->
-      <div class="hidden lg:hidden w-full fixed " id="menu">
+      <div class="fixed hidden w-full lg:hidden " id="menu">
         <NavResponsive></NavResponsive>
       </div>
     </header>
@@ -36,7 +36,7 @@
       <img
         src="/images/landing-page/header/arr.png"
         alt="arr1"
-        class=" lg:mt-0 w-52 h-10  "
+        class="h-10 lg:mt-0 w-52"
       />
     </div>
   </div>
