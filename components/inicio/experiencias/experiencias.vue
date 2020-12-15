@@ -2,7 +2,7 @@
   <div class="bg-gray-900">
     <div
       class="bg-center bg-no-repeat bg-cover"
-      style="background-image: url(/images/landing-page/aside/malla2.webp)"
+      style="background-image: url(/images/inicio/experiencia/malla2.webp)"
     >
       <div class="px-10 pt-20 md:px-16 lg:px-0 lg:pl-16 ">
         <div class="-ml-20 md:-ml-16">
@@ -24,11 +24,11 @@
                 desinfección y mantenimiento industrial.
               </h2>
             </div>
-            <div class="mt-2  sm:flex seccion-1">
+            <div class="mt-2 sm:flex seccion-1">
               <div class="hidden sm:block ">
                 <img
                   class="w-full h-full mr-40 "
-                  src="/images/landing-page/aside/lab1.webp"
+                  src="/images/inicio/experiencia/lab1.webp"
                   alt="imagen-lab"
                 />
               </div>
@@ -43,7 +43,7 @@
                     <span
                       ><img
                         class="inline ml-4"
-                        src="/images/landing-page/aside/arrR.webp"
+                        src="/images/inicio/experiencia/arrR.webp"
                         alt=""
                     /></span>
                   </p>
@@ -54,8 +54,8 @@
           <div class="hidden w-1/3 mt-20 lg:block xl:px-1 xl:-mt-10">
             <div class="">
               <img
-                class="h-auto  seccion-2"
-                src="images/landing-page/aside/hexa1.webp"
+                class="h-auto seccion-2"
+                src="images/inicio/experiencia/hexa1.webp"
                 alt=""
               />
             </div>

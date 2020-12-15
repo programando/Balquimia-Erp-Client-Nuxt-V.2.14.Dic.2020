@@ -7,7 +7,7 @@
           <div class="">
             <img
               class="h-20 logo lg:ml-10 lg:h-auto"
-              src="/images/landing-page/header/balquimia-logo.png"
+              src="/images/inicio/header/balquimia-logo.png"
               alt="logo"
             />
           </div>
@@ -34,7 +34,7 @@
     </header>
     <div class="flex justify-center lg:block lg:ml-4">
       <img
-        src="/images/landing-page/header/arr.png"
+        src="/images/inicio/header/arr.png"
         alt="arr1"
         class="h-10 lg:mt-0 w-52"
       />
@@ -43,9 +43,9 @@
 </template>
 
 <script>
-import NavFullScreen from "@/components/landing-page/header/navFullScreen";
-import NavResponsive from "@/components/landing-page/header/navResponsive";
-import HamburguerIcon from "@/components/landing-page/navOptions/hamburguerIcon";
+import NavFullScreen from "@/components/inicio/header/navFullScreen";
+import NavResponsive from "@/components/inicio/header/navResponsive";
+import HamburguerIcon from "@/components/inicio/navOptions/hamburguerIcon";
 export default {
   data: () => ({}),
   components: { NavFullScreen, HamburguerIcon, NavResponsive }

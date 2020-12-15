@@ -5,23 +5,23 @@
       <Slider></Slider>
 
     <!-- aside -->
-    <Aside></Aside>
+    <Experiencia></Experiencia>
 
     <!-- section -->
-    <Section></Section>
+    <Industrias></Industrias>
   </div>
 </template>
 
 <script>
-    import Header   from "@/components/landing-page/header/indexHeader";
-    import Aside    from "@/components/landing-page/aside/aside";
-    import Section  from "@/components/landing-page/section/section";
-    import Slider   from "@/components/landing-page/slider"
+    import Header         from "@/components/inicio/header/indexHeader";
+    import Experiencia    from "@/components/inicio/experiencias/experiencias";
+    import Industrias     from "@/components/inicio/industrias/section";
+    import  Slider        from "@/components/inicio/slider/slider"
     export default {
        data: () => ({
  
        }),
-      components: { Header, Aside,Section, Slider },
+      components: { Header, Slider,Experiencia,Industrias },
   
     };
 

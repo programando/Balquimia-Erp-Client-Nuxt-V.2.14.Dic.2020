@@ -5,12 +5,12 @@
 
     <div
           class="bg-center bg-no-repeat bg-cover contenido-slider"
-          style="background-image: url(/images/landing-page/slider/slide3.webp)"
+          style="background-image: url(/images/inicio/slider/slide3.webp)"
         >
           <!-- imagen de fondo de malla -->
           <div
             class="bg-no-repeat bg-cover "
-            style="background-image: url(/images/landing-page/slider/malla1.webp)"
+            style="background-image: url(/images/inicio/slider/malla1.webp)"
           >
             <div
               class="min-h-screen px-16 py-64 mt-40 lg:py-64 lg:px-48 lg:mt-20"
@@ -47,7 +47,7 @@
                   </p>
                   <img
                     class="h-5"
-                    src="/images/landing-page/slider/icono-flecha.png"
+                    src="/images/inicio/slider/icono-flecha.png"
                     alt="bandera"
                   />
                 </a>

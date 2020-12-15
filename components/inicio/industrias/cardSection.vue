@@ -8,7 +8,7 @@
         Sistema de limpieza, desinfección y mantenimiento preventivo
       </p>
       <div class="img">
-        <img class="" src="/images/landing-page/section/icono0.webp" alt="" />
+        <img class="" src="/images/inicio/industrias/icono0.webp" alt="" />
       </div>
       <div class="-mt-6 opacity-0 informacion">
         <div class="w-64 px-6 py-2 font-semibold bg-yellow-700 sm:w-2/5">
@@ -17,7 +17,7 @@
             <span
               ><img
                 class="inline"
-                src="images/landing-page/section/icono-flecha.png"
+                src="images/inicio/industrias/icono-flecha.png"
                 alt=""/></span
           ></a>
         </div>
@@ -35,7 +35,7 @@
 
     <style>
       .hover1:hover {
-        background-image: url("/images/landing-page/section/linea0.webp");
+        background-image: url("/images/inicio/industrias/linea0.webp");
         background-size: cover;
         background-repeat: no-repeat;
       }
