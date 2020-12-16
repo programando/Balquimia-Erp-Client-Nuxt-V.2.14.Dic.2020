@@ -5,7 +5,7 @@
             :class="[ cssResponsiveLink, cssNotResponsiveLink]">
               <img
                 class="h-6 ml-1"
-                src="/images/landing-page/header/icono-carrito.png"
+                src="/images/inicio/header/icono-carrito.png"
                 alt="carrito"
               />
               <span :class="[cssResponsiveSpan, cssNotResponsiveSpan ]">

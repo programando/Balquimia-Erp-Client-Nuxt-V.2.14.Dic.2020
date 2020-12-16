@@ -4,7 +4,7 @@
       <div :class="[ cssResponsiveDiv, cssNotResponsiveDiv ]">
 
         <nuxt-link to="/" :class="[ cssResponsiveLink, cssNotResponsiveLink ]">
-            <img  class="-mb-2"  src='/images/landing-page/header/eng.png' alt="bandera" />
+            <img  class="-mb-2"  src='/images/inicio/header/eng.png' alt="bandera" />
             <span :class="[cssResponsiveSpan,cssNotResponsiveSpan]">
               EN
             </span>        

@@ -1,16 +1,16 @@
 <template>
   <div class="bg-gray-900">
     <div
-      class="bg-no-repeat bg-cover bg-center"
-      style="background-image: url(/images/landing-page/aside/malla2.webp)"
+      class="bg-center bg-no-repeat bg-cover"
+      style="background-image: url(/images/inicio/experiencia/malla2.webp)"
     >
-      <div class="pt-20 px-10 md:px-16 lg:px-0 lg:pl-16 ">
+      <div class="px-10 pt-20 md:px-16 lg:px-0 lg:pl-16 ">
         <div class="-ml-20 md:-ml-16">
           <div
-            class="boder border-b-2 border-yellow-500 w-20 inline-block md:ml-1 lg:ml-12 "
+            class="inline-block w-20 border-b-2 border-yellow-500 boder md:ml-1 lg:ml-12 "
           ></div>
           <p
-            class="text-yellow-500 font-semibold inline text-xs  uppercase md:text-sm ml-1 lg:ml-2"
+            class="inline ml-1 text-xs font-semibold text-yellow-500 uppercase md:text-sm lg:ml-2"
           >
             Expericencia validada
           </p>
@@ -18,21 +18,21 @@
         <div class="lg:flex lg:mt-10">
           <div class="lg:w-2/3 lg:px-10 xl:px-20">
             <div class="mt-8 lg:mb-2">
-              <h2 class="text-white text-2xl md:text-3xl xl:text-4xl ">
+              <h2 class="text-2xl text-white md:text-3xl xl:text-4xl ">
                 Durante <span class="font-bold">más de 20 años</span>, hemos
                 estado desarrollando las mejores soluciones de limpieza,
                 desinfección y mantenimiento industrial.
               </h2>
             </div>
-            <div class=" sm:flex mt-2 seccion-1 ">
+            <div class="mt-2 sm:flex seccion-1">
               <div class="hidden sm:block ">
                 <img
-                  class="w-full h-full  mr-40 "
-                  src="/images/landing-page/aside/lab1.webp"
+                  class="w-full h-full mr-40 "
+                  src="/images/inicio/experiencia/lab1.webp"
                   alt="imagen-lab"
                 />
               </div>
-              <div class="bg-yellow-800 py-5 px-5  text-white">
+              <div class="px-5 py-5 text-white bg-yellow-800">
                 <a href="#">
                   <p class="mr-20">
                     Aplicamos calidad, eficiencia y durabilidad en nuestros
@@ -43,7 +43,7 @@
                     <span
                       ><img
                         class="inline ml-4"
-                        src="/images/landing-page/aside/arrR.webp"
+                        src="/images/inicio/experiencia/arrR.webp"
                         alt=""
                     /></span>
                   </p>
@@ -51,11 +51,11 @@
               </div>
             </div>
           </div>
-          <div class="hidden lg:block mt-20 w-1/3 xl:px-1 xl:-mt-10">
+          <div class="hidden w-1/3 mt-20 lg:block xl:px-1 xl:-mt-10">
             <div class="">
               <img
-                class=" h-auto seccion-2 "
-                src="images/landing-page/aside/hexa1.webp"
+                class="h-auto seccion-2"
+                src="images/inicio/experiencia/hexa1.webp"
                 alt=""
               />
             </div>
@@ -70,13 +70,13 @@ export default {};
 </script>
 
 <style scoped>
-.seccion-1 {
-  position: relative;
-  top: 50px;
-}
+    .seccion-1 {
+      position: relative;
+      top: 50px;
+    }
 
-.seccion-2 {
-  position: relative;
-  top: 30px;
-}
+    .seccion-2 {
+      position: relative;
+      top: 30px;
+    }
 </style>
