@@ -1,7 +1,7 @@
 <template>
   <!-- Navbar en pantalla completa, en pantalla pequeña esta oculto -->
   <nav class="flex ">
-    <ul class="flex items-center justify-center xl:mr-64">
+    <ul class="flex items-center justify-center xl:mr-40 pt-5">
       <Inicio></Inicio>
       <Productos></Productos>
       <Servicios></Servicios>
