@@ -1,17 +1,17 @@
 <template>
   <div class=" bg-white">
-    <div class="hover1 border-2 px-10 py-10 hover:text-white relative">
-      <h2 class="mb-10 font-bold text-base uppercase mt-2 ">
-        Inicuidad de alimentos
+    <div class="hover1 border-2 px-10 py-10 md:px-6 md:py-6 hover:text-white relative">
+      <h2 class="mb-10 md:mb-6 font-bold text-base uppercase mt-2">
+        {{ title }}
       </h2>
       <p class="text-white text-lg ">
         Sistema de limpieza, desinfección y mantenimiento preventivo
       </p>
-      <div class="img">
-        <img class="" src="/images/landing-page/section/icono0.webp" alt="" />
+      <div class="img md:-mt-4 md:-mb-10">
+        <img class="" :src="imgProducto" alt="" />
       </div>
-      <div class="opacity-0 informacion -mt-6">
-        <div class="py-2 px-6 bg-yellow-700 w-64 sm:w-2/5 font-semibold">
+      <div class="opacity-0 informacion -mt-6 md:px-4">
+        <div class="py-2 px-6 bg-yellow-700 w-64 sm:w-2/5 md:w-full font-semibold">
           <a href="#"
             >Mas informacion
             <span
@@ -28,6 +28,11 @@
 <script>
 export default {
   name: "CardSection",
+  props:{
+    title: String,
+    imgProducto: String,
+
+  }
 };
 </script>
 <style>
