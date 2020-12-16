@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD:components/landing-page/section/section.vue
   <section class=" py-10">
     <!-- seccion1 -->
     <div>
@@ -104,13 +103,6 @@
           </div>
         </div>
       </div>
-=======
-  <section class="py-10 bg-white">
-    <div class="flex mb-8">
-      <h2 class="mx-auto mt-20 text-2xl font-bold text-yellow-700">
-        Conocemos tu historia
-      </h2>
->>>>>>> 11c424197ce2373992731596cc6971176b369e31:components/inicio/industrias/section.vue
     </div>
   </section>
 </template>
