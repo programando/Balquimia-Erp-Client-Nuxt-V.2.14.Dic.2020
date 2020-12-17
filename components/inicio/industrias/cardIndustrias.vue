@@ -17,7 +17,7 @@
             <span
               ><img
                 class="inline"
-                src="images/inicio/industrias/icono-flecha.png"
+                src="images/comunes/icono-flecha.png"
                 alt=""/></span
           ></a>
         </div>

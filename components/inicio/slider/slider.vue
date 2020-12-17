@@ -13,7 +13,7 @@
           <!-- imagen de fondo de malla -->
           <div
             class="bg-no-repeat bg-cover "
-            style="background-image: url(/images/inicio/slider/malla1.webp)"
+            style="background-image: url(/images/comunes/malla1.webp)"
           >
             <div
               class="min-h-screen px-16 py-64 mt-40 lg:py-64 lg:px-48 lg:mt-20"
@@ -50,7 +50,7 @@
                   </p>
                   <img
                     class="h-5"
-                    src="/images/inicio/slider/icono-flecha.png"
+                    src="/images/comunes/icono-flecha.png"
                     alt="bandera"
                   />
                 </a>
@@ -76,9 +76,10 @@
          slider: "",
          sliderIndividual: "",
          images : [
-             { idimage: 0,
-               name: '/images/inicio/slider/slide3.webp' 
-              }
+             { idimage: 0,  name: '/images/inicio/slider/slide1.webp' },
+             { idimage: 1,  name: '/images/inicio/slider/slide2.webp' },
+             { idimage: 2,  name: '/images/inicio/slider/slide3.webp' },
+             { idimage: 3,  name: '/images/inicio/slider/slide4.webp' },
          ]
        }),
        
@@ -97,7 +98,6 @@
           this.sliderIndividual = document.querySelectorAll(".contenido-slider");
           this.width = this.sliderIndividual[0].clientWidth;
 
-          //this.clientResize();
           setInterval(() => {
             this.slideMove();
           }, this.intervalo);
@@ -124,20 +124,7 @@
         }
       }
     };
-    /*
-    <div v-for="slide in loadSliderImages" :key="slide.id">
-    <div v-else :style="bannerBgImage(slide.banner)"></div>
-</div>
-Method
 
-bannerBgImage(image){
-    return 'background-image: url("' + image + '")';
-},
-
-
-<div :style="{ backgroundImage: `url('${image}')` }"></div>
-
-*/
 </script>
 
 

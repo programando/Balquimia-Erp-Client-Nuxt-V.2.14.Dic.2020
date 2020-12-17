@@ -7,7 +7,7 @@
           <p :class="[ cssResponsiveP,cssNotResponsiveP ]">Acceso clientes</p>
           <img
             class=""
-            src="/images/inicio/header/icono-flecha.png"
+            src="/images/comunes/icono-flecha.png"
             alt="bandera"
           />
         </nuxt-link>

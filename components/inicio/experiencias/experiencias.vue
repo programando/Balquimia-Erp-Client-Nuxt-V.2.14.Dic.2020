@@ -2,7 +2,7 @@
   <div class="bg-gray-900">
     <div
       class="bg-center bg-no-repeat bg-cover"
-      style="background-image: url(/images/inicio/experiencia/malla2.webp)"
+      style="background-image: url(/images/comunes/malla2.webp)"
     >
       <div class="px-10 pt-20 md:px-16 lg:px-0 lg:pl-16 ">
         <div class="-ml-20 md:-ml-16">
@@ -43,7 +43,7 @@
                     <span
                       ><img
                         class="inline ml-4"
-                        src="/images/inicio/experiencia/arrR.webp"
+                        src="/images/comunes/arrR.webp"
                         alt=""
                     /></span>
                   </p>
@@ -51,7 +51,7 @@
               </div>
             </div>
           </div>
-          <div class="hidden w-1/3 mt-20 lg:block  xl:px-1 xl:-mt-10">
+          <div class="hidden w-1/3 mt-20 lg:block xl:px-1 xl:-mt-10">
             <div class="">
               <img
                 class="h-auto seccion-2"
