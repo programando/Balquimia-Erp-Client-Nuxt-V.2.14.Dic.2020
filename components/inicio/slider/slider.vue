@@ -69,15 +69,6 @@
     
     export default {
       name: "landingPageSlider",
-<<<<<<< HEAD
-      //  data: () => ({
-      //    intervalo: 3000,
-      //    contador: 1,
-      //    width: 0,
-      //    slider: "",
-      //    sliderIndividual: ""
-      //  }),
-=======
        data: () => ({
          intervalo: 3000,
          contador: 1,
@@ -91,7 +82,6 @@
              { idimage: 3,  name: '/images/inicio/slider/slide4.webp' },
          ]
        }),
->>>>>>> f94e6346163738dd6056172f536b76db9ece8e76
        
       mounted() {
         this.sliderPlay();

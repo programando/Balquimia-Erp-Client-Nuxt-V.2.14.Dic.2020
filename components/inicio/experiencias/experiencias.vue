@@ -24,7 +24,7 @@
                 desinfección y mantenimiento industrial.
               </h2>
             </div>
-            <div class="mt-2 sm:flex seccion-1">
+            <div class="mt-2 sm:flex  seccion-1">
               <div class="hidden sm:block ">
                 <img
                   class="w-full h-full mr-40 "
@@ -33,7 +33,7 @@
                 />
               </div>
               <div class="px-5 py-5 text-white bg-yellow-800">
-                <a href="#">
+                <nuxt-link to="/">
                   <p class="mr-20">
                     Aplicamos calidad, eficiencia y durabilidad en nuestros
                     servicios para superar los objetivos de nuestros clientes.
@@ -47,11 +47,11 @@
                         alt=""
                     /></span>
                   </p>
-                </a>
+                </nuxt-link>
               </div>
             </div>
           </div>
-          <div class="hidden w-1/3 mt-20 lg:block xl:px-1 xl:-mt-10">
+          <div class="hidden w-1/3 mt-20 lg:flex  xl:px-1 xl:-mt-10">
             <div class="">
               <img
                 class="h-auto seccion-2"
@@ -70,19 +70,19 @@ export default {};
 </script>
 
 <style scoped>
-    .seccion-1 {
-      position: relative;
-      top: 50px;
-    }
+.seccion-1 {
+  position: relative;
+  top: 50px;
+}
 
-    .seccion-2 {
-      position: relative;
-      top: 60px;
-    }
+.seccion-2 {
+  position: relative;
+  top: 60px;
+}
 
-    @media (min-width: 1200px) {
-      .seccion-2{
-        top:33px
-      }
-    }
+@media (min-width: 1200px) {
+  .seccion-2 {
+    top: 33px;
+  }
+}
 </style>

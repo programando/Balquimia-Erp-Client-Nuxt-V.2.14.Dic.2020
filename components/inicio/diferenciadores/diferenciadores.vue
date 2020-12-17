@@ -1,98 +1,102 @@
 <template>
-<div>
-  <div
-    class="pt-20 -mb-48 bg-center bg-no-repeat bg-cover"
-    style="background-image: url(/images/inicio/diferenciadores/baru.webp)"
-  >
+  <div>
     <div
-      class="bg-center bg-no-repeat bg-cover"
-      style="background-image: url(/images/comunes/malla2.webp)"
+      class="pt-20 -mb-48 bg-center bg-no-repeat bg-cover"
+      style="background-image: url(/images/inicio/diferenciadores/baru.webp)"
     >
-      <div class="-ml-16 md:-ml-16">
-        <div
-          class="inline-block w-20 border-b-2 border-yellow-500 boder md:ml-1 lg:ml-12 "
-        ></div>
-        <p
-          class="inline ml-1 text-xs font-semibold text-yellow-500 uppercase md:text-sm lg:ml-2"
-        >
-          Expericencia validada
-        </p>
-      </div>
-      <div class="w-1/2 mx-6 my-10">
-        <h2 class="text-2xl font-semibold text-white md:text-2xl lg:text-5xl">
-          Nuestros productos ofrecen alta calidad, eficiencia y durabilidad.
-        </h2>
-        <div class="w-64 px-6 py-2 mt-4 font-semibold text-white bg-yellow-700 sm:w-64">
-          <a href="#"
-            >Mas informacion
-            <span
-              ><img
-                class="inline ml-4"
-                src="images/comunes/icono-flecha.png"
-                alt=""/></span
-          ></a>
+      <div
+        class="bg-center bg-no-repeat bg-cover"
+        style="background-image: url(/images/comunes/malla2.webp)"
+      >
+        <div class="-ml-16 md:-ml-16">
+          <div
+            class="inline-block w-20 border-b-2 border-yellow-500 boder md:ml-1 lg:ml-12 "
+          ></div>
+          <p
+            class="inline ml-1 text-xs font-semibold text-yellow-500 uppercase md:text-sm lg:ml-2"
+          >
+            Expericencia validada
+          </p>
         </div>
-      </div>
+        <div class="w-1/2 mx-6 my-10">
+          <h2 class="text-2xl font-semibold text-white md:text-2xl lg:text-5xl">
+            Nuestros productos ofrecen alta calidad, eficiencia y durabilidad.
+          </h2>
+          <div
+            class="w-64 px-6 py-2 mt-4 font-semibold text-white bg-yellow-700 sm:w-64 transition duration-700 ease-in-out hover:bg-indigo-900"
+          >
+            <nuxt-link to="/">
+              Mas informacion
+              <span
+                ><img
+                  class="inline ml-4"
+                  src="images/comunes/icono-flecha.png"
+                  alt=""
+              /></span>
+            </nuxt-link>
+          </div>
+        </div>
 
-      <div class="mt-10 -mb-8 md:grid md:grid-cols-4 lg:grid-cols-3 ">
-        <div class="col-span-2 md:ml-4 lg:ml-0 xl:ml-0 md:col-start-1 lg:col-span-1 ">
-          <div class="hexagon-wrapper">
-            <div class="items-center hexagon">
-              <div class="z-10 ">
-                <img
-                  class="mx-auto mb-4 "
-                  src="images/inicio/diferenciadores/fortaleza1.webp"
-                  alt="fortaleza1"
-                />
-                <p class="z-10 px-4 leading-4 text-center">
-                  Disminuimos el consumo de los recursos naturales para ayudar
-                  en la protección del Medio Ambiente.
-                </p>
+        <div class="mt-10 -mb-8 md:grid md:grid-cols-4 lg:grid-cols-3 ">
+          <div
+            class="col-span-2 md:ml-4 lg:ml-0 xl:ml-0 md:col-start-1 lg:col-span-1 "
+          >
+            <div class="hexagon-wrapper">
+              <div class="items-center hexagon">
+                <div class="z-10 ">
+                  <img
+                    class="mx-auto mb-4 "
+                    src="images/inicio/diferenciadores/fortaleza1.webp"
+                    alt="fortaleza1"
+                  />
+                  <p class="z-10 px-4 leading-4 text-center">
+                    Disminuimos el consumo de los recursos naturales para ayudar
+                    en la protección del Medio Ambiente.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-span-2 -mt-20 md:mt-0 md:mr-4 lg:col-span-1 ">
-          <div class="hexagon-wrapper">
-            <div class="items-center hexagon">
-              <div class="z-10 px-2 my-10">
-                <img
-                  class="z-10 mx-auto mb-4 "
-                  src="images/inicio/diferenciadores/fortaleza2.webp"
-                  alt="fortaleza1"
-                />
-                <p class="z-10 px-4 leading-4 text-center">
-                  Realizamos acompañamiento técnico para optimizar la implementación de los productos.
-                </p>
+          <div class="col-span-2 -mt-20 md:mt-0 md:mr-4 lg:col-span-1 ">
+            <div class="hexagon-wrapper">
+              <div class="items-center hexagon">
+                <div class="z-10 px-2 my-10">
+                  <img
+                    class="z-10 mx-auto mb-4 "
+                    src="images/inicio/diferenciadores/fortaleza2.webp"
+                    alt="fortaleza1"
+                  />
+                  <p class="z-10 px-4 leading-4 text-center">
+                    Realizamos acompañamiento técnico para optimizar la
+                    implementación de los productos.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="col-span-2 -mt-20 md:mx-4 lg:mx-0 xl:mx-0 md:col-start-2 md:-mt-10 lg:mt-0 lg:col-span-1 "
-        >
-          <div class="hexagon-wrapper">
-            <div class="items-center hexagon">
-              <div class="z-10 px-2 my-10">
-                <img
-                  class="z-10 mx-auto mb-4 "
-                  src="images/inicio/diferenciadores/fortaleza3.webp"
-                  alt="fortaleza1"
-                />
-                <p class="z-10 px-4 leading-4 text-center">
-                  Somos Garantía en resultados porque conocemos las dinámicas de los sectores y las necesidades de nuestros clientes.
-                </p>
+          <div
+            class="col-span-2 -mt-20 md:mx-4 lg:mx-0 xl:mx-0 md:col-start-2 md:-mt-10 lg:mt-0 lg:col-span-1 "
+          >
+            <div class="hexagon-wrapper">
+              <div class="items-center hexagon">
+                <div class="z-10 px-2 my-10">
+                  <img
+                    class="z-10 mx-auto mb-4 "
+                    src="images/inicio/diferenciadores/fortaleza3.webp"
+                    alt="fortaleza1"
+                  />
+                  <p class="z-10 px-4 leading-4 text-center">
+                    Somos Garantía en resultados porque conocemos las dinámicas
+                    de los sectores y las necesidades de nuestros clientes.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class=""></div>
     </div>
   </div>
-
-</div>
 </template>
 <script>
 export default {
@@ -119,7 +123,7 @@ export default {
   width: 46%;
   height: 80%;
   margin: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /*background: linear-gradient(-180deg, white, #fda3b2); */
   background-color: white;
   display: flex;
