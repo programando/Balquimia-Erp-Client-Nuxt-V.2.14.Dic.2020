@@ -1,16 +1,19 @@
 <template>
-    <!-- slider -->
+    <!-- slider style="background-image: url(/images/inicio/slider/slide3.webp)"-->
+    
+
     <div class="max-h-screen contenedor">
       <div class="mt-16 leading-tight slider-contenedor lg:mt-20">
 
-    <div
-          class="bg-center bg-no-repeat bg-cover contenido-slider"
-          style="background-image: url(/images/inicio/slider/slide3.webp)"
+    <div v-for="image in images " :key="image.id"
+          class="bg-center bg-no-repeat bg-cover contenido-slider"     
+          :style="getImage(image.name)"
         >
+        
           <!-- imagen de fondo de malla -->
           <div
             class="bg-no-repeat bg-cover "
-            style="background-image: url(/images/inicio/slider/malla1.webp)"
+            style="background-image: url(/images/comunes/malla1.webp)"
           >
             <div
               class="min-h-screen px-16 py-64 mt-40 lg:py-64 lg:px-48 lg:mt-20"
@@ -47,7 +50,7 @@
                   </p>
                   <img
                     class="h-5"
-                    src="/images/inicio/slider/icono-flecha.png"
+                    src="/images/comunes/icono-flecha.png"
                     alt="bandera"
                   />
                 </a>
@@ -66,6 +69,7 @@
     
     export default {
       name: "landingPageSlider",
+<<<<<<< HEAD
       //  data: () => ({
       //    intervalo: 3000,
       //    contador: 1,
@@ -73,19 +77,37 @@
       //    slider: "",
       //    sliderIndividual: ""
       //  }),
+=======
+       data: () => ({
+         intervalo: 3000,
+         contador: 1,
+         width: 0,
+         slider: "",
+         sliderIndividual: "",
+         images : [
+             { idimage: 0,  name: '/images/inicio/slider/slide1.webp' },
+             { idimage: 1,  name: '/images/inicio/slider/slide2.webp' },
+             { idimage: 2,  name: '/images/inicio/slider/slide3.webp' },
+             { idimage: 3,  name: '/images/inicio/slider/slide4.webp' },
+         ]
+       }),
+>>>>>>> f94e6346163738dd6056172f536b76db9ece8e76
        
       mounted() {
         this.sliderPlay();
       },
 
       methods: {
+        getImage ( imageName ) {
+              return 'background-image: url("' + imageName + '")';
+        },
+
         sliderPlay() {
           this.sliderIndividual = "";
           this.slider = document.querySelector(".slider-contenedor");
           this.sliderIndividual = document.querySelectorAll(".contenido-slider");
           this.width = this.sliderIndividual[0].clientWidth;
 
-          //this.clientResize();
           setInterval(() => {
             this.slideMove();
           }, this.intervalo);
@@ -112,7 +134,7 @@
         }
       }
     };
-    
+
 </script>
 
 

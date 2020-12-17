@@ -1,49 +1,50 @@
 <template>
+<div>
   <div
     class="pt-20 -mb-48 bg-center bg-no-repeat bg-cover"
     style="background-image: url(/images/inicio/diferenciadores/baru.webp)"
   >
     <div
-      class="bg-no-repeat bg-cover bg-center"
-      style="background-image: url(/images/inicio/diferenciadores/malla2.webp)"
+      class="bg-center bg-no-repeat bg-cover"
+      style="background-image: url(/images/comunes/malla2.webp)"
     >
       <div class="-ml-16 md:-ml-16">
         <div
-          class="boder border-b-2 border-yellow-500 w-20 inline-block md:ml-1 lg:ml-12 "
+          class="inline-block w-20 border-b-2 border-yellow-500 boder md:ml-1 lg:ml-12 "
         ></div>
         <p
-          class="text-yellow-500 font-semibold inline text-xs  uppercase md:text-sm ml-1 lg:ml-2"
+          class="inline ml-1 text-xs font-semibold text-yellow-500 uppercase md:text-sm lg:ml-2"
         >
           Expericencia validada
         </p>
       </div>
-      <div class="my-10 mx-6 w-1/2">
-        <h2 class="text-white text-2xl font-semibold md:text-2xl lg:text-5xl">
+      <div class="w-1/2 mx-6 my-10">
+        <h2 class="text-2xl font-semibold text-white md:text-2xl lg:text-5xl">
           Nuestros productos ofrecen alta calidad, eficiencia y durabilidad.
         </h2>
-        <div class="py-2 px-6 mt-4 bg-yellow-700 text-white w-64 sm:w-64 font-semibold">
+        <div class="w-64 px-6 py-2 mt-4 font-semibold text-white bg-yellow-700 sm:w-64">
           <a href="#"
             >Mas informacion
             <span
               ><img
                 class="inline ml-4"
-                src="images/landing-page/section/icono-flecha.png"
+                src="images/comunes/icono-flecha.png"
                 alt=""/></span
           ></a>
         </div>
       </div>
 
-      <div class="mt-10 -mb-8 md:grid md:grid-cols-4 lg:grid-cols-3  ">
-        <div class="md:ml-4 lg:ml-0 xl:ml-0 md:col-start-1 col-span-2 lg:col-span-1 ">
+      <div class="mt-10 -mb-8 md:grid md:grid-cols-4 lg:grid-cols-3 ">
+        <div class="col-span-2 md:ml-4 lg:ml-0 xl:ml-0 md:col-start-1 lg:col-span-1 ">
           <div class="hexagon-wrapper">
-            <div class="hexagon items-center">
+            <div class="items-center hexagon">
               <div class="z-10 ">
                 <img
                   class="mx-auto mb-4 "
                   src="images/inicio/diferenciadores/fortaleza1.webp"
                   alt="fortaleza1"
                 />
-                <p class="px-4 text-center z-10 leading-4">
+                <p class="z-10 px-4 leading-4 text-center">
                   Disminuimos el consumo de los recursos naturales para ayudar
                   en la protección del Medio Ambiente.
                 </p>
@@ -51,16 +52,16 @@
             </div>
           </div>
         </div>
-        <div class="-mt-20 md:mt-0 md:mr-4  col-span-2 lg:col-span-1 ">
+        <div class="col-span-2 -mt-20 md:mt-0 md:mr-4 lg:col-span-1 ">
           <div class="hexagon-wrapper">
-            <div class="hexagon items-center">
-              <div class="z-10 my-10 px-2">
+            <div class="items-center hexagon">
+              <div class="z-10 px-2 my-10">
                 <img
-                  class="mx-auto mb-4 z-10 "
+                  class="z-10 mx-auto mb-4 "
                   src="images/inicio/diferenciadores/fortaleza2.webp"
                   alt="fortaleza1"
                 />
-                <p class="px-4 text-center z-10 leading-4">
+                <p class="z-10 px-4 leading-4 text-center">
                   Realizamos acompañamiento técnico para optimizar la implementación de los productos.
                 </p>
               </div>
@@ -68,17 +69,17 @@
           </div>
         </div>
         <div
-          class="-mt-20  md:mx-4 lg:mx-0 xl:mx-0 md:col-start-2 md:-mt-10 lg:mt-0 col-span-2 lg:col-span-1 "
+          class="col-span-2 -mt-20 md:mx-4 lg:mx-0 xl:mx-0 md:col-start-2 md:-mt-10 lg:mt-0 lg:col-span-1 "
         >
           <div class="hexagon-wrapper">
-            <div class="hexagon items-center">
-              <div class="z-10 my-10 px-2">
+            <div class="items-center hexagon">
+              <div class="z-10 px-2 my-10">
                 <img
-                  class="mx-auto mb-4 z-10 "
+                  class="z-10 mx-auto mb-4 "
                   src="images/inicio/diferenciadores/fortaleza3.webp"
                   alt="fortaleza1"
                 />
-                <p class="px-4 text-center z-10 leading-4">
+                <p class="z-10 px-4 leading-4 text-center">
                   Somos Garantía en resultados porque conocemos las dinámicas de los sectores y las necesidades de nuestros clientes.
                 </p>
               </div>
@@ -90,6 +91,8 @@
       <div class=""></div>
     </div>
   </div>
+
+</div>
 </template>
 <script>
 export default {
