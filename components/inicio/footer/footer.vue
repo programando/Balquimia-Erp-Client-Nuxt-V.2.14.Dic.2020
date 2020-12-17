@@ -46,7 +46,7 @@
     <div class="sm:grid sm:grid-cols-2 lg:grid-cols-4 lg:mx-4 lg:mr-8">
       <div class="text-gray-700">
         <div class="flex justify-center">
-          <h3 class="uppercase font-bold">Explorar</h3>
+          <h3 class="font-bold uppercase">Explorar</h3>
         </div>
         
 
@@ -66,7 +66,7 @@
           <nuxt-link to="/">Contacto</nuxt-link> 
         </div>
       </div>
-      <div class="mt-6 sm:mt-0 text-gray-700">
+      <div class="mt-6 text-gray-700 sm:mt-0">
         <div class="flex justify-center">
           <h3 class="font-bold uppercase">Productos</h3>
         </div>
@@ -92,7 +92,7 @@
           <nuxt-link to="/">Linea Sanidad Portatil</nuxt-link> 
         </div>
       </div>
-      <div class="mt-6 text-gray-700">
+      <div class="mt-2 text-gray-700 sm:mt-0">
         <div class="flex justify-center">
           <h3 class="font-bold uppercase">Legal</h3>
         </div>
@@ -103,7 +103,7 @@
           <nuxt-link to="/">Politicas de privacidad</nuxt-link> 
         </div>
       </div>
-      <div class="mt-6 text-gray-700">
+      <div class="mt-6 text-gray-700 sm:mt-0">
         <div class="flex justify-center">
           <h3 class="font-bold uppercase">Contáctenos</h3>
         </div>
