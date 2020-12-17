@@ -66,13 +66,13 @@
     
     export default {
       name: "landingPageSlider",
-       data: () => ({
-         intervalo: 3000,
-         contador: 1,
-         width: 0,
-         slider: "",
-         sliderIndividual: ""
-       }),
+      //  data: () => ({
+      //    intervalo: 3000,
+      //    contador: 1,
+      //    width: 0,
+      //    slider: "",
+      //    sliderIndividual: ""
+      //  }),
        
       mounted() {
         this.sliderPlay();

@@ -55,6 +55,7 @@ export default {
 <style scoped>
  .logo {
   position: relative;
+  left: 6px;
   top: 20px;
   z-index: 100;
 } 
@@ -62,6 +63,6 @@ export default {
 .logo-full {
   
   
-  left: 40px;
+  left: 0px;
 } 
 </style>
