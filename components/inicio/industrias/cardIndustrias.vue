@@ -11,7 +11,7 @@
         <img class="" src="/images/inicio/industrias/icono0.webp" alt="" />
       </div>
       <div class="-mt-6 opacity-0 informacion">
-        <div class="w-64 px-6 py-2 font-semibold bg-yellow-700 sm:w-2/5">
+        <div class="w-64 px-6 py-2 font-semibold bg-yellow-700 sm:w-4/5 lg:w-4/5 xl:w-3/5">
           <a href="#"
             >Mas informacion
             <span
@@ -28,7 +28,7 @@
 
 <script>
   export default {
-    name: "CardSection",
+    name: "CardIndustrias",
   };
 
 </script>

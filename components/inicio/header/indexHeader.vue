@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed z-10 w-full ">
+  <div class="fixed z-20 w-full ">
     <header class="bg-white">
       <!-- Icono de la empresa -->
       <div class="flex justify-center -mt-3 lg:flex lg:justify-between lg:mt:0 lg:py-0">

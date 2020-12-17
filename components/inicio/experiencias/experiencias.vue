@@ -51,7 +51,7 @@
               </div>
             </div>
           </div>
-          <div class="hidden w-1/3 mt-20 lg:block xl:px-1 xl:-mt-10">
+          <div class="hidden w-1/3 mt-20 lg:block  xl:px-1 xl:-mt-10">
             <div class="">
               <img
                 class="h-auto seccion-2"
@@ -77,6 +77,12 @@ export default {};
 
     .seccion-2 {
       position: relative;
-      top: 30px;
+      top: 60px;
+    }
+
+    @media (min-width: 1200px) {
+      .seccion-2{
+        top:33px
+      }
     }
 </style>
