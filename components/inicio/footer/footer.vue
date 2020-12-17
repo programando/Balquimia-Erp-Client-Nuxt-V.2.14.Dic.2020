@@ -16,7 +16,7 @@
             <div
               class="w-56 px-3 py-2 mx-auto mt-4 text-white transition duration-700 ease-in-out bg-yellow-700 hover:bg-indigo-900 "
             >
-              <a href="#" class="flex items-center justify-center">
+              <nuxt-link to="/" class="flex items-center justify-center">
                 <p
                   class="mr-4 text-base font-medium md:text-lg lg:text-xl md:px-6"
                 >
@@ -27,7 +27,7 @@
                   src="/images/comunes/icono-flecha.png"
                   alt="bandera"
                 />
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -48,20 +48,22 @@
         <div class="flex justify-center">
           <h3 class="uppercase font-bold">Explorar</h3>
         </div>
+        
+
         <div class="flex justify-center mt-2">
-          <a class="" href="#">Inicio</a>
+          <nuxt-link to="/">Inicio</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Productos</a>
+          <nuxt-link to="/">Productos</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Servicios</a>
+          <nuxt-link to="/">Servicios</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Experiencia</a>
+          <nuxt-link to="/">Experiencia</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Contacto</a>
+          <nuxt-link to="/">Contacto</nuxt-link> 
         </div>
       </div>
       <div class="mt-6 sm:mt-0 text-gray-700">
@@ -69,25 +71,25 @@
           <h3 class="font-bold uppercase">Productos</h3>
         </div>
         <div class="flex justify-center mt-2">
-          <a href="#">Linea Inocuidad Alimentaria</a>
+          <nuxt-link to="/">Linea Inocuidad Alimentaria</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Linea Artes gráficas</a>
+          <nuxt-link to="/">Linea Artes gráficas</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Linea Automotriz</a>
+          <nuxt-link to="/">Linea Automotriz</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Linea Hotelera</a>
+          <nuxt-link to="/">Linea Hotelera</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Linea Mantenimiento Industrial</a>
+          <nuxt-link to="/">Linea Mantenimiento Industrial</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Linea Materias Primas</a>
+          <nuxt-link to="/">Linea Materias Primas</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Linea Sanidad Portatil</a>
+          <nuxt-link to="/">Linea Sanidad Portatil</nuxt-link> 
         </div>
       </div>
       <div class="mt-6 text-gray-700">
@@ -95,10 +97,10 @@
           <h3 class="font-bold uppercase">Legal</h3>
         </div>
         <div class="flex justify-center mt-2">
-          <a href="#">Términos y condiciones</a>
+          <nuxt-link to="/">Términos y condiciones</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <a href="#">Politicas de privacidad</a>
+          <nuxt-link to="/">Politicas de privacidad</nuxt-link> 
         </div>
       </div>
       <div class="mt-6 text-gray-700">
@@ -123,26 +125,30 @@
       </div>
     </div>
     <div class="flex justify-center mt-20">
-      <a href="#">
+      <nuxt-link to="/">
         <img class="h-6 mx-1" src="/images/inicio/footer/facebook.svg" alt="">
-      </a>
-      <a href="#">
+      </nuxt-link>       
+      <nuxt-link to="/">
         <img class="h-6 mx-1" src="/images/inicio/footer/instagram.svg" alt="">
-      </a>
-      <a href="#">
+      </nuxt-link>   
+     <nuxt-link to="/">
         <img class="h-6 mx-1" src="/images/inicio/footer/twitter.svg" alt="">
-      </a>
-      <a href="#">
+      </nuxt-link>   
+      <nuxt-link to="/">
         <img class="h-6 mx-1" src="/images/inicio/footer/linkedin.svg" alt="">
-      </a>
-      <a href="#">
+      </nuxt-link> 
+      <nuxt-link to="/">
         <img class="h-6 mx-1" src="/images/inicio/footer/youtube.svg" alt="">
-      </a>
+      </nuxt-link> 
+        
+      
     </div>
     <div class="flex justify-center">
       <p class="text-xs text-gray-700">© Balquimia Chemical Solutions 2020</p>
     </div>
   </div>
+
+  
 </template>
 <script>
 export default {};
