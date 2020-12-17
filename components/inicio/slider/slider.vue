@@ -1,12 +1,15 @@
 <template>
-    <!-- slider -->
+    <!-- slider style="background-image: url(/images/inicio/slider/slide3.webp)"-->
+    
+
     <div class="max-h-screen contenedor">
       <div class="mt-16 leading-tight slider-contenedor lg:mt-20">
 
-    <div
-          class="bg-center bg-no-repeat bg-cover contenido-slider"
-          style="background-image: url(/images/inicio/slider/slide3.webp)"
+    <div v-for="image in images " :key="image.id"
+          class="bg-center bg-no-repeat bg-cover contenido-slider"     
+          :style="getImage(image.name)"
         >
+        
           <!-- imagen de fondo de malla -->
           <div
             class="bg-no-repeat bg-cover "
@@ -71,7 +74,12 @@
          contador: 1,
          width: 0,
          slider: "",
-         sliderIndividual: ""
+         sliderIndividual: "",
+         images : [
+             { idimage: 0,
+               name: '/images/inicio/slider/slide3.webp' 
+              }
+         ]
        }),
        
       mounted() {
@@ -79,6 +87,10 @@
       },
 
       methods: {
+        getImage ( imageName ) {
+              return 'background-image: url("' + imageName + '")';
+        },
+
         sliderPlay() {
           this.sliderIndividual = "";
           this.slider = document.querySelector(".slider-contenedor");
@@ -112,7 +124,20 @@
         }
       }
     };
-    
+    /*
+    <div v-for="slide in loadSliderImages" :key="slide.id">
+    <div v-else :style="bannerBgImage(slide.banner)"></div>
+</div>
+Method
+
+bannerBgImage(image){
+    return 'background-image: url("' + image + '")';
+},
+
+
+<div :style="{ backgroundImage: `url('${image}')` }"></div>
+
+*/
 </script>
 
 
