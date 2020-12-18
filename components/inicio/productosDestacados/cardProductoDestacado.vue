@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 my-4 bg-white">
+  <div class="px-4 my-4 mx-2 bg-white">
       
       <a href="#" class="w-2/3">
         <img

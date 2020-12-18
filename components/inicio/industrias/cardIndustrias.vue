@@ -2,6 +2,7 @@
   <div class="bg-white ">
     <div
       class="relative px-10 md:px-6 lg:px-4 md:py-8 py-10 border-2 hover1 hover:text-white"
+      
     >
       <h2 class="mt-2 mb-10 text-base font-bold uppercase ">
         Inicuidad de alimentos
@@ -30,7 +31,10 @@
 
 <script>
 export default {
-  name: "CardIndustrias"
+  name: "CardIndustrias",
+  props: {
+    
+  }
 };
 </script>
 
@@ -41,23 +45,18 @@ export default {
   background-repeat: no-repeat;
 }
 
-.hover1:hover > .img {
-  opacity: 0;
-}
-
-.hover1:hover > h2 {
-  opacity: 0;
-}
-
-.hover1:hover > p {
-  opacity: 0;
-}
-
-.hover1:hover {
-  background: white;
-}
 
 .hover1:hover > .informacion {
-  opacity: 100;
+  
+  opacity: 1;
+  
+}
+
+
+
+.hover1:hover {
+  
+  filter: contrast(80%);
+  
 }
 </style>

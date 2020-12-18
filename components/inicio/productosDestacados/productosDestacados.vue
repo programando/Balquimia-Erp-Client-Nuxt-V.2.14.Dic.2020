@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-56 -mt-4 bg-gray-300">
+  <div class="pt-56 -mt-4 bg-gray-200">
     <div class="flex justify-between mx-10 mb-4">
       <h2 class="text-2xl font-bold text-yellow-700 ">Productos Destacados</h2>
       <div class="hidden mr-10 lg:inline">

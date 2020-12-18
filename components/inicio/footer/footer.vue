@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20">
+  <div class="pb-10">
     <div
       class="bg-center bg-no-repeat bg-cover lg:py-20 "
       style="background-image:url(/images/inicio/footer/footer-contact.webp)"

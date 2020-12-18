@@ -1,5 +1,5 @@
 <template>
-  <div class="py-10 bg-gray-300">
+  <div class="py-10 bg-gray-200">
     <div class="flex justify-between mx-10">
       <h2 class="text-2xl font-bold text-black">Algunos de nuestros clientes</h2>
       <div class="hidden mr-10 lg:inline xl:hidden">
