@@ -1,6 +1,6 @@
 <template>
   <li>
-    <nuxt-link to="/"
+    <nuxt-link to="/servicios"
         :class="[ cssResponve, cssNotResponisve ]">
             Servicios
     </nuxt-link>
