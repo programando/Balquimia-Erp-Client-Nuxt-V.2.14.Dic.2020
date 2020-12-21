@@ -10,12 +10,12 @@
       >
         <div class="-ml-16 md:-ml-16">
           <div
-            class="inline-block w-20 border-b-2 border-yellow-500 boder md:ml-1 lg:ml-12 "
+            class="inline-block w-20 border-b-2 border-primary boder md:ml-1 lg:ml-12 "
           ></div>
           <p
-            class="inline ml-1 text-xs font-semibold text-yellow-500 uppercase md:text-sm lg:ml-2"
+            class="inline ml-1 text-xs font-semibold text-primary uppercase md:text-sm lg:ml-2"
           >
-            Expericencia validada
+            Que nos hace diferentes
           </p>
         </div>
         <div class="w-1/2 mx-6 my-10">
@@ -23,10 +23,10 @@
             Nuestros productos ofrecen alta calidad, eficiencia y durabilidad.
           </h2>
           <div
-            class="w-64 px-6 py-2 mt-4 font-semibold text-white bg-yellow-700 sm:w-64 transition duration-700 ease-in-out hover:bg-indigo-900"
+            class="w-64 px-6 py-2 mt-4 font-semibold text-white bg-primary sm:w-64 transition duration-700 ease-in-out hover:bg-indigo-900"
           >
             <nuxt-link to="/">
-              Mas informacion
+              Ver Productos
               <span
                 ><img
                   class="inline ml-4"

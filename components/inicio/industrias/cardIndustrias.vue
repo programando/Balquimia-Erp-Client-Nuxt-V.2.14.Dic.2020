@@ -15,7 +15,7 @@
       </div>
       <div class="-mt-6 opacity-0 informacion">
         <div
-          class="w-64 px-6 -mt-10 py-2 font-semibold bg-yellow-700 sm:w-4/5 lg:w-auto  lg:mr-10 xl:w-4/6"
+          class="w-64 px-6 -mt-10 py-2 font-semibold bg-primary sm:w-4/5 lg:w-auto  lg:mr-10 xl:w-4/6"
         >
           <nuxt-link to="/">
             Mas informacion

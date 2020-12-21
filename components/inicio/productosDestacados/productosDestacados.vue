@@ -1,7 +1,7 @@
 <template>
   <div class="pt-56 -mt-4 bg-gray-200">
     <div class="flex justify-between mx-10 mb-4">
-      <h2 class="text-2xl font-bold text-yellow-700 ">Productos Destacados</h2>
+      <h2 class="text-2xl font-bold text-primary ">Productos Destacados</h2>
       <div class="hidden mr-10 lg:inline">
         <img class="inline" src="/images/comunes/arrL.webp" alt="fecha-izquierda">
         <img class="inline" src="/images/comunes/arrR.webp" alt="fecha-derecha">
@@ -23,7 +23,7 @@ export default {};
 </script>
 <style>
 .fondo:hover {
-  background-color: darkgoldenrod;
+  background-color: #D3500A;
 }
 
 .fondo:hover > p,

@@ -32,7 +32,7 @@
                   alt="imagen-lab"
                 />
               </div>
-              <div class="px-5 py-5 text-white bg-yellow-800">
+              <div class="px-5 py-5 text-white bg-primary">
                 <nuxt-link to="/">
                   <p class="mr-20">
                     Aplicamos calidad, eficiencia y durabilidad en nuestros

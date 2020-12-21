@@ -20,10 +20,10 @@
             >
               <div class="-mt-32 -ml-20 md:-ml-16">
                 <div
-                  class="inline-block w-12 ml-3 border-b-2 border-yellow-500 boder lg:w-16 lg:-ml-4 "
+                  class="inline-block w-12 ml-3 border-b-2 border-primary boder lg:w-16 lg:-ml-4 "
                 ></div>
                 <p
-                  class="inline ml-6 text-xs font-semibold text-yellow-500 uppercase md:text-sm lg:ml-4 "
+                  class="inline ml-6 text-xs font-semibold text-primary uppercase md:text-sm lg:ml-4 "
                 >
                   Balquimia Chemical Solution
                 </p>
@@ -40,7 +40,7 @@
                 óptima implementación y manejo de nuestros productos
               </p>
               <div
-                class="w-2/3 px-3 py-2 mx-2 text-white transition duration-700 ease-in-out bg-yellow-700 hover:bg-indigo-900 sm:w-1/2 md:w-2/5 lg:w-6/12 xl:w-4/12 md:ml-8 lg:mt-4 lg:ml-0 "
+                class="w-2/3 px-3 py-2 mx-2 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 sm:w-1/2 md:w-2/5 lg:w-6/12 xl:w-4/12 md:ml-8 lg:mt-4 lg:ml-0 "
               >
                 <a href="#" class="flex items-center justify-center">
                   <p

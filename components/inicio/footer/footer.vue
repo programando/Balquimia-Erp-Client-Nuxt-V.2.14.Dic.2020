@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-10">
+  <div class="pb-10 bg-white">
     <div
       class="bg-center bg-no-repeat bg-cover lg:py-20 "
       style="background-image:url(/images/inicio/footer/footer-contact.webp)"
@@ -14,7 +14,7 @@
               Estamos listos, ¿Que necesidad tienes en tu empresa?
             </h2>
             <div
-              class="w-56 px-3 py-2 mx-auto mt-4 text-white transition duration-700 ease-in-out bg-yellow-700 hover:bg-indigo-900 "
+              class="w-56 px-3 py-2 mx-auto mt-4 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 "
             >
               <nuxt-link to="/" class="flex items-center justify-center">
                 <p
@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="-mt-10 ">
-      <img class="mx-auto" src="/images/inicio/footer/arr2.webp" alt="" />
+      <img class="mx-auto " src="/images/inicio/footer/arr2.webp" alt="" />
     </div>
     <div class="relative">
       <img
@@ -44,12 +44,10 @@
       />
     </div>
     <div class="sm:grid sm:grid-cols-2 lg:grid-cols-4 lg:mx-4 lg:mr-8">
-      <div class="text-gray-700">
-        <div class="flex justify-center">
+      <div class="text-gray-700 sm:mt-4">
+        <div class="flex justify-center mt-2">
           <h3 class="font-bold uppercase">Explorar</h3>
         </div>
-        
-
         <div class="flex justify-center mt-2">
           <nuxt-link to="/">Inicio</nuxt-link> 
         </div>
@@ -66,7 +64,7 @@
           <nuxt-link to="/">Contacto</nuxt-link> 
         </div>
       </div>
-      <div class="mt-6 text-gray-700 sm:mt-0">
+      <div class="mt-10 text-gray-700 sm:mt-4 ">
         <div class="flex justify-center">
           <h3 class="font-bold uppercase">Productos</h3>
         </div>
@@ -92,7 +90,7 @@
           <nuxt-link to="/">Linea Sanidad Portatil</nuxt-link> 
         </div>
       </div>
-      <div class="mt-2 text-gray-700 sm:mt-0">
+      <div class="mt-10 text-gray-700 sm:mt-8 lg:mt-4 ">
         <div class="flex justify-center">
           <h3 class="font-bold uppercase">Legal</h3>
         </div>
@@ -103,7 +101,7 @@
           <nuxt-link to="/">Politicas de privacidad</nuxt-link> 
         </div>
       </div>
-      <div class="mt-6 text-gray-700 sm:mt-0">
+      <div class="mt-10 text-gray-700 sm:mt-8 lg:mt-4">
         <div class="flex justify-center">
           <h3 class="font-bold uppercase">Contáctenos</h3>
         </div>

@@ -11,7 +11,7 @@
       <nuxt-link to="/">
       <div class="px-4 py-2 fondo ">
         <p class="p-2">Lineas de Artes Graficas</p>
-        <h2 class="p-2 font-bold text-yellow-700 uppercase">Clorotron</h2>
+        <h2 class="p-2 font-bold text-primary uppercase">Clorotron</h2>
         <div class="mt-6 mb-2 opacity-0">
           <div href="#">
             Ver detalles

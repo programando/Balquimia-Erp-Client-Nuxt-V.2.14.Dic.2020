@@ -1,26 +1,27 @@
 <template>
-  <div class="bg-gray-100">
+  <div>
     <Header></Header>
     <div
-      class="bg-center bg-no-repeat bg-cover "
+      class="bg-center bg-no-repeat bg-cover"
       style="background-image: url(/images/servicios/servicios.webp)"
     >
       <div
         class="bg-center bg-no-repeat bg-cover pt-64 lg pb-10 lg:pb-32"
         style="background-image: url(/images/comunes/malla1.webp)"
       >
-        <div class="px-10 md:px-16 ">
+        <div class="px-10 md:px-16">
           <div class="-ml-20 -mt-20 md:-ml-16">
             <div
-              class="inline-block w-20 border-b-2 border-yellow-500 boder md:ml-1 lg:ml-12 "
+              class="inline-block w-20 border-b-2 border-primary boder md:ml-1 lg:ml-12"
             ></div>
             <p
-              class="inline ml-1 text-xs font-semibold text-yellow-500 uppercase md:text-sm lg:ml-2"
+              class="inline ml-1 text-xs font-semibold text-primary uppercase md:text-sm lg:ml-2"
             >
               Servicios
             </p>
           </div>
-          <div class="my-20 ">
+
+          <div class="my-20">
             <h2
               class="px-4 text-3xl lg:text-5xl xl:text-6xl text-center font-bold"
             >
@@ -31,8 +32,8 @@
       </div>
     </div>
 
-    <div class="mx-10 contenedor bg-white px-6 py-6 lg:flex xl:mx-20 ">
-      <h2 class="text-yellow-700 text-xl lg:text-3xl w-2/3 lg:w-2/4 lg:px-10">
+    <div class="mx-10 contenedor bg-white px-6 py-6 lg:flex xl:mx-20">
+      <h2 class="text-primary text-xl lg:text-3xl w-2/3 lg:w-2/4 lg:px-10">
         Ofrecemos calidad, eficiencia y durabilidad.
       </h2>
       <p class="mt-6 lg:mt-0 text-gray-700 lg:w-2/4 lg:text-xl lg:px-10">
@@ -144,15 +145,15 @@
       </div>
     </div>
 
-    <div class="bg-gray-900 lg:flex relative ">
+    <div class="bg-gray-900 lg:flex relative mt-20">
       <div
-        class="bg-center bg-no-repeat bg-cover pt-48 pb-10  "
+        class="bg-center bg-no-repeat bg-cover pt-48 pb-10"
         style="background-image: url(/images/comunes/malla2.webp)"
       >
-        <div class="px-10 md:px-16 lg:px-10 ">
+        <div class="px-10 md:px-16 lg:px-10">
           <div class="-ml-20 -mt-20 md:-ml-16">
             <div
-              class="inline-block w-20 border-b-2 border-yellow-500 boder md:ml-1 lg:ml-12 "
+              class="inline-block w-20 border-b-2 border-yellow-500 boder md:ml-1 lg:ml-12"
             ></div>
             <p
               class="inline ml-1 text-xs font-semibold text-yellow-500 uppercase md:text-sm lg:ml-2"
@@ -160,12 +161,12 @@
               Control de calidad
             </p>
           </div>
-          <div class="my-20 lg:mx-8 ">
+          <div class="my-20 lg:mx-8">
             <h2
-              class="px-4 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl  font-bold leading-8 lg:leading-tight"
+              class="px-4 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-8 lg:leading-tight"
             >
               El Control de la calidad
-              <span class="text-yellow-700">es el factor principal</span> en el
+              <span class="text-primary">es el factor principal</span> en el
               desarrollo e implementación de nuestros productos
             </h2>
             <p class="px-4 mt-4 text-white text-lg">
@@ -185,24 +186,24 @@
     <div class="pt-20">
       <div class="mx-8 md:-ml-16">
         <div
-          class="inline-block w-20 border-b-2 border-yellow-500 boder -ml-10 md:ml-1 lg:ml-12 "
+          class="inline-block w-20 border-b-2 border-yellow-500 boder -ml-10 md:ml-1 lg:ml-12"
         ></div>
         <p
-          class="inline w-1/2 text-center  font-bold text-2xl  md:text-3xl lg:ml-2"
+          class="inline w-1/2 text-center font-bold text-2xl md:text-3xl lg:ml-2"
         >
           Por que contar con nuestros servicios
         </p>
       </div>
     </div>
-    <div class="mt-10 -mb-8 md:grid md:grid-cols-4 lg:grid-cols-3 ">
+    <div class="mt-10 md:grid md:grid-cols-4 lg:grid-cols-3 bg-gray-200">
       <div
-        class="col-span-2 md:ml-4 lg:ml-0 xl:ml-0 md:col-start-1 lg:col-span-1 "
+        class="col-span-2 md:ml-4 lg:ml-0 xl:ml-0 md:col-start-1 lg:col-span-1"
       >
         <div class="hexagon-wrapper">
           <div class="items-center hexagon">
-            <div class="z-10 ">
+            <div class="z-10">
               <img
-                class="mx-auto mb-4 "
+                class="mx-auto mb-4"
                 src="images/inicio/diferenciadores/fortaleza1.webp"
                 alt="fortaleza1"
               />
@@ -214,12 +215,12 @@
           </div>
         </div>
       </div>
-      <div class="col-span-2 -mt-20 md:mt-0 md:mr-4 lg:col-span-1 ">
+      <div class="col-span-2 -mt-20 md:mt-0 md:mr-4 lg:col-span-1">
         <div class="hexagon-wrapper">
           <div class="items-center hexagon">
             <div class="z-10 px-2 my-10">
               <img
-                class="z-10 mx-auto mb-4 "
+                class="z-10 mx-auto mb-4"
                 src="images/inicio/diferenciadores/fortaleza2.webp"
                 alt="fortaleza1"
               />
@@ -232,13 +233,13 @@
         </div>
       </div>
       <div
-        class="col-span-2 -mt-20 md:mx-4 lg:mx-0 xl:mx-0 md:col-start-2 md:-mt-10 lg:mt-0 lg:col-span-1 "
+        class="col-span-2 -mt-20 md:mx-4 lg:mx-0 xl:mx-0 md:col-start-2 md:-mt-10 lg:mt-0 lg:col-span-1"
       >
         <div class="hexagon-wrapper">
           <div class="items-center hexagon">
             <div class="z-10 px-2 my-10">
               <img
-                class="z-10 mx-auto mb-4 "
+                class="z-10 mx-auto mb-4"
                 src="images/inicio/diferenciadores/fortaleza3.webp"
                 alt="fortaleza1"
               />
@@ -259,12 +260,13 @@
 <script>
 import Header from "@/components/inicio/header/indexHeader";
 import Footer from "@/components/inicio/footer/footer";
+
 export default {
   components: {
     Header,
-
-    Footer
-  }
+    Footer,
+    
+  },
 };
 </script>
 <style scoped>
@@ -275,7 +277,7 @@ export default {
 }
 
 .hover:hover {
-  background-color: tomato;
+  background-color: #ce3b0a;
 }
 
 .hover:hover > .imgen1 {

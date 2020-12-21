@@ -2,7 +2,7 @@
   <section class="pt-10 ">
     <div>
       <div class="flex mb-8">
-        <h2 class="mx-auto mt-20 text-2xl font-bold text-yellow-700">
+        <h2 class="mx-auto mt-20 text-2xl font-bold text-primary">
           Conocemos tu historia
         </h2>
       </div>
