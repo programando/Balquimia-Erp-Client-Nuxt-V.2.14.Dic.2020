@@ -5,15 +5,8 @@
       style="background-image: url(/images/comunes/malla2.webp)"
     >
       <div class="px-10 pt-20 md:px-16 lg:px-0 lg:pl-16 ">
-        <div class="-ml-20 md:-ml-16">
-          <div
-            class="inline-block w-20 border-b-2 border-yellow-500 boder md:ml-1 lg:ml-12 "
-          ></div>
-          <p
-            class="inline ml-1 text-xs font-semibold text-yellow-500 uppercase md:text-sm lg:ml-2"
-          >
-            Expericencia validada
-          </p>
+        <div class="-ml-20 md:-ml-16 relative">
+          <Encabezado text="Experiencia Validad"></Encabezado>
         </div>
         <div class="lg:flex lg:mt-10">
           <div class="lg:w-2/3 lg:px-10 xl:px-20">
@@ -66,7 +59,14 @@
   </div>
 </template>
 <script>
-export default {};
+import Encabezado from "@/components/comun/Encabezado"
+
+export default {
+  components: {
+    Encabezado
+    
+  }
+};
 </script>
 
 <style scoped>
@@ -85,4 +85,6 @@ export default {};
     top: 33px;
   }
 }
+
+
 </style>

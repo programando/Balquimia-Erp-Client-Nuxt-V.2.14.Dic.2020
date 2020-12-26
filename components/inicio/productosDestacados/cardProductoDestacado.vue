@@ -8,7 +8,7 @@
       />
     </nuxt-link>
     <div class="inline w-1/3 ">
-      <nuxt-link to="/">
+      <nuxt-link to="/detalleProductos">
       <div class="px-4 py-2 fondo ">
         <p class="p-2">Lineas de Artes Graficas</p>
         <h2 class="p-2 font-bold text-primary uppercase">Clorotron</h2>

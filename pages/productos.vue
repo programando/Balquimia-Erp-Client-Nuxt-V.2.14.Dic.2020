@@ -41,6 +41,24 @@
             </div>
           </div>
 
+          <div class="flex justify-between mx-10 mb-4">
+            <h2 class="text-2xl font-bold text-primary ">
+              Lista de Productos
+            </h2>
+            <div class="hidden mr-10 lg:inline">
+              <img
+                class="inline"
+                src="/images/comunes/arrL.webp"
+                alt="fecha-izquierda"
+              />
+              <img
+                class="inline"
+                src="/images/comunes/arrR.webp"
+                alt="fecha-derecha"
+              />
+            </div>
+          </div>
+
           <div class="my-10 sm:grid sm:grid-cols-3 xl:grid-cols-4 sm:gap-1">
             <CardProductoDestacado></CardProductoDestacado>
             <CardProductoDestacado></CardProductoDestacado>
@@ -51,7 +69,10 @@
           </div>
         </div>
 
-        <div class="mx-4 px-4   lg:mt-20 xl:mt-10 lg:py-10 xl:py-12 xl:ml-8 lg:w-3/6 xl:w-2/6">
+        
+          <div
+          class="mx-4 px-4 lg:mt-20 xl:mt-10 lg:py-10 xl:py-12 xl:ml-8 lg:w-3/6 xl:w-2/6"
+        >
           <div class="bg-black border flex justify-center lg:pt-10 xl:pt-6">
             <h3 class="text-white text-xl py-2 px-3 lg:py-5 font-bold">
               Por Sectores
@@ -125,6 +146,8 @@
             </div>
           </div>
         </div>
+        
+        
       </div>
     </div>
 
@@ -139,8 +162,8 @@ export default {
   components: {
     Header,
     Footer,
-    CardProductoDestacado,
-  },
+    CardProductoDestacado
+  }
 };
 </script>
 <style>

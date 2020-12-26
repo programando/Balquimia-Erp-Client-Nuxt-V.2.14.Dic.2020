@@ -7,15 +7,8 @@
         style="background-image: url(/images/comunes/malla2.webp)"
       >
         <div class="px-10 md:px-16">
-          <div class="-ml-20 -mt-20 md:-ml-16">
-            <div
-              class="inline-block w-20 border-b-2 border-primary boder md:ml-1 lg:ml-12"
-            ></div>
-            <p
-              class="inline ml-1 text-xs font-semibold text-primary uppercase md:text-sm lg:ml-2"
-            >
-              Contacto
-            </p>
+          <div class="-ml-20 -mt-20 md:-ml-16 relative">
+            <Encabezado text="Contacto"></Encabezado>
           </div>
 
           <div class="my-8 lg:my-14">
@@ -124,6 +117,7 @@
 <script>
 import Header from "@/components/inicio/header/indexHeader";
 import Footer from "@/components/inicio/footer/footer";
+import Encabezado from '@/components/comun/Encabezado'
 export default {
   components: {
     Header,

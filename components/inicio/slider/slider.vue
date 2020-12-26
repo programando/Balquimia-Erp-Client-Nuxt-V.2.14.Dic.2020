@@ -18,15 +18,8 @@
             <div
               class="min-h-screen px-16 py-64 mt-40 lg:py-64 lg:px-48 lg:mt-20"
             >
-              <div class="-mt-32 -ml-20 md:-ml-16">
-                <div
-                  class="inline-block w-12 ml-3 border-b-2 border-primary boder lg:w-16 lg:-ml-4 "
-                ></div>
-                <p
-                  class="inline ml-6 text-xs font-semibold text-primary uppercase md:text-sm lg:ml-4 "
-                >
-                  Balquimia Chemical Solution
-                </p>
+              <div class="-mt-32 -ml-20 md:-ml-16 ">
+                <Encabezado text="Balquimia Chemical Solution"></Encabezado>
               </div>
               <h1
                 class="ml-2 text-3xl font-bold text-white md:ml-8 md:mt-5 md:mb-3 lg:ml-0 sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl lg:pr-36 xl:pr-56"
@@ -66,7 +59,7 @@
 </template>
 
 <script>
-    
+    import Encabezado from "@/components/comun/Encabezado"
     export default {
       name: "landingPageSlider",
        data: () => ({

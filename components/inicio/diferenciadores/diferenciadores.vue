@@ -8,15 +8,8 @@
         class="bg-center bg-no-repeat bg-cover"
         style="background-image: url(/images/comunes/malla2.webp)"
       >
-        <div class="-ml-16 md:-ml-16">
-          <div
-            class="inline-block w-20 border-b-2 border-primary boder md:ml-1 lg:ml-12 "
-          ></div>
-          <p
-            class="inline ml-1 text-xs font-semibold text-primary uppercase md:text-sm lg:ml-2"
-          >
-            Que nos hace diferentes
-          </p>
+        <div class="-ml-16 md:-ml-16 relative">
+          <Encabezado text="Que nos hace diferentes"></Encabezado>
         </div>
         <div class="w-1/2 mx-6 my-10">
           <h2 class="text-2xl font-semibold text-white md:text-2xl lg:text-5xl">
@@ -99,6 +92,7 @@
   </div>
 </template>
 <script>
+import Encabezado from '@/components/comun/Encabezado'
 export default {
   components: {}
 };

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray-300">
     <Header></Header>
     <div
       class="bg-center bg-no-repeat bg-cover"
@@ -10,15 +10,8 @@
         style="background-image: url(/images/comunes/malla1.webp)"
       >
         <div class="px-10 md:px-16">
-          <div class="-ml-20 -mt-20 md:-ml-16">
-            <div
-              class="inline-block w-20 border-b-2 border-primary boder md:ml-1 lg:ml-12"
-            ></div>
-            <p
-              class="inline ml-1 text-xs font-semibold text-primary uppercase md:text-sm lg:ml-2"
-            >
-              Servicios
-            </p>
+          <div class="-ml-20 -mt-20 md:-ml-16 relative">
+            <Encabezado text="Servicios"></Encabezado>
           </div>
 
           <div class="my-20">
@@ -152,14 +145,7 @@
       >
         <div class="px-10 md:px-16 lg:px-10">
           <div class="-ml-20 -mt-20 md:-ml-16">
-            <div
-              class="inline-block w-20 border-b-2 border-yellow-500 boder md:ml-1 lg:ml-12"
-            ></div>
-            <p
-              class="inline ml-1 text-xs font-semibold text-yellow-500 uppercase md:text-sm lg:ml-2"
-            >
-              Control de calidad
-            </p>
+            <Encabezado text="Control de calidad"></Encabezado>
           </div>
           <div class="my-20 lg:mx-8">
             <h2
@@ -184,9 +170,9 @@
 
     <!-- diferenciadores -->
     <div class="pt-20">
-      <div class="mx-8 md:-ml-16">
+      <div class="mx-8 md:-ml-16 relative">
         <div
-          class="inline-block w-20 border-b-2 border-yellow-500 boder -ml-10 md:ml-1 lg:ml-12"
+          class="inline-block w-20 border-b-2 border-primary boder -ml-10 md:ml-1 lg:ml-12 alinear"
         ></div>
         <p
           class="inline w-1/2 text-center font-bold text-2xl md:text-3xl lg:ml-2"
@@ -195,7 +181,7 @@
         </p>
       </div>
     </div>
-    <div class="mt-10 md:grid md:grid-cols-4 lg:grid-cols-3 bg-gray-200">
+    <div class="mt-10 md:grid md:grid-cols-4 lg:grid-cols-3 bg-gray-300">
       <div
         class="col-span-2 md:ml-4 lg:ml-0 xl:ml-0 md:col-start-1 lg:col-span-1"
       >
@@ -260,11 +246,14 @@
 <script>
 import Header from "@/components/inicio/header/indexHeader";
 import Footer from "@/components/inicio/footer/footer";
+import Encabezado from '@/components/comun/Encabezado'
+
 
 export default {
   components: {
     Header,
     Footer,
+    Encabezado
     
   },
 };
@@ -389,5 +378,12 @@ export default {
     width: 480px;
     height: 480px;
   }
+}
+
+
+/* alineacion de la linea vertical */
+.alinear {
+  position: relative;
+  bottom: 6px;
 }
 </style>
