@@ -31,7 +31,7 @@
 
       <!-- Navbar en pantallas pequeñas y medianas -->
       <div class="fixed hidden w-full lg:hidden " id="menu">
-        <NavResponsive></NavResponsive>
+        <NavResponsiveProductos></NavResponsiveProductos>
       </div>
     </header>
     <div class="flex justify-center lg:block lg:ml-4">
@@ -48,9 +48,10 @@
 import NavFullScreen from "@/components/inicio/header/navFullScreen";
 import NavResponsive from "@/components/inicio/header/navResponsive";
 import HamburguerIcon from "@/components/inicio/navOptions/hamburguerIcon";
+import NavResponsiveProductos from "@/components/productos/navResponsiveProductos"
 export default {
   data: () => ({}),
-  components: { NavFullScreen, HamburguerIcon, NavResponsive }
+  components: { NavFullScreen, HamburguerIcon, NavResponsiveProductos }
 };
 </script>
 
