@@ -3,28 +3,28 @@
     <HeaderProductos></HeaderProductos>
 
     <div class="pb-8 bg-gray-200 ">
-      <div class="lg:grid grid-cols-4 gap-4  lg:mx-0 ">
-        <div class="mx-4 lg:-ml-2 lg:mx-0 col-start-2 col-end-5 ">
+      <div class="grid-cols-4 gap-4 lg:grid lg:mx-0 ">
+        <div class="col-start-2 col-end-5 mx-4 lg:-ml-2 lg:mx-0 ">
           <div class="pt-20 bg-gray-200">
-            <div class="my-10 border bg-white ml-2 mr-4  lg:ml-2 lg:mr-4">
+            <div class="my-10 ml-2 mr-4 bg-white border lg:ml-2 lg:mr-4">
               <div
                 class="bg-center bg-no-repeat bg-cover"
                 style="background-image: url(/images/comunes/malla2.webp)"
               >
                 <div class="flex">
-                  <div class="mx-4 md:mx-8 my-6">
+                  <div class="mx-4 my-6 md:mx-8">
                     <h2
-                      class="text-primary text-2xl mt-4 leading-5 md:leading-none md:text-3xl font-bold px-4 lg:text-4xl "
+                      class="px-4 mt-4 text-2xl font-bold leading-5 text-primary md:leading-none md:text-3xl lg:text-4xl "
                     >
                       Productos para el sector Inocuidad de Alimentos
                     </h2>
-                    <div class="border my-4 mx-4"></div>
-                    <p class="px-4 text-lg text-gray-700 leading-6">
+                    <div class="mx-4 my-4 border"></div>
+                    <p class="px-4 text-lg leading-6 text-gray-700">
                       Sistema de limpieza, desinfección y mantenimiento
                       preventivo
                     </p>
                   </div>
-                  <div class="flex relative -ml-10 mr-16 lg:ml-4">
+                  <div class="relative flex mr-16 -ml-10 lg:ml-4">
                     <img
                       class="h-64 pico"
                       src="/images/comunes/eu.webp"
@@ -69,75 +69,75 @@
           </div>
         </div>
 
-        <div class="mx-4 px-4 mb-4 lg:mt-12 xl:mt-16 lg:py-5 lg:mx-0 xl:ml-10 lg:fixed">
-          <div class="bg-black border flex justify-center lg:pt-10 xl:pt-6">
-            <h3 class="text-white text-xl py-2 px-3 lg:py-5 font-bold">
+        <div class="px-4 mx-4 mb-4 lg:mt-12 xl:mt-16 lg:py-5 lg:mx-0 xl:ml-10 lg:fixed">
+          <div class="flex justify-center bg-black border lg:pt-10 xl:pt-6">
+            <h3 class="px-3 py-2 text-xl font-bold text-white lg:py-5">
               Por Sectores
             </h3>
           </div>
           <div
-            class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+            class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
             <nuxt-link to="/">Linea Inocuidad Alimentaria</nuxt-link>
           </div>
           <div
-            class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+            class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
             <nuxt-link to="/">Linea Artes gráficas</nuxt-link>
           </div>
           <div
-            class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+            class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
             <nuxt-link to="/">Linea Automotriz</nuxt-link>
           </div>
           <div
-            class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+            class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
             <nuxt-link to="/">Linea Hotelera</nuxt-link>
           </div>
           <div
-            class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+            class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
             <nuxt-link to="/">Linea Mantenimiento Industrial</nuxt-link>
           </div>
           <div
-            class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+            class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
             <nuxt-link to="/">Linea Materias Primas</nuxt-link>
           </div>
           <div
-            class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+            class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
             <nuxt-link to="/">Linea Sanidad Portatil</nuxt-link>
           </div>
           <div class="hidden lg:inline">
-            <div class="bg-black border flex justify-center mt-2">
-              <h3 class="text-white text-xl py-2 px-3 lg:py-5 font-bold">
+            <div class="flex justify-center mt-2 bg-black border">
+              <h3 class="px-3 py-2 text-xl font-bold text-white lg:py-5">
                 Por Marcas
               </h3>
             </div>
             <div
-              class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+              class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
             >
               <nuxt-link to="/">RAX</nuxt-link>
             </div>
             <div
-              class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+              class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
             >
               <nuxt-link to="/">Lito-TRON</nuxt-link>
             </div>
             <div
-              class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+              class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
             >
               <nuxt-link to="/">Retrocho</nuxt-link>
             </div>
             <div
-              class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+              class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
             >
               <nuxt-link to="/">Tawax</nuxt-link>
             </div>
             <div
-              class="flex justify-start border px-3 py-2 hover:bg-gray-300 text-gray-700 bg-white"
+              class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
             >
               <nuxt-link to="/">Tron</nuxt-link>
             </div>
@@ -145,7 +145,7 @@
         </div>
 
         <!-- footer -->
-        <div class=" lg:mx-0 col-start-2 col-end-5 order-last">
+        <div class="order-last col-start-2 col-end-5 lg:mx-0">
           <div class="pb-10 bg-white">
             <div
               class="bg-center bg-no-repeat bg-cover lg:py-20 "
@@ -331,6 +331,7 @@ import HeaderProductos from "@/components/productos/headerProductos";
 import Footer from "@/components/inicio/footer/footer";
 import CardProductoDestacado from "@/components/inicio/productosDestacados/cardProductoDestacado";
 export default {
+  
   components: {
     HeaderProductos,
     Footer,

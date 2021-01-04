@@ -33,6 +33,7 @@
     import Clientes             from '@/components/inicio/clientes/clientes.vue';
     import Footer               from '@/components/inicio/footer/footer.vue';
     export default {
+       
        data: () => ({
  
        }),

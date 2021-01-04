@@ -1,6 +1,6 @@
 <template>
   <li>
-    <nuxt-link to="/"
+    <nuxt-link to="/"  
         :class="[ cssResponve, cssNotResponisve ]">
             Inicio
     </nuxt-link>
@@ -8,6 +8,7 @@
 </template>
 <script>
   export default {
+     
       props: {
           responsive: {
             type: Boolean,

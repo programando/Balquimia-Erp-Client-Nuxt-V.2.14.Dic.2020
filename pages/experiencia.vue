@@ -104,6 +104,7 @@ import Footer from "@/components/inicio/footer/footer";
 import SectoresClientes from "@/components/experiencia/sectoresClientes";
 import Encabezado from '@/components/comun/Encabezado'
 export default {
+ 
   components:{
     Header,
     Footer,

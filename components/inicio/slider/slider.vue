@@ -35,7 +35,7 @@
               <div
                 class="w-2/3 px-3 py-2 mx-2 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 sm:w-1/2 md:w-2/5 lg:w-6/12 xl:w-4/12 md:ml-8 lg:mt-4 lg:ml-0 "
               >
-                <a href="#" class="flex items-center justify-center">
+                <nuxt-link to="/" class="flex items-center justify-center">
                   <p
                     class="mr-4 text-base font-medium md:text-lg lg:text-xl md:px-6"
                   >
@@ -46,7 +46,7 @@
                     src="/images/comunes/icono-flecha.png"
                     alt="bandera"
                   />
-                </a>
+                </nuxt-link>
               </div>
             </div>
           </div>

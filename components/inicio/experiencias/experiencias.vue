@@ -5,7 +5,7 @@
       style="background-image: url(/images/comunes/malla2.webp)"
     >
       <div class="px-10 pt-20 md:px-16 lg:px-0 lg:pl-16 ">
-        <div class="-ml-20 md:-ml-16 relative">
+        <div class="relative -ml-20 md:-ml-16">
           <Encabezado text="Experiencia Validad"></Encabezado>
         </div>
         <div class="lg:flex lg:mt-10">
@@ -17,7 +17,7 @@
                 desinfección y mantenimiento industrial.
               </h2>
             </div>
-            <div class="mt-2 sm:flex  seccion-1">
+            <div class="mt-2 sm:flex seccion-1">
               <div class="hidden sm:block ">
                 <img
                   class="w-full h-full mr-40 "
@@ -44,7 +44,7 @@
               </div>
             </div>
           </div>
-          <div class="hidden w-1/3 mt-20 lg:flex  xl:px-1 xl:-mt-10">
+          <div class="hidden w-1/3 mt-20 lg:flex xl:px-1 xl:-mt-10">
             <div class="">
               <img
                 class="h-auto seccion-2"
@@ -62,6 +62,7 @@
 import Encabezado from "@/components/comun/Encabezado"
 
 export default {
+   
   components: {
     Encabezado
     
