@@ -15,7 +15,7 @@
             Nuestros productos ofrecen alta calidad, eficiencia y durabilidad.
           </h2>
           <div
-            class="w-64 px-6 py-2 mt-4 font-semibold text-white transition duration-700 ease-in-out bg-primary sm:w-64 hover:bg-indigo-900"
+            class="inline-block px-6 py-2 mt-4 font-semibold text-white transition duration-700 ease-in-out bg-primary  hover:bg-indigo-900"
           >
             <nuxt-link to="/store/productos">
               Ver Productos

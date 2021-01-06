@@ -14,11 +14,11 @@
               Estamos listos, ¿Que necesidad tienes en tu empresa?
             </h2>
             <div
-              class="w-56 px-3 py-2 mx-auto mt-4 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 "
+              class="mx-auto w-40 lg:w-48 px-3 py-2  mt-4 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 "
             >
               <nuxt-link to="/" class="flex items-center justify-center">
                 <p
-                  class="mr-4 text-base font-medium md:text-lg lg:text-xl md:px-6"
+                  class="mr-4 text-base font-medium lg:text-lg "
                 >
                   Contáctenos
                 </p>

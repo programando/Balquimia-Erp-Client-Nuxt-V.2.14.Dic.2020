@@ -9,11 +9,12 @@
         <div class="lg:flex lg:mt-10">
           <div class="lg:w-2/3 lg:px-10 xl:px-20">
             <div class="mt-8 lg:mb-2">
-              <h2 class="text-2xl text-white md:text-3xl xl:text-4xl ">
+              <h2 class="lg:pr-24 lg:text-5xl text-3xl font-bold text-center -mt-10 mb-4 text-primary ">Experiencia Validada</h2>
+              <h3 class="text-2xl text-white md:text-3xl xl:text-4xl ">
                 Durante <span class="font-bold">más de 20 años</span>, hemos
                 estado desarrollando las mejores soluciones de limpieza,
                 desinfección y mantenimiento industrial.
-              </h2>
+              </h3>
             </div>
             <div class="mt-2 sm:flex seccion-1">
               <div class="hidden sm:block ">
@@ -23,7 +24,7 @@
                   alt="imagen-lab"
                 />
               </div>
-              <div class="px-5 py-5 text-white bg-primary">
+              <div class="px-5 py-5 text-white bg-primary transition duration-700 ease-in-out hover:bg-indigo-900 hover:text-white">
                 <nuxt-link to="/home/experiencia">
                   <p class="mr-20">
                     Aplicamos calidad, eficiencia y durabilidad en nuestros

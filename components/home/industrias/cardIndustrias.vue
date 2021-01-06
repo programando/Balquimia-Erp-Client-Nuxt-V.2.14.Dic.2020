@@ -2,7 +2,6 @@
   <div class="bg-white ">
     <div
       class="relative px-10 py-10 border-2 md:px-6 lg:px-4 md:py-8 hover1 hover:text-white"
-      
     >
       <h2 class="mt-2 mb-10 text-base font-bold uppercase ">
         Inicuidad de alimentos
@@ -13,21 +12,15 @@
       <div class="opacity-0 img ">
         <img class="" src="/images/home/industrias/icono0.webp" alt="" />
       </div>
-      
-      <div class="-mt-6 opacity-0 informacion">
-        <div
-          class="w-64 px-6 py-2 -mt-10 font-semibold bg-primary sm:w-4/5 lg:w-auto lg:mr-10 xl:w-4/6"
-        >
-         <nuxt-link to="/store/productos" >
-            Mas información
-            <span>
-              <img class="inline" src="/images/comunes/icono-flecha.png" alt=""/>
-            </span>
-          </nuxt-link> 
 
+      <nuxt-link class="-mt-6 opacity-0 informacion" to="/store/productos">
+        <div class=" px-4 py-2 -mt-10 font-semibold bg-primary inline-block">
+          Mas información
+          <span>
+            <img class="inline" src="/images/comunes/icono-flecha.png" alt="" />
+          </span>
         </div>
-      </div>
-
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -35,9 +28,7 @@
 <script>
 export default {
   name: "CardIndustrias",
-  props: {
-    
-  }
+  props: {}
 };
 </script>
 
@@ -48,18 +39,11 @@ export default {
   background-repeat: no-repeat;
 }
 
-
 .hover1:hover > .informacion {
-  
   opacity: 1;
-  
 }
 
-
-
 .hover1:hover {
-  
   filter: contrast(80%);
-  
 }
 </style>
