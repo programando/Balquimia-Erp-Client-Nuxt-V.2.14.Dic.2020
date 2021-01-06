@@ -24,17 +24,17 @@
 </template>
 
 <script>
-    import Header               from "@/components/inicio/header/indexHeader";
-    import Experiencia          from "@/components/inicio/experiencias/experiencias";
-    import Industrias           from "@/components/inicio/industrias/industrias";
-    import  Slider              from "@/components/inicio/slider/slider"
-    import Diferenciadores      from '@/components/inicio/diferenciadores/diferenciadores.vue';
-    import ProductosDestacados  from '@/components/inicio/productosDestacados/productosDestacados.vue';
-    import Clientes             from '@/components/inicio/clientes/clientes.vue';
-    import Footer               from '@/components/inicio/footer/footer.vue';
+    import Header               from "@/components/home/header/indexHeader";
+    import Experiencia          from "@/components/home/experiencias";
+    import Industrias           from "@/components/home/industrias/industrias";
+    import  Slider              from "@/components/home/slider/slider"
+    import Diferenciadores      from '@/components/home/diferenciadores.vue';
+    import ProductosDestacados  from '@/components/home/productosDestacados/productosDestacados.vue';
+    import Clientes             from '@/components/home/clientesList.vue';
+    import Footer               from '@/components/home/footer/footer.vue';
     export default {
        
-       data: () => ({
+    data: () => ({
  
        }),
       components: { Header, Slider,Experiencia,Industrias,Diferenciadores,ProductosDestacados, Clientes, Footer },
