@@ -160,6 +160,7 @@
                     <h2 class="text-2xl font-bold text-center">
                       Estamos listos, ¿Que necesidad tienes en tu empresa?
                     </h2>
+                    
                     <div
                       class="w-56 px-3 py-2 mx-auto mt-4 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 "
                     >
@@ -179,6 +180,7 @@
                         />
                       </nuxt-link>
                     </div>
+
                   </div>
                 </div>
               </div>

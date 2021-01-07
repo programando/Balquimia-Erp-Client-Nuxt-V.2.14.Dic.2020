@@ -13,22 +13,23 @@
             <h2 class="text-2xl font-bold text-center">
               Estamos listos, ¿Que necesidad tienes en tu empresa?
             </h2>
-            <div
-              class="mx-auto w-40 lg:w-48 px-3 py-2  mt-4 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 "
+<!--             <div
+              class="w-40 px-3 py-2 mx-auto mt-4 text-white transition duration-700 ease-in-out lg:w-48 bg-primary hover:bg-indigo-900 "
             >
-              <nuxt-link to="/" class="flex items-center justify-center">
-                <p
-                  class="mr-4 text-base font-medium lg:text-lg "
-                >
+              <nuxt-link to="/home/contacto" class="flex items-center justify-center">  
+                <p class="mr-4 text-base font-medium lg:text-lg ">
                   Contáctenos
                 </p>
-                <img
-                  class="h-5"
-                  src="/images/comunes/icono-flecha.png"
-                  alt="bandera"
-                />
               </nuxt-link>
-            </div>
+            </div> -->
+            
+            <AppButton 
+                    class      = "w-40 px-3 py-2 lg:w-48"
+                    to         = "/home/contacto"
+                  :center    = "true"
+                  > Contáctenos 
+            </AppButton>
+
           </div>
         </div>
       </div>
@@ -44,62 +45,42 @@
       />
     </div>
     <div class="sm:grid sm:grid-cols-2 lg:grid-cols-4 lg:mx-4 lg:mr-8">
-      <div class="text-gray-700 sm:mt-4">
-        <div class="flex justify-center mt-2">
-          <h3 class="font-bold uppercase">Explorar</h3>
-        </div>
-        <div class="flex justify-center mt-2">
-          <nuxt-link to="/">Inicio</nuxt-link> 
-        </div>
-        <div class="flex justify-center">
-          <nuxt-link to="/">Productos</nuxt-link> 
-        </div>
-        <div class="flex justify-center">
-          <nuxt-link to="/">Servicios</nuxt-link> 
-        </div>
-        <div class="flex justify-center">
-          <nuxt-link to="/">Experiencia</nuxt-link> 
-        </div>
-        <div class="flex justify-center">
-          <nuxt-link to="/">Contacto</nuxt-link> 
-        </div>
-      </div>
+
       <div class="mt-10 text-gray-700 sm:mt-4 ">
         <div class="flex justify-center">
-          <h3 class="font-bold uppercase">Productos</h3>
+          <h3 class="font-bold uppercase">Líneas de productos</h3>
         </div>
         <div class="flex justify-center mt-2">
-          <nuxt-link to="/">Linea Inocuidad Alimentaria</nuxt-link> 
+          <nuxt-link to="/store/productos">Linea Inocuidad Alimentaria</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <nuxt-link to="/">Linea Artes gráficas</nuxt-link> 
+          <nuxt-link to="/store/productos">Linea Artes gráficas</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <nuxt-link to="/">Linea Automotriz</nuxt-link> 
+          <nuxt-link to="/store/productos">Linea Automotriz</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <nuxt-link to="/">Linea Hotelera</nuxt-link> 
+          <nuxt-link to="/store/productos">Linea Hotelera</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <nuxt-link to="/">Linea Mantenimiento Industrial</nuxt-link> 
+          <nuxt-link to="/store/productos">Linea Mantenimiento Industrial</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <nuxt-link to="/">Linea Materias Primas</nuxt-link> 
+          <nuxt-link to="/store/productos">Linea Materias Primas</nuxt-link> 
         </div>
         <div class="flex justify-center">
-          <nuxt-link to="/">Linea Sanidad Portatil</nuxt-link> 
+          <nuxt-link to="/store/productos">Linea Sanidad Portatil</nuxt-link> 
         </div>
       </div>
       <div class="mt-10 text-gray-700 sm:mt-8 lg:mt-4 ">
         <div class="flex justify-center">
           <h3 class="font-bold uppercase">Legal</h3>
         </div>
-        <div class="flex justify-center mt-2">
-          <nuxt-link to="/">Términos y condiciones</nuxt-link> 
-        </div>
+ 
         <div class="flex justify-center">
-          <nuxt-link to="/">Politicas de privacidad</nuxt-link> 
-        </div>
+          <div class=""   @click="openPdf">Politicas tratamiento de la información</div>  
+         </div>
+         
       </div>
       <div class="mt-10 text-gray-700 sm:mt-8 lg:mt-4">
         <div class="flex justify-center">
@@ -149,12 +130,29 @@
   
 </template>
 <script>
-export default {};
+  import AppButton from "@/components/library/button";
+export default {
+  components : { AppButton },
+
+  data: ()=> ({
+
+  }),
+
+  methods: {
+        openPdf() {
+          let fileName ="/files/Politica.pdf";
+          window.open(fileName , "_blank");
+        }
+  },  
+
+
+};
+
 </script>
-<style>
-.logo {
-  position: relative;
-  bottom: 30px;
-  right: 30px;
-}
-</style>
+  <style>
+  .logo {
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+  }
+  </style>
