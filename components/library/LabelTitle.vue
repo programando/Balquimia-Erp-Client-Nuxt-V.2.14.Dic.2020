@@ -4,8 +4,9 @@
       class="flex"
       :class="[setAlign, setColor]"
     >
-      <h2 class="md:text-lg lg:text-xl xl:text-2xl">{{ title }}</h2>
+      <h3 class="font-bold md:text-lg lg:text-xl xl:text-2xl"> {{ title }}</h3>
     </div>
+    
     <div 
       class="flex"
       :class="[setAlign, setColor]"
@@ -19,10 +20,10 @@ export default {
   name: "LabelTitle",
 
   props: {
-    title: String,
+    title      : String,
     description: String,
-    align: String,
-    color: String
+    align      : String,
+    color      : String
   },
 
   computed: {
