@@ -37,13 +37,13 @@ export default {
     },
     cssResponsiveDiv() {
       return {
-        "grid grid-cols-5 border transition duration-700 ease-in-out hover:bg-indigo-900 hover:text-white py-1":
+        "grid grid-cols-5 border transition duration-700 ease-in-out hover:bg-gray-400 py-1":
           this.responsive === true
       };
     },
     cssNotResponsiveDiv() {
       return {
-        " py-2 px-3 mx-2  transition duration-700 ease-in-out hover:bg-indigo-900 hover:text-white ":
+        " py-2 px-3 mx-2  transition duration-700 ease-in-out hover:bg-gray-400 ":
           this.responsive === false
       };
     },
@@ -54,10 +54,10 @@ export default {
       return { "": this.responsive === false };
     },
     cssResponsiveSpan() {
-      return { "text-xs text-gray-500": this.responsive === true };
+      return { "text-xs text-gray-900": this.responsive === true };
     },
     cssNotResponsiveSpan() {
-      return { "text-xs text-gray-500 font-semibold": this.responsive === false };
+      return { "text-xs text-gray-900 font-semibold": this.responsive === false };
     }
   }
 };

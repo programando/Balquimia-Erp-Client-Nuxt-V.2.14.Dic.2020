@@ -31,10 +31,10 @@ export default {
       return { "": this.responsive === false };
     },
     cssResponsiveDiv() {
-      return { "grid grid-cols-5 border transition duration-700 ease-in-out hover:bg-indigo-900 hover:text-white py-1": this.responsive === true };
+      return { "grid grid-cols-5 border transition duration-700 ease-in-out hover:bg-gray-400 py-1": this.responsive === true };
     },
     cssNotResponsiveDiv() {
-      return { "py-2 px-4 mx-2 transition duration-700 ease-in-out hover:bg-indigo-900 hover:text-white": this.responsive === false };
+      return { "py-2 px-4 mx-2 transition duration-700 ease-in-out hover:bg-gray-400": this.responsive === false };
     },
     cssResponsiveLink() {
       return {
@@ -46,12 +46,12 @@ export default {
     },
     cssResponsiveSpan() {
       return {
-        "text-xs text-gray-500": this.responsive === true
+        "text-xs text-gray-900": this.responsive === true
       };
     },
     cssNotResponsiveSpan() {
       return {
-        "text-xs text-gray-500 ": this.responsive === false
+        "text-xs text-gray-900 ": this.responsive === false
       };
     }
   }
