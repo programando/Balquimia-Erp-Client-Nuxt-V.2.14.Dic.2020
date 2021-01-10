@@ -2,15 +2,21 @@
   <div>
     <div 
       class="flex"
-      :class="[setAlign, setColor]"
+      :class="[setAlign]"
     >
-      <h2 class="md:text-lg lg:text-xl xl:text-2xl">{{ title }}</h2>
+      <h2 
+        class="md:text-lg lg:text-xl xl:text-2xl"
+        :class="setColor"
+      >{{ title }}</h2>
     </div>
     <div 
       class="flex"
-      :class="[setAlign, setColor]"
+      :class="[setAlign]"
     >
-      <p class="text-sm lg:text-base ">{{ description }}</p>
+      <p 
+        class="text-sm lg:text-base "
+        :class="setColor"  
+      >{{ description }}</p>
     </div>
   </div>
 </template>
