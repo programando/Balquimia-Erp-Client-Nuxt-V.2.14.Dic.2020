@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class=" bg-center bg-no-repeat bg-cover"
+      class="bg-center bg-no-repeat bg-cover "
       style="background-image: url('/images/home/slider/investigacion.webp')"
     >
       <div
@@ -28,16 +28,15 @@
               class="py-6 md:py-8 px-8 md:px-12 bg-white mt-6 lg:mt-0 border rounded-lg"
             >
               <!-- label, titulo y descripcion -->
-              
-                <LabelTitle
+
+              <LabelTitle
                 title="Bienvenid@"
                 description="Registre sus credenciales para ingreso al sistema"
                 align="center"
                 color="extra"
               >
               </LabelTitle>
-              
-              
+
               <div class="mt-4">
                 <!-- inputText -->
                 <InputBasic
@@ -58,17 +57,13 @@
               </div>
 
               <div class="mt-4 flex justify-between">
-                <ButtonBasic 
-                  text="Olvidé mi contraeña" 
-                  to="/"
-                ></ButtonBasic>
+                <ButtonBasic text="Olvidé mi contraeña" to="/"></ButtonBasic>
 
                 <ButtonLoad
-                  text="Ingresar al sistema" 
+                  text="Ingresar al sistema"
                   to="/"
                   variant="success"
                 ></ButtonLoad>
-                
               </div>
             </div>
           </div>

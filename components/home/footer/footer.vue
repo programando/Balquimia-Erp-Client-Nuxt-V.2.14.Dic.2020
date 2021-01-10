@@ -13,20 +13,11 @@
             <h2 class="text-2xl font-bold text-center">
               Estamos listos, ¿Que necesidad tienes en tu empresa?
             </h2>
-            <!--             <div
-              class="w-40 px-3 py-2 mx-auto mt-4 text-white transition duration-700 ease-in-out lg:w-48 bg-primary hover:bg-indigo-900 "
-            >
-              <nuxt-link to="/home/contacto" class="flex items-center justify-center">  
-                <p class="mr-4 text-base font-medium lg:text-lg ">
-                  Contáctenos
-                </p>
-              </nuxt-link>
-            </div> -->
 
             <AppButton
-              class="w-40 px-3 py-2 lg:w-48"
-              to="/home/contacto"
-              :center="true"
+                class = "w-40 px-3 py-2 lg:w-48"
+                to    = "/home/contacto"
+              :center = "true"
             >
               Contáctenos
             </AppButton>
@@ -44,12 +35,12 @@
         alt=""
       />
     </div>
-    <div class="sm:grid sm:grid-cols-1 lg:grid-cols-3 lg:mx-20 gap-20 ">
+    <div class="gap-20 sm:grid sm:grid-cols-1 lg:grid-cols-3 lg:mx-20 ">
       <div class="mt-10 text-gray-700 sm:mt-4 ">
         <div class="flex justify-center lg:justify-start lg:ml-10">
           <h3 class="font-bold uppercase">Líneas de productos</h3>
         </div>
-        <div class="flex justify-center lg:justify-start lg:ml-10 mt-2">
+        <div class="flex justify-center mt-2 lg:justify-start lg:ml-10">
           <nuxt-link to="/store/productos"
             >Linea Inocuidad Alimentaria</nuxt-link
           >
