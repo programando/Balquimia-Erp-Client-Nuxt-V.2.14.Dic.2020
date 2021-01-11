@@ -1,34 +1,38 @@
 <template>
   <div class="bg-white ">
-    <div
-      class="relative px-10 py-10 border-2 md:px-6 lg:px-4 md:py-8 hover1 hover:text-white"
-    >
+    <div class="relative px-10 py-10 border-2 md:px-6 lg:px-4 md:py-8 hover1 hover:text-white">
       <h2 class="mt-2 mb-10 text-base font-bold uppercase ">
-        Inicuidad de alimentos
+        {{ nom_linea }}
       </h2>
       <p class="text-lg text-white ">
-        Sistema de limpieza, desinfección y mantenimiento preventivo
+        {{slogan}}
       </p>
-      <div class="opacity-0 img ">
+      <div class="opacity-0 ">
         <img class="" src="/images/home/industrias/icono0.webp" alt="" />
       </div>
 
       <nuxt-link class="-mt-6 opacity-0 informacion" to="/store/productos">
-        <div class=" px-4 py-2 -mt-10 font-semibold bg-primary inline-block">
+        <div class="inline-block px-4 py-2 -mt-10 font-semibold bg-primary">
           Mas información
-          <span>
+<!--           <span>
             <img class="inline" src="/images/comunes/icono-flecha.png" alt="" />
-          </span>
+          </span> -->
         </div>
       </nuxt-link>
+
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "CardIndustrias",
-  props: {}
+  name: "cardLineasProductos",
+  props: {
+      nom_linea: String,
+      id_linea : Number,
+      slogan   : String,
+      imagen   : String,
+  }
 };
 </script>
 

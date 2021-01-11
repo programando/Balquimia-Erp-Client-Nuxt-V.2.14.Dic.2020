@@ -8,7 +8,7 @@
     <Experiencia></Experiencia>
 
     <!-- section -->
-    <Industrias></Industrias>
+    <LineasProductos></LineasProductos>
 
     <Diferenciadores></Diferenciadores>
     
@@ -26,16 +26,16 @@
 <script>
     import Header               from "@/components/home/header/indexHeader";
     import Experiencia          from "@/components/home/experiencias";
-    import Industrias           from "@/components/home/industrias/industrias";
+    import LineasProductos           from "@/components/home/lineasProductos/lineasProductos";
     import  Slider              from "@/components/home/slider/slider"
     import Diferenciadores      from '@/components/home/diferenciadores.vue';
     import ProductosDestacados  from '@/components/home/productosDestacados/productosDestacados.vue';
     import Clientes             from '@/components/home/clientesList.vue';
     import Footer               from '@/components/home/footer/footer.vue';
     
-    import Productos from '@/models/Productos';
+    import Productos from '@/models/Prdcto';
     export default {
-     components: { Header, Slider,Experiencia,Industrias,Diferenciadores,ProductosDestacados, Clientes, Footer }, 
+     components: { Header, Slider,Experiencia,LineasProductos,Diferenciadores,ProductosDestacados, Clientes, Footer }, 
     
       data: () => ({
  
