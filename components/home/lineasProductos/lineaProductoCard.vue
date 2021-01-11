@@ -1,6 +1,8 @@
 <template>
   <div class="bg-white ">
-    <div class="relative px-10 py-10 border-2 md:px-6 lg:px-4 md:py-8 hover1 hover:text-white">
+  
+    <div class="relative px-10 py-10 bg-no-repeat bg-cover border-2 md:px-6 lg:px-4 md:py-8 hover:text-white hover1"
+          :style="getImage(imagen)">
       <h2 class="mt-2 mb-10 text-base font-bold uppercase ">
         {{ nom_linea }}
       </h2>
@@ -14,13 +16,11 @@
       <nuxt-link class="-mt-6 opacity-0 informacion" to="/store/productos">
         <div class="inline-block px-4 py-2 -mt-10 font-semibold bg-primary">
           Mas información
-<!--           <span>
-            <img class="inline" src="/images/comunes/icono-flecha.png" alt="" />
-          </span> -->
         </div>
       </nuxt-link>
 
     </div>
+   
   </div>
 </template>
 
@@ -32,17 +32,18 @@ export default {
       id_linea : Number,
       slogan   : String,
       imagen   : String,
-  }
+  },
+     methods: {
+    getImage(imageName) {
+      return 'background-image: url("' + imageName + '")';
+    }
+    },
+    
 };
 </script>
 
 <style>
-.hover1 {
-  background-image: url("/images/home/industrias/linea0.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
+ 
 .hover1:hover > .informacion {
   opacity: 1;
 }
