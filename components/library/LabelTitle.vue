@@ -1,17 +1,13 @@
 <template>
   <div>
-    <div 
-      class="flex"
-      :class="[setAlign, setColor]"
-    >
-      <h3 class="font-bold md:text-lg lg:text-xl xl:text-2xl"> {{ title }}</h3>
+    <div class="flex" :class="[setAlign]">
+      <h2 class="md:text-lg lg:text-xl xl:text-2xl" :class="setColor">
+        {{ title }}
+      </h2>
     </div>
-    
-    <div 
-      class="flex"
-      :class="[setAlign, setColor]"
-    >
-      <p class="text-sm lg:text-base ">{{ description }}</p>
+
+    <div class="flex" :class="[setAlign]">
+      <p class="text-sm lg:text-base " :class="setColor">{{ description }}</p>
     </div>
   </div>
 </template>
@@ -20,40 +16,40 @@ export default {
   name: "LabelTitle",
 
   props: {
-    title      : String,
+    title: String,
     description: String,
-    align      : String,
-    color      : String
+    align: String,
+    color: String
   },
 
   computed: {
-    setAlign(){
+    setAlign() {
       switch (this.align) {
-        case 'center':
-          return 'justify-center'
+        case "center":
+          return "justify-center";
           break;
-      
-        case 'start':
-          return 'justify-start'
+
+        case "start":
+          return "justify-start";
           break;
-        
-        case 'end':
-          return 'justify-end'
+
+        case "end":
+          return "justify-end";
       }
     },
 
-    setColor(){
+    setColor() {
       switch (this.color) {
-        case 'primary':
-          return 'text-primary'
+        case "primary":
+          return "text-primary";
           break;
-      
-        case 'secondary':
-          return 'text-secondary'
+
+        case "secondary":
+          return "text-secondary";
           break;
-        
-        case 'extra':
-          return 'text-extra'
+
+        case "extra":
+          return "text-extra";
           break;
       }
     }
