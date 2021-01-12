@@ -1,31 +1,31 @@
 <template>
   <div>
     <div
-      class="bg-center bg-no-repeat bg-cover "
+      class="bg-center bg-no-repeat bg-cover"
       style="background-image: url('/images/home/slider/investigacion.webp')"
     >
       <div
-        class="bg-no-repeat bg-cover py-10 lg:pt-20 pb-40 h-screen "
+        class="h-screen py-10 pb-40 bg-no-repeat bg-cover lg:pt-20"
         style="background-image: url('/images/comunes/malla1.webp')"
       >
         <div class="mt-10">
-          <div class="flex justify-center text-4xl text-white font-bold">
+          <div class="flex justify-center text-4xl font-bold text-white">
             <h2>BALQUIMIA S.A.S</h2>
           </div>
           <div
-            class="mt-10 mx-10 md:mx-20 lg:mx-24 xl:mx-32 lg:grid lg:grid-cols-2 gap-10"
+            class="gap-10 mx-10 mt-10 md:mx-20 lg:mx-24 xl:mx-32 lg:grid lg:grid-cols-2"
           >
             <div class="text-white">
               <p class="lg:text-lg">
                 Se gana y se pierde, se sube y se baja, se nace y se muere. Y si
                 la historia es tan simple, ¿por qué te preocupas tanto?
               </p>
-              <h3 class="mt-1 flex justify-end mr-4 font-semibold lg:text-lg">
+              <h3 class="flex justify-end mt-1 mr-4 font-semibold lg:text-lg">
                 -Fancundo Cabral
               </h3>
             </div>
             <div
-              class="py-6 md:py-8 px-8 md:px-12 bg-white mt-6 lg:mt-0 border rounded-lg"
+              class="px-8 py-6 mt-6 bg-white border rounded-lg md:py-8 md:px-12 lg:mt-0"
             >
               <!-- label, titulo y descripcion -->
 
@@ -56,7 +56,7 @@
                 ><P></P>
               </div>
 
-              <div class="mt-4 flex justify-between">
+              <div class="flex justify-between mt-4 ">
                 <ButtonBasic text="Olvidé mi contraeña" to="/"></ButtonBasic>
 
                 <ButtonLoad
@@ -84,6 +84,6 @@ export default {
 
   data() {
     return {};
-  }
+  },
 };
 </script>
