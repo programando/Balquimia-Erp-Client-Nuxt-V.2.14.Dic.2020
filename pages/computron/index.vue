@@ -56,7 +56,7 @@
               </div>
 
               <div class="flex justify-between mt-4 ">
-                <ButtonBasic text="Olvidé mi contraeña" to="Contraseña"></ButtonBasic>
+                <ButtonBasic text="Olvidé mi contraseña" to="/computron/usersResetPassword"></ButtonBasic>
 
                 <ButtonLoad
                   text="Ingresar al sistema"
