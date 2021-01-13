@@ -43,7 +43,7 @@
                   type="text"
                   text="jhonjamesmg@hotmail.com"
                   width="w-full"
-                  borderColor="extra"
+                  
                 ></InputBasic>
 
                 <!-- inputPassword -->
@@ -51,13 +51,12 @@
                   type="password"
                   text="contraseña"
                   width="w-full"
-                  borderColor="extra"
                 ></InputBasic
                 ><P></P>
               </div>
 
               <div class="flex justify-between mt-4 ">
-                <ButtonBasic text="Olvidé mi contraeña" to="/"></ButtonBasic>
+                <ButtonBasic text="Olvidé mi contraeña" to="Contraseña"></ButtonBasic>
 
                 <ButtonLoad
                   text="Ingresar al sistema"

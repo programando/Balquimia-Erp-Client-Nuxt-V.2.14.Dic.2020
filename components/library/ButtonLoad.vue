@@ -24,6 +24,8 @@ export default {
         case "success":
           return "text-white bg-green-600 hover:bg-green-800";
           break;
+        case "primary":
+          return "text-white bg-primary hover:bg-red-900";
         
       }
     },
