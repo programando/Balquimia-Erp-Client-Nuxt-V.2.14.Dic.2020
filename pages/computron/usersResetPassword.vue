@@ -10,9 +10,9 @@
           style="background-image: url('/images/comunes/malla1.webp')"
         >
           <div class="mt-40 lg:mx-20 xl:mx-56">
-            <div class="mx-10 mt-10 md:mx-20 lg:mx-24 xl:mx-32">
+            <div class="mx-16 mt-10 md:mx-24 lg:mx-32 xl:mx-40">
               <div
-                class="px-16 py-6 mt-6 bg-white border rounded-lg md:py-8 md:px-24 lg:mt-0"
+                class="px-10 py-6 mt-6 bg-white border rounded-lg md:py-8 md:px-16 lg:mt-0"
               >
                 <!-- label, titulo y descripcion -->
 

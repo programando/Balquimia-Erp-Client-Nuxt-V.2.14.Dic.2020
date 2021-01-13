@@ -1,13 +1,13 @@
 <template>
-  <div class="flex">
-    <span><img 
-      src="/images/comunes/gmail.svg" 
-      alt="icono gmail"
-      class="h-10 bg-gray-200" 
-    />
+  <div class="flex border">
+    <div class="px-2 pt-1 bg-gray-200">
+      <span>
+      <i aria-hidden="true" class="fa fa-envelope fa-2x"></i>
     </span>
+    </div>
+    
     <input
-      class="px-4 py-2 bg-gray-200"
+      class="px-4 py-2 bg-gray-200 focus:outline-none"
       :class="width"
       type="text"
       :placeholder="text"
