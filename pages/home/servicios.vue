@@ -60,7 +60,7 @@
           <h3 class="py-4 mx-4 text-lg font-bold">
             Desarrollo tecnologico de Productos
           </h3>
-          <div class="opacity-0 ver-mas mt-8">
+          <div class="mt-8 opacity-0 ver-mas">
             <nuxt-link to="/">
               <div class="flex items-center">
                 <p class="mx-4 font-bold text-white">
@@ -88,7 +88,7 @@
               industrial, ofreciendo alta calidad, eficiencia y durabilidad
             </p>
           </div>
-          <h3 class="py-4 mx-4 lg:-mt-8 xl:mt-0 text-lg font-bold">
+          <h3 class="py-4 mx-4 text-lg font-bold lg:-mt-8 xl:mt-0">
             Elaboración soluciones personalizada a su necesidad
           </h3>
           <div class="opacity-0 ver-mas">
@@ -119,7 +119,7 @@
               industrial, ofreciendo alta calidad, eficiencia y durabilidad
             </p>
           </div>
-          <h3 class="py-4 mx-4 md:-mt-6 lg:-mt-16 xl:mt-0 text-lg font-bold">
+          <h3 class="py-4 mx-4 text-lg font-bold md:-mt-6 lg:-mt-16 xl:mt-0">
             Programa de limpieza, desinfeccion y mantenimiento preventivo
           </h3>
           <div class="opacity-0 ver-mas">
@@ -167,9 +167,7 @@
     <!-- diferenciadores -->
     <div class="pt-20">
       <div class="relative mx-8 md:-ml-16">
-        <div
-          class="inline-block w-20 -ml-10 border-b-2 border-primary boder md:ml-1 lg:ml-12 alinear"
-        ></div>
+       
         <p
           class="inline w-1/2 text-2xl font-bold text-center md:text-3xl lg:ml-2"
         >

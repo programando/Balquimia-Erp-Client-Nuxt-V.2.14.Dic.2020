@@ -5,17 +5,17 @@
         <h2
           class="mx-auto mt-20 mb-56 text-3xl font-bold text-center md:mb-4 lg:text-5xl text-primary"
         >
-          Conocemos tu historia
+          Sectores industriales
         </h2>
       </div>
 
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <CardIndustrias
-          v-for="linea in lineas"
-          :key="linea.id_linea"
-          :imagen="linea.imagen"
-          :slogan="linea.slogan"
-          :nom_linea="linea.nom_linea"
+            v-for    = "linea in lineas"
+          :key       = "linea.id_linea"
+          :imagen    = "linea.imagen"
+          :slogan    = "linea.slogan"
+          :nom_linea = "linea.nom_linea"
         >
         </CardIndustrias>
       </div>
