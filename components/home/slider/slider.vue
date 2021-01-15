@@ -13,10 +13,10 @@
           style="background-image: url(/images/comunes/malla1.webp)"
         >
           <div
-            class="min-h-screen px-16 py-20 md:pr-40 mt-40 lg:py-40 lg:px-20 xl:px-32 lg:mt-20 "
+            class="min-h-screen px-16 py-20 mt-40 md:pr-40 lg:py-40 lg:px-20 xl:px-32 lg:mt-20 "
           >
             <h1
-              class="ml-2 text-3xl font-bold text-white md:ml-8 md:mt-5 md:mb-3 lg:ml-0 sm:text-4xl md:text-4xl lg:text-5xl  lg:pr-40 xl:pr-56"
+              class="ml-2 text-3xl font-bold text-white md:ml-8 md:mt-5 md:mb-3 lg:ml-0 sm:text-4xl md:text-4xl lg:text-5xl lg:pr-40 xl:pr-56"
             >
               {{ image.primaryText }}
             </h1>
@@ -26,7 +26,7 @@
               {{ image.secondText }}
             </p>
             <div
-              class="inline-block mt-4 px-4 py-2 mx-2 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 md:ml-8 lg:mt-4 lg:ml-0 "
+              class="inline-block px-4 py-2 mx-2 mt-4 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 md:ml-8 lg:mt-4 lg:ml-0 "
             >
               <nuxt-link
                 :to="image.buttonLink"
@@ -65,9 +65,9 @@ export default {
         idimage: 0,
         name: "/images/home/slider/investigacion.webp",
         primaryText:
-          "Innovación y desarrollo de acuerdo a sus necesidades puntuales",
+          "Fabricamos y formulamos productos químicos especializados para el mejoramiento de la eficiencia productiva empresarial",
         secondText:
-          "Fabricamos productos químicos especializados en desinfección, mantenimiento y limpieza industrial",
+          "Innovaciones y desarrollos basados en solicitudes específicas de años de atención personalizada a nuestros clientes",   
         buttonText: "Conócenos",
         buttonLink: "/store/productos"
       },
@@ -75,18 +75,18 @@ export default {
         idimage: 1,
         name: "/images/home/slider/productos.webp",
         primaryText:
-          "Ofrecemos un portafolio con más de un centenar de productos en diversos sectores",
+          "Ofrecemos un portafolio con más de un centenar de productos químicos comprobados en diversos sectores empresariales",
         secondText:
-          "Participamos en los procesos logrando ofreciendo y economía",
+           "Detergentes, desinfectantes, desoxidantes, desmoldantes, desengrasantes, desencofrantes, destintantes y materias primas en procesos",
         buttonText: "Sectores industriales",
         buttonLink: "/store/productos"
       },
       {
         idimage: 2,
         name: "/images/home/slider/ambiente.webp",
-        primaryText: "Respeto al medio ambiente",
+        primaryText: "Respeto al planeta",
         secondText:
-          "Nuestra experiencia durante más de dos décadas le garantizan la óptima implementación y manejo de nuestros productos",
+          "Nuestras formulaciones están diseñadas para respetar al medio ambiente y cumplen las normas establecidas para la seguridad industrial ",
         buttonText: "Conócenos",
         buttonLink: "/store/productos"
       },
@@ -94,9 +94,9 @@ export default {
         idimage: 3,
         name: "/images/home/slider/equipo.webp",
         primaryText:
-          "Ofrecemos una amplia gama de desinfectantes para garantizar la inocuidad en sus procesos",
+          "Despachos a cualquier parte del mundo",
         secondText:
-          "Nos respalda nuestro equipo interdisciplinario con amplia experiencia",
+          "Su pedido es importante para nosotros porque trabajamos para usted.",
         buttonText: "Conócenos",
         buttonLink: "/store/productos"
       }

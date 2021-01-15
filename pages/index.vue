@@ -43,27 +43,12 @@ export default {
   },
 
   data: () => ({}),
-  created() {
-    //this.listaPrecios();
-  },
+ 
 
   methods: {
-    listaPrecios() {
-      Productos.listaPrecios().then((response) => {
-        //this.depurarListaPrecios( response.data );
-        console.log(response.data);
-      });
+ 
     },
 
-    depurarListaPrecios(Productos) {
-      const Datos = Productos.map((Producto) => {
-        return {
-          Producto: Producto.nom_prdcto,
-          Presentacion: Producto.nom_prsntcion,
-          Valor: Producto.vr_vta,
-        };
-      });
-    },
-  },
+ 
 };
 </script>
