@@ -60,7 +60,7 @@
 
                 <ButtonLoad
                   text="Ingresar al sistema"
-                  to="/"
+                  to="/computron/dashboard"
                   variant="success"
                 ></ButtonLoad>
               </div>
