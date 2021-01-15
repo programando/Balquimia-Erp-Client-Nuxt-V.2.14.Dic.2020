@@ -2,7 +2,7 @@
   <li>
     <nuxt-link to="/productos"
         :class="[ cssResponve, cssNotResponisve ]">
-            Linea Hotelera
+            Línea Hotelera
     </nuxt-link>
 
 

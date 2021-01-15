@@ -30,27 +30,26 @@
               <!-- label, titulo y descripcion -->
 
               <LabelTitle
-                title="Bienvenid@"
-                description="Registre sus credenciales para ingreso al sistema"
-                align="center"
-                color="extra"
+                title       = "Bienvenid@"
+                description = "Registre sus credenciales para ingreso al sistema"
+                align       = "center"
+                color       = "extra"
               >
               </LabelTitle>
 
               <div class="mt-4">
                 <!-- inputText -->
                 <InputBasic
-                  type="text"
-                  text="jhonjamesmg@hotmail.com"
-                  width="w-full"
-                  
+                  type  = "text"
+                  text  = "jhonjamesmg@hotmail.com"
+                  width = "w-full"
                 ></InputBasic>
 
                 <!-- inputPassword -->
                 <InputBasic
-                  type="password"
-                  text="contraseña"
-                  width="w-full"
+                  type  = "password"
+                  text  = "contraseña"
+                  width = "w-full"
                 ></InputBasic
                 ><P></P>
               </div>
@@ -59,9 +58,9 @@
                 <ButtonBasic text="Olvidé mi contraseña" to="/computron/usersResetPassword"></ButtonBasic>
 
                 <ButtonLoad
-                  text="Ingresar al sistema"
-                  to="/"
-                  variant="success"
+                  text    = "Ingresar al sistema"
+                  to      = "/"
+                  variant = "success"
                 ></ButtonLoad>
               </div>
             </div>

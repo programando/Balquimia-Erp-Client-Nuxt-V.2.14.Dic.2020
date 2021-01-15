@@ -2,7 +2,7 @@
   <li>
     <nuxt-link to="/productos"
         :class="[ cssResponve, cssNotResponisve ]">
-            Linea Inocuidad Alimentaria
+            Línea Inocuidad Alimentaria
     </nuxt-link>
 
 

@@ -2,7 +2,7 @@
   <li>
     <nuxt-link to="/productos"
         :class="[ cssResponve, cssNotResponisve ]">
-            Linea Mantenimiento Industrial
+            Línea Mantenimiento Industrial
     </nuxt-link>
 
 
