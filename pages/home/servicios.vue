@@ -28,7 +28,7 @@
         Ofrecemos calidad, eficiencia y durabilidad.
       </h2>
       <p class="mt-6 text-gray-700 lg:mt-0 lg:w-2/4 lg:text-xl lg:px-10">
-        En Balquimia S.A.S. contamos con un equipo de porfesionales idóneos,
+        En BALQUIMIA S.A.S. contamos con un equipo de profesionales idóneos,
         orientados a la asesoría técnica de postventa, que garantizan la óptima
         implementación y el manejo de nuestros productos y servicios.
       </p>
@@ -49,7 +49,7 @@
           <img class="mx-6 imagen2" src="/images/servicios/ser11.webp" alt="" />
           <div class="mx-6 my-6">
             <h2 class="text-xl font-bold text-white uppercase">
-              Desarrollo tecnologico de productos quimicos
+              Desarrollo tecnológico de productos químicos
             </h2>
             <p class="pt-4 text-white">
               Contamos con un departamento especializado en investigación y
@@ -58,13 +58,13 @@
             </p>
           </div>
           <h3 class="py-4 mx-4 text-lg font-bold">
-            Desarrollo tecnologico de Productos
+            Desarrollo tecnológico de Productos
           </h3>
-          <div class="opacity-0 ver-mas mt-8">
+          <div class="mt-8 opacity-0 ver-mas">
             <nuxt-link to="/">
               <div class="flex items-center">
                 <p class="mx-4 font-bold text-white">
-                  Ver sectores de experiencia
+                  Ver sectores 
                 </p>
                 <img class="mx-4" src="/images/comunes/arrR.webp" alt="" />
               </div>
@@ -80,7 +80,7 @@
           <img class="mx-6 imagen2" src="/images/servicios/ser22.webp" alt="" />
           <div class="mx-6 my-6">
             <h2 class="text-xl font-bold text-white uppercase">
-              Elaboración soluciones personalizada a su necesidad
+              Elaboración soluciones personalizadas de acuerdo a su necesidad
             </h2>
             <p class="pt-4 text-white">
               Contamos con un departamento especializado en investigación y
@@ -88,14 +88,14 @@
               industrial, ofreciendo alta calidad, eficiencia y durabilidad
             </p>
           </div>
-          <h3 class="py-4 mx-4 lg:-mt-8 xl:mt-0 text-lg font-bold">
-            Elaboración soluciones personalizada a su necesidad
+          <h3 class="py-4 mx-4 text-lg font-bold lg:-mt-8 xl:mt-0">
+            Elaboración soluciones personalizadas de acuerdo a su necesidad
           </h3>
           <div class="opacity-0 ver-mas">
             <nuxt-link to="/">
               <div class="flex items-center">
                 <p class="mx-4 font-bold text-white">
-                  Ver sectores de experiencia
+                  Ver sectores 
                 </p>
                 <img class="mx-4" src="/images/comunes/arrR.webp" alt="" />
               </div>
@@ -111,7 +111,7 @@
           <img class="mx-6 imagen2" src="/images/servicios/ser33.webp" alt="" />
           <div class="mx-6 my-6">
             <h2 class="text-xl font-bold text-white uppercase">
-              Programa de limpieza, desinfeccion y mantenimiento preventivo
+              Programa de limpieza, desinfección y mantenimiento preventivo
             </h2>
             <p class="pt-4 text-white">
               Contamos con un departamento especializado en investigación y
@@ -119,7 +119,7 @@
               industrial, ofreciendo alta calidad, eficiencia y durabilidad
             </p>
           </div>
-          <h3 class="py-4 mx-4 md:-mt-6 lg:-mt-16 xl:mt-0 text-lg font-bold">
+          <h3 class="py-4 mx-4 text-lg font-bold md:-mt-6 lg:-mt-16 xl:mt-0">
             Programa de limpieza, desinfeccion y mantenimiento preventivo
           </h3>
           <div class="opacity-0 ver-mas">
@@ -167,13 +167,11 @@
     <!-- diferenciadores -->
     <div class="pt-20">
       <div class="relative mx-8 md:-ml-16">
-        <div
-          class="inline-block w-20 -ml-10 border-b-2 border-primary boder md:ml-1 lg:ml-12 alinear"
-        ></div>
+       
         <p
-          class="inline w-1/2 text-2xl font-bold text-center md:text-3xl lg:ml-2"
+          class="inline w-1/2 ml-16 text-2xl font-bold text-center md:text-3xl lg:ml-2"
         >
-          Por que contar con nuestros servicios
+          Por qué contar con nuestros servicios?
         </p>
       </div>
     </div>

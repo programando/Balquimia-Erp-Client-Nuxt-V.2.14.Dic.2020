@@ -2,7 +2,7 @@
   <li>
     <nuxt-link to="/productos"
         :class="[ cssResponve, cssNotResponisve ]">
-            Linea Materias Primas
+            Línea Materias Primas
     </nuxt-link>
 
 

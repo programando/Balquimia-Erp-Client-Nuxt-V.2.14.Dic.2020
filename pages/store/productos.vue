@@ -78,74 +78,39 @@
           <div
             class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
-            <nuxt-link to="/">Linea Inocuidad Alimentaria</nuxt-link>
+            <nuxt-link to="/"> Inocuidad Alimentaria</nuxt-link>
           </div>
           <div
             class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
-            <nuxt-link to="/">Linea Artes gráficas</nuxt-link>
+            <nuxt-link to="/"> Artes gráficas</nuxt-link>
           </div>
           <div
             class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
-            <nuxt-link to="/">Linea Automotriz</nuxt-link>
+            <nuxt-link to="/"> Automotriz</nuxt-link>
+          </div>
+ 
+          <div
+            class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
+          >
+            <nuxt-link to="/"> Mantenimiento Industrial</nuxt-link>
           </div>
           <div
             class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
-            <nuxt-link to="/">Linea Hotelera</nuxt-link>
+            <nuxt-link to="/"> Materias Primas</nuxt-link>
           </div>
           <div
             class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
           >
-            <nuxt-link to="/">Linea Mantenimiento Industrial</nuxt-link>
+            <nuxt-link to="/"> Sanidad Portatil</nuxt-link>
           </div>
-          <div
-            class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
-          >
-            <nuxt-link to="/">Linea Materias Primas</nuxt-link>
-          </div>
-          <div
-            class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
-          >
-            <nuxt-link to="/">Linea Sanidad Portatil</nuxt-link>
-          </div>
-          <div class="hidden lg:inline">
-            <div class="flex justify-center mt-2 bg-black border">
-              <h3 class="px-3 py-2 text-xl font-bold text-white lg:py-5">
-                Por Marcas
-              </h3>
-            </div>
-            <div
-              class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
-            >
-              <nuxt-link to="/">RAX</nuxt-link>
-            </div>
-            <div
-              class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
-            >
-              <nuxt-link to="/">Lito-TRON</nuxt-link>
-            </div>
-            <div
-              class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
-            >
-              <nuxt-link to="/">Retrocho</nuxt-link>
-            </div>
-            <div
-              class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
-            >
-              <nuxt-link to="/">Tawax</nuxt-link>
-            </div>
-            <div
-              class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"
-            >
-              <nuxt-link to="/">Tron</nuxt-link>
-            </div>
-          </div>
+
         </div>
 
         <!-- footer -->
-        <div class="order-last col-start-2 col-end-5 lg:mx-0">
+<!--         <div class="order-last col-start-2 col-end-5 lg:mx-0">
           <div class="pb-10 bg-white">
             <div
               class="bg-center bg-no-repeat bg-cover lg:py-20 "
@@ -319,11 +284,11 @@
             </div>
             <div class="flex justify-center">
               <p class="text-xs text-gray-700">
-                © Balquimia Chemical Solutions 2020
+                © Balquimia Chemical Solutions 2021
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

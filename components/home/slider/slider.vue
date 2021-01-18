@@ -65,9 +65,9 @@ export default {
         idimage: 0,
         name: "/images/home/slider/investigacion.webp",
         primaryText:
-          "Innovación y desarrollo de acuerdo a sus necesidades puntuales",
+          "Fabricamos y formulamos productos químicos especializados para el mejoramiento de la eficiencia productiva empresarial",
         secondText:
-          "Fabricamos productos químicos especializados en desinfección, mantenimiento y limpieza industrial",
+          "Innovaciones y desarrollos basados en solicitudes específicas de años de atención personalizada a nuestros clientes",   
         buttonText: "Conócenos",
         buttonLink: "/store/productos"
       },
@@ -75,18 +75,18 @@ export default {
         idimage: 1,
         name: "/images/home/slider/productos.webp",
         primaryText:
-          "Ofrecemos un portafolio con más de un centenar de productos en diversos sectores",
+          "Ofrecemos un portafolio con más de un centenar de productos químicos comprobados en diversos sectores empresariales",
         secondText:
-          "Participamos en los procesos logrando ofreciendo y economía",
+           "Detergentes, desinfectantes, desoxidantes, desmoldantes, desengrasantes, desencofrantes, destintantes y materias primas en procesos",
         buttonText: "Sectores industriales",
         buttonLink: "/store/productos"
       },
       {
         idimage: 2,
         name: "/images/home/slider/ambiente.webp",
-        primaryText: "Respeto al medio ambiente",
+        primaryText: "Respeto al planeta",
         secondText:
-          "Nuestra experiencia durante más de dos décadas le garantizan la óptima implementación y manejo de nuestros productos",
+          "Nuestras formulaciones están diseñadas para respetar al medio ambiente y cumplen las normas establecidas para la seguridad industrial ",
         buttonText: "Conócenos",
         buttonLink: "/store/productos"
       },
@@ -94,9 +94,9 @@ export default {
         idimage: 3,
         name: "/images/home/slider/equipo.webp",
         primaryText:
-          "Ofrecemos una amplia gama de desinfectantes para garantizar la inocuidad en sus procesos",
+          "Despachos a cualquier parte del mundo",
         secondText:
-          "Nos respalda nuestro equipo interdisciplinario con amplia experiencia",
+          "Su pedido es importante para nosotros porque trabajamos para usted.",
         buttonText: "Conócenos",
         buttonLink: "/store/productos"
       },
@@ -104,9 +104,9 @@ export default {
         idimage: 0,
         name: "/images/home/slider/investigacion.webp",
         primaryText:
-          "Innovación y desarrollo de acuerdo a sus necesidades puntuales",
+          "Fabricamos y formulamos productos químicos especializados para el mejoramiento de la eficiencia productiva empresarial",
         secondText:
-          "Fabricamos productos químicos especializados en desinfección, mantenimiento y limpieza industrial",
+          "Innovaciones y desarrollos basados en solicitudes específicas de años de atención personalizada a nuestros clientes",   
         buttonText: "Conócenos",
         buttonLink: "/store/productos"
       },

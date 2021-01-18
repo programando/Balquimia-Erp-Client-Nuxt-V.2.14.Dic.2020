@@ -19,8 +19,8 @@
             <p
               class="px-4 pt-4 text-center text-white lg:pt-6 md:text-lg lg:text-xl lg:px-20 xl:px-40 xl:text-2xl"
             >
-              En Estamos comprometidos con el mejoramiento continuo para
-              optimizar sus recursos, escríbanos, nos contactaremos con ud.
+              En BALQUIMIA S.A.S. estamos comprometidos con el mejoramiento continuo para
+              optimizar sus recursos. Escríbanos, nos contactaremos con usted.
             </p>
           </div>
         </div>
@@ -29,14 +29,14 @@
    
     <div class="justify-center mt-4 lg:flex lg:mx-10 ">
       <div class="px-4 py-10 mx-4 lg:w-3/5 lg:ml-16">
-        <h2 class="text-2xl text-gray-700 lg:text-3xl">Comuniquese con nosotros</h2>
+        <h2 class="text-2xl text-gray-700 lg:text-3xl">Comuníquese con nosotros</h2>
         <div class="mt-4">
           <p class="text-xs lg:text-sm">Dirección:</p>
           <p class="text-lg text-primary lg:text-xl ">CLL 35 N° 4-31</p>
           <p class="text-xs text-gray-700 lg:text-sm">Cali, Valle del Cauca - Colombia</p>
         </div>
         <div class="mt-4">
-          <p class="text-xs lg:text-sm">Línea gratuita al cliente:</p>
+          <p class="text-xs lg:text-sm">Línea gratuita servicio al cliente:</p>
           <p class="text-lg text-primary lg:text-xl">01 8000 18 87 66 </p>
         </div>
         <div class="mt-4">
@@ -55,8 +55,7 @@
         <h2 class="text-2xl text-gray-700 lg:text-4xl">Formulario de contacto</h2>
         <p class="w-2/3 mt-2 text-gray-600 lg:text-lg lg:w-4/5">
           Si tiene alguna solicitud o sugerencia por favor diligencie este
-          formulario, y uno de nuestros ejecutivos se pondrá en contacto con
-          usted en un tiempo máximo de 48 horas.
+          formulario y uno de nuestros ejecutivos se pondrá en contacto a la mayor brevedad posible.
         </p>
 
         <form class="mt-6">
@@ -99,8 +98,8 @@
             placeholder="¿En que podemos ayudarte?"
           ></textarea>
           <p class="w-2/3 mt-2 text-xs text-gray-700 ">
-            Al llenar y enviar este formulario, acepto las Política de
-            Tratamiento de datos personales de Balquimia SAS.
+            Al diligenciar y enviar este formulario, acepto las Política de
+            Tratamiento de datos personales de BALQUIMIA S.A.S.
           </p>
           <input
             class="px-6 py-2 mt-4 text-white bg-primary hover:bg-indigo-900"

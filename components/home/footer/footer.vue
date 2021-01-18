@@ -11,7 +11,7 @@
         <div class="py-20">
           <div class="mx-10">
             <h2 class="text-2xl font-bold text-center">
-              Estamos listos, ¿Que necesidad tienes en tu empresa?
+              Estamos listos, ¿Qué necesidad tienes en tu empresa?
             </h2>
 
             <AppButton
@@ -40,30 +40,28 @@
         <div class="flex justify-center lg:justify-start lg:ml-10">
           <h3 class="font-bold uppercase">Líneas de productos</h3>
         </div>
-        <div class="flex justify-center mt-2 lg:justify-start lg:ml-10">
+        <div class="flex justify-center mt-2 lg:justify-start lg:ml-10 lg:mt-1">
           <nuxt-link to="/store/productos"
-            >Linea Inocuidad Alimentaria</nuxt-link
+            > Inocuidad Alimentaria</nuxt-link
           >
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <nuxt-link to="/store/productos">Linea Artes gráficas</nuxt-link>
+          <nuxt-link to="/store/productos"> Artes gráficas</nuxt-link>
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <nuxt-link to="/store/productos">Linea Automotriz</nuxt-link>
+          <nuxt-link to="/store/productos"> Automotriz</nuxt-link>
         </div>
-        <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <nuxt-link to="/store/productos">Linea Hotelera</nuxt-link>
-        </div>
+ 
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
           <nuxt-link to="/store/productos"
-            >Linea Mantenimiento Industrial</nuxt-link
+            > Mantenimiento Industrial</nuxt-link
           >
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <nuxt-link to="/store/productos">Linea Materias Primas</nuxt-link>
+          <nuxt-link to="/store/productos"> Materias Primas</nuxt-link>
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <nuxt-link to="/store/productos">Linea Sanidad Portatil</nuxt-link>
+          <nuxt-link to="/store/productos"> Sanidad Portátil</nuxt-link>
         </div>
       </div>
       <div class="mt-10 text-gray-700 sm:mt-8 lg:mt-4 ">
@@ -85,10 +83,10 @@
           <p class="font-bold">Balquimia Chemical Solutions</p>
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <p>Linea de atencion al cliente</p>
+          <p>Linea de atención al cliente</p>
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <p class="font-bold">01 8000 18 TRON (8766)</p>
+          <p class="font-bold">01 8000 18 8766</p>
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
           <p>Dirección: Cll 35 #4-31</p>
@@ -116,7 +114,7 @@
       </nuxt-link>
     </div>
     <div class="flex justify-center">
-      <p class="text-xs text-gray-700">© Balquimia Chemical Solutions 2020</p>
+      <p class="text-xs text-gray-700">© Balquimia Chemical Solutions 2021</p>
     </div>
   </div>
 </template>

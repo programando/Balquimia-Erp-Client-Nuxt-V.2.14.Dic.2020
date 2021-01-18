@@ -18,7 +18,7 @@
             >
               Ofrecemos soluciones químicas para todas las industrias
             </h2>
-            <p class="pt-6 text-center text-white md:text-lg lg:text-xl lg:px-16 xl:px-20">En Balquimia S.A.S. Estamos comprometidos en ofrecer productos que impulsen el desarrollo de las industrias en diversos sectores. Siendo la base para el desarrollo de miles de productos que usamos día a día en nuestras vidas.</p>
+            <p class="pt-6 text-center text-white md:text-lg lg:text-xl lg:px-16 xl:px-20">En BALQUIMIA S.A.S. estamos comprometidos en ofrecer productos que impulsen el desarrollo de las industrias en diversos sectores. </p>
           </div>
         </div>
       </div>

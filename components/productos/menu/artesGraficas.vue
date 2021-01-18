@@ -2,7 +2,7 @@
   <li>
     <nuxt-link to="/productos"
         :class="[ cssResponve, cssNotResponisve ]">
-            Linea Artes Graficas
+            Línea Artes Gráficas
     </nuxt-link>
 
 
