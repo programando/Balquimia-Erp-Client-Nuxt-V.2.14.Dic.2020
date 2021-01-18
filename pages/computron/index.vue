@@ -58,15 +58,9 @@
                 <ButtonBasic text="Olvidé mi contraseña" to="/computron/usersResetPassword"></ButtonBasic>
 
                 <ButtonLoad
-<<<<<<< HEAD
                   text="Ingresar al sistema"
                   to="/computron/dashboard"
                   variant="success"
-=======
-                  text    = "Ingresar al sistema"
-                  to      = "/"
-                  variant = "success"
->>>>>>> e3eb66dc8495b78a5f681ea776dc59cc2eaae685
                 ></ButtonLoad>
               </div>
             </div>
