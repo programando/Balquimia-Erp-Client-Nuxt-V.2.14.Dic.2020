@@ -3,15 +3,25 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: [
+    './components/**/*.{vue,js}',
+     './layouts/**/*.vue',
+     './pages/**/*.vue',
+     './plugins/**/*.{js,ts}',
+     './nuxt.config.{js,ts}',
+  ],
   theme: {
     extend: {
       colors: {
         primary  : '#D3500A',
         secondary: '#ce550a',
-
         extra    : '#0f3057'
-        
+      },
+
+      fontFamily: {
+        rale: 'Raleway',
+        robo: 'Roboto',
+        latos: 'Lato'
       }
     },
   },

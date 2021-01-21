@@ -44,6 +44,14 @@
                 />
               </nuxt-link>
             </div>
+            <div id="arrows-wrapper">
+              <p id="arrow-prev" class="slider-arrow center-y">
+                  &#10094;
+              </p>
+              <p id="arrow-next" class="slider-arrow center-y">
+                &#10095;
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -113,9 +121,9 @@ export default {
     ]
   }),
 
-  mounted() {
-    this.sliderPlay();
-  },
+  // mounted() {
+  //   this.sliderPlay();
+  // },
 
   methods: {
     getImage(imageName) {
@@ -179,4 +187,34 @@ export default {
 
   flex-shrink: 0;
 }
+
+.center-y {
+    position: relative;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.center-x {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-arrow {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#arrow-prev {
+    left: 20px;
+
+}
+
+#arrow-next {
+    right: 20px;
+
+}
+
 </style>

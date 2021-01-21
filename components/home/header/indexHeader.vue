@@ -38,7 +38,7 @@
       <img
         src="/images/home/header/arr.png"
         alt="arr1"
-        class="h-10 lg:mt-0 w-52"
+        class="h-10 lg:mt-0"
       />
     </div>
   </div>
