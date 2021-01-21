@@ -12,17 +12,9 @@
 
         <div class="w-1/2 mx-6 my-10">
           <h2 class="text-2xl font-semibold text-white md:text-2xl lg:text-5xl">
-            Nuestros productos ofrecen alta calidad, eficiencia y durabilidad.
+            ¿Por qué elegirnos?
           </h2>
- 
-
-           <AppButton 
-                  :inlineBlock = "true"
-                    class      = "px-6 py-2 "
-                    to         = "/store/productos"
-                  > Ver Productos 
-            </AppButton> 
-        </div>
+         </div>
 
         <div class="mt-10 -mb-8 md:grid md:grid-cols-4 lg:grid-cols-3 ">
           <div

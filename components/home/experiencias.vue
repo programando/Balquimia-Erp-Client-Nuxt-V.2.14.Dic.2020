@@ -9,11 +9,9 @@
         <div class="lg:flex lg:mt-10">
           <div class="lg:w-2/3 lg:px-10 xl:px-20">
             <div class="mt-8 lg:mb-2">
-              <h2 class="lg:pr-24 lg:text-5xl text-3xl font-bold text-center -mt-10 mb-4 text-primary ">Experiencia Validada</h2>
-              <h3 class="text-2xl text-white md:text-3xl xl:text-4xl ">
-                Durante <span class="font-bold">más de 20 años</span>, hemos
-                estado desarrollando las mejores soluciones de limpieza,
-                desinfección y mantenimiento industrial.
+              <h2 class="mb-4 -mt-10 text-3xl font-bold text-center lg:pr-24 lg:text-5xl text-primary ">¿Quénes somos?</h2>
+              <h3 class="text-sm text-white md:text-xl xl:text-3xl ">
+BALQUIMIA S.A.S. empresa colombiana fabricante de productos químicos especializados enfocados a la limpieza, desinfección y mantenimiento en todas las áreas, equipos y superficies.  Innovamos y desarrollamos nuestros productos con énfasis al cuidado del medio ambiente y con altos estándares de calidad para satisfacer los requerimientos de todos los sectores industriales nacionales e internacionales.
               </h3>
             </div>
             <div class="mt-2 sm:flex seccion-1">
@@ -24,7 +22,7 @@
                   alt="imagen-lab"
                 />
               </div>
-              <div class="px-5 py-5 text-white bg-primary transition duration-700 ease-in-out hover:bg-indigo-900 hover:text-white">
+              <div class="px-5 py-5 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 hover:text-white">
                 <nuxt-link to="/home/experiencia">
                   <p class="mr-20">
                     Aplicamos calidad, eficiencia y durabilidad en nuestros
