@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <div
       class="pt-20 -mb-48 bg-center bg-no-repeat bg-cover"
       style="background-image: url(/images/home/diferenciadores/baru.webp)"
@@ -18,7 +18,7 @@
 
         <div class="mt-10 -mb-8 md:grid md:grid-cols-4 lg:grid-cols-3 ">
           <div
-            class="col-span-2 md:ml-4 lg:ml-0 xl:ml-0 md:col-start-1 lg:col-span-1 "
+            class="col-span-2 md:ml-4 lg:ml-0 md:col-start-1 lg:col-span-1 "
           >
             <div class="hexagon-wrapper">
               <div class="items-center hexagon">
@@ -142,15 +142,15 @@ export default {
 
 @media (min-width: 600px) {
   .hexagon-wrapper {
-    width: 550px;
-    height: 550px;
+    width: 450px;
+    height: 450px;
   }
 }
 
 @media (min-width: 768px) {
   .hexagon-wrapper {
-    width: 420px;
-    height: 420px;
+    width: 400px;
+    height: 400px;
   }
 }
 
@@ -163,8 +163,8 @@ export default {
 
 @media (min-width: 1200px) {
   .hexagon-wrapper {
-    width: 480px;
-    height: 480px;
+    width: 450px;
+    height: 450px;
   }
 }
 </style>

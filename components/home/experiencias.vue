@@ -10,8 +10,8 @@
           <div class="lg:w-2/3 lg:px-10 xl:px-20">
             <div class="mt-8 lg:mb-2">
               <h2 class="mb-4 -mt-10 text-3xl font-bold text-center lg:pr-24 lg:text-5xl text-primary ">¿Quénes somos?</h2>
-              <h3 class="text-sm text-white md:text-xl xl:text-3xl ">
-BALQUIMIA S.A.S. empresa colombiana fabricante de productos químicos especializados enfocados a la limpieza, desinfección y mantenimiento en todas las áreas, equipos y superficies.  Innovamos y desarrollamos nuestros productos con énfasis al cuidado del medio ambiente y con altos estándares de calidad para satisfacer los requerimientos de todos los sectores industriales nacionales e internacionales.
+              <h3 class="text-sm text-white sm:text-base md:text-xl xl:text-2xl ">
+                BALQUIMIA S.A.S. empresa colombiana fabricante de productos químicos especializados enfocados a la limpieza, desinfección y mantenimiento en todas las áreas, equipos y superficies.  Innovamos y desarrollamos nuestros productos con énfasis al cuidado del medio ambiente y con altos estándares de calidad para satisfacer los requerimientos de todos los sectores industriales nacionales e internacionales.
               </h3>
             </div>
             <div class="mt-2 sm:flex seccion-1">
@@ -28,7 +28,7 @@ BALQUIMIA S.A.S. empresa colombiana fabricante de productos químicos especializ
                     Aplicamos calidad, eficiencia y durabilidad en nuestros
                     servicios para superar los objetivos de nuestros clientes.
                   </p>
-                  <p class="mt-4 ml-40">
+                  <p class="mt-4 ml-16 sm:ml-20 md:ml-24 lg:ml-28 xl:ml-40">
                     Ver servicios
                     <span
                       ><img
@@ -41,7 +41,7 @@ BALQUIMIA S.A.S. empresa colombiana fabricante de productos químicos especializ
               </div>
             </div>
           </div>
-          <div class="hidden w-1/3 mt-20 lg:flex xl:px-1 xl:-mt-10">
+          <div class="hidden w-1/3 mt-20 lg:flex xl:px-1 xl:-mt-3">
             <div class="">
               <img
                 class="h-auto seccion-2"
