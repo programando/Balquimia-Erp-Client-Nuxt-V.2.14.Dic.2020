@@ -1,9 +1,9 @@
 <template>
   <section class="pt-10">
-    <div>
-      <div class="flex mb-8">
+    
+      <div class="mb-8">
         <h2
-          class="mx-auto mt-20 mb-56 text-3xl font-bold text-center md:mb-4 lg:text-5xl text-primary"
+          class="mx-auto mt-20 text-3xl font-bold text-center md:mb-4 lg:text-5xl text-primary"
         >
           Sectores industriales
         </h2>
@@ -19,7 +19,7 @@
         >
         </CardIndustrias>
       </div>
-    </div>
+    
   </section>
 </template>
 <script>
@@ -33,7 +33,7 @@ export default {
       {
         id_linea: 3,
         cod_linea: "03  ",
-        nom_linea: "INOCUIDAD ALIMENTARIA         ",
+        nom_linea: "INOCUIDAD ALIMENTARIA",
         orden_local: 1,
         orden_web: 1,
         imagen: "/images/home/industrias/inocuidad_alimentaria.jpg",
@@ -44,7 +44,7 @@ export default {
       {
         id_linea: 7,
         cod_linea: "07  ",
-        nom_linea: "ARTES GRAFICAS                ",
+        nom_linea: "ARTES GRAFICAS",
         orden_local: 2,
         orden_web: 2,
         imagen: "/images/home/industrias/artes_graficas.jpg",
@@ -55,7 +55,7 @@ export default {
       {
         id_linea: 5,
         cod_linea: "MP  ",
-        nom_linea: "MATERIAS PRIMAS               ",
+        nom_linea: "MATERIAS PRIMAS",
         orden_local: 3,
         orden_web: 3,
         imagen: "/images/home/industrias/materias_primas.jpg",
@@ -66,7 +66,7 @@ export default {
       {
         id_linea: 4,
         cod_linea: "04  ",
-        nom_linea: "MANTENIMIENTO INDUSTRIAL      ",
+        nom_linea: "MANTENIMIENTO INDUSTRIAL",
         orden_local: 4,
         orden_web: 4,
         imagen: "/images/home/industrias/mantenimiento_industrial.jpg",
@@ -77,7 +77,7 @@ export default {
       {
         id_linea: 11,
         cod_linea: "AUT ",
-        nom_linea: "AUTOMOTRIZ                    ",
+        nom_linea: "AUTOMOTRIZ",
         orden_local: 93,
         orden_web: 93,
         imagen: "/images/home/industrias/automotriz.jpg",
@@ -88,7 +88,7 @@ export default {
       {
         id_linea: 12,
         cod_linea: "CON ",
-        nom_linea: "CONSTRUCCIÓN Y OBRAS CIVILES  ",
+        nom_linea: "CONSTRUCCIÓN Y OBRAS CIVILES",
         orden_local: 94,
         orden_web: 94,
         imagen: "/images/home/industrias/sin_imagen_disponible.jpg",
@@ -99,7 +99,7 @@ export default {
       {
         id_linea: 13,
         cod_linea: "SAN ",
-        nom_linea: "SANIDAD PORTÁTIL              ",
+        nom_linea: "SANIDAD PORTÁTIL",
         orden_local: 95,
         orden_web: 95,
         imagen: "/images/home/industrias/sanidad.jpg",

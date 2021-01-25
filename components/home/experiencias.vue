@@ -9,8 +9,8 @@
         <div class="lg:flex lg:mt-10">
           <div class="lg:w-2/3 lg:px-10 xl:px-20">
             <div class="mt-8 lg:mb-2">
-              <h2 class="mb-4 -mt-10 text-3xl font-bold text-center lg:pr-24 lg:text-5xl text-primary ">¿Quénes somos?</h2>
-              <h3 class="text-sm text-white sm:text-base md:text-xl xl:text-2xl ">
+              <h2 class="mb-4 -mt-10 text-2xl font-bold text-center lg:pr-24 lg:text-4xl text-primary ">¿Quénes somos?</h2>
+              <h3 class="text-sm text-white sm:text-base md:text-xl xl:text-xl ">
                 BALQUIMIA S.A.S. empresa colombiana fabricante de productos químicos especializados enfocados a la limpieza, desinfección y mantenimiento en todas las áreas, equipos y superficies.  Innovamos y desarrollamos nuestros productos con énfasis al cuidado del medio ambiente y con altos estándares de calidad para satisfacer los requerimientos de todos los sectores industriales nacionales e internacionales.
               </h3>
             </div>
@@ -41,8 +41,8 @@
               </div>
             </div>
           </div>
-          <div class="hidden w-1/3 mt-20 lg:flex xl:px-1 xl:-mt-3">
-            <div class="">
+          <div class="relative hidden w-1/3 mt-20 lg:flex xl:px-1 xl:-mt-3">
+            <div class="relative">
               <img
                 class="h-auto seccion-2"
                 src="/images/home/experiencia/hexa1.webp"

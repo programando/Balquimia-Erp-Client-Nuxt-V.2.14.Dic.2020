@@ -163,8 +163,8 @@ export default {
 
 @media (min-width: 1200px) {
   .hexagon-wrapper {
-    width: 450px;
-    height: 450px;
+    width: 430px;
+    height: 430px;
   }
 }
 </style>

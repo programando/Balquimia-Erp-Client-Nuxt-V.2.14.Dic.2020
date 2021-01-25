@@ -9,11 +9,11 @@
           ></div>
         </div>
         <div class="details bg-primary">
-          <div class="center">
-            <h2 class="mb-4 text-lg font-bold text-black uppercase">
+          <div class="px-2 py-2 center">
+            <h2 class="text-base font-bold text-black uppercase ">
               {{ nom_linea }}
             </h2>
-            <p class="-mt-1 text-lg text-black">
+            <p class="text-base text-black ">
               {{ slogan }}
             </p>
 
@@ -54,7 +54,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 300px;
+  height: 260px;
   background: #000;
 }
 
@@ -79,7 +79,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 70%; /*100%*/
+  width: 80%; /*100%*/
   height: 100%;
   transition: 0.5s;
   transform-origin: left;
@@ -91,7 +91,7 @@ export default {
 }
 
 .card .details .center {
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
   background: #fff;
   position: absolute;

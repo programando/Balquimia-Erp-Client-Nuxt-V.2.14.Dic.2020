@@ -16,7 +16,7 @@
             class="min-h-screen px-16 py-10 mt-40 md:pr-32 lg:py-32 lg:px-20 xl:px-32 lg:mt-20 "
           >
             <h1
-              class="ml-2 text-2xl font-semibold text-white md:ml-8 md:mt-5 md:mb-3 lg:ml-0 sm:text-2xl md:text-4xl lg:text-5xl lg:pr-40 xl:pr-32"
+              class="ml-2 text-2xl font-semibold text-white md:ml-8 md:mt-5 md:mb-3 lg:ml-0 sm:text-2xl md:text-3xl lg:text-4xl lg:pr-40 xl:pr-32"
             >
               {{ image.primaryText }}
             </h1>
@@ -77,7 +77,7 @@ export default {
         secondText:
           "Innovaciones y desarrollos basados en solicitudes específicas de años de atención personalizada a nuestros clientes",   
         buttonText: "Conócenos",
-        buttonLink: "/store/productos"
+        buttonLink: "/store/productos",
       },
       {
         idimage: 1,
