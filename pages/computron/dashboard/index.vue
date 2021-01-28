@@ -1,67 +1,70 @@
 <template>
-  <div>
+  <div class="font-robo">
     <input type="checkbox" id="check" />
     <!--header area start-->
-    <header class="px-10 py-2 bg-blue-300 border">
+    <header class="px-10 pt-2 pb-2 bg-primary">
       <label for="check">
-        <i class="bg-blue-400 fas fa-bars" id="sidebar_btn"></i>
+        <i
+          class="px-4 py-3 opacity-0 md:opacity-100 fa fa-bars"
+          id="sidebar_btn"
+        ></i>
       </label>
-      <div class="left_area">
-        <h3 class="text-2xl font-bold">Balquimia</h3>
+      <div class="h-8 text-lg left_area">
+        <span>
+          <!-- <img class="h-16 -mt-4 -ml-8" src="/images/home/header/balquimia-logo.png" alt="logo"/> -->
+          <p class="text-white text-3xl mt-3">BALQUIMIA</p>
+        </span>
       </div>
-      <div class="right_area">
-        <a href="#" class="px-4 py-2 logout_btn">Cerrar seccion</a>
+      <div class="pb-5 right_area">
+        <a
+          href="#"
+          class="px-4 py-2 font-light bg-extra  logout_btn"
+          >Logout</a
+        >
       </div>
     </header>
 
     <!--mobile navigation bar end-->
     <!--sidebar start-->
-    <div class="border-b-2 border-r-2 sidebar">
+    <div class="border-b border-r sidebar mt-20 pt-4">
       <div class="profile_info">
-        <img src="/images/comunes/user.svg" class="profile_image" alt="" />
-        <h4>User</h4>
+        <img src="/images/dashboard/1.svg" class="h-20" alt="" />
+        <h4 class="mt-2 text-gray-700 ">Jhon James</h4>
       </div>
-      <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-      <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
-      <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
-      <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
-      <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
-      <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+      <div>
+        <nuxt-link
+          class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
+          to="/"
+        >
+          <i class="fa fa-desktop"></i><span>Dashboard</span>
+        </nuxt-link>
+        <nuxt-link
+          class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
+          to="/"
+        >
+          <i class="fa fa-cogs"></i><span>Órdenes trabajo</span>
+        </nuxt-link>
+        <nuxt-link
+          class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
+          to="/"
+        >
+          <i class="fa fa-table"></i><span>Cartera</span>
+        </nuxt-link>
+        <nuxt-link
+          class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
+          to="/"
+        >
+          <i class="fa fa-th"></i><span>Reuniones</span>
+        </nuxt-link>
+        <nuxt-link
+          class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
+          to="/"
+        >
+          <i class="fa fa-info-circle"></i><span>Configuración</span>
+        </nuxt-link>
+      </div>
     </div>
     <!--sidebar end-->
-
-    <div class="content">
-      <div class="card">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
-        </p>
-      </div>
-      <div class="card">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
-        </p>
-      </div>
-      <div class="card">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
-        </p>
-      </div>
-    </div>
   </div>
 </template>
 <script>
@@ -85,8 +88,7 @@ header {
 
 
 .logout_btn {
-  
-  background: #19b3d3;
+
   text-decoration: none;
   float: right;
   margin-top: -30px;
@@ -99,15 +101,13 @@ header {
   transition-property: background;
 }
 
-.logout_btn:hover {
-  background: #0b87a6;
-}
+
 
 .sidebar {
   z-index: 1;
   top: 0;
-  margin-top: 62px;
-  padding-top: 30px;
+  
+  
   position: fixed;
   left: 0;
   width: 250px;
@@ -149,9 +149,6 @@ header {
   transition-property: background;
 }
 
-.sidebar a:hover {
-  background: #19b3d3;
-}
 
 .sidebar i {
   padding-right: 10px;
