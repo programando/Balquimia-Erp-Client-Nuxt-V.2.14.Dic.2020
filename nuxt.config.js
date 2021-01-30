@@ -84,13 +84,23 @@ export default {
           optipng: { optimizationLevel: 5 },
           gifsicle: { optimizationLevel: 2 }
         },
-     ]
+    ],
+     ['nuxt-tailvue', {toast: true}],
   ],
 
+ 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+  },
+
+    purge: {
+
+    content: [
+      'node_modules/tv-*/dist/tv-*.umd.min.js',
+    ],
+  },
+    
 }
