@@ -119,7 +119,7 @@
   </div>
 </template>
 <script>
-import AppButton from "@/components/library/button";
+import AppButton from "@/components/library/buttons/button";
 export default {
   components: { AppButton },
 

@@ -1419,6 +1419,13 @@
   dependencies:
     source-map "^0.6.1"
 
+"@types/vue-datetime@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/vue-datetime/-/vue-datetime-1.0.1.tgz#fedfbea8792eae48c6b9b9cafa133363a689674b"
+  integrity sha512-MbuhT/JbOLvLIrMGwvq0KxghgM5Ud65sHRi+zNHcx6iWhkIv221KJzSXaEFufbWlkZSrSCNa+utaiqjNjBahVQ==
+  dependencies:
+    vue "^2.0.0"
+
 "@types/webpack-sources@*":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@types/webpack-sources/-/webpack-sources-2.1.0.tgz#8882b0bd62d1e0ce62f183d0d01b72e6e82e8c10"
@@ -6102,6 +6109,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+luxon@^1.25.0:
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.25.0.tgz#d86219e90bc0102c0eb299d65b2f5e95efe1fe72"
+  integrity sha512-hEgLurSH8kQRjY6i4YLey+mcKVAWXbDNlZRmM6AgWDJ1cY3atl8Ztf5wEY7VBReFbmGnwQPz7KYJblL8B2k0jQ==
+
 make-dir@^1.0.0, make-dir@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-1.3.0.tgz#79c1033b80515bd6d24ec9933e860ca75ee27f0c"
@@ -6667,6 +6679,16 @@ nuxt-imagemin@^1.0.0:
   integrity sha512-DiO6FUlTt+EPZycBMPJIW4ec4iVd0gKEErz1sP/OcDdBdVGkKXbzQc5R4VG0cKMrlsEh1lyOcWtwPD46cA1VOQ==
   dependencies:
     imagemin-webpack-plugin "^2.1.1"
+
+nuxt-tailvue@^1.0.52:
+  version "1.0.52"
+  resolved "https://registry.yarnpkg.com/nuxt-tailvue/-/nuxt-tailvue-1.0.52.tgz#a75ead69d0e327715c20e67829dc846b92f533fd"
+  integrity sha512-GldIux+idMuGLGGnPwFVr0FZidIJREYX3r0vwGv/pl638HExctQD+m9ZITWjELCTkF2G/O63o8NjaJupEeGwxg==
+  dependencies:
+    tv-button "^1.0.7"
+    tv-icon "^1.0.6"
+    tv-modal "^1.0.3"
+    tv-toast "^1.2.4"
 
 nuxt@^2.14.12:
   version "2.14.12"
@@ -9489,6 +9511,31 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
+tv-button@^1.0.7:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/tv-button/-/tv-button-1.0.17.tgz#b272868ec548f8f16eca1fb0a47410c0b42ffac0"
+  integrity sha512-kw0KdPGW/E9gzDIhAtUfUjihKkZuMIU5qMs/Vxc9s+Jsl+wkHumQsnzYKRciN8mKRas73PZnUajs6NOfxrx7rg==
+
+tv-icon@^1.0.1, tv-icon@^1.0.6:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/tv-icon/-/tv-icon-1.0.17.tgz#352f58f9704a8f028624e2a8cd0e38656a322f93"
+  integrity sha512-nVf2eEsaT4M5cVEyCnVHfRC3XuAZLR6XQFn9oN3IS09hxQcTZn3Eau0bftaEOUiogS6xHCDSMJvgME88qiFJAQ==
+
+tv-modal@^1.0.3:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/tv-modal/-/tv-modal-1.0.13.tgz#c0c1009f781f4a4a4ef83fa0684a762b02fc94a2"
+  integrity sha512-GlLlBg5FXgUssEyqqW4Qe4ezb6RI/Y1fh+LLeVg3JqwVfz/7A4ivyIFBy10Ws4WM7Q2C678SP/rdBdrMCOSrtA==
+  dependencies:
+    tv-button "^1.0.7"
+    tv-icon "^1.0.1"
+
+tv-toast@^1.2.4:
+  version "1.2.19"
+  resolved "https://registry.yarnpkg.com/tv-toast/-/tv-toast-1.2.19.tgz#b6a27dcb02f557c33316046af534a8027677495b"
+  integrity sha512-RC3zlLvR4zL5qNDKYzr8mWEEZYoN/uABh2G775GZmZwwsV2EPb4qo7V853EHDhP5DNH1HR3mqp6U7XR8uB+yzg==
+  dependencies:
+    tv-icon "^1.0.1"
+
 type-fest@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.11.0.tgz#97abf0872310fed88a5c466b25681576145e33f1"
@@ -9777,6 +9824,11 @@ vue-client-only@^2.0.0:
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.0.0.tgz#ddad8d675ee02c761a14229f0e440e219de1da1c"
   integrity sha512-arhk1wtWAfLsJyxGMoEYhoBowM87/i6HLSG2LH/03Yog6i2d9JEN1peMP0Ceis+/n9DxdenGYZZTxbPPJyHciA==
 
+vue-datetime@^1.0.0-beta.14:
+  version "1.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/vue-datetime/-/vue-datetime-1.0.0-beta.14.tgz#791e724500929cdfeb31395154d9a26fd27ffb46"
+  integrity sha512-n25LqldE1xryeoweohiqlxy8iUsi+UwZnKLaN4gXjk7xxGL6rUl1y/GGvkoMwJUzRKttw+QnQV4oFAYupUQdug==
+
 vue-draggable-resizable@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue-draggable-resizable/-/vue-draggable-resizable-2.3.0.tgz#94c433ca748bc1a4d0959ba1c5c0e1c3536cee5b"
@@ -9850,7 +9902,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.6.10, vue@^2.6.12:
+vue@^2.0.0, vue@^2.6.10, vue@^2.6.12:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==
@@ -9990,6 +10042,11 @@ webpackbar@^4.0.0:
     std-env "^2.2.1"
     text-table "^0.2.0"
     wrap-ansi "^6.0.0"
+
+weekstart@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/weekstart/-/weekstart-1.0.1.tgz#950970b48e5797e06fc1a762f3d0f013312321e1"
+  integrity sha512-h6B1HSJxg7sZEXqIpDqAtwiDBp3x5y2jY8WYcUSBhLTcTCy7laQzBmamqMuQM5fpvo1pgpma0OCRpE2W8xrA9A==
 
 which-module@^2.0.0:
   version "2.0.0"
