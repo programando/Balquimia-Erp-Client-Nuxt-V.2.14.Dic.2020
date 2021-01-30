@@ -65,17 +65,21 @@
         border-radius: 0.25rem;
         padding-left: 10px;
     }
-
-    .theme-orange .vdatetime-popup__header,
+    .vdatetime-popup__header
+    {
+        background: #FF9895 !important;
+    }
+    
+/*     .theme-orange .vdatetime-popup__header,
     .theme-orange .vdatetime-calendar__month__day--selected > span > span,
     .theme-orange .vdatetime-calendar__month__day--selected:hover > span > span {
-      background: #FF9800;
-    }
+      background: #FF9800 !important;
+    } */
 
-    .theme-orange .vdatetime-year-picker__item--selected,
+/*     .theme-orange .vdatetime-year-picker__item--selected,
     .theme-orange .vdatetime-time-picker__item--selected,
     .theme-orange .vdatetime-popup__actions__button {
       color: #ff9800;
-    }
+    } */
 
 </style>
