@@ -1,6 +1,6 @@
 export const address = {
-   baseUrl      : 'http://localhost:3000/',
-   apiUrl       : 'http://localhost:8000/',
-   webUrl       : 'http://localhost:8000/',
-   resetPassword: 'http://localhost:3000/erp/users/'
+   baseUrl      : process.env.URL_BASE,
+   apiUrl       : process.env.URL_API,
+   webUrl       : process.env.URL_WEB,
+   resetPassword: process.env.URL_RESET_PASS
 }
