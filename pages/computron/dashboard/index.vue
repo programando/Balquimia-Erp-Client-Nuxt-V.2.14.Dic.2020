@@ -2,38 +2,38 @@
   <div class="font-robo">
     <input type="checkbox" id="check" />
     <!--header area start-->
-    <header class="px-10 pt-2 pb-2 bg-primary">
+    <header class="px-10 pt-2 pb-2 bg-white">
       <label for="check">
         <i
-          class="px-4 py-3 fa fa-bars"
+          class="px-4 py-3 fa fa-bars "
           id="sidebar_btn"
         ></i>
       </label>
-      <div class="h-8 text-lg left_area">
+      <div class="h-12 text-lg left_area">
         <span>
-          <!-- <img class="h-16 -mt-4 -ml-8" src="/images/home/header/balquimia-logo.png" alt="logo"/> -->
-          <p class="mt-3 text-3xl text-white">BALQUIMIA</p>
+          <img class="h-16 -mt-1 -ml-4" src="/images/home/header/balquimia-logo.png" alt="logo"/>
+          
         </span>
       </div>
       <div class="pb-5 right_area">
-        <a href="#" class="px-4 py-2 -mr-6 font-light lg:-mr-3 bg-extra logout_btn">Logout</a>
+        <a href="#" class="px-4 py-2 -mr-6 font-light rounded-lg lg:-mr-3 bg-extra logout_btn">Logout</a>
       </div>
     </header>
 
     <!--mobile navigation bar end-->
     <!--sidebar start-->
     <div class="pt-4 mt-20 border-b border-r sidebar">
-      <div class="pl-14 profile_info sib">
+      <div class="pl-16 profile_info sib">
         <img src="/images/dashboard/1.svg" class="h-20" alt="" />
         <h4 class="mt-2 text-gray-700">Jhon James</h4>
       </div>
       <div class="sib">
-        <div class="pl-10 text-gray-700 cursor-pointer hover:bg-primary hover:text-white">
+        <div class="pl-12 text-gray-700 cursor-pointer hover:bg-primary hover:text-white">
           <i class="fa fa-desktop"></i><span>Dashboard</span>
         </div>
 
         <div
-          class="pl-10 text-gray-700 cursor-pointer hover:bg-primary hover:text-white"
+          class="pl-12 text-gray-700 cursor-pointer hover:bg-primary hover:text-white"
           @click="isOpen = !isOpen"
         >
           <i class="fa fa-cogs"></i><span>Comercial</span>
@@ -47,8 +47,8 @@
             class="ml-16 hover:text-primary focus:none"
             @click="registro = true"
           >Registro de Pedidos</div>
-          <div class="mt-2 ml-16 hover:text-primary">Actorización Carteras</div>
-          <div class="mt-2 ml-16 hover:text-primary">Listado de Precios</div>
+          <div class="ml-16 hover:text-primary">Actorización Carteras</div>
+          <div class="ml-16 hover:text-primary">Listado de Precios</div>
         </div>
       </div>
         
@@ -81,8 +81,8 @@
     <!--sidebar end-->
 
 
-    <div class="px-10 pt-8 bg-gray-100 content">
-      <div class="mt-10">
+    <div class="bg-gray-100 content">
+      <div class="mt-4 ">
         <div v-if="registro">
           <RegistroPedidos></RegistroPedidos>
         </div> 
@@ -165,7 +165,7 @@ header {
   color: black;
   display: block;
   width: 100%;
-  line-height: 50px;
+  line-height: 40px;
   text-decoration: none;
   box-sizing: border-box;
   transition: 0.5s;
@@ -178,7 +178,7 @@ header {
 
 label #sidebar_btn {
   z-index: 1;
-  color: #fff;
+  color: gray;
   position: fixed;
   cursor: pointer;
   left: 250px;
@@ -189,7 +189,7 @@ label #sidebar_btn {
 }
 
 label #sidebar_btn:hover {
-  color: #19b3d3;
+  color: #D3500A;
 }
 
 #check:checked ~ .sidebar {
@@ -207,13 +207,13 @@ label #sidebar_btn:hover {
 }
 
 .content {
-  width: (100% - 250px);
+  /* width: (100% - 250px); */
   margin-top: 60px;
   padding: 20px;
   margin-left: 250px;
 
-  background-position: center;
-  background-size: cover;
+  
+  
   height: 100vh;
   transition: 0.5s;
 }
