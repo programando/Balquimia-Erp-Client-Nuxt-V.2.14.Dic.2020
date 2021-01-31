@@ -37,7 +37,7 @@
               >
               </LabelTitle>
 
-              <SingleDate   textLabel="Fecha" v-model="fcha_dspcho"></SingleDate>
+              <SingleDate   textLabel="Fecha" v-model="fcha_dspcho" borderColor="primary"></SingleDate>
 
               <div class="mt-4">
                 <!-- inputText -->
@@ -66,7 +66,7 @@
                 ></ButtonLoad>
               </div>
 
-        <button @click="mensaje"> Mensaje </button>
+              <button @click="mensaje"> Mensaje </button>
 
             </div>
           </div>
@@ -80,14 +80,20 @@
 
 <script>
 import LabelTitle from "@/components/library/LabelTitle";
-import InputBasic from "@/components/library/InputBasic";
-import ButtonBasic from "@/components/library/ButtonBasic";
-import ButtonLoad from "@/components/library/ButtonLoad";
+import InputBasic from "@/components/library/inputs/InputBasic";
+import ButtonBasic from "@/components/library/buttons/buttonBasic";
+import ButtonLoad from "@/components/library/buttons/buttonLoad";
 import SingleDate from "@/components/library/dates/singleDate";
 import Messages   from "@/mixins/toastrMessages";
 
 export default {
   layout: "dashboard",
+  components: {
+    ButtonLoad,
+    ButtonBasic,
+    InputBasic,
+    LabelTitle
+  },
 
   data: () =>({
       fcha_dspcho:''

@@ -51,8 +51,8 @@
 </template>
 <script>
 import LabelTitle from "@/components/library/LabelTitle";
-import InputGmail from "@/components/library/InputGmail";
-import ButtonLoad from "@/components/library/ButtonLoad";
+import InputGmail from "@/components/library/inputs/InputGmail";
+import ButtonLoad from "@/components/library/buttons/buttonLoad";
 export default {
   name: "Contraseña",
   components: {

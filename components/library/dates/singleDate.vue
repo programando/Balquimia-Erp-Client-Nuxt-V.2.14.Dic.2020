@@ -1,15 +1,15 @@
 <template>
-  <div class="mt-2">
-        <label>{{textLabel}}</label>
-           <Datetime class="theme-orange  my-vdatetime  { 'invalid-data': ErrorHas('fcha_dspcho')}"
-                    input-class = "my-vdatetime"
-                    type        = "date"
-                    v-model     = "recordSource"
-                    value-zone  = 'America/bogota'
-                  :class        = "[setBorderColor]"
-                  :phrases      = "{ok: 'Seleccionar', cancel: 'Salir'}"
+  <div class="mt-2 ">
+      <label>{{textLabel}}</label>
+        <Datetime class="theme-orange  my-vdatetime  { 'invalid-data': ErrorHas('fcha_dspcho')}"
+          input-class = "my-vdatetime"
+          type        = "date"
+          v-model     = "recordSource"
+          value-zone  = 'America/bogota'
+          :class        = "[setBorderColor]"
+          :phrases      = "{ok: 'Seleccionar', cancel: 'Salir'}"
             >
-           </Datetime>
+        </Datetime>
   </div>
 </template>
  
@@ -61,7 +61,7 @@
 
 <style   scoped>
     .my-vdatetime{
-        border: 1px solid #666EE8 !important;
+        /* border: 1px solid #D3500A !important; */
         border-radius: 0.25rem;
         padding-left: 10px;
     }

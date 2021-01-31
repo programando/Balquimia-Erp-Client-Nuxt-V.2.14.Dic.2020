@@ -5,46 +5,60 @@
     <header class="px-10 pt-2 pb-2 bg-primary">
       <label for="check">
         <i
-          class="px-4 py-3 opacity-0 md:opacity-100 fa fa-bars"
+          class="px-4 py-3 fa fa-bars"
           id="sidebar_btn"
         ></i>
       </label>
       <div class="h-8 text-lg left_area">
         <span>
           <!-- <img class="h-16 -mt-4 -ml-8" src="/images/home/header/balquimia-logo.png" alt="logo"/> -->
-          <p class="text-white text-3xl mt-3">BALQUIMIA</p>
+          <p class="mt-3 text-3xl text-white">BALQUIMIA</p>
         </span>
       </div>
       <div class="pb-5 right_area">
-        <a
-          href="#"
-          class="px-4 py-2 font-light bg-extra  logout_btn"
-          >Logout</a
-        >
+        <a href="#" class="px-4 py-2 -mr-6 font-light lg:-mr-3 bg-extra logout_btn">Logout</a>
       </div>
     </header>
 
     <!--mobile navigation bar end-->
     <!--sidebar start-->
-    <div class="border-b border-r sidebar mt-20 pt-4">
-      <div class="profile_info">
+    <div class="pt-4 mt-20 border-b border-r sidebar">
+      <div class="pl-14 profile_info sib">
         <img src="/images/dashboard/1.svg" class="h-20" alt="" />
-        <h4 class="mt-2 text-gray-700 ">Jhon James</h4>
+        <h4 class="mt-2 text-gray-700">Jhon James</h4>
       </div>
-      <div>
-        <nuxt-link
-          class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
-          to="/"
-        >
+      <div class="sib">
+        <div class="pl-10 text-gray-700 cursor-pointer hover:bg-primary hover:text-white">
           <i class="fa fa-desktop"></i><span>Dashboard</span>
-        </nuxt-link>
-        <nuxt-link
-          class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
-          to="/"
+        </div>
+
+        <div
+          class="pl-10 text-gray-700 cursor-pointer hover:bg-primary hover:text-white"
+          @click="isOpen = !isOpen"
         >
-          <i class="fa fa-cogs"></i><span>Órdenes trabajo</span>
-        </nuxt-link>
-        <nuxt-link
+          <i class="fa fa-cogs"></i><span>Comercial</span>
+        </div>
+
+        <div
+          class="text-gray-700 cursor-pointer "
+          v-if="isOpen"
+        >
+          <div 
+            class="ml-16 hover:text-primary focus:none"
+            @click="registro = true"
+          >Registro de Pedidos</div>
+          <div class="mt-2 ml-16 hover:text-primary">Actorización Carteras</div>
+          <div class="mt-2 ml-16 hover:text-primary">Listado de Precios</div>
+        </div>
+      </div>
+        
+
+
+
+
+
+
+        <!-- <nuxt-link
           class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
           to="/"
         >
@@ -61,38 +75,52 @@
           to="/"
         >
           <i class="fa fa-info-circle"></i><span>Configuración</span>
-        </nuxt-link>
+        </nuxt-link> -->
+      </div>
+    
+    <!--sidebar end-->
+
+
+    <div class="px-10 pt-8 bg-gray-100 content">
+      <div class="mt-10">
+        <div v-if="registro">
+          <RegistroPedidos></RegistroPedidos>
+        </div> 
       </div>
     </div>
-    <!--sidebar end-->
+
+
+
+
   </div>
 </template>
 <script>
+import RegistroPedidos from '@/components/computron/comercial/RegistroPedidos'
 export default {
   name: "index",
+  components: {
+    RegistroPedidos
+  },
+  data() {
+    return {
+      isOpen: false,
+      registro: false
+    };
+  },
 };
 </script>
 <style>
-
-
 header {
   z-index: 1;
   position: fixed;
   width: calc(100% - 0%);
   top: 0;
-  
 }
 
-
-
-
-
 .logout_btn {
-
   text-decoration: none;
   float: right;
   margin-top: -30px;
-  
   border-radius: 2px;
   font-size: 15px;
   font-weight: 600;
@@ -101,13 +129,9 @@ header {
   transition-property: background;
 }
 
-
-
 .sidebar {
   z-index: 1;
   top: 0;
-  
-  
   position: fixed;
   left: 0;
   width: 250px;
@@ -137,18 +161,16 @@ header {
   margin-bottom: 20px;
 }
 
-.sidebar a {
+.sidebar .sib {
   color: black;
   display: block;
   width: 100%;
-  line-height: 60px;
+  line-height: 50px;
   text-decoration: none;
-  padding-left: 40px;
   box-sizing: border-box;
   transition: 0.5s;
   transition-property: background;
 }
-
 
 .sidebar i {
   padding-right: 10px;
@@ -159,7 +181,7 @@ label #sidebar_btn {
   color: #fff;
   position: fixed;
   cursor: pointer;
-  left: 300px;
+  left: 250px;
   font-size: 20px;
   margin: 5px 0;
   transition: 0.5s;
@@ -174,11 +196,11 @@ label #sidebar_btn:hover {
   left: -185px;
 }
 
-#check:checked ~ .sidebar a span {
+#check:checked ~ .sidebar .sib span {
   display: none;
 }
 
-#check:checked ~ .sidebar a {
+#check:checked ~ .sidebar .sib {
   font-size: 20px;
   margin-left: 165px;
   width: 100%;
@@ -208,9 +230,6 @@ label #sidebar_btn:hover {
   display: none;
 }
 
-.mobile_nav {
-  display: none;
-}
 
 .content .card p {
   background: #fff;
@@ -223,8 +242,6 @@ label #sidebar_btn:hover {
 /* Responsive CSS */
 
 @media screen and (max-width: 780px) {
-  
-
   /* .content {
     margin-left: 0;
     margin-top: 0;
