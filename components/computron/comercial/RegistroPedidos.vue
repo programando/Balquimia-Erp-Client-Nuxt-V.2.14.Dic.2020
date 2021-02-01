@@ -40,8 +40,10 @@
           type="date"
           class="px-4 py-1 text-sm border"
           placeholder="Sucursal"
+          v-model="fecha"
         />
       </div>
+      <button @click="ver"> Ver </button>
     </div>
   </div>
 </template>
@@ -50,6 +52,14 @@
 export default {
   name: "RegistroPedidos",
   components: {},
+  data: () => ({
+      fecha:''
+  }),
+  methods:{
+        ver() {
+            console.log( this.fecha );
+        }
+  },
 };
 </script>
 
