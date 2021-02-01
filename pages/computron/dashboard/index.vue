@@ -1,289 +1,152 @@
 <template>
-  <div class="font-robo">
-    <input type="checkbox" id="check" />
-    <!--header area start-->
-    <header class="px-10 pt-2 pb-2 bg-white">
-      <label for="check">
-        <i
-          class="px-4 py-3 fa fa-bars "
-          id="sidebar_btn"
-        ></i>
-      </label>
-      <div class="h-12 text-lg left_area">
-        <span>
-          <img class="h-16 -mt-1 -ml-4" src="/images/home/header/balquimia-logo.png" alt="logo"/>
-          
-        </span>
-      </div>
-      <div class="pb-5 right_area">
-        <a href="#" class="px-4 py-2 -mr-6 font-light rounded-lg lg:-mr-3 bg-extra logout_btn">Logout</a>
-      </div>
-    </header>
-
-    <!--mobile navigation bar end-->
-    <!--sidebar start-->
-    <div class="pt-4 mt-20 border-b border-r sidebar">
-      <div class="pl-16 profile_info sib">
-        <img src="/images/dashboard/1.svg" class="h-20" alt="" />
-        <h4 class="mt-2 text-gray-700">Jhon James</h4>
-      </div>
-      <div class="sib">
-        <div class="pl-12 text-gray-700 cursor-pointer hover:bg-primary hover:text-white">
-          <i class="fa fa-desktop"></i><span>Dashboard</span>
+  <div>
+    <div class="fixed z-20 w-full">
+      <header class="bg-white">
+        <!-- Icono de la empresa -->
+        <div class="flex justify-between -mt-3 lg:mt:0 lg:py-0">
+          <div class="flex flex-grow lg:flex-grow-0">
+            <div class="">
+              <img
+                class="h-16 md:h-20 logo lg:ml-10 lg:h-auto"
+                src="/images/home/header/balquimia-logo.png"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <div class="flex items-center justify-center mt-6 mr-6">
+            <div class="mx-1 cursor-pointer md:mx-2">
+              <img
+                class="h-6 md:h-8"
+                src="/images/dashboard/headerDash/notification-repo.svg"
+                alt=""
+              />
+            </div>
+            <div class="mx-1 cursor-pointer md:mx-2">
+              <img
+                class="h-6 md:h-8"
+                src="/images/dashboard/headerDash/email-repo.svg"
+                alt=""
+              />
+            </div>
+            <div class="flex items-center mx-1 cursor-pointer md:mx-2">
+              <p class="mx-2">Jhon Montaño</p>
+              <img
+                class="h-8 md:h-12"
+                src="/images/dashboard/headerDash/user-repo.svg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-
-        <div
-          class="pl-12 text-gray-700 cursor-pointer hover:bg-primary hover:text-white"
-          @click="isOpen = !isOpen"
-        >
-          <i class="fa fa-cogs"></i><span>Comercial</span>
-        </div>
-
-        <div
-          class="text-gray-700 cursor-pointer "
-          v-if="isOpen"
-        >
-          <div 
-            class="ml-16 hover:text-primary focus:none"
-            @click="registro = true"
-          >Registro de Pedidos</div>
-          <div class="ml-16 hover:text-primary">Actorización Carteras</div>
-          <div class="ml-16 hover:text-primary">Listado de Precios</div>
-        </div>
-      </div>
-        
-
-
-
-
-
-
-        <!-- <nuxt-link
-          class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
-          to="/"
-        >
-          <i class="fa fa-table"></i><span>Cartera</span>
-        </nuxt-link>
-        <nuxt-link
-          class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
-          to="/"
-        >
-          <i class="fa fa-th"></i><span>Reuniones</span>
-        </nuxt-link>
-        <nuxt-link
-          class="ml-4 text-gray-700 hover:bg-primary hover:text-white"
-          to="/"
-        >
-          <i class="fa fa-info-circle"></i><span>Configuración</span>
-        </nuxt-link> -->
-      </div>
-    
-    <!--sidebar end-->
-
-
-    <div class="bg-gray-100 content">
-      <div class="mt-4 ">
-        <div v-if="registro">
-          <RegistroPedidos></RegistroPedidos>
-        </div> 
+      </header>
+      <div class="-ml-1 lg:block lg:ml-4">
+        <img
+          src="/images/home/header/arr.png"
+          alt="arr1"
+          class="h-7 lg:h-10 lg:mt-0"
+        />
       </div>
     </div>
+    <div class="px-4 pt-32 pb-40 bg-gray-100">
+      <div class="mx-2">
+        <p class="text-lg font-bold lg:text-xl">Comercial</p>
+        <div class="grid grid-cols-1 gap-5 mt-6 sm:grid-cols-2 lg:grid-cols-4">
+          <nuxt-link to="/computron/dashboard/registroPedido">
+            <div
+              class="p-4 transition-shadow bg-white border rounded-lg shadow-sm cursor-pointer hover:shadow-lg"
+            >
+              <div class="flex items-center justify-center space-x-4">
+                <div class="rounded-md">
+                  <img
+                    class="h-12"
+                    src="/images/dashboard/graph-repo.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="">
+                  <span class="text-gray-900">Registro de Pedidos</span>
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
 
-
-
-
+          <div
+            class="p-4 transition-shadow bg-white border rounded-lg shadow-sm cursor-pointer hover:shadow-lg"
+          >
+            <div class="flex items-center justify-center space-x-4">
+              <div class="rounded-md">
+                <img
+                  class="h-12"
+                  src="/images/dashboard/cash-repo.svg"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <span class="text-gray-900">Ventas por Cliente</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 transition-shadow bg-white border rounded-lg shadow-sm cursor-pointer hover:shadow-lg"
+          >
+            <div class="flex items-center justify-center space-x-4">
+              <div class="rounded-md">
+                <img
+                  class="h-12"
+                  src="/images/dashboard/list-repo.svg"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <span class="text-gray-900">Lista de Precios</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 transition-shadow bg-white border rounded-lg shadow-sm cursor-pointer hover:shadow-lg"
+          >
+            <div class="flex items-center justify-center space-x-4">
+              <div class="rounded-md">
+                <img
+                  class="h-12"
+                  src="/images/dashboard/pass-repo.svg"
+                  alt=""
+                />
+              </div>
+              <div class="">
+                <span class="text-gray-900">Autorizacíon Cartera</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
-import RegistroPedidos from '@/components/computron/comercial/RegistroPedidos'
+
 export default {
   name: "index",
   components: {
-    RegistroPedidos
+   
   },
   data() {
     return {
       isOpen: false,
-      registro: false
+      registro: false,
     };
   },
 };
 </script>
 <style>
-header {
-  z-index: 1;
-  position: fixed;
-  width: calc(100% - 0%);
-  top: 0;
+.logo {
+  position: relative;
+  left: 6px;
+  top: 20px;
+  z-index: 100;
 }
 
-.logout_btn {
-  text-decoration: none;
-  float: right;
-  margin-top: -30px;
-  border-radius: 2px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
-  transition: 0.5s;
-  transition-property: background;
-}
-
-.sidebar {
-  z-index: 1;
-  top: 0;
-  position: fixed;
-  left: 0;
-  width: 250px;
-  height: calc(100% - 9%);
-  transition: 0.5s;
-  transition-property: left;
-  overflow-y: auto;
-}
-
-.profile_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.sidebar .profile_info .profile_image {
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  margin-bottom: 10px;
-}
-
-.sidebar .profile_info h4 {
-  color: #ccc;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.sidebar .sib {
-  color: black;
-  display: block;
-  width: 100%;
-  line-height: 40px;
-  text-decoration: none;
-  box-sizing: border-box;
-  transition: 0.5s;
-  transition-property: background;
-}
-
-.sidebar i {
-  padding-right: 10px;
-}
-
-label #sidebar_btn {
-  z-index: 1;
-  color: gray;
-  position: fixed;
-  cursor: pointer;
-  left: 250px;
-  font-size: 20px;
-  margin: 5px 0;
-  transition: 0.5s;
-  transition-property: color;
-}
-
-label #sidebar_btn:hover {
-  color: #D3500A;
-}
-
-#check:checked ~ .sidebar {
-  left: -185px;
-}
-
-#check:checked ~ .sidebar .sib span {
-  display: none;
-}
-
-#check:checked ~ .sidebar .sib {
-  font-size: 20px;
-  margin-left: 165px;
-  width: 100%;
-}
-
-.content {
-  /* width: (100% - 250px); */
-  margin-top: 60px;
-  padding: 20px;
-  margin-left: 250px;
-
-  
-  
-  height: 100vh;
-  transition: 0.5s;
-}
-
-#check:checked ~ .content {
-  margin-left: 60px;
-}
-
-#check:checked ~ .sidebar .profile_info {
-  display: none;
-}
-
-#check {
-  display: none;
-}
-
-
-.content .card p {
-  background: #fff;
-  padding: 15px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-/* Responsive CSS */
-
-@media screen and (max-width: 780px) {
-  /* .content {
-    margin-left: 0;
-    margin-top: 0;
-    padding: 10px 20px;
-    transition: 0s;
-  }
-
-  #check:checked ~ .content {
-    margin-left: 0;
-  }
-
-  .mobile_nav {
-    display: block;
-    width: calc(100% - 0%);
-  }
-
-  .nav_bar {
-    background: #222;
-    width: (100% - 0px);
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-
-  .nav_bar .mobile_profile_image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-
-  .nav_bar .nav_btn {
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.5s;
-    transition-property: color;
-  }
-
-  .nav_bar .nav_btn:hover {
-    color: #19b3d3;
-  } */
+.logo-full {
+  left: 0px;
 }
 </style>

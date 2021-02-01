@@ -5,22 +5,23 @@
     >
       Registro de Pedidos
     </h2>
-    <div class="grid gap-2 lg:gap-0 md:grid-cols-2 lg:flex lg:justify-center ">
-      <div class="mt-2 ml-4 sm:ml-8 lg:ml-2 lg:mr-2 ">
-        <label class="block mx-5">Cliente</label>
-        <i class="mx-2 lg:mx-0 fa fa-search"></i>
+    <div class="grid gap-2 lg:gap-0 md:grid-cols-2 lg:flex">
+      <div class="mt-2 ml-12 sm:ml-16 lg:ml-4 lg:mr-2">
+        <label class="block ">Cliente</label>
+
         <input
           type="text"
-          class="px-4 py-1 text-sm border "
+          class="px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline"
           placeholder="Nombre del Cliente"
         />
+        <img class="inline h-6 cursor-pointer -ml-9 " src="/images/dashboard/search-repo.svg" alt=""/>
       </div>
       <div class="mt-2 ml-12 sm:ml-16 lg:ml-2 lg:mr-4">
         <label class="block">Sucursal</label>
 
         <input
           type="text"
-          class="px-4 py-1 text-sm border"
+          class="px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline"
           placeholder="Sucursal"
         />
       </div>
@@ -29,7 +30,7 @@
 
         <input
           type="text"
-          class="px-4 py-1 text-sm border"
+          class="px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline"
           placeholder="Sucursal"
         />
       </div>
@@ -38,7 +39,7 @@
 
         <input
           type="date"
-          class="px-4 py-1 text-sm border"
+          class="px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline"
           placeholder="Sucursal"
         />
       </div>
