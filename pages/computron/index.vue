@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-latos">
     <div
       class="bg-center bg-no-repeat bg-cover"
       style="background-image: url('/images/home/slider/investigacion.webp')"

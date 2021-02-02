@@ -1,72 +1,85 @@
 <template>
-  <div>
-    <div class="fixed z-20 w-full">
-      <header class="bg-white">
-        <!-- Icono de la empresa -->
-        <div class="flex justify-between -mt-3 lg:mt:0 lg:py-0">
-          <div class="flex flex-grow lg:flex-grow-0">
-            <div class="">
-              <img
-                class="h-16 md:h-20 logo lg:ml-10 lg:h-auto"
-                src="/images/home/header/balquimia-logo.png"
-                alt="logo"
-              />
+  <div class="font-latos">
+    <HeaderDash></HeaderDash>
+    <div class="min-h-screen px-4 pt-24 pb-40 bg-gray-100">
+      <div class="mx-2">
+        <div class="pb-10 bg-white border-2 rounded-lg">
+          <h2
+            class="py-2 text-lg font-semibold text-center text-white uppercase bg-primary"
+          >
+            Registro de Pedidos
+          </h2>
+          <div class="grid gap-2 lg:gap-0 md:grid-cols-2 lg:grid-cols-4">
+            <div class="mt-2 ml-12 sm:ml-16 lg:ml-4 lg:mr-2">
+              <InputSearch
+                textLabel="Cliente"
+                placeholder="Nombre del Cliente"
+                width="w-5/6"
+              ></InputSearch>
             </div>
-          </div>
-          <div class="flex items-center justify-center mt-6 mr-6">
-            <div class="mx-1 cursor-pointer md:mx-2">
-              <img
-                class="h-6 md:h-8"
-                src="/images/dashboard/headerDash/notification-repo.svg"
-                alt=""
-              />
+
+            <div class="mt-2 ml-12 sm:ml-16 lg:ml-2 lg:mr-4">
+              <InputLabel
+                textLabel="Sucursal"
+                placeholder="Sucursal"
+                width="w-5/6"
+              ></InputLabel>
             </div>
-            <div class="mx-1 cursor-pointer md:mx-2">
-              <img
-                class="h-6 md:h-8"
-                src="/images/dashboard/headerDash/email-repo.svg"
-                alt=""
-              />
+
+            <div class="mt-2 ml-12 sm:ml-16 md:ml-15 lg:ml-4 lg:mr-4">
+              <InputLabel
+                textLabel="Vendedor"
+                placeholder="Vendedor"
+                width="w-5/6"
+              ></InputLabel>
             </div>
-            <div class="flex items-center mx-1 cursor-pointer md:mx-2">
-              <p class="mx-2">Jhon </p>
-              <img
-                class="h-8 md:h-12"
-                src="/images/dashboard/headerDash/user-repo.svg"
-                alt=""
-              />
+            <div class="mt-2 ml-12 sm:ml-16 lg:ml-4 lg:mr-4">
+              <InputDate textLabel="Fecha Despacho" width="w-5/6"></InputDate>
             </div>
+            <!-- <button @click="ver">Ver</button> -->
           </div>
         </div>
-      </header>
-      <div class="-ml-1 lg:block lg:ml-4">
-        <img
-          src="/images/home/header/arr.png"
-          alt="arr1"
-          class="h-7 lg:h-10 lg:mt-0"
-        />
       </div>
     </div>
-    <div class="px-4 pt-32 pb-40 bg-gray-100">
-      <div class="mx-2">
-        <FormPedidos></FormPedidos>
 
-      </div>
-    </div>
+
+
+
+
+
+
+
+   
   </div>
 </template>
 <script>
-import FormPedidos from "@/components/computron/comercial/FormPedidos";
+import HeaderDash from "@/components/computron/HeaderDash";
+import InputSearch from "@/components/library/inputs/InputSearch";
+import InputLabel from "@/components/library/inputs/InputLabel";
+import InputDate from "@/components/library/inputs/InputDate";
 export default {
   name: "index",
   components: {
-    FormPedidos,
+    HeaderDash,
+    InputSearch,
+    InputLabel,
+    InputDate,
   },
   data() {
     return {
       isOpen: false,
       registro: false,
+      fecha: "",
     };
+  },
+  methods: {
+    ver() {
+      console.log(this.fecha);
+    },
+
+
+    
+
   },
 };
 </script>
