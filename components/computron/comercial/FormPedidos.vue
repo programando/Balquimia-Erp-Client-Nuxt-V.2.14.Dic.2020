@@ -16,6 +16,7 @@
         />
         <img class="inline h-6 cursor-pointer -ml-9 " src="/images/dashboard/search-repo.svg" alt=""/>
       </div>
+      
       <div class="mt-2 ml-12 sm:ml-16 lg:ml-2 lg:mr-4">
         <label class="block">Sucursal</label>
 
@@ -25,6 +26,7 @@
           placeholder="Sucursal"
         />
       </div>
+
       <div class="mt-2 ml-12 sm:ml-16 md:ml-15 lg:ml-4 lg:mr-4">
         <label class="block">Vendedor</label>
 

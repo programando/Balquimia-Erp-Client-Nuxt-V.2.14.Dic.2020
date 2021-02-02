@@ -37,7 +37,7 @@
               >
               </LabelTitle>
 
-              <SingleDate   textLabel="Fecha" v-model="fcha_dspcho" borderColor="primary"></SingleDate>
+               
 
               <div class="mt-4">
                 <!-- inputText -->
@@ -83,7 +83,7 @@ import LabelTitle from "@/components/library/LabelTitle";
 import InputBasic from "@/components/library/inputs/InputBasic";
 import ButtonBasic from "@/components/library/buttons/buttonBasic";
 import ButtonLoad from "@/components/library/buttons/buttonLoad";
-import SingleDate from "@/components/library/dates/singleDate";
+ 
 import Messages   from "@/mixins/toastrMessages";
 
 export default {
@@ -98,12 +98,14 @@ export default {
   data: () =>({
       fcha_dspcho:''
   }),
-   components:{ SingleDate},
+ 
    mixins:[ Messages],
 
    methods: {
       mensaje(){
-          this.MsgError("dldl", "2309403940'3'023'030'3");
+          this.MsgSuccess("dldl", "2309403940'3'023'030'3",5);
+ 
+
       },
    }, 
   

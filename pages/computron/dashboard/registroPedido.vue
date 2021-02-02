@@ -29,7 +29,7 @@
               />
             </div>
             <div class="flex items-center mx-1 cursor-pointer md:mx-2">
-              <p class="mx-2">Jhon Montaño</p>
+              <p class="mx-2">Jhon </p>
               <img
                 class="h-8 md:h-12"
                 src="/images/dashboard/headerDash/user-repo.svg"
