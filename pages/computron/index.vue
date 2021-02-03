@@ -13,7 +13,7 @@
             <h2>BALQUIMIA S.A.S</h2>
           </div>
           <div
-            class="gap-10 mx-10 mt-10 md:mx-20 lg:mx-24 xl:mx-32 lg:grid lg:grid-cols-2"
+            class="items-center gap-10 mx-10 mt-10 md:mx-20 lg:mx-24 xl:mx-32 lg:grid lg:grid-cols-2"
           >
             <div class="text-white">
               <p class="lg:text-lg">

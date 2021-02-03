@@ -41,15 +41,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-   
   </div>
 </template>
 <script>
@@ -76,10 +67,6 @@ export default {
     ver() {
       console.log(this.fecha);
     },
-
-
-    
-
   },
 };
 </script>
