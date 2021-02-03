@@ -1,17 +1,22 @@
 <template>
-  <div class="fixed z-20 w-full">
+  <div>
+    <div class="fixed z-20 w-full">
     <header class="bg-white">
       <!-- Icono de la empresa -->
       <div class="flex justify-between -mt-3 lg:mt:0 lg:py-0">
+        
         <div class="flex flex-grow lg:flex-grow-0">
           <div class="">
+          <nuxt-link to="/">
             <img
               class="h-16 md:h-20 logo lg:ml-10 lg:h-auto"
               src="/images/home/header/balquimia-logo.png"
               alt="logo"
             />
+            </nuxt-link>
           </div>
         </div>
+
         <div class="flex items-center justify-center mt-6 mr-6">
           <div class="mx-1 cursor-pointer md:mx-2">
             <img
@@ -27,29 +32,14 @@
               alt=""
             />
           </div>
-          <div class="relative flex flex-col">
-            <div
-              @click="userBoton"
-              class="flex items-center mx-1 cursor-pointer md:mx-2"
-            >
-              <img
-                class="h-8 md:h-12"
-                src="/images/dashboard/headerDash/user-repo.svg"
-                alt=""
-              />
-            </div>
-            <div
-              v-if="menuUser"
-              class="absolute flex flex-col p-2 pt-1 bg-gray-200 rounded-lg top-16 right-1"
-            >
-              <nuxt-link class="px-2 py-1 rounded-lg hover:text-white hover:bg-primary" to="#"> Perfil </nuxt-link>
-              <nuxt-link class="px-2 py-1 rounded-lg hover:text-white hover:bg-primary" to="#"> Configuracion </nuxt-link>
-              <nuxt-link class="px-2 py-1 rounded-lg hover:text-white hover:bg-primary" to="#"> Salir </nuxt-link>
-            </div>
-          </div>
+
+          <!-- user menu -->
+            <UserAccount></UserAccount>
+
         </div>
       </div>
     </header>
+
     <div class="-ml-1 lg:block lg:ml-4">
       <img
         src="/images/home/header/arr.png"
@@ -57,26 +47,42 @@
         class="h-7 lg:h-10 lg:mt-0"
       />
     </div>
+
+  </div>
+
+
+   <div>
+    <Nuxt />
+  </div>
+
+ 
   </div>
 </template>
 
 <script>
+  import UserAccount from "@/components/computron/terceros/userAccount";
 export default {
-  name: "HeaderDash",
+  name: "computron",
   data() {
     return {
-      menuUser: false,
+      
     };
   },
+  components: { UserAccount},
 
-  methods: {
-    userBoton() {
-      console.log("click");
-      this.menuUser = !this.menuUser;
-    },
-  },
+
 };
 </script>
 
 <style>
+.logo {
+  position: relative;
+  left: 6px;
+  top: 20px;
+  z-index: 100;
+}
+
+.logo-full {
+  left: 0px;
+}
 </style>

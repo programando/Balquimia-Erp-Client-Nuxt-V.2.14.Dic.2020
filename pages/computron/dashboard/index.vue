@@ -1,11 +1,12 @@
 <template>
   <div class="font-latos">
-    <HeaderDash></HeaderDash>
+     
     <div class="min-h-screen px-4 pb-40 bg-gray-100 pt-36">
       <div class="mx-2">
         <p class="mx-10 text-lg font-bold lg:text-xl">Comercial</p>
         <div class="grid grid-cols-1 gap-8 mx-6 mt-6 lg:gap-4 lg:mx-0 xl:mx-8 xl:gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          <nuxt-link to="/computron/dashboard/registroPedido">
+         
+          <nuxt-link to="/computron/comercial/pedidos-registro">
             <div
               class="p-4 mx-4 transition-shadow bg-white border rounded-lg shadow-sm cursor-pointer hover:shadow-lg"
             >
@@ -23,6 +24,7 @@
               </div>
             </div>
           </nuxt-link>
+
 
           <div
             class="p-4 mx-4 transition-shadow bg-white border rounded-lg shadow-sm cursor-pointer hover:shadow-lg"
@@ -81,16 +83,14 @@
   </div>
 </template>
 <script>
-import HeaderDash from '@/components/computron/HeaderDash'
+ 
 export default {
+  layout:"layoutComputron",
   name: "index",
-  components: {
-    HeaderDash
-  },
+ 
   data() {
     return {
-      isOpen: false,
-      registro: false,
+ 
       
     };
   },
@@ -98,15 +98,3 @@ export default {
   
 };
 </script>
-<style>
-.logo {
-  position: relative;
-  left: 6px;
-  top: 20px;
-  z-index: 100;
-}
-
-.logo-full {
-  left: 0px;
-}
-</style>

@@ -3,11 +3,12 @@
     <label class="block">{{ textLabel }}</label>
 
     <input
-      type="date"
-      class="px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline"
-      :class="width"
-      placeholder="Sucursal"
-      v-model="fecha"
+        class       = "px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline"
+        placeholder = "Sucursal"
+        type        = "date"
+        v-model     = "recordSource"
+      :class        = "width"
+      
     />
   </div>
 </template>
@@ -17,12 +18,23 @@ export default {
   name: 'InputDate',
   props: {
     textLabel: String,
-    width: String
-  }
+    vmodel   : String,
+    width    : String,
+  },
+    data () {
+      return {
+        recordSource: this.vmodel
+      }
+    },
+    watch :{
+      recordSource ( newDate ){
+          this.$emit('input', newDate);
+      },
+      vmodel ( newDate ) {
+          this.recordSource = newDate;
+      },
+    },
 
 
 };
 </script>
-
-<style>
-</style>
