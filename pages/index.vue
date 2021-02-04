@@ -29,6 +29,7 @@ import Diferenciadores      from "@/components/home/diferenciadores.vue";
 import ProductosDestacados  from "@/components/home/productosDestacados/productosDestacados.vue";
 import Clientes             from "@/components/home/clientesList.vue";
 import Footer               from "@/components/home/footer/footer.vue";
+ 
 export default {
   components: {
     Header,
@@ -43,9 +44,9 @@ export default {
 
   data: () => ({}),
  
-
-  methods: {
  
+  methods: {
+
     },
 
  
