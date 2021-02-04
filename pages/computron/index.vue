@@ -37,6 +37,7 @@
                   text="jhonjamesmg@hotmail.com"
                   width="w-full"
                   img="/images/dashboard/user-repo.svg"
+                  :alert="true"
                 ></InputBasic>
 
                 <!-- inputPassword -->
@@ -45,6 +46,7 @@
                   text="contraseña"
                   width="w-full"
                   img="/images/dashboard/candado-cerrado.svg"
+                  :alert="true"
                 ></InputBasic>  
               </div>
 
@@ -59,6 +61,14 @@
                   to="/computron/dashboard"
                   variant="success"
                 ></ButtonLoad>
+              </div>
+              
+              <div>
+                <ButtonBasic
+                  text="Cambiar Contraseña"
+                  to="/computron/terceros/users-change-password"
+                  
+                ></ButtonBasic>
               </div>
 
               <button @click="mensaje">Mensaje</button>

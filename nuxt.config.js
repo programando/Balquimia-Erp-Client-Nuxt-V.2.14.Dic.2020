@@ -12,19 +12,19 @@ export default {
       { hid: 'http-equiv', name: 'X-UA-Compatible', content: 'IE=edge' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
-    script: [
-      {
-        src: 'https://use.fontawesome.com/020bc864c9.js'
-      },
-    ],
+    // script: [
+    //   {
+    //     src: 'https://use.fontawesome.com/020bc864c9.js'
+    //   },
+    // ],
         
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap'
-      },
-    ]
+    // link: [
+    //   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    //   {
+    //     rel: 'stylesheet',
+    //     href: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap'
+    //   },
+    // ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

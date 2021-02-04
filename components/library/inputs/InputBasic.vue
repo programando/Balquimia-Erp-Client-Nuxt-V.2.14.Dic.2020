@@ -12,7 +12,7 @@
       />
     </div>
 
-    <div class="flex items-center">
+    <div v-if="alert" class="flex items-center">
       <img
         class="inline h-5 mr-1"
         src="/images/dashboard/acceso-negado.svg"
@@ -32,7 +32,8 @@ export default {
     text: String,
     width: String,
     borderColor: String,
-    img: String
+    img: String,
+    alert: false
   },
 
   computed: {

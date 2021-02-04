@@ -2,7 +2,7 @@
   <div class="flex border">
     <div class="px-2 pt-1 bg-gray-200">
       <span>
-        <i aria-hidden="true" class="fa fa-envelope fa-2x"></i>
+        <img class="h-8" src="/images/dashboard/gmail-repo.svg" alt="">
       </span>
     </div>
     
