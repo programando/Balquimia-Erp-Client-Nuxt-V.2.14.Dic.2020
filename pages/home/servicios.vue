@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-300">
-    <Header></Header>
+  <div >
+    
     <div
       class="bg-center bg-no-repeat bg-cover"
       style="background-image: url(/images/servicios/servicios.webp)"
@@ -233,23 +233,13 @@
       </div>
     </div>
 
-    <!-- <Footer></Footer> -->
-    <Footer></Footer>
+ 
   </div>
 </template>
 <script>
-import Header from "@/components/home/header/indexHeader";
-import Footer from "@/components/home/footer/footer";
  
-
-
 export default {
-  components: {
-    Header,
-    Footer,
- 
-    
-  },
+  layout:'layoutBalquimia',
 };
 </script>
 <style scoped>

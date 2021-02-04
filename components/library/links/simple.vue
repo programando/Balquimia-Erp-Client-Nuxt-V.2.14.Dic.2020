@@ -1,8 +1,9 @@
 <template>
   <li>
-    <nuxt-link to="/"  
+    <nuxt-link 
+        :to="urlDestino" 
         :class="[ cssResponve, cssNotResponisve ]">
-            Inicio
+        {{ textMenu }}
     </nuxt-link>
   </li>
 </template>
@@ -11,9 +12,11 @@
      
       props: {
           responsive: {
-            type: Boolean,
-            default: false
-        }
+            default   : false,
+            type      : Boolean,
+        },
+         textMenu  : String,
+         urlDestino: String,
       },
       data: ()=> ({
 

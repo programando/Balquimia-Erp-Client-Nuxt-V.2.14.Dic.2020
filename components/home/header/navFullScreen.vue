@@ -2,11 +2,13 @@
   <!-- Navbar en pantalla completa, en pantalla pequeña esta oculto -->
   <nav class="flex ">
     <ul class="flex items-center justify-center pt-5 xl:mr-40">
-      <Inicio></Inicio>
-      <Productos></Productos>
-      <Servicios></Servicios>
-      <Experiencia></Experiencia>
-      <Contacto></Contacto>
+      <SimpleLink  textMenu='Inicio'      urlDestino='/home/contacto'    :responisve = "false"></SimpleLink>    <!-- / -->
+      <SimpleLink  textMenu='Productos'   urlDestino='/home/contacto'    :responisve = "false"></SimpleLink>    <!-- "/store/productos" -->
+      <SimpleLink  textMenu='Servicios'   urlDestino='/home/contacto'    :responisve = "false"></SimpleLink>    <!-- "/home/servicios" -->
+      <SimpleLink  textMenu='Experiencia' urlDestino='/home/contacto'    :responisve = "false"></SimpleLink>    <!-- "/home/experiencia" -->
+      <SimpleLink  textMenu='Contacto'    urlDestino='/home/contacto'    :responisve = "false"></SimpleLink>    <!-- "/home/contacto" -->
+
+      
     </ul>
 
     <ul class="flex items-center justify-center">
@@ -18,25 +20,19 @@
 </template>
 
 <script>
-import Carrito        from "@/components/home/navOptions/carrito";
-import Computron      from "@/components/home/navOptions/computron";
-import Contacto       from "@/components/home/navOptions/contacto";
-import Experiencia    from "@/components/home/navOptions/experiencia";
-import Idioma         from "@/components/home/navOptions/idioma";
-import Inicio         from "@/components/home/navOptions/inicio";
-import Productos      from "@/components/home/navOptions/productos";
-import Servicios      from "@/components/home/navOptions/servicios";
  
+import SimpleLink     from "@/components/library/links/simple";
+import Carrito        from "@/components/home/navOptions/carrito";
+import Idioma         from "@/components/home/navOptions/idioma";
+
+  
 export default {
   data: () => ({}),
   components: {
-    Inicio,
-    Productos,
-    Servicios,
-    Experiencia,
-    Contacto,
+    
     Idioma,
     Carrito,
+    SimpleLink,
      
   }
 };

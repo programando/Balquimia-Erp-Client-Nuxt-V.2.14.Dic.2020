@@ -70,10 +70,11 @@
         </div>
 
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <div class="" @click="openPdf">
-            Politicas tratamiento de la información
-          </div>
+
+        <PoliticaTratamientoDatos></PoliticaTratamientoDatos>
+
         </div>
+
       </div>
       <div class="mt-10 text-gray-700 sm:mt-8 lg:mt-4">
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
@@ -120,17 +121,13 @@
 </template>
 <script>
 import AppButton from "@/components/library/buttons/button";
+import PoliticaTratamientoDatos from "@/components/comun/politicaDatos";
 export default {
-  components: { AppButton },
+  components: { AppButton, PoliticaTratamientoDatos },
 
   data: () => ({}),
 
-  methods: {
-    openPdf() {
-      let fileName = "/files/Politica.pdf";
-      window.open(fileName, "_blank");
-    }
-  }
+ 
 };
 </script>
 <style>

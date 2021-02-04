@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-200">
-    <Header></Header>
+  <div >
+     
     <div
       class="bg-center bg-no-repeat bg-cover "
       style="background-image: url(/images/home/experiencia/experiencia.webp)"
@@ -86,20 +86,17 @@
       <CardProductoDestacado></CardProductoDestacado>
     </div>
     </div>
-    <Footer></Footer>
+     
   </div>
 </template>
 <script>
-import Header from "@/components/home/header/indexHeader";
-import Footer from "@/components/home/footer/footer";
+ 
 import SectoresClientes from "@/components/home/sectoresClientes";
  
 export default {
- 
+   layout:'layoutBalquimia',
   components:{
-    Header,
-    Footer,
-    SectoresClientes
+     SectoresClientes
   }
 }
 </script>
