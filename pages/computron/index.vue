@@ -17,6 +17,7 @@
           >
             <FraseDiaria></FraseDiaria>
 
+          <form>
             <div
               class="px-8 py-6 mt-6 bg-white border rounded-lg md:py-8 md:px-12 lg:mt-0"
             >
@@ -37,6 +38,9 @@
                   text="jhonjamesmg@hotmail.com"
                   width="w-full"
                   img="/images/dashboard/user-repo.svg"
+                  v-model="form.email" 
+                  :errors="errors.email"
+                   
                 ></InputBasic>
 
                 <!-- inputPassword -->
@@ -45,6 +49,8 @@
                   text="contraseña"
                   width="w-full"
                   img="/images/dashboard/candado-cerrado.svg"
+                  v-model="form.password" 
+                   :errors="errors.password"
                 ></InputBasic>  
               </div>
 
@@ -54,15 +60,19 @@
                   to="/computron/terceros/users-reset-password"
                 ></ButtonBasic>
 
-                <ButtonLoad
-                  text="Ingresar al sistema"
-                  to="/computron/dashboard"
-                  variant="success"
-                ></ButtonLoad>
+                <ButtonLoading 
+                    @click.prevent="login" 
+                    size="small" 
+                    ref="ButtonLoading" 
+                    variant="success"
+                    variant-type="normal">  Ingresar al sistema 
+                </ButtonLoading>
+
               </div>
 
-              <button @click="mensaje">Mensaje</button>
+             
             </div>
+            </form>
           </div>
         </div>
       </div>
@@ -71,33 +81,59 @@
 </template>
 
 <script>
-import LabelTitle from "@/components/library/LabelTitle";
-import InputBasic from "@/components/library/inputs/InputBasic";
-import ButtonBasic from "@/components/library/buttons/buttonBasic";
-import ButtonLoad from "@/components/library/buttons/buttonLoad";
-
-import Messages from "@/mixins/toastrMessages";
-
-export default {
-  layout: "dashboard",
-  components: {
-    ButtonLoad,
-    ButtonBasic,
-    InputBasic,
-    LabelTitle,
+    import LabelTitle from "@/components/library/LabelTitle";
+    import InputBasic from "@/components/library/inputs/InputBasic";
+    import ButtonBasic from "@/components/library/buttons/buttonBasic";
+    import ButtonLoad from "@/components/library/buttons/buttonLoad";
+    import ButtonLoading   from "@/components/library/buttons/ButtonLoading";
+    import Messages from "@/mixins/toastrMessages";
     
-  },
 
-  data: () => ({
-    fcha_dspcho: "",
-  }),
+    import User            from "@/models/User";
 
-  mixins: [Messages],
+    export default {
+      layout: "dashboard",
+      components: {
+        ButtonLoad,
+        ButtonBasic,
+        InputBasic,
+        LabelTitle ,
+        ButtonLoading
+        
+      },
 
-  methods: {
-    mensaje() {
-      this.MsgSuccess("dldl", "2309403940'3'023'030'3", 5);
-    },
-  },
-};
+    data: () => ({
+        form: {
+          email: "jhonjamesmg@hotmail.com",
+          password: "12345467"
+        },
+        errors: [ ],
+        buttonIsDisabled: false
+    }),
+
+      mixins: [Messages],
+
+      methods: {
+            login(){
+                  this.$refs.ButtonLoading.startLoading();
+                  User.login( this.form)
+                  .then (response => {
+                      //this.$store.commit('SET_USER', response.data);
+                      this.$router.replace({ path: '/computron/dashboard' });
+                      this.buttonIsDisabled = true;
+                      this.$refs.ButtonLoading.stopLoading();
+                  })
+                  .catch( error => {
+                    if ( error.response.status == 422) {
+                      this.errors = error.response.data.errors;  
+                      this.$refs.ButtonLoading.stopLoading(); 
+                        
+                    }
+                  });
+            },
+                    clearErrors() {
+          this.errors = [];
+                    },
+      },
+    };
 </script>

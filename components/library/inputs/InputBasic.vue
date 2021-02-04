@@ -5,53 +5,79 @@
         <img class="inline h-4" :src="img" alt="" />
       </div>
       <input
-        class="px-8 py-2 bg-gray-200 border rounded-lg focus:border-primary focus:outline-none focus:shadow-outlin"
-        :class="[width, setBorderColor]"
-        :type="type"
-        :placeholder="text"
+          @blur      ="$emit('blur'     , $event)"
+          @input     ="$emit('input'    , $event.target.value)"
+          @keydown   ="$emit('keydown'  , $event)"
+          @keyup     ="$emit('keyup'    , $event)"
+          class      ="px-8 py-2 bg-gray-200 rounded-lg focus:border-inputsBorder focus:outline-none focus:shadow-outlin"
+          ref        ="input"
+          v-bind     ="$attrs"
+        :class       ="[width, setBorderColor, hasErrors]"
+        :placeholder ="text"
+        :type        ="type"
       />
     </div>
 
-    <div class="flex items-center">
+    <div class="flex items-center" v-if="errors.length">
       <img
-        class="inline h-5 mr-1"
+        class="inline h-5 mr-1 "
         src="/images/dashboard/acceso-negado.svg"
         alt=""
       />
-      <p class="inline text-primary">
-        Error al ingresar los datos. No puede ingresar al sistema
+      <p class="inline text-xs text-primary">
+        {{ errors[0] }}
       </p>
     </div>
+    
   </div>
 </template>
 <script>
-export default {
-  name: "InputText",
-  props: {
-    type: String,
-    text: String,
-    width: String,
-    borderColor: String,
-    img: String
-  },
+  
 
-  computed: {
-    setBorderColor() {
-      switch (this.borderColor) {
-        case "primary":
-          return "border border-primary";
-          break;
+    export default {
+      name: "InputText",
+      props: {
+        type       : String,
+        text       : String,
+        width      : String,
+        borderColor: String,
+        img        : String,
+        errors     : {
+            type: Array,
+            default: () => []
+        }
 
-        case "secondary":
-          return "border border-secondary";
-          break;
+      },
 
-        case "extra":
-          return "border border-extra";
-          break;
-      }
-    },
-  },
-};
+      computed: {
+        setBorderColor() {
+          switch (this.borderColor) {
+            case "primary":
+              return "border border-primary";
+              break;
+
+            case "secondary":
+              return "border border-secondary";
+              break;
+
+            case "extra":
+              return "border border-extra";
+              break;
+          }
+        },
+        hasErrors (){
+            return {
+                'border-red-400': this.errors.length
+            }
+        },
+
+      },
+      methods: {
+        clearErrors() {
+          this.errors = [];
+          
+      },
+      },
+    };
 </script>
 <style></style>
