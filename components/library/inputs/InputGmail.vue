@@ -2,8 +2,8 @@
   <div class="flex border">
     <div class="px-2 pt-1 bg-gray-200">
       <span>
-      <i aria-hidden="true" class="fa fa-envelope fa-2x"></i>
-    </span>
+        <i aria-hidden="true" class="fa fa-envelope fa-2x"></i>
+      </span>
     </div>
     
     <input

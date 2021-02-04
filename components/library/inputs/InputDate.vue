@@ -3,7 +3,7 @@
     <label class="block">{{ textLabel }}</label>
 
     <input
-        class       = "px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline"
+        class       = "px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"
         placeholder = "Sucursal"
         type        = "date"
         v-model     = "recordSource"

@@ -11,7 +11,7 @@
 
     <input
       type="text"
-      class="py-1 pl-8 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline"
+      class="py-1 pl-8 text-sm bg-gray-100 border rounded-lg focus:border-primary focus:outline-none focus:shadow-outline"
       :class="width"
       :placeholder="placeholder"
     />
