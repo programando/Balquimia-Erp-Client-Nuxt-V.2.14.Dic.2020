@@ -1,6 +1,5 @@
 <template>
   <div class="font-latos">
-    
     <div class="min-h-screen px-4 pt-24 pb-40 bg-gray-100">
       <div class="mx-2">
         <div class="pb-10 bg-white border-2 rounded-lg">
