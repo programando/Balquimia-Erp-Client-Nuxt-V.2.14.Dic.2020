@@ -30,34 +30,36 @@
               <!-- label, titulo y descripcion -->
 
               <LabelTitle
-                title       = "Bienvenid@"
-                description = "Registre sus credenciales para ingreso al sistema"
-                align       = "center"
-                color       = "extra"
+                title="Bienvenid@"
+                description="Registre sus credenciales para ingreso al sistema"
+                align="center"
+                color="extra"
               >
               </LabelTitle>
-
-               
 
               <div class="mt-4">
                 <!-- inputText -->
                 <InputBasic
-                  type  = "text"
-                  text  = "jhonjamesmg@hotmail.com"
-                  width = "w-full"
+                  type="text"
+                  text="jhonjamesmg@hotmail.com"
+                  width="w-full"
+                  img="/images/dashboard/user-repo.svg"
                 ></InputBasic>
 
                 <!-- inputPassword -->
                 <InputBasic
-                  type  = "password"
-                  text  = "contraseña"
-                  width = "w-full"
-                ></InputBasic
-                ><P></P>
+                  type="password"
+                  text="contraseña"
+                  width="w-full"
+                  img="/images/dashboard/candado-cerrado.svg"
+                ></InputBasic>  
               </div>
 
-              <div class="flex justify-between mt-4 ">
-                <ButtonBasic text="Olvidé mi contraseña" to="/computron/terceros/users-reset-password"></ButtonBasic>
+              <div class="flex justify-between mt-4">
+                <ButtonBasic
+                  text="Olvidé mi contraseña"
+                  to="/computron/terceros/users-reset-password"
+                ></ButtonBasic>
 
                 <ButtonLoad
                   text="Ingresar al sistema"
@@ -66,15 +68,12 @@
                 ></ButtonLoad>
               </div>
 
-              <button @click="mensaje"> Mensaje </button>
-
+              <button @click="mensaje">Mensaje</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-                  
   </div>
 </template>
 
@@ -83,8 +82,8 @@ import LabelTitle from "@/components/library/LabelTitle";
 import InputBasic from "@/components/library/inputs/InputBasic";
 import ButtonBasic from "@/components/library/buttons/buttonBasic";
 import ButtonLoad from "@/components/library/buttons/buttonLoad";
- 
-import Messages   from "@/mixins/toastrMessages";
+
+import Messages from "@/mixins/toastrMessages";
 
 export default {
   layout: "dashboard",
@@ -92,22 +91,19 @@ export default {
     ButtonLoad,
     ButtonBasic,
     InputBasic,
-    LabelTitle
+    LabelTitle,
   },
 
-  data: () =>({
-      fcha_dspcho:''
+  data: () => ({
+    fcha_dspcho: "",
   }),
- 
-   mixins:[ Messages],
 
-   methods: {
-      mensaje(){
-          this.MsgSuccess("dldl", "2309403940'3'023'030'3",5);
- 
+  mixins: [Messages],
 
-      },
-   }, 
-  
+  methods: {
+    mensaje() {
+      this.MsgSuccess("dldl", "2309403940'3'023'030'3", 5);
+    },
+  },
 };
 </script>
