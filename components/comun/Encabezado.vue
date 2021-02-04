@@ -4,7 +4,7 @@
       class="inline-block w-20 border-b-2 border-primary boder md:ml-1 lg:ml-12 alineacion "
     ></div>
     <p
-      class="inline ml-1 text-xs font-semibold text-primary uppercase md:text-sm lg:ml-2 "
+      class="inline ml-1 text-xs font-semibold uppercase text-primary md:text-sm lg:ml-2 "
     >
       {{ text }}
     </p>
