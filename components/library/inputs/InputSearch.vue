@@ -16,22 +16,23 @@
       :placeholder="placeholder"
     />
 
-    <!-- Modal search -->
+    <!-- Modal -->
     <div
       v-if="modal"
       class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50"
     >
-      <div class="w-4/6 pb-10 bg-white rounded-lg">
+      <div class="w-4/6 pb-10 -mt-48 bg-white rounded-lg">
         <div class="flex items-center justify-between px-4 bg-primary">
-          <h2
-            class="py-2 text-lg font-semibold text-white uppercase "
-          >
+          <h2 class="py-2 text-lg font-semibold text-white uppercase ">
             Busqueda de Clientes
           </h2>
           <div @click="modal = false" class="cursor-pointer ">
-            <img class="h-6" src="/images/dashboard/close-repo.svg" alt="close">
+            <img
+              class="h-6"
+              src="/images/dashboard/close-repo.svg"
+              alt="close"
+            />
           </div>
-          
         </div>
 
         <div class="px-4 py-2">
@@ -41,6 +42,30 @@
             width="w-5/6"
           ></InputLabel>
         </div>
+
+        <div class="grid px-4 lg:grid-cols-4">
+          <div class="w-full px-4 py-1 border-2">
+            <p>Nit</p>
+          </div>
+          <div class="w-full col-span-2 px-4 py-1 border-t-2 border-b-2">
+            <p>Nombre/Razón Social</p>
+          </div>
+          <div class="w-full px-4 py-1 border-2">
+            <p>Sucural</p>
+          </div>
+        </div>
+
+        <div class="grid px-4 lg:grid-cols-4">
+          <div class="w-full px-4 py-1 text-gray-700 border-2">
+            <p>860009808</p>
+          </div>
+          <div class="w-full col-span-2 px-4 py-1 text-gray-700 border-t-2 border-b-2">
+            <p>HOLCIM COLOMBIA S.A</p>
+          </div>
+          <div class="w-full px-4 py-1 text-gray-700 border-2">
+            <p>PALMIRA</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -48,24 +73,26 @@
 
 <script>
 import InputLabel from "@/components/library/inputs/InputLabel";
+
 export default {
   name: "InputSearch",
   components: {
-    InputLabel,
+    InputLabel
   },
   props: {
     textLabel: String,
     placeholder: String,
-    width: String,
+    width: String
   },
 
   data() {
     return {
-      modal: false,
+      modal: false
     };
   },
+
+  methods: {}
 };
 </script>
 
-<style>
-</style>
+<style></style>
