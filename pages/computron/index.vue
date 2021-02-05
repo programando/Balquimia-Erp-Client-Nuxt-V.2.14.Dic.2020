@@ -62,6 +62,7 @@
                 to="/computron/terceros/users-reset-password"
               ></ButtonBasic>
 
+              
                 <ButtonLoading 
                     @click.prevent="login" 
                     size="small" 
@@ -71,6 +72,12 @@
                 </ButtonLoading>
 
               </div>
+
+              <ButtonBasic
+                text="Recuperar Contraseña"
+                to="/computron/terceros/users-change-password"
+              ></ButtonBasic>
+
 
              
             </div>
