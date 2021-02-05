@@ -1,7 +1,9 @@
 <template>
   <div class="bg-gray-200">
     <Header></Header>
+
       <Nuxt />
+      
     <Footer></Footer>
   </div>
 </template>
