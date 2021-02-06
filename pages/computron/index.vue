@@ -23,11 +23,11 @@
 
           <form>
             <div
-              class="px-8 py-6 mt-6 bg-white border rounded-lg md:py-8 md:px-12 lg:mt-0"
+              class="px-8 py-6 mt-6 bg-white rounded-lg md:py-8 md:px-12 lg:mt-0"
             >
             <LabelTitle
-              title="Balquimia"
-              description="Bienvenido por favor ingrese su clave y contraseña"
+              title="Ingreso al sistema"
+              description="Bienvenid@ por favor ingrese su clave y contraseña"
               align="center"
               color="extra"
             >
@@ -58,7 +58,7 @@
 
             <div class="flex justify-between mt-4">
               <ButtonBasic
-                text="Olvidé mi contraseña"
+                text="Olvidé mi contraseña o es la primera vez que ingreso y quiero asignar una a mi usuario"
                 to="/computron/terceros/users-reset-password"
               ></ButtonBasic>
 
@@ -72,13 +72,7 @@
                 </ButtonLoading>
 
               </div>
-
-              <ButtonBasic
-                text="Recuperar Contraseña"
-                to="/computron/terceros/users-change-password"
-              ></ButtonBasic>
-
-
+ 
              
             </div>
             </form>
@@ -114,7 +108,7 @@
     data: () => ({
         form: {
           email: "jhonjamesmg@hotmail.com",
-          password: "12345467"
+          password: "1234546"
         },
         errors: [ ],
         buttonIsDisabled: false
@@ -136,7 +130,6 @@
                     if ( error.response.status == 422) {
                       this.errors = error.response.data.errors;  
                       this.$refs.ButtonLoading.stopLoading(); 
-                        
                     }
                   });
             },
