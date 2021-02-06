@@ -9,7 +9,7 @@
           <CardLeftImage   
                   text    = "Cartera  clientes"
                   urlImg  = "/images/dashboard/cartera.svg"
-                  urlLink = "#">
+                  urlLink = "/computron/comercial/cartera-clientes">
           </CardLeftImage>
 
           <CardLeftImage   

@@ -1,4 +1,4 @@
-<template>
+  <template>
   <component
     class="flex items-center "
     v-on="$listeners"

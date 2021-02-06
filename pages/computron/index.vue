@@ -17,14 +17,9 @@
           <FraseDiaria></FraseDiaria>
 
           <div
-            class="px-8 py-6 mt-6 bg-white border rounded-lg md:py-8 md:px-12 lg:mt-0"
+            class="px-6 py-4 mt-6 bg-white border rounded-lg md:py-8 md:px-12 lg:mt-0"
           >
             <!-- label, titulo y descripcion -->
-
-          <form>
-            <div
-              class="px-8 py-6 mt-6 bg-white rounded-lg md:py-8 md:px-12 lg:mt-0"
-            >
             <LabelTitle
               title="Ingreso al sistema"
               description="Bienvenid@ por favor ingrese su clave y contraseña"
@@ -46,7 +41,8 @@
                 ></InputBasic>
 
                 <!-- inputPassword -->
-                <InputBasic
+                <div class="mt-3">
+                  <InputBasic
                   type="password"
                   text="contraseña"
                   width="w-full"
@@ -54,28 +50,28 @@
                   v-model="form.password" 
                    :errors="errors.password"
                 ></InputBasic>  
+                </div>
               </div>
 
-            <div class="flex justify-between mt-4">
-              <ButtonBasic
+            <div class="sm:grid sm:grid-cols-5">
+              <div class="flex items-center justify-center col-span-3 -ml-4">
+                <ButtonBasic
                 text="Olvidé mi contraseña o es la primera vez que ingreso y quiero asignar una a mi usuario"
                 to="/computron/terceros/users-reset-password"
+                sizeText="small"
               ></ButtonBasic>
-
+              </div>
               
-                <ButtonLoading 
+                <div class="flex items-center justify-center col-span-2">
+                  <ButtonLoading 
                     @click.prevent="login" 
                     size="small" 
                     ref="ButtonLoading" 
                     variant="success"
                     variant-type="normal">  Ingresar al sistema 
                 </ButtonLoading>
-
+                </div>
               </div>
- 
-             
-            </div>
-            </form>
           </div>
         </div>
       </div>

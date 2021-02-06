@@ -23,7 +23,7 @@
     >
       <div class="w-4/6 pb-10 -mt-48 bg-white rounded-lg">
         <div class="flex items-center justify-between px-4 bg-primary">
-          <h2 class="py-2 text-lg font-semibold text-white uppercase ">
+          <h2 class="py-2 text-lg font-semibold text-white ">
             Busqueda de Clientes
           </h2>
           <div @click="modal = false" class="cursor-pointer ">
@@ -43,27 +43,36 @@
           ></InputLabel>
         </div>
 
-        <div class="grid px-4 lg:grid-cols-4">
-          <div class="w-full px-4 py-1 border-2">
+        <div class="grid px-4 lg:grid-cols-9">
+          <div class="w-full col-span-2 px-4 py-1 border-2">
             <p>Nit</p>
           </div>
-          <div class="w-full col-span-2 px-4 py-1 border-t-2 border-b-2">
+          <div class="w-full col-span-4 px-4 py-1 border-t-2 border-b-2">
             <p>Nombre/Razón Social</p>
           </div>
-          <div class="w-full px-4 py-1 border-2">
+          <div class="w-full col-span-2 px-4 py-1 border-2">
             <p>Sucural</p>
+          </div>
+          <div class="border-t-2 border-b-2 border-r-2">
+
           </div>
         </div>
 
-        <div class="grid px-4 lg:grid-cols-4">
-          <div class="w-full px-4 py-1 text-gray-700 border-2">
+        <div class="grid px-4 lg:grid-cols-9">
+          <div class="w-full col-span-2 px-4 py-1 text-gray-700 border-2">
             <p>860009808</p>
           </div>
-          <div class="w-full col-span-2 px-4 py-1 text-gray-700 border-t-2 border-b-2">
+          <div class="w-full col-span-4 px-4 py-1 text-gray-700 border-t-2 border-b-2">
             <p>HOLCIM COLOMBIA S.A</p>
           </div>
-          <div class="w-full px-4 py-1 text-gray-700 border-2">
+          <div class="w-full col-span-2 px-4 py-1 text-gray-700 border-2">
             <p>PALMIRA</p>
+          </div>
+          <div class="flex items-center justify-center border-t-2 border-b-2 border-r-2 ">
+            <ButtonIcon
+              urlIcon="/images/dashboard/left-arrow-repo.svg"
+              variant="success"
+            ></ButtonIcon>
           </div>
         </div>
       </div>
@@ -73,11 +82,13 @@
 
 <script>
 import InputLabel from "@/components/library/inputs/InputLabel";
+import ButtonIcon from "@/components/library/buttons/buttonIcon";
 
 export default {
   name: "InputSearch",
   components: {
-    InputLabel
+    InputLabel,
+    ButtonIcon
   },
   props: {
     textLabel: String,
