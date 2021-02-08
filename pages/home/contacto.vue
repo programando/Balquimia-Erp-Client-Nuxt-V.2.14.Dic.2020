@@ -98,7 +98,7 @@
             placeholder="¿En que podemos ayudarte?"
           ></textarea>
           <p class="w-2/3 mt-2 text-xs text-gray-700 ">
-            Al diligenciar y enviar este formulario, acepto <PoliticaTratamientoDatos></PoliticaTratamientoDatos> de BALQUIMIA S.A.S.
+            Al diligenciar y enviar este formulario, acepto   de BALQUIMIA S.A.S.
           </p>
           <input
             class="px-6 py-2 mt-4 text-white bg-primary hover:bg-indigo-900"

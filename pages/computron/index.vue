@@ -34,7 +34,7 @@
                   type="text"
                   text="jhonjamesmg@hotmail.com"
                   width="w-full"
-                  img="/images/dashboard/user-repo.svg"
+                  img="user-repo.svg"
                   v-model="form.email" 
                   :errors="errors.email"
                    
@@ -46,7 +46,7 @@
                   type="password"
                   text="contraseña"
                   width="w-full"
-                  img="/images/dashboard/candado-cerrado.svg"
+                  img="candado-cerrado.svg"
                   v-model="form.password" 
                    :errors="errors.password"
                 ></InputBasic>  
