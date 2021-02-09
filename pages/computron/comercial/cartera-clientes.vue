@@ -9,82 +9,174 @@
         </h2>
       </div>
       <div class="mx-2 border rounded-lg lg:grid lg:grid-cols-6">
-        <div class="col-span-2 mr-1 bg-gray-300 lg:grid lg:grid-cols-2">
-          <div class="col-span-2 px-4 py-2">
-            <input class="w-full" type="text" />
-          </div>
-          <div class="col-span-2">
-            <table class="w-full text-left">
-		        <thead class="flex w-full overflow-y-scroll text-white bg-grey-light">
-              <tr class="flex items-center justify-center w-full">
-                <th class="w-2/4 px-2 py-1 bg-gray-700 border border-black">Cliente</th>
-                <th class="w-2/4 px-2 py-1 bg-gray-700 border-t border-b border-r border-black">Deuda</th> 
-              </tr>
-		        </thead>
-    
-		        <tbody class="flex flex-col w-full overflow-y-scroll bg-grey-light" style="height: 50vh;">
-			        <tr class="flex w-full">
-                <td class="w-2/4 px-2 py-1 bg-white border-t border-b border-l border-black">Dogs</td>
-                <td class="w-2/4 px-2 py-1 bg-white border-t border-b border-l border-r border-black">Cats</td>
-              </tr>
-              <tr class="flex w-full">
-                <td class="w-2/4 px-2 py-1 bg-white border-b border-l border-black">Dogs</td>
-                <td class="w-2/4 px-2 py-1 bg-white border-b border-l border-r border-black">Cats</td>
-              </tr>
-            </tbody>
-            </table>
-          </div>
-          
-        </div>
-        <div class="col-span-4 bg-gray-300 ">
-          <div class="container">
-            <table class="w-full text-left">
-              <thead
-                class="flex w-full overflow-y-scroll text-white border bg-grey-light"
-              >
-                <tr class="flex w-full ">
+        <div class="col-span-2 mr-1 bg-gray-300">
+          <div class="container col-span-2">  
+            <div class="px-4 py-2 ">
+              <label class="font-semibold text-extra">Buscar</label>
+              <input class="w-5/6 ml-2 rounded-lg" type="text" />
+            </div>
+            <table class="w-full col-span-2 text-left">
+              <thead class="flex w-full text-white border">
+                <tr class="flex w-full margen">
                   <th
-                    class="w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-3/5 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
                   >
                     Fecha
                   </th>
                   <th
-                    class="w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-2/5 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                  >
+                    Factu
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="flex flex-col w-full overflow-y-scroll bg-grey-light"
+                style="height: 50vh"
+              >
+                <tr class="flex w-full bg-white ">
+                  <td
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                  >
+                    Dogs
+                  </td>
+                  <td class="w-2/5 px-2 py-1 border border-black ">
+                    Cats
+                  </td>
+                </tr>
+                <tr class="flex w-full bg-white ">
+                  <td
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                  >
+                    Dogs
+                  </td>
+                  <td class="w-2/5 px-2 py-1 border border-black ">
+                    Cats
+                  </td>
+                </tr>
+                <tr class="flex w-full bg-white ">
+                  <td
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                  >
+                    Dogs
+                  </td>
+                  <td class="w-2/5 px-2 py-1 border border-black ">
+                    Cats
+                  </td>
+                </tr>
+                <tr class="flex w-full bg-white ">
+                  <td
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                  >
+                    Dogs
+                  </td>
+                  <td class="w-2/5 px-2 py-1 border border-black ">
+                    Cats
+                  </td>
+                </tr>
+                <tr class="flex w-full bg-white ">
+                  <td
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                  >
+                    Dogs
+                  </td>
+                  <td class="w-2/5 px-2 py-1 border border-black ">
+                    Cats
+                  </td>
+                </tr>
+                <tr class="flex w-full bg-white ">
+                  <td
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                  >
+                    Dogs
+                  </td>
+                  <td class="w-2/5 px-2 py-1 border border-black ">
+                    Cats
+                  </td>
+                </tr>
+                <tr class="flex w-full bg-white ">
+                  <td
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                  >
+                    Dogs
+                  </td>
+                  <td class="w-2/5 px-2 py-1 border border-black ">
+                    Cats
+                  </td>
+                </tr>
+                <tr class="flex w-full bg-white ">
+                  <td
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                  >
+                    Dogs
+                  </td>
+                  <td class="w-2/5 px-2 py-1 border border-black ">
+                    Cats
+                  </td>
+                </tr>
+                <tr class="flex w-full bg-white ">
+                  <td
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                  >
+                    Dogs
+                  </td>
+                  <td class="w-2/5 px-2 py-1 border border-black ">
+                    Cats
+                  </td>
+                </tr>
+                
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-span-4 mt-10 bg-gray-300 lg:mt-0">
+          <div class="container">
+            <table class="w-full text-left">
+              <thead class="flex w-full text-white border">
+                <tr class="flex w-full margen">
+                  <th
+                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                  >
+                    Fecha
+                  </th>
+                  <th
+                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
                   >
                     Factu
                   </th>
                   <th
-                    class="w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
                   >
                     Valor
                   </th>
                   <th
-                    class="w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
                   >
-                    Plazo
+                    Plazo 
                   </th>
                   <th
-                    class="w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
                   >
                     Lleva
                   </th>
                   <th
-                    class="w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
                   >
                     0 - 30
                   </th>
                   <th
-                    class="w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
                   >
                     31 - 60
                   </th>
                   <th
-                    class="w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
                   >
                     61 - 90
                   </th>
                   <th
-                    class="w-1/4 px-2 py-2 bg-gray-700 border border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border border-black"
                   >
                     90 o Más
                   </th>
@@ -93,7 +185,7 @@
               <!-- Remove the nasty inline CSS fixed height on production and replace it with a CSS class — this is just for demonstration purposes! -->
               <tbody
                 class="flex flex-col w-full overflow-y-scroll bg-grey-light"
-                style="height: 50vh;"
+                style="height: 55vh;"
               >
                 <tr class="flex w-full bg-white ">
                   <td
@@ -549,6 +641,94 @@
             </table>
           </div>
         </div>
+        
+      </div>
+      <div class="flex items-center mt-1">
+          <table class="w-full col-span-2 ml-40 text-left">
+              <thead class="flex w-full text-white">
+                <tr class="grid w-full grid-cols-7 border">
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black"
+                  >
+                    0 - 30 dias
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black "
+                  >
+                    31 - 60 dias
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black w-1/7"
+                  >
+                    61 - 90 dias
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black w-1/7"
+                  >
+                    90 dias o Más
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black w-1/7"
+                  >
+                    Total Cartera
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black w-1/7"
+                  >
+                    Cartera Vencida
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black w-1/7"
+                  >
+                    % Cartera
+                  </th>
+                </tr>
+              </thead>
+          </table>
+      </div>
+      <div class="flex items-center -mt-1">
+          <label class="px-10 py-2 ml-6 text-lg text-white bg-primary">Totales</label>
+          <table class="w-full col-span-2 text-left">
+              <thead class="flex w-full text-white">
+                <tr class="grid w-full grid-cols-7 border">
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black"
+                  >
+                    123123
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black "
+                  >
+                    2143423432
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black w-1/7"
+                  >
+                    23424
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black w-1/7"
+                  >
+                    23424444
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black w-1/7"
+                  >
+                    435345345435
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black w-1/7"
+                  >
+                    Cartera Vencida
+                  </th>
+                  <th
+                    class="flex justify-center py-2 bg-gray-700 border-t border-b border-l border-black w-1/7"
+                  >
+                    % Cartera
+                  </th>
+                </tr>
+              </thead>
+          </table>
       </div>
     </div>
   </div>
@@ -560,3 +740,11 @@ export default {
   components: {}
 };
 </script>
+
+<style>
+.margen {
+  margin-right: 14px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+</style>
