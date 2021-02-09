@@ -2,7 +2,8 @@
   <div class="mt-2">
     <div class="flex items-center">
       <div class="z-10 -mr-6">
-        <img class="inline h-4" :src="img" alt="" />
+      
+        <img class="inline h-4" :src="`/images/inputs/${img}`" alt="" />
       </div>
       <input
           @blur      ="$emit('blur'     , $event)"
@@ -21,7 +22,7 @@
     <div class="flex items-center" v-if="errors.length">
       <img
         class="inline h-5 mr-1 "
-        src="/images/dashboard/acceso-negado.svg"
+        src="/images/inputs/acceso-negado.svg"
         alt=""
       />
       <p class="inline text-xs text-primary">
@@ -35,6 +36,7 @@
   
 
     export default {
+      inheritAttrs: false,
       name: "InputText",
       props: {
         type       : String,
