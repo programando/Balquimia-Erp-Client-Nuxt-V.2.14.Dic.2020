@@ -58,7 +58,11 @@
           formulario y uno de nuestros ejecutivos se pondrá en contacto a la mayor brevedad posible.
         </p>
 
-        <form class="mt-6">
+        <form class="mt-6"
+            id='formContacto'
+            @submit.prevent="saveContacto"
+            method="post"
+        >
           <input
             class="w-2/3 px-6 py-3 bg-white border border-gray-500 lg:w-4/5 focus:ring-2 focus:ring-gray-200"
             type="text"
@@ -105,7 +109,9 @@
             type="submit"
             value="Enviar mensaje"
           />
+          <button type="submit"> Enviar</button>
         </form>
+
       </div>
     </div>
      
@@ -113,10 +119,21 @@
 </template>
 <script>
  import PoliticaTratamientoDatos from "@/components/comun/politicaDatos";
+ import TercerosContactos from "@/models/Terceros";
  
 export default {
   layout:'layoutBalquimia',
-  components:{PoliticaTratamientoDatos }
+  components:{PoliticaTratamientoDatos },
+  data: () =>({
+        formContacto:{
+              nombre: '',
+              email:'',
+              celular:'',
+              telefono:'',
+              empresa:'',
+              ciudad:''
+        }
+  }),
  
 };
 </script>
