@@ -19,12 +19,12 @@
               <thead class="flex w-full text-white border">
                 <tr class="flex w-full margen">
                   <th
-                    class="flex justify-center w-3/5 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-3/5 px-2 py-2 border-t border-b border-l border-gray-400 bg-primary"
                   >
                     Fecha
                   </th>
                   <th
-                    class="flex justify-center w-2/5 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-2/5 px-2 py-2 border-t border-b border-l border-gray-400 bg-primary"
                   >
                     Factu
                   </th>
@@ -36,91 +36,91 @@
               >
                 <tr class="flex w-full bg-white ">
                   <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
                   >
                     Dogs
                   </td>
-                  <td class="w-2/5 px-2 py-1 border border-black ">
+                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
                     Cats
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white ">
                   <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
                   >
                     Dogs
                   </td>
-                  <td class="w-2/5 px-2 py-1 border border-black ">
+                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
                     Cats
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white ">
                   <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
                   >
                     Dogs
                   </td>
-                  <td class="w-2/5 px-2 py-1 border border-black ">
+                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
                     Cats
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white ">
                   <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
                   >
                     Dogs
                   </td>
-                  <td class="w-2/5 px-2 py-1 border border-black ">
+                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
                     Cats
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white ">
                   <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
                   >
                     Dogs
                   </td>
-                  <td class="w-2/5 px-2 py-1 border border-black ">
+                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
                     Cats
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white ">
                   <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
                   >
                     Dogs
                   </td>
-                  <td class="w-2/5 px-2 py-1 border border-black ">
+                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
                     Cats
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white ">
                   <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
                   >
                     Dogs
                   </td>
-                  <td class="w-2/5 px-2 py-1 border border-black ">
+                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
                     Cats
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white ">
                   <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
                   >
                     Dogs
                   </td>
-                  <td class="w-2/5 px-2 py-1 border border-black ">
+                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
                     Cats
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white ">
                   <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-black"
+                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
                   >
                     Dogs
                   </td>
-                  <td class="w-2/5 px-2 py-1 border border-black ">
+                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
                     Cats
                   </td>
                 </tr>
@@ -136,47 +136,47 @@
               <thead class="flex w-full text-white border">
                 <tr class="flex w-full margen">
                   <th
-                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
                   >
                     Fecha
                   </th>
                   <th
-                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
                   >
                     Factu
                   </th>
                   <th
-                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
                   >
                     Valor
                   </th>
                   <th
-                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
                   >
                     Plazo 
                   </th>
                   <th
-                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
                   >
                     Lleva
                   </th>
                   <th
-                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
                   >
                     0 - 30
                   </th>
                   <th
-                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
                   >
                     31 - 60
                   </th>
                   <th
-                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
                   >
                     61 - 90
                   </th>
                   <th
-                    class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border border-black"
+                    class="flex justify-center w-1/4 px-2 py-2 border border-gray-700 bg-primary"
                   >
                     90 o Más
                   </th>
@@ -189,450 +189,450 @@
               >
                 <tr class="flex w-full bg-white ">
                   <td
-                    class="w-1/4 px-2 py-1 border-t border-b border-l border-black"
+                    class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400"
                   >
                     Dogs
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-t border-b border-l border-black "
+                    class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400 "
                   >
                     Cats
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-t border-b border-l border-black "
+                    class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400 "
                   >
                     Birds
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-t border-b border-l border-black "
+                    class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400 "
                   >
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-t border-b border-l border-black "
+                    class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400 "
                   >
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-t border-b border-l border-black "
+                    class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400 "
                   >
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-t border-b border-l border-black "
+                    class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400 "
                   >
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-t border-b border-l border-black "
+                    class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400 "
                   >
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-t border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-t border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
                 </tr>
                 <tr class="flex w-full bg-white">
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400">
                     Dogs
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Cats
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Birds
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
-                  <td class="w-1/4 px-2 py-1 border-b border-l border-black ">
+                  <td class="w-1/4 px-2 py-1 border-b border-l border-gray-400 ">
                     Fish
                   </td>
                   <td
-                    class="w-1/4 px-2 py-1 border-b border-l border-r border-black "
+                    class="w-1/4 px-2 py-1 border-b border-l border-r border-gray-400 "
                   >
                     Fish
                   </td>
@@ -687,7 +687,7 @@
           </table>
       </div>
       <div class="flex items-center -mt-1">
-          <label class="px-10 py-2 ml-6 text-lg text-white bg-primary">Totales</label>
+          <label class="px-10 py-2 ml-6 text-lg text-white border-gray-400 bg-primary">Totales</label>
           <table class="w-full col-span-2 text-left">
               <thead class="flex w-full text-white">
                 <tr class="grid w-full grid-cols-7 border">
