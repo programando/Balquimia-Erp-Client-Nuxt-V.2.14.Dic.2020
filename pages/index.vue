@@ -61,7 +61,6 @@
         <form class="mt-6"
             id='formContacto'
             @submit.prevent="saveContacto"
-            method="post"
         >
           <input
             class="w-2/3 px-6 py-3 bg-white border border-gray-500 lg:w-4/5 focus:ring-2 focus:ring-gray-200"
@@ -119,22 +118,52 @@
 </template>
 <script>
  import PoliticaTratamientoDatos from "@/components/comun/politicaDatos";
- import TercerosContactos from "@/models/Terceros";
+ import Terceros  from "@/models/Terceros";
  
 export default {
   layout:'layoutBalquimia',
   components:{PoliticaTratamientoDatos },
-  data: () =>({
-        formContacto:{
-              nombre: '',
-              email:'',
-              celular:'',
-              telefono:'',
-              empresa:'',
-              ciudad:''
-        }
-  }),
- 
+      data: () =>({
+            formContacto:{
+                  nombre  : 'Jhon James',
+                  email   : 'jhonjamesmg@hotmail.com',
+                  celular : '3113369005',
+                  telefono: '4416218',
+                  empresa : 'personal',
+                  ciudad  : 'cali',
+                  comentario:'comentario comentario comentario comentario'
+            },
+            errors : [],
+
+      }),
+
+      methods: {
+            saveContacto() {
+                  Terceros.contactoSendEmail ( this.formContacto)
+                  .then( response => {
+                        console.log( response.data);
+                  })
+                  .catch( error => {
+                    if ( error.response.status == 422) {
+                      this.errors = error.response.data.errors; 
+                    }
+            })
+            
+          }
+  }
 };
+/*
+                  .then (response => {
+                      //this.$store.commit('SET_USER', response.data);
+                      this.$router.replace({ path: '/computron/dashboard' });
+                      this.buttonIsDisabled = true;
+                      this.$refs.ButtonLoading.stopLoading();
+                  })
+
+                  });
+                  */
+
 </script>
+
+
 <style></style>
