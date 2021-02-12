@@ -4,7 +4,7 @@
     
     <div class="bg-gray-900 ">
       <div
-        class="pb-10 bg-center bg-no-repeat bg-cover pt-36 lg lg:pb-20"
+        class="pt-24 pb-10 bg-center bg-no-repeat bg-cover lg lg:pb-10"
         style="background-image: url(/images/comunes/malla2.webp)"
       >
         <div class="px-10 md:px-16">
@@ -58,58 +58,81 @@
           formulario y uno de nuestros ejecutivos se pondrá en contacto a la mayor brevedad posible.
         </p>
 
-        <form class="mt-6"
-            id='formContacto'
-            @submit.prevent="saveContacto"
-        >
-          <input
-            class="w-2/3 px-6 py-3 bg-white border border-gray-500 lg:w-4/5 focus:ring-2 focus:ring-gray-200"
-            type="text"
-            placeholder="Nombre"
-          />
-          <input
-            class="w-2/3 px-6 py-3 mt-2 bg-white border border-gray-500 lg:w-4/5 focus:ring-2 focus:ring-gray-200"
-            type="text"
-            placeholder="Empresa"
-          />
-          <input
-            class="w-2/3 px-6 py-3 mt-2 bg-white border border-gray-500 lg:w-4/5 focus:ring-2 focus:ring-gray-200"
-            type="text"
-            placeholder="Ciudad"
-          />
-          <input
-            class="w-2/3 px-6 py-3 mt-2 bg-white border border-gray-500 lg:w-4/5 focus:ring-2 focus:ring-gray-200"
-            type="text"
-            placeholder="E-mail"
-          />
-          <input
-            class="w-2/3 px-6 py-3 mt-2 bg-white border border-gray-500 lg:w-4/5 focus:ring-2 focus:ring-gray-200"
-            type="text"
-            placeholder="Telefono"
-          />
-          <input
-            class="w-2/3 px-6 py-3 mt-2 bg-white border border-gray-500 lg:w-4/5 focus:ring-2 focus:ring-gray-200"
-            type="text"
-            placeholder="Celular"
-          />
-          <textarea
-            class="w-2/3 px-6 pt-8 mt-2 border border-gray-500 lg:w-4/5"
-            name=""
-            id=""
-            cols="22"
-            rows="5"
-            placeholder="¿En que podemos ayudarte?"
-          ></textarea>
-          <p class="w-2/3 mt-2 text-xs text-gray-700 ">
-            Al diligenciar y enviar este formulario, acepto   de BALQUIMIA S.A.S.
-          </p>
-          <input
-            class="px-6 py-2 mt-4 text-white bg-primary hover:bg-indigo-900"
-            type="submit"
-            value="Enviar mensaje"
-          />
-          <button type="submit"> Enviar</button>
-        </form>
+        <div class="">
+            <form
+              id='formContacto'
+              @submit.prevent="saveContacto"
+          >
+            <InputBasic
+              type="text"
+              text="nombre"
+              width="w-5/6"
+              img="user-repo.svg"
+              background="white"       
+              ></InputBasic>
+            
+            <InputBasic
+              type="text"
+              text="empresa"
+              width="w-5/6"
+              img="company-repo.svg"
+              background="white"       
+              ></InputBasic>
+            
+            <InputBasic
+              type="text"
+              text="ciudad"
+              width="w-5/6"
+              img="country-repo.svg"
+              background="white"       
+              ></InputBasic>
+            
+            <InputBasic
+              type="text"
+              text="E-mail"
+              width="w-5/6"
+              img="email-repo.svg"
+              background="white"       
+              ></InputBasic>
+            
+            <InputBasic
+              type="text"
+              text="Telefono"
+              width="w-5/6"
+              img="home-phone-repo.svg"
+              background="white"       
+              ></InputBasic>
+            
+            <InputBasic
+              type="text"
+              text="celular"
+              width="w-5/6"
+              img="smartphone-repo.svg"
+              background="white"       
+              ></InputBasic>
+            <div class="my-2 -ml-1">
+              <InputArea
+                text="En que podemos Ayudarte?"
+                cols="50"
+                rows="4"
+              ></InputArea>
+            </div>
+            
+            <p class="w-2/3 mt-2 text-xs text-gray-700 ">
+              Al diligenciar y enviar este formulario, acepto   de BALQUIMIA S.A.S.
+            </p>
+            <div class="mt-2">
+              <ButtonLoading 
+              @click.prevent="login" 
+              size="normal" 
+              ref="ButtonLoading" 
+              variant="danger"
+              variant-type="normal">  Enviar 
+            </ButtonLoading>
+            </div>
+          </form>
+        </div>
+        
 
       </div>
     </div>
@@ -119,10 +142,13 @@
 <script>
  import PoliticaTratamientoDatos from "@/components/comun/politicaDatos";
  import Terceros  from "@/models/Terceros";
+ import InputBasic from "@/components/library/inputs/InputBasic"
+ import InputArea from "@/components/library/inputs/inputArea"
+ import ButtonLoading   from "@/components/library/buttons/ButtonLoading";
  
 export default {
   layout:'layoutBalquimia',
-  components:{PoliticaTratamientoDatos },
+  components:{PoliticaTratamientoDatos, InputBasic, InputArea, ButtonLoading },
       data: () =>({
             formContacto:{
                   nombre  : 'Jhon James',

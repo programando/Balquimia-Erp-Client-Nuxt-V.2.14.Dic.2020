@@ -2,18 +2,17 @@
   <div class="mt-2">
     <div class="flex items-center">
       <div class="z-10 -mr-6">
-      
-        <img class="inline h-4" :src="`/images/inputs/${img}`" alt="" />
+        <img class="inline h-5" :src="`/images/inputs/${img}`" alt="" />
       </div>
       <input
           @blur      ="$emit('blur'     , $event)"
           @input     ="$emit('input'    , $event.target.value)"
           @keydown   ="$emit('keydown'  , $event)"
           @keyup     ="$emit('keyup'    , $event)"
-          class      ="px-8 py-2 bg-gray-200 rounded-lg focus:border-inputsBorder focus:outline-none focus:shadow-outlin"
+          class      ="px-8 py-2 rounded-lg focus:border-inputsBorder focus:outline-none "
           ref        ="input"
           v-bind     ="$attrs"
-        :class       ="[width, setBorderColor, hasErrors]"
+        :class       ="[width, setBorderColor, hasErrors, setBackground]"
         :placeholder ="text"
         :type        ="type"
       />
@@ -43,6 +42,7 @@
         text       : String,
         width      : String,
         borderColor: String,
+        background: String,
         img        : String,
         errors     : {
             type: Array,
@@ -72,6 +72,30 @@
                 'border-red-400': this.errors.length
             }
         },
+
+        setBackground(){
+          switch (this.background) {
+            case "primary":
+              return "bg-primary";
+              break;
+
+            case "secondary":
+              return "bg-secondary";
+              break;
+
+            case "extra":
+              return "bg-extra";
+              break;
+            
+            case "white":
+              return "bg-white"
+              break;
+            
+            case "gray":
+              return "bg-gray-200"
+              break;
+          }
+        }
 
       },
       methods: {

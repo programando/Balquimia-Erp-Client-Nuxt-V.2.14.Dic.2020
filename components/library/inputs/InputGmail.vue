@@ -2,7 +2,7 @@
   <div class="flex border">
     <div class="px-2 pt-1 bg-gray-200">
       <span>
-        <img class="h-8" src="/images/dashboard/gmail-repo.svg" alt="">
+        <img class="h-8" src="/images/inputs/email-repo.svg" alt="">
       </span>
     </div>
     

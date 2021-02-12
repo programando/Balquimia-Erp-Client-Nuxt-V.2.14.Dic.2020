@@ -37,7 +37,7 @@
                   img="user-repo.svg"
                   v-model="form.email" 
                   :errors="errors.email"
-                   
+                  background="gray"
                 ></InputBasic>
 
                 <!-- inputPassword -->
@@ -49,6 +49,7 @@
                   img="candado-cerrado.svg"
                   v-model="form.password" 
                    :errors="errors.password"
+                  background="gray"
                 ></InputBasic>  
                 </div>
               </div>
