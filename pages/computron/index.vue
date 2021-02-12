@@ -89,7 +89,7 @@
     import ButtonLoad from "@/components/library/buttons/buttonLoad";
     import ButtonLoading   from "@/components/library/buttons/ButtonLoading";
     import Messages from "@/mixins/toastrMessages";
-    
+    import {mapMutations} from 'vuex';
 
     import User            from "@/models/User";
 
@@ -107,7 +107,7 @@
     data: () => ({
         form: {
           email: "jhonjamesmg@hotmail.com",
-          password: "1234546"
+          password: "123456"
         },
         errors: [ ],
         buttonIsDisabled: false
@@ -116,11 +116,13 @@
       mixins: [Messages],
 
       methods: {
+
             login(){
                   this.$refs.ButtonLoading.startLoading();
                   User.login( this.form)
                   .then (response => {
-                      //this.$store.commit('SET_USER', response.data);
+                      //this.$store.commit('User/SET_USER', response.data);
+                      this.$store.dispatch('User/SetUser', response.data );
                       this.$router.replace({ path: '/computron/dashboard' });
                       this.buttonIsDisabled = true;
                       this.$refs.ButtonLoading.stopLoading();

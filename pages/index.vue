@@ -145,6 +145,7 @@
  import InputBasic from "@/components/library/inputs/InputBasic"
  import InputArea from "@/components/library/inputs/inputArea"
  import ButtonLoading   from "@/components/library/buttons/ButtonLoading";
+ //imporm { mapGetters }  from "@"
  
 export default {
   layout:'layoutBalquimia',
@@ -162,7 +163,7 @@ export default {
             errors : [],
 
       }),
-
+ 
       methods: {
             saveContacto() {
                   Terceros.contactoSendEmail ( this.formContacto)
@@ -178,16 +179,7 @@ export default {
           }
   }
 };
-/*
-                  .then (response => {
-                      //this.$store.commit('SET_USER', response.data);
-                      this.$router.replace({ path: '/computron/dashboard' });
-                      this.buttonIsDisabled = true;
-                      this.$refs.ButtonLoading.stopLoading();
-                  })
-
-                  });
-                  */
+ 
 
 </script>
 

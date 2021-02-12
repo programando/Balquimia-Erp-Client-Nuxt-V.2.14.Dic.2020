@@ -35,6 +35,12 @@
                 urlImg  = "/images/dashboard/autorizacion-cartera.svg"
                 urlLink = "#">
           </CardLeftImage>
+
+          <div>
+              {{ user }}
+              {{ logueado}}
+          </div>
+
         </div>
       </div>
     </div>
@@ -42,6 +48,7 @@
 </template>
 <script>
 import CardLeftImage from "@/components/library/links/cardLeftImage";
+ import {mapState} from 'vuex';
 export default {
   layout: "layoutComputron",
   name: "index",
@@ -50,7 +57,21 @@ export default {
   },
 
   data() {
-    return {};
+    return {
+
+    };
   },
+
+     mounted() {
+          console.log( this.$store.state.User.Logueado);
+      },
+
+  computed: {
+  ...mapState({
+      user    : state => state.User.User,
+      logueado: state => state.User.Loguado
+  })
+}
+
 };
 </script>
