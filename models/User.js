@@ -22,7 +22,7 @@ export default {
          return Api.get('user');
       },
       
-      async resetPassword(formData) {
+      async userResetPassword(formData) {
         return Api.post('reset/password', formData);
       },
       async updatePassword(formData) {
