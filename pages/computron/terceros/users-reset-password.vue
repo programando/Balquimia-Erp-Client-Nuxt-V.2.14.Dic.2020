@@ -16,7 +16,7 @@
 
             <LabelTitle
               title="BALQUIMIA S.A.S"
-              description="Enviaremos un correo electronico a la cuentra registrada en nuestro sistema con las instrucciones para que cambie los datos de acceso"
+              description="Enviaremos un correo electrónico a la cuentra registrada en nuestro sistema con las instrucciones para que cambie los datos de acceso"
               align="center"
               color="extra"
             >
@@ -24,18 +24,24 @@
 
             <div class="px-4 mt-4 lg:px-8 xl:px-10">
               <!-- inputGmail -->
-              <InputGmail
-                text="Cuenta de correo electronico o email"
-                width="w-full"
-              >
-              </InputGmail>
+                <InputBasic
+                  type="email"
+                  text="Email o correo electrónico"
+                  width="w-full"
+                  img="user-repo.svg"
+                  v-model="form.email" 
+                  :errors="errors.email"
+                ></InputBasic>
 
               <div class="flex justify-center mt-4">
-                <ButtonLoad
-                  text="Enviar Correo"
-                  to="/"
-                  variant="primary"
-                ></ButtonLoad>
+                <ButtonLoading
+                      @click.prevent="userResetPasswordSendMail" 
+                        size="small" 
+                        ref="ButtonLoading" 
+                        variant="danger"
+                        variant-type="normal">  Enviar correo
+                </ButtonLoading>
+                
               </div>
             </div>
           </div>
@@ -45,16 +51,41 @@
   </div>
 </template>
 <script>
-import LabelTitle from "@/components/library/LabelTitle";
-import InputGmail from "@/components/library/inputs/InputGmail";
-import ButtonLoad from "@/components/library/buttons/buttonLoad";
+import LabelTitle       from "@/components/library/LabelTitle";
+import InputBasic       from "@/components/library/inputs/InputBasic";
+import ButtonLoading    from "@/components/library/buttons/ButtonLoading";
+import Terceros         from "@/models/User";
+import Messages from "@/mixins/toastrMessages";
 export default {
-  name: "Contraseña",
+  name: "resetPassword",
   components: {
     LabelTitle,
-    InputGmail,
-    ButtonLoad,
+    InputBasic,
+    ButtonLoading,
   },
+  data: () => ({
+      form : { email:'' },
+      errors : [],
+  }),
+   mixins: [Messages],
+
+  methods: {
+        userResetPasswordSendMail() {
+          this.errors              = [];
+          this.$refs.ButtonLoading.startLoading();
+          Terceros.userResetPassword ( this.form)
+          .then (response => {
+              this.$refs.ButtonLoading.stopLoading();
+              this.MsgSuccess('Correo Enviado','Hemos enviado correo electrónico a la cuenta indicada. Siga las instrucciones. No olvide revisar la carpera de Spam', 10);
+          })   
+          .catch( error => {
+            if ( error.response.status == 422 || error.response.status == 419) {
+              this.errors = error.response.data.errors; 
+              this.$refs.ButtonLoading.stopLoading();  
+            }
+          })    
+        },
+  },  
 };
 </script>
 <style >

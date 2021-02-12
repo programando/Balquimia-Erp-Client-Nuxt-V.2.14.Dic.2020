@@ -15,7 +15,9 @@
     "luxon": "^1.25.0",
     "nuxt": "^2.14.12",
     "nuxt-imagemin": "^1.0.0",
-    "weekstart": "^1.0.1"
+    "vue-password-strength-meter": "^1.7.2",
+    "weekstart": "^1.0.1",
+    "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",

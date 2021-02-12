@@ -71,6 +71,8 @@
                     variant="success"
                     variant-type="normal">  Ingresar al sistema 
                 </ButtonLoading>
+
+                <nuxt-link to="/computron/terceros/45454">  Cambiar pass </nuxt-link>
                 </div>
               </div>
           </div>

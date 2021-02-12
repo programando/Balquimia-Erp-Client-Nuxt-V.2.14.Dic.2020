@@ -28,18 +28,26 @@
                 type="password"
                 text="Nueva Contraseña"
                 width="w-full"
-                img="/images/dashboard/candado-cerrado.svg"
+                img="candado-cerrado.svg"
                 :alert="false"
+                v-model='form.password'
               ></InputBasic>
+              <password v-model="form.password" :strength-meter-only="true"  :toggle="true" />
 
               <InputBasic
                 type="password"
                 text="Confirmar Contraseña"
                 width="w-full"
-                img="/images/dashboard/candado-cerrado.svg"
+                img="candado-cerrado.svg"
                 :alert="false"
               ></InputBasic>
 
+
+                  <password
+                    v-model="form.password"
+                    :toggle="true"
+                  />
+                  
               <div class="flex justify-center mt-4">
                 <ButtonLoad
                   text="Actualizar Contraseña"
@@ -58,12 +66,26 @@
 import LabelTitle from "@/components/library/LabelTitle";
 import InputBasic from "@/components/library/inputs/InputBasic";
 import ButtonLoad from "@/components/library/buttons/buttonLoad";
+import Password from 'vue-password-strength-meter'
+
 export default {
   name: "CambioContraseña",
   components: {
     LabelTitle,
     InputBasic,
     ButtonLoad,
+    Password
+  },
+  data: () => ({
+      form :{
+          password             : null,
+          password_confirmation: null,
+          token                : '',
+      },
+      errors : [],
+  }),
+      mounted() {
+      this.form.token = this.$route.params.users_token;
   },
 };
 </script>
