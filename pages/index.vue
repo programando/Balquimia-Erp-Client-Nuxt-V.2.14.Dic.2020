@@ -145,7 +145,7 @@
  import InputBasic from "@/components/library/inputs/InputBasic"
  import InputArea from "@/components/library/inputs/inputArea"
  import ButtonLoading   from "@/components/library/buttons/ButtonLoading";
- //imporm { mapGetters }  from "@"
+
  
 export default {
   layout:'layoutBalquimia',

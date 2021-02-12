@@ -737,7 +737,10 @@
 export default {
   layout: "layoutComputron",
   name: "index",
-  components: {}
+  components: {},
+  data: ()=> ({
+
+  }),
 };
 </script>
 

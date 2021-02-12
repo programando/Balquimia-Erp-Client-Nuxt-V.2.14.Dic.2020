@@ -12,10 +12,13 @@
   import Footer from "@/components/home/footer/footer";
 
     export default {
-      
-    components: {
-        Header,
-        Footer
-  }
+        components: {
+            Header,
+            Footer
+          },
+          data: ()=> ({
+
+          }),
+
     }
 </script>

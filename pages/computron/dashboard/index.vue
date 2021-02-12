@@ -55,16 +55,14 @@ export default {
   components: {
     CardLeftImage,
   },
-
+    
   data() {
     return {
 
     };
   },
 
-     mounted() {
-          console.log( this.$store.state.User.Logueado);
-      },
+  //middleware: ['isAuthenticated'],
 
   computed: {
   ...mapState({
