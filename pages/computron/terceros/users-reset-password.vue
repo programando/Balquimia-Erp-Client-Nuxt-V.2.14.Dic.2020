@@ -29,6 +29,7 @@
                   text="Email o correo electrónico"
                   width="w-full"
                   img="user-repo.svg"
+                  borderColor='extra'
                   v-model="form.email" 
                   :errors="errors.email"
                 ></InputBasic>
@@ -77,6 +78,7 @@ export default {
           .then (response => {
               this.$refs.ButtonLoading.stopLoading();
               this.MsgSuccess('Correo Enviado','Hemos enviado correo electrónico a la cuenta indicada. Siga las instrucciones. No olvide revisar la carpera de Spam', 10);
+              this.routeRedirect();
           })   
           .catch( error => {
             if ( error.response.status == 422 || error.response.status == 419) {
@@ -84,6 +86,12 @@ export default {
               this.$refs.ButtonLoading.stopLoading();  
             }
           })    
+        },
+
+        routeRedirect() {
+            this.errors              = [];
+            this.form = {};
+            this.$router.replace({ path: '/' });
         },
   },  
 };

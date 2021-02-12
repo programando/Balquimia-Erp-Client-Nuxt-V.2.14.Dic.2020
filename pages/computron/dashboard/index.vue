@@ -36,10 +36,10 @@
                 urlLink = "#">
           </CardLeftImage>
 
-          <div>
+<!--           <div>
               {{ user }}
               {{ logueado}}
-          </div>
+          </div> -->
 
         </div>
       </div>

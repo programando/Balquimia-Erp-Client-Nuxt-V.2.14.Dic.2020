@@ -25,7 +25,7 @@ export default {
       async userResetPassword(formData) {
         return Api.post('reset/password', formData);
       },
-      async updatePassword(formData) {
+      async userUpdatePassword(formData) {
         return Api.post('update/password', formData);
       }
 }

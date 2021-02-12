@@ -123,7 +123,6 @@
             </p>
             <div class="mt-2">
               <ButtonLoading 
-              @click.prevent="login" 
               size="normal" 
               ref="ButtonLoading" 
               variant="danger"

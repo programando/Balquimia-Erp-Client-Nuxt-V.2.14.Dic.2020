@@ -71,8 +71,6 @@
                     variant="success"
                     variant-type="normal">  Ingresar al sistema 
                 </ButtonLoading>
-
-                <nuxt-link to="/computron/terceros/45454">  Cambiar pass </nuxt-link>
                 </div>
               </div>
           </div>
@@ -124,7 +122,7 @@
                   this.$refs.ButtonLoading.startLoading();
                   User.login( this.form)
                   .then (response => {
-                      //this.$store.commit('User/SET_USER', response.data);
+                      
                       this.$store.dispatch('User/SetUser', response.data );
                       this.$router.replace({ path: '/computron/dashboard' });
                       this.buttonIsDisabled = true;
