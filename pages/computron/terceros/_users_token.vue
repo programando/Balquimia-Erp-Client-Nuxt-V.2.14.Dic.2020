@@ -7,7 +7,7 @@
       class="h-screen py-10 pb-40 bg-no-repeat bg-cover lg:pt-16"
       style="background-image: url('/images/comunes/malla1.webp')"
     >
-      <div class="mt-32 lg:mx-20 xl:mx-56">
+      <div class="mt-40 lg:mx-20 xl:mx-56">
         <div class="mx-16 mt-10 md:mx-24 lg:mx-32 xl:mx-40">
           <div
             class="px-10 py-6 mt-6 bg-white border rounded-lg md:py-8 md:px-16 lg:mt-0"
