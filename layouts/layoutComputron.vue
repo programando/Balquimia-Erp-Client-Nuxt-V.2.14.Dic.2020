@@ -62,7 +62,7 @@
 <script>
   import UserAccount from "@/components/computron/terceros/userAccount";
 export default {
-  name: "computron",
+  name: "layoutComputron",
     data() {
       return {
         

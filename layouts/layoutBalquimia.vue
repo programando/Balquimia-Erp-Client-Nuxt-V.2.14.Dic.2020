@@ -12,6 +12,7 @@
   import Footer from "@/components/home/footer/footer";
 
     export default {
+        name: "layoutComputron",
         components: {
             Header,
             Footer
@@ -21,4 +22,7 @@
           }),
 
     }
+</script>
+
+
 </script>

@@ -1,9 +1,9 @@
 
-export default function isAuthenticated({ store, redirect , next}) {
+export default async  function isAuthenticated({ store, redirect }) {
  
   if ( !store.state.Logueado ) {
       return redirect('/computron');
     }  
-    next();
+ 
   
 }
