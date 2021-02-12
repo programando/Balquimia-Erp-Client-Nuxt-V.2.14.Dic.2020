@@ -6,7 +6,7 @@
         :class="[cssResponsiveLink, cssNotResponsiveLink]"
       >
         <img
-          class="h-8 w-10 ml-2 "
+          class="w-10 h-8 ml-2 "
           src="/images/servicios/ser2.webp"
           alt="computron"
         />
@@ -30,20 +30,20 @@ export default {
 
   computed: {
     cssResponsiveLi() {
-      return { "p-2 hover:bg-gray-300": this.responsive === true };
+      return { "p-2 hover:bg-gray-200": this.responsive === true };
     },
     cssNotResponsiveLi() {
       return { "": this.responsive === false };
     },
     cssResponsiveDiv() {
       return {
-        "grid grid-cols-5 border transition duration-700 ease-in-out hover:bg-gray-400 py-1":
+        "grid grid-cols-5 border transition duration-700 ease-in-out hover:bg-extra hover:text-white py-1":
           this.responsive === true
       };
     },
     cssNotResponsiveDiv() {
       return {
-        " py-2 px-3 mx-2  transition duration-700 ease-in-out hover:bg-gray-400 ":
+        " py-2 px-3 mx-2  transition duration-700 ease-in-out hover:text-white hover:bg-extra ":
           this.responsive === false
       };
     },
@@ -62,3 +62,12 @@ export default {
   }
 };
 </script>
+
+<style>
+
+
+
+
+
+
+</style>

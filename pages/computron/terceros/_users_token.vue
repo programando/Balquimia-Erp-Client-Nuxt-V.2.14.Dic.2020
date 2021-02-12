@@ -22,7 +22,7 @@
             >
             </LabelTitle>
 
-            <div class="mt-4">
+            <div class="mt-4 ">
               <ButtonPassword
                   text="Nueva Contraseña"
                 ></ButtonPassword>
