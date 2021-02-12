@@ -1,8 +1,9 @@
 <template>
-  <div class="flex justify-center w-full ">
-    <img class="z-10 inline h-12 px-4 py-4 -mr-10 " src="/images/inputs/user-repo.svg" alt="">
-    <div class="w-auto">
-      <Password class="w-full" v-model="form.password" :toggle="true" :placeholder="text"
+  <div class="flex justify-center">
+    
+    <div class="flex justify-center w-full">
+      <img class="z-10 h-12 px-4 py-4 -mr-10 " src="/images/inputs/user-repo.svg" alt="">
+      <Password class="w-full " v-model="form.password" :toggle="true" :placeholder="text"
       />
     </div>
   </div>
@@ -38,6 +39,14 @@ input.Password__field {
   padding-left: 35px;
   
 }
+
+
+
+.Password.w-full {
+    max-width: 100%;
+}
+
+
 
 
 
