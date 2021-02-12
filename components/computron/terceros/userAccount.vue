@@ -17,7 +17,7 @@
       >
         <nuxt-link class="px-2 py-1 rounded-lg hover:text-white hover:bg-primary" to="#"> Perfil </nuxt-link>
         <nuxt-link class="px-2 py-1 rounded-lg hover:text-white hover:bg-primary" to="#"> Configuración </nuxt-link>
-        <nuxt-link class="px-2 py-1 rounded-lg hover:text-white hover:bg-primary" to="#"> Salir </nuxt-link>
+        <nuxt-link class="px-2 py-1 rounded-lg hover:text-white hover:bg-primary" to="/computron/terceros/user-logout"> Salir </nuxt-link>
       </div>
     </div>
 
