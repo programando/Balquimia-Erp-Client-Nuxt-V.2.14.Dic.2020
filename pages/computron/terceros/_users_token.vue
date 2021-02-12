@@ -22,30 +22,15 @@
             >
             </LabelTitle>
 
-            <div class="px-4 mt-4 lg:px-8 xl:px-10">
-              <!-- inputGmail -->
+            <div class="mt-4">
               <ButtonPassword
                   text="Nueva Contraseña"
                 ></ButtonPassword>
-              <!-- <InputBasic
-                type="password"
-                text="Confirmar Contraseña"
-                width="w-full"
-                img="candado-cerrado.svg"
-                :alert="false"
-              ></InputBasic> -->
-
+              
                 <ButtonPassword
                   text="Repetir Contraseña"
                 ></ButtonPassword>
-
-
-                
-                  <!-- <password
-                    v-model="form.password"
-                    :toggle="true"
-                  /> -->
-                
+               
               <div class="flex justify-center mt-4">
                 <ButtonLoad
                   text="Actualizar Contraseña"
