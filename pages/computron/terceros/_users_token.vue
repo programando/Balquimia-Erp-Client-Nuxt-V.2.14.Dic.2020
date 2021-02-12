@@ -4,10 +4,10 @@
     style="background-image: url('/images/home/slider/investigacion.webp')"
   >
     <div
-      class="h-screen py-10 pb-40 bg-no-repeat bg-cover lg:pt-20"
+      class="h-screen py-10 pb-40 bg-no-repeat bg-cover lg:pt-16"
       style="background-image: url('/images/comunes/malla1.webp')"
     >
-      <div class="mt-40 lg:mx-20 xl:mx-56">
+      <div class="mt-32 lg:mx-20 xl:mx-56">
         <div class="mx-16 mt-10 md:mx-24 lg:mx-32 xl:mx-40">
           <div
             class="px-10 py-6 mt-6 bg-white border rounded-lg md:py-8 md:px-16 lg:mt-0"
@@ -24,30 +24,28 @@
 
             <div class="px-4 mt-4 lg:px-8 xl:px-10">
               <!-- inputGmail -->
-              <InputBasic
-                type="password"
-                text="Nueva Contraseña"
-                width="w-full"
-                img="candado-cerrado.svg"
-                :alert="false"
-                v-model='form.password'
-              ></InputBasic>
-              <password v-model="form.password" :strength-meter-only="true"  :toggle="true" />
-
-              <InputBasic
+              <ButtonPassword
+                  text="Nueva Contraseña"
+                ></ButtonPassword>
+              <!-- <InputBasic
                 type="password"
                 text="Confirmar Contraseña"
                 width="w-full"
                 img="candado-cerrado.svg"
                 :alert="false"
-              ></InputBasic>
+              ></InputBasic> -->
+
+                <ButtonPassword
+                  text="Repetir Contraseña"
+                ></ButtonPassword>
 
 
-                  <password
+                
+                  <!-- <password
                     v-model="form.password"
                     :toggle="true"
-                  />
-                  
+                  /> -->
+                
               <div class="flex justify-center mt-4">
                 <ButtonLoad
                   text="Actualizar Contraseña"
@@ -66,7 +64,8 @@
 import LabelTitle from "@/components/library/LabelTitle";
 import InputBasic from "@/components/library/inputs/InputBasic";
 import ButtonLoad from "@/components/library/buttons/buttonLoad";
-import Password from 'vue-password-strength-meter'
+import ButtonPassword from "@/components/library/buttons/buttonPassword";
+import Password from 'vue-password-strength-meter';
 
 export default {
   name: "CambioContraseña",
@@ -74,7 +73,8 @@ export default {
     LabelTitle,
     InputBasic,
     ButtonLoad,
-    Password
+    Password,
+    ButtonPassword
   },
   data: () => ({
       form :{
