@@ -1,7 +1,7 @@
 <template>
   <div>
     <textarea name="" id="" :cols="cols" :rows="rows" :placeholder="text"
-    class="w-5/6 px-4 py-2 rounded-lg focus:border-inputsBorder focus:outline-none "
+    class="w-5/6 px-4 py-2 -ml-2 rounded-lg focus:border-inputsBorder focus:outline-none "
     >
 
     </textarea>

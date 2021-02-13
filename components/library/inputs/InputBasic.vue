@@ -1,7 +1,7 @@
 <template>
   <div class="mt-2">
     <div class="flex items-center">
-      <div class="z-10 -mr-6">
+      <div class="z-10 -mr-8">
         <img class="inline h-5" :src="`/images/inputs/${img}`" alt="" />
       </div>
       <input
@@ -9,7 +9,7 @@
           @input     ="$emit('input'    , $event.target.value)"
           @keydown   ="$emit('keydown'  , $event)"
           @keyup     ="$emit('keyup'    , $event)"
-          class      ="px-8 py-2 rounded-lg focus:border-inputsBorder focus:outline-none "
+          class      ="px-10 py-2 rounded-lg focus:border-inputsBorder focus:outline-none "
           ref        ="input"
           v-bind     ="$attrs"
         :class       ="[width, setBorderColor, hasErrors, setBackground]"
