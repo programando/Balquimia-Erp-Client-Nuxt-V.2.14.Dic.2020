@@ -68,7 +68,9 @@
               text="nombre"
               width="w-5/6"
               img="user-repo.svg"
-              background="white"       
+              background="white"    
+              v-model="formContacto.nombre"   
+              :errors="errors.nombre" 
               ></InputBasic>
             
             <InputBasic
@@ -76,7 +78,9 @@
               text="empresa"
               width="w-5/6"
               img="company-repo.svg"
-              background="white"       
+              background="white"   
+              v-model="formContacto.empresa"   
+              :errors="errors.empresa"  
               ></InputBasic>
             
             <InputBasic
@@ -84,7 +88,9 @@
               text="ciudad"
               width="w-5/6"
               img="country-repo.svg"
-              background="white"       
+              background="white"      
+              v-model="formContacto.ciudad"  
+              :errors="errors.ciudad" 
               ></InputBasic>
             
             <InputBasic
@@ -92,7 +98,9 @@
               text="E-mail"
               width="w-5/6"
               img="email-repo.svg"
-              background="white"       
+              background="white"   
+              v-model="formContacto.email"  
+              :errors="errors.email"     
               ></InputBasic>
             
             <InputBasic
@@ -100,7 +108,9 @@
               text="Telefono"
               width="w-5/6"
               img="home-phone-repo.svg"
-              background="white"       
+              background="white"  
+              v-model="formContacto.telefono"  
+              :errors="errors.telefono"                    
               ></InputBasic>
             
             <InputBasic
@@ -108,13 +118,17 @@
               text="celular"
               width="w-5/6"
               img="smartphone-repo.svg"
-              background="white"       
+              background="white"  
+              v-model="formContacto.celular"  
+              :errors="errors.celular"                  
               ></InputBasic>
             <div class="my-2 -ml-1">
               <InputArea
                 text="En que podemos Ayudarte?"
                 cols="50"
                 rows="4"
+              v-model="formContacto.comentario"  
+              :errors="errors.comentario"                 
               ></InputArea>
             </div>
             
@@ -126,7 +140,7 @@
               size="normal" 
               ref="ButtonLoading" 
               variant="danger"
-              variant-type="normal">  Enviar 
+              variant-type="normal">  Enviar información
             </ButtonLoading>
             </div>
           </form>
@@ -144,37 +158,34 @@
  import InputBasic from "@/components/library/inputs/InputBasic"
  import InputArea from "@/components/library/inputs/inputArea"
  import ButtonLoading   from "@/components/library/buttons/ButtonLoading";
+ import Messages from "@/mixins/toastrMessages";
 
  
 export default {
   layout:'layoutBalquimia',
   components:{PoliticaTratamientoDatos, InputBasic, InputArea, ButtonLoading },
       data: () =>({
-            formContacto:{
-                  nombre  : 'Jhon James',
-                  email   : 'jhonjamesmg@hotmail.com',
-                  celular : '3113369005',
-                  telefono: '4416218',
-                  empresa : 'personal',
-                  ciudad  : 'cali',
-                  comentario:'comentario comentario comentario comentario'
-            },
+            formContacto:{ nombre  : '',      email   : '',     celular : '',     telefono: '',       empresa : '', ciudad  : '',   comentario:'' },
             errors : [],
-
       }),
- 
+      mixins: [Messages],
       methods: {
             saveContacto() {
+                  this.$refs.ButtonLoading.startLoading();
                   Terceros.contactoSendEmail ( this.formContacto)
                   .then( response => {
-                        console.log( response.data);
+                     this.$refs.ButtonLoading.stopLoading();
+                     this.formContacto = [];
+                     this.MsgInfo('Información recibida', "Hemos recibido la información suministrada. Nos comunicaremos a la mayor brevedad posible.",10);
                   })
                   .catch( error => {
                     if ( error.response.status == 422) {
                       this.errors = error.response.data.errors; 
+                      console.log ( this.errors);
+                      this.$refs.ButtonLoading.stopLoading();
                     }
-            })
-            
+                })
+              
           }
   }
 };

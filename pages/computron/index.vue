@@ -84,23 +84,15 @@
     import LabelTitle from "@/components/library/LabelTitle";
     import InputBasic from "@/components/library/inputs/InputBasic";
     import ButtonBasic from "@/components/library/buttons/buttonBasic";
-    import ButtonLoad from "@/components/library/buttons/buttonLoad";
     import ButtonLoading   from "@/components/library/buttons/ButtonLoading";
-    import Messages from "@/mixins/toastrMessages";
-    import {mapMutations} from 'vuex';
+     
+     
 
     import User            from "@/models/User";
 
     export default {
       layout: "dashboard",
-      components: {
-        ButtonLoad,
-        ButtonBasic,
-        InputBasic,
-        LabelTitle ,
-        ButtonLoading
-        
-      },
+      components: { ButtonBasic,      ButtonLoading,      InputBasic,     LabelTitle ,  },
 
     data: () => ({
         form: {
@@ -111,7 +103,7 @@
         buttonIsDisabled: false
     }),
 
-      mixins: [Messages],
+      
         mounted() {
             if ( this.$store.state.User.Logueado) {
               this.$router.replace({ path: '/computron/dashboard' });
@@ -135,9 +127,7 @@
                     }
                   });
             },
-                    clearErrors() {
-          this.errors = [];
-                    },
+           clearErrors() { this.errors = [] ; },
       },
     };
 </script>
