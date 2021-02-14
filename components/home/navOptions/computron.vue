@@ -43,7 +43,7 @@ export default {
     },
     cssNotResponsiveDiv() {
       return {
-        " py-2 px-3 mx-2  transition duration-700 ease-in-out hover:text-white hover:bg-extra ":
+        " py-2 px-3 mx-2  transition duration-700 ease-in-out hover:text-white hover:bg-yellow-500 rounded-lg":
           this.responsive === false
       };
     },

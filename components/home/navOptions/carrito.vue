@@ -34,7 +34,7 @@ export default {
       return { "grid grid-cols-5 border transition duration-700 ease-in-out hover:bg-gray-400 py-1": this.responsive === true };
     },
     cssNotResponsiveDiv() {
-      return { "py-2 px-4 mx-2 transition duration-700 ease-in-out hover:bg-gray-400": this.responsive === false };
+      return { "py-2 px-4 mx-2 transition duration-700 ease-in-out hover:bg-yellow-500 rounded-lg": this.responsive === false };
     },
     cssResponsiveLink() {
       return {
