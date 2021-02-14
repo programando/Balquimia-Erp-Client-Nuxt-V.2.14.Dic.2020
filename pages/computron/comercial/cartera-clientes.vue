@@ -10,124 +10,15 @@
       </div>
       <div class="mx-2 border rounded-lg lg:grid lg:grid-cols-6">
         <div class="col-span-2 mr-1 bg-gray-300">
+       
           <div class="container col-span-2">  
             <div class="px-4 py-2 ">
-              <label class="font-semibold text-extra">Buscar</label>
+              <label class="font-semibold text-extra">Buscar :</label>
               <input class="w-5/6 ml-2 rounded-lg" type="text" />
             </div>
-            <table class="w-full col-span-2 text-left">
-              <thead class="flex w-full text-white border">
-                <tr class="flex w-full margen">
-                  <th
-                    class="flex justify-center w-3/5 px-2 py-2 border-t border-b border-l border-gray-400 bg-primary"
-                  >
-                    Fecha
-                  </th>
-                  <th
-                    class="flex justify-center w-2/5 px-2 py-2 border-t border-b border-l border-gray-400 bg-primary"
-                  >
-                    Factu
-                  </th>
-                </tr>
-              </thead>
-              <tbody
-                class="flex flex-col w-full overflow-y-scroll bg-grey-light"
-                style="height: 50vh"
-              >
-                <tr class="flex w-full bg-white ">
-                  <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
-                  >
-                    Dogs
-                  </td>
-                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
-                    Cats
-                  </td>
-                </tr>
-                <tr class="flex w-full bg-white ">
-                  <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
-                  >
-                    Dogs
-                  </td>
-                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
-                    Cats
-                  </td>
-                </tr>
-                <tr class="flex w-full bg-white ">
-                  <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
-                  >
-                    Dogs
-                  </td>
-                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
-                    Cats
-                  </td>
-                </tr>
-                <tr class="flex w-full bg-white ">
-                  <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
-                  >
-                    Dogs
-                  </td>
-                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
-                    Cats
-                  </td>
-                </tr>
-                <tr class="flex w-full bg-white ">
-                  <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
-                  >
-                    Dogs
-                  </td>
-                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
-                    Cats
-                  </td>
-                </tr>
-                <tr class="flex w-full bg-white ">
-                  <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
-                  >
-                    Dogs
-                  </td>
-                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
-                    Cats
-                  </td>
-                </tr>
-                <tr class="flex w-full bg-white ">
-                  <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
-                  >
-                    Dogs
-                  </td>
-                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
-                    Cats
-                  </td>
-                </tr>
-                <tr class="flex w-full bg-white ">
-                  <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
-                  >
-                    Dogs
-                  </td>
-                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
-                    Cats
-                  </td>
-                </tr>
-                <tr class="flex w-full bg-white ">
-                  <td
-                    class="w-3/5 px-2 py-1 border-t border-b border-l border-gray-400"
-                  >
-                    Dogs
-                  </td>
-                  <td class="w-2/5 px-2 py-1 border border-gray-400 ">
-                    Cats
-                  </td>
-                </tr>
-                
-                
-              </tbody>
-            </table>
+
+            <TableCustomers></TableCustomers>
+
           </div>
         </div>
         <div class="col-span-4 mt-10 bg-gray-300 lg:mt-0">
@@ -733,11 +624,14 @@
     </div>
   </div>
 </template>
+
 <script>
+  import TableCustomers  from "../comercial/carteraClientesPartials/tableCustomers";
 export default {
+  
   layout: "layoutComputron",
   name: "index",
-  components: {},
+  components: { TableCustomers },
   data: ()=> ({
 
   }),
