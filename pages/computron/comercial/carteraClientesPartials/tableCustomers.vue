@@ -18,7 +18,7 @@
                     {{ cliente.nombre }}
                   </td>
                   <td class="w-2/5 px-2 py-1 border border-gray-400 ">
-                    {{ cliente.deuda }}
+                    {{ cliente.deuda | NumeroEntero }}
                   </td>
                 </tr>
            </tbody>
@@ -26,6 +26,7 @@
               
 </template>
 <script>
+  
   export default {
       data: () =>({
             terceros : [
@@ -33,6 +34,7 @@
                     { 'id':'1', 'nombre':'clientes 2', 'deuda':952525 },
             ]
       }),
+      
       methods: {
             buscarFaturasCliente ( idCliente ) {
                 alert (idCliente );

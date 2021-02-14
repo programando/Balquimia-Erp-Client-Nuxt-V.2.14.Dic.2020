@@ -34,7 +34,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-      { src: '~/plugins/persistedState.client.js' }
+      { src: '~/plugins/persistedState.client.js' },
+      { src: '~/plugins/filters.js' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -95,6 +96,12 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+        /*
+    ** You can extend webpack config here
+    */
+    extend (config, ctx) {
+    },
+    extractCSS: true,
   },
 
     purge: {
@@ -103,5 +110,11 @@ export default {
       'node_modules/tv-*/dist/tv-*.umd.min.js',
     ],
   },
+  
+  purgeCSS: {
+    mode: 'postcss',
+    enabled: (process.env.NODE_ENV === 'production')
+  },
+
     
 }
