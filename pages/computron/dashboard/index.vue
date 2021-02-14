@@ -42,13 +42,17 @@
           </div> -->
 
         </div>
+        <div class="mt-10 mx-8">
+          <LineChart></LineChart>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
 import CardLeftImage from "@/components/library/links/cardLeftImage";
- import {mapState} from 'vuex';
+import {mapState} from 'vuex';
+import LineChart from "@/components/vueChart/lineChart"
 export default {
   layout: "layoutComputron",
   name: "index",
