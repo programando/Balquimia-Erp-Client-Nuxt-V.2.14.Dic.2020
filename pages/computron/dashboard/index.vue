@@ -42,7 +42,8 @@
           </div> -->
 
         </div>
-        <div class="mt-10 mx-8">
+        <div class="mx-8 mt-10 ">
+          <h2 class="mb-4 text-lg font-bold text-center lg:text-xl">Porcentajes de ventas</h2>
           <LineChart></LineChart>
         </div>
       </div>
