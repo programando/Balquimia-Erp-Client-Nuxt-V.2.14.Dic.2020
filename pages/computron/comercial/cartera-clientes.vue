@@ -9,16 +9,9 @@
         </h2>
       </div>
       <div class="mx-2 text-sm border rounded-lg lg:grid lg:grid-cols-6">
-        <div class="col-span-2 mr-1 bg-gray-300">
-       
+        <div class="col-span-2 mr-1 bg-gray-300">      
           <div class="container col-span-2">  
-            <div class="px-4 py-2 ">
-              <label class="font-semibold text-extra">Buscar :</label>
-              <input class="w-5/6 ml-2 rounded-lg" type="text" />
-            </div>
-
             <TableCustomers></TableCustomers>
-
           </div>
         </div>
         <div class="col-span-4 mt-10 text-sm bg-gray-300 lg:mt-0">
@@ -26,7 +19,6 @@
             <TableList></TableList>
           </div>
         </div>
-        
       </div>
       <div class="flex items-center mt-1 text-sm">
           <table class="w-10/12 col-span-2 ml-40 ">
