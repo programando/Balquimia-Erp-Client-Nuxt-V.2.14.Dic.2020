@@ -32,7 +32,7 @@
           <td
             class="w-4/6 px-2 py-1 border-t border-b border-l border-gray-400"
           >
-            {{ cliente.nombre  }}
+            {{ cliente.nombre | Capitalize }}
           </td>
           <td class="w-2/6 px-2 py-1 text-right border border-gray-400">
             {{ cliente.deuda | NumeroEntero }}
@@ -60,8 +60,6 @@ export default {
       alert(idCliente);
     }
   },
-
-
 
   computed: {
 
