@@ -27,7 +27,7 @@
           <CardLeftImage  
                 text    = "Lista de precios"
                 urlImg  = "/images/dashboard/lista-precios.svg"
-                urlLink = "#" >
+                urlLink = "/computron/comercial/lista-precios" >
           </CardLeftImage>
 
           <CardLeftImage  
