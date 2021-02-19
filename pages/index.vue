@@ -165,7 +165,7 @@ export default {
   layout:'layoutBalquimia',
   components:{PoliticaTratamientoDatos, InputBasic, InputArea, ButtonLoading },
       data: () =>({
-            formContacto:{ nombre  : '',      email   : '',     celular : '',     telefono: '',       empresa : '', ciudad  : '',   comentario:'' },
+            formContacto:{ nombre  : 'Jhon',      email   : 'jhonjamesmg@hotmail.com',     celular : '311',     telefono: '311',       empresa : 'Personal', ciudad  : 'cali',   comentario:'Informacion prod' },
             errors : [],
       }),
       mixins: [Messages],
@@ -175,14 +175,14 @@ export default {
                   Terceros.contactoSendEmail ( this.formContacto)
                   .then( response => {
                      this.$refs.ButtonLoading.stopLoading();
-                     this.formContacto = [];
+                     //this.formContacto = [];
                      this.MsgInfo('Información recibida', "Hemos recibido la información suministrada. Nos comunicaremos a la mayor brevedad posible.",10);
                   })
                   .catch( error => {
+                    this.$refs.ButtonLoading.stopLoading();
                     if ( error.response.status == 422) {
                       this.errors = error.response.data.errors; 
                       console.log ( this.errors);
-                      this.$refs.ButtonLoading.stopLoading();
                     }
                 })
               

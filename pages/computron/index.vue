@@ -92,12 +92,13 @@
 
     export default {
       layout: "dashboard",
+       
       components: { ButtonBasic,      ButtonLoading,      InputBasic,     LabelTitle ,  },
 
     data: () => ({
         form: {
           email: "jhonjamesmg@hotmail.com",
-          password: "123456"
+          password: "1234567"
         },
         errors: [ ],
         buttonIsDisabled: false
@@ -107,7 +108,7 @@
         mounted() {
             if ( this.$store.state.User.Logueado) {
               this.$router.replace({ path: '/computron/dashboard' });
-            }
+            } 
         },
       methods: {
             login(){
