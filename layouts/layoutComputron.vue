@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-latos">
     <div class="fixed z-20 w-full">
     <header class="bg-white">
       <!-- Icono de la empresa -->
