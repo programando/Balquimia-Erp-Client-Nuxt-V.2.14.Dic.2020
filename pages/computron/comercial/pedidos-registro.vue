@@ -32,7 +32,11 @@
             ></InputLabel>
           </div>
           <div class="mx-12 mt-2 sm:ml-16 lg:ml-4 lg:mr-4">
-            <InputDate textLabel="Fecha Despacho" width="w-full"></InputDate>
+            <!-- <InputDate textLabel="Fecha Despacho" width="w-full"></InputDate> -->
+            <label>Fecha Despacho</label>
+            <VueTailWindPicker :init="false" @change="v => (value = v)">
+              <input class="w-full px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline focus:border-primary" v-model="value" placeholder="fecha" />
+            </VueTailWindPicker>
           </div>
         </div>
         <div class="grid gap-2 lg:gap-6 md:grid-cols-2 lg:grid-cols-5 ">
@@ -63,7 +67,7 @@
           <p>Contactos</p>
         </div>
 
-        <!-- table Ultimas Ventas -->
+        <!-- tabla Ultimas Ventas -->
         <div>
           <table class="w-full mt-4 text-left">
             <thead class="flex w-full text-white border margen">
@@ -177,14 +181,12 @@
                 >
                   <ButtonIcon
                     urlIcon="/images/dashboard/carrito-compras.svg"
-                    
                   ></ButtonIcon>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        
       </div>
     </div>
   </div>
@@ -193,7 +195,7 @@
 import InputSearch from "@/components/library/inputs/InputSearch";
 import InputLabel from "@/components/library/inputs/InputLabel";
 import InputDate from "@/components/library/inputs/InputDate";
-import ButtonIcon from "@/components/library/buttons/buttonIcon"
+import ButtonIcon from "@/components/library/buttons/buttonIcon";
 export default {
   layout: "layoutComputron",
   name: "index",
@@ -201,14 +203,15 @@ export default {
     InputSearch,
     InputLabel,
     InputDate,
-    ButtonIcon
+    ButtonIcon,
+    VueTailWindPicker: () => import('vue-tailwind-picker'),
   },
   data() {
     return {
       isOpen: false,
       registro: false,
       fecha: "",
-
+      value: '',
       productos: [
         {
           id: 0,
