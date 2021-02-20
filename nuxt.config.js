@@ -120,9 +120,6 @@ export default {
     enabled: (process.env.NODE_ENV === 'production')
   },
 
-  transition: {
-    name: 'fade',
-    mode:'out-in',
-  },
+
     
 }

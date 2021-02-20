@@ -58,7 +58,7 @@ export default {
   layout: "layoutComputron",
   name: "index",
   components: {
-    CardLeftImage,
+    CardLeftImage,LineChart
   },
     
   data() {
@@ -67,7 +67,7 @@ export default {
     };
   },
 
-  //middleware: ['isAuthenticated'],
+  middleware: ['isAuthenticated'],
 
   computed: {
   ...mapState({

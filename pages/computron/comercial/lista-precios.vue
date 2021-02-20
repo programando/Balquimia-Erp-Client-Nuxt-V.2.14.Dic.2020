@@ -11,6 +11,7 @@
     </div>
     <div class="mx-20">
       <table class="w-full">
+        
         <thead class="flex w-full text-white ">
           <tr class="flex w-full mr-3">
             <th
@@ -34,7 +35,8 @@
               Iva
             </th>
           </tr>
-        </thead>
+        </thead>  
+
         <tbody
           class="flex flex-col w-full overflow-y-scroll bg-grey-light"
           style="height: 50vh"
@@ -66,12 +68,16 @@
 </template>
 
 <script>
+ 
 export default {
   layout: "layoutComputron",
   name: "index",
 
   data: () => ({
     busqueda: "",
+    tableColumns : [ { 'id' : '0', 'name': 'Producto'  }, 
+                     { 'id' : '1', 'name': 'Presentación'  }
+    ],
     productos: [
       {
         id: 0,
@@ -96,6 +102,7 @@ export default {
       }
     ]
   }),
+  
 
   computed: {
 
