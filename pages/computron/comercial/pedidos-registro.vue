@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <div class="mt-10">
+        <div class="mt-4 text-sm">
           <DataTable></DataTable>
         </div>
         
@@ -103,7 +103,5 @@ export default {
 </script>
 
 <style scoped>
-.margen {
-  padding-right: 14px;
-}
+
 </style>

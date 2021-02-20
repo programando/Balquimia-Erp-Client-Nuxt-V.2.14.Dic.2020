@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="flex items-center mt-1 text-sm">
-          <table class="w-10/12 col-span-2 ml-40 ">
+          <table class="w-11/12 col-span-2 ml-40 ">
               <thead class="flex w-full text-white">
                 <tr class="grid w-full grid-cols-7 border">
                   <th
@@ -65,7 +65,7 @@
       </div>
       <div class="flex items-center -mt-1 text-sm">
           <label class="px-10 py-2 ml-6 text-lg text-white border-gray-400 bg-primary">Totales</label>
-          <table class="w-10/12 col-span-2 text-left">
+          <table class="w-11/12 col-span-2 text-left">
               <thead class="flex w-full text-white">
                 <tr class="grid w-full grid-cols-7 border">
                   <th

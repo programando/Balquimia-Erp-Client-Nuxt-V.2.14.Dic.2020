@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-40 bg-gray-200">
+  <div class="pt-40 bg-gray-200 pb-36">
     <div class="px-4 py-2 mx-10 lg:mx-20">
       <label class="font-semibold text-extra">Buscar Producto :</label>
       <input

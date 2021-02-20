@@ -11,7 +11,7 @@
       />
     </div>
     
-    <div v-if="menuUser" class="absolute flex flex-col p-2 pt-1 bg-gray-100 rounded-lg w-44 top-10 md:top-14 lg:top-16 right-1" >
+    <div v-if="menuUser" class="absolute flex flex-col p-2 pt-1 bg-gray-100 border rounded-lg w-44 top-10 md:top-14 lg:top-16 right-1 border-primary" >
 
         <UserLink textMenu="Mis Datos"      image="user-blank.svg"      urlDestino='/' >          </UserLink>
         <UserLink textMenu="Tareas"         image="task-repo.svg"       urlDestino='/' >          </UserLink>
