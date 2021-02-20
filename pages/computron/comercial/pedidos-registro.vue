@@ -35,7 +35,11 @@
             <!-- <InputDate textLabel="Fecha Despacho" width="w-full"></InputDate> -->
             <label>Fecha Despacho</label>
             <VueTailWindPicker :init="false" @change="v => (value = v)">
-              <input class="w-full px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline focus:border-primary" v-model="value" placeholder="fecha" />
+              <input
+                class="w-full px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"
+                v-model="value"
+                placeholder="fecha"
+              />
             </VueTailWindPicker>
           </div>
         </div>
@@ -56,137 +60,13 @@
           </div>
         </div>
 
-        <div
-          class="grid mx-10 mt-10 text-center gap 2 md:grid-cols-3 lg:grid-cols-6"
-        >
-          <p>Últimas Ventas</p>
-          <p>Pedido Generado</p>
-          <p>Estado de Cuenta</p>
-          <p>Observaciones Ventas</p>
-          <p>Notas Cartera</p>
-          <p>Contactos</p>
+        <div class="mt-10">
+          <DataTable></DataTable>
         </div>
-
-        <!-- tabla Ultimas Ventas -->
-        <div>
-          <table class="w-full mt-4 text-left">
-            <thead class="flex w-full text-white border margen">
-              <tr class="flex w-full">
-                <th
-                  class="flex justify-center w-2/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
-                >
-                  Fecha
-                </th>
-                <th
-                  class="flex justify-center w-2/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
-                >
-                  Factura
-                </th>
-                <th
-                  class="flex justify-center w-4/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
-                >
-                  Producto
-                </th>
-                <th
-                  class="flex justify-center w-4/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
-                >
-                  Presentacion
-                </th>
-                <th
-                  class="flex justify-center w-2/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
-                >
-                  Cantida
-                </th>
-                <th
-                  class="flex justify-center w-2/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
-                >
-                  $Base
-                </th>
-                <th
-                  class="flex justify-center w-2/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
-                >
-                  Flete
-                </th>
-                <th
-                  class="flex justify-center w-2/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
-                >
-                  Mayor Vr
-                </th>
-                <th
-                  class="flex justify-center w-2/6 px-2 py-2 border border-gray-700 bg-primary"
-                >
-                  Vr.Unit
-                </th>
-                <th
-                  class="flex justify-center w-1/6 px-2 py-2 border border-gray-700 bg-primary"
-                ></th>
-              </tr>
-            </thead>
-            <tbody
-              class="flex flex-col w-full overflow-y-scroll bg-grey-light"
-              style="height: 55vh;"
-            >
-              <tr
-                v-for="producto in productos"
-                :key="producto.id"
-                class="flex w-full bg-white "
-              >
-                <td
-                  class="w-2/6 px-2 py-1 border-t border-b border-l border-gray-400"
-                >
-                  {{ producto.fecha }}
-                </td>
-                <td
-                  class="w-2/6 px-2 py-1 border-t border-b border-l border-gray-400 "
-                >
-                  {{ producto.factura }}
-                </td>
-                <td
-                  class="w-4/6 px-2 py-1 text-right border-t border-b border-l border-gray-400"
-                >
-                  {{ producto.producto }}
-                </td>
-                <td
-                  class="w-4/6 px-2 py-1 text-right border-t border-b border-l border-gray-400 "
-                >
-                  {{ producto.presentacion }}
-                </td>
-                <td
-                  class="w-2/6 px-2 py-1 text-right border-t border-b border-l border-gray-400 "
-                >
-                  {{ producto.cantidad }}
-                </td>
-                <td
-                  class="w-2/6 px-2 py-1 text-right border-t border-b border-l border-gray-400 "
-                >
-                  {{ producto.base }}
-                </td>
-                <td
-                  class="w-2/6 px-2 py-1 text-right border-t border-b border-l border-gray-400 "
-                >
-                  {{ producto.flete }}
-                </td>
-                <td
-                  class="w-2/6 px-2 py-1 text-right border-t border-b border-l border-gray-400 "
-                >
-                  {{ producto.mayor }}
-                </td>
-                <td
-                  class="w-2/6 px-2 py-1 text-right border-t border-b border-l border-r border-gray-400 "
-                >
-                  {{ producto.unit }}
-                </td>
-                <td
-                  class="w-1/6 px-2 py-1 text-right border-t border-b border-l border-r border-gray-400 "
-                >
-                  <ButtonIcon
-                    urlIcon="/images/dashboard/carrito-compras.svg"
-                  ></ButtonIcon>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        
+        
+          
+        
       </div>
     </div>
   </div>
@@ -196,6 +76,7 @@ import InputSearch from "@/components/library/inputs/InputSearch";
 import InputLabel from "@/components/library/inputs/InputLabel";
 import InputDate from "@/components/library/inputs/InputDate";
 import ButtonIcon from "@/components/library/buttons/buttonIcon";
+import DataTable from "@/components/computron/terceros/dataTable"
 export default {
   layout: "layoutComputron",
   name: "index",
@@ -204,30 +85,20 @@ export default {
     InputLabel,
     InputDate,
     ButtonIcon,
-    VueTailWindPicker: () => import('vue-tailwind-picker'),
+    DataTable,
+    VueTailWindPicker: () => import("vue-tailwind-picker")
   },
   data() {
     return {
       isOpen: false,
       registro: false,
       fecha: "",
-      value: '',
-      productos: [
-        {
-          id: 0,
-          fecha: "04/10/2015",
-          factura: "256388",
-          producto: "RAX SHAMPOO",
-          presentacion: "20 LTS ORIGINAL",
-          cantidad: 6,
-          base: "117,311",
-          flete: "0",
-          mayor: "20,702",
-          unit: "138,013"
-        }
-      ]
+      value: "",
+      
     };
-  }
+  },
+
+  
 };
 </script>
 
