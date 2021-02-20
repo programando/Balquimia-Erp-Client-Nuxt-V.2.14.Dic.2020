@@ -27,7 +27,7 @@
           <CardLeftImage  
                 text    = "Lista de precios"
                 urlImg  = "/images/dashboard/lista-precios.svg"
-                urlLink = "/computron/comercial/lista-precios" >
+                urlLink = "/computron/comercial/productos-lista-precios" >
           </CardLeftImage>
 
           <CardLeftImage  
@@ -36,10 +36,7 @@
                 urlLink = "#">
           </CardLeftImage>
 
-<!--           <div>
-              {{ user }}
-              {{ logueado}}
-          </div> -->
+ 
 
         </div>
         <div class="mx-8 mt-10 ">
