@@ -2,6 +2,8 @@
   <div class="flex flex-wrap font-latos">
     <div class="w-full">
       <ul class="flex flex-row flex-wrap pt-1 pb-2 mb-0 list-none">
+       
+      
         <li class="flex-auto mr-2 -mb-px text-center cursor-pointer last:mr-0">
           <div
             class="block px-5 py-3 text-xs font-bold leading-normal uppercase rounded shadow-lg"
@@ -14,6 +16,7 @@
             Ultimas Ventas
           </div>
         </li>
+       
         <li class="flex-auto mr-2 -mb-px text-center last:mr-0">
           <div
             class="block px-5 py-3 text-xs font-bold leading-normal uppercase rounded shadow-lg"
@@ -26,6 +29,7 @@
             Pedido Generado
           </div>
         </li>
+
         <li class="flex-auto mr-2 -mb-px text-center last:mr-0">
           <div
             class="block px-5 py-3 text-xs font-bold leading-normal uppercase rounded shadow-lg"
@@ -38,6 +42,7 @@
             Estado de Cuenta
           </div>
         </li>
+        
         <li class="flex-auto mr-2 -mb-px text-center last:mr-0">
           <div
             class="block px-5 py-3 text-xs font-bold leading-normal uppercase rounded shadow-lg"
@@ -75,19 +80,23 @@
           </div>
         </li>
       </ul>
+
       <div
         class="relative flex flex-col w-full min-w-0 mb-2 break-words bg-white rounded shadow-lg"
       >
         <div class="flex-auto px-4">
           <div class="tab-content tab-space">
+         
             <div
               v-bind:class="{
                 hidden: openTab !== 1,
                 block: openTab === 1
               }"
             >
-              <TablaUltimasVentas></TablaUltimasVentas>
+              <ClienteUltimasVentas></ClienteUltimasVentas>
             </div>
+
+
             <div
               v-bind:class="{
                 hidden: openTab !== 2,
@@ -176,11 +185,11 @@
 </template>
 
 <script>
-import TableUltimasVentas from '@/components/computron/terceros/tablas/tablaUltimasVentas'
+import ClienteUltimasVentas from '@/components/computron/terceros/clienteUltimasVentas'
 export default {
   name: "DataTable",
   components: {
-    TableUltimasVentas
+    ClienteUltimasVentas
   },
 
   data() {

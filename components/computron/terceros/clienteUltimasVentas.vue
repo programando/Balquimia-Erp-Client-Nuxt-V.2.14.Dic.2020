@@ -1,4 +1,5 @@
 <template>
+ 
   <table class="w-full text-left">
     <thead class="flex w-full text-white border margen">
       <tr class="flex w-full">
@@ -116,7 +117,7 @@
 
 <script>
 export default {
-  name: 'TablaUltimasVentas',
+  name: 'clienteUltimasVentas',
   data() {
     return {
       productos: [

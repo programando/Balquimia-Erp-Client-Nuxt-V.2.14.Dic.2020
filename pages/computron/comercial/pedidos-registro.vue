@@ -61,7 +61,7 @@
         </div>
 
         <div class="mt-4 text-sm">
-          <DataTable></DataTable>
+          <NavTabsOptions></NavTabsOptions>
         </div>
         
         
@@ -76,7 +76,7 @@ import InputSearch from "@/components/library/inputs/InputSearch";
 import InputLabel from "@/components/library/inputs/InputLabel";
 import InputDate from "@/components/library/inputs/InputDate";
 import ButtonIcon from "@/components/library/buttons/buttonIcon";
-import DataTable from "@/components/computron/terceros/dataTable"
+import NavTabsOptions from "../comercial/pedidosPartials/navTabsOptions"
 export default {
   layout: "layoutComputron",
   name: "index",
@@ -85,7 +85,7 @@ export default {
     InputLabel,
     InputDate,
     ButtonIcon,
-    DataTable,
+    NavTabsOptions,
     VueTailWindPicker: () => import("vue-tailwind-picker")
   },
   data() {
