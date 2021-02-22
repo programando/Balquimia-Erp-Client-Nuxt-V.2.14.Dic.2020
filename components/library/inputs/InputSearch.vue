@@ -19,7 +19,7 @@
     <!-- Modal -->
     <div
       v-if="modal"
-      class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50"
+      class="absolute inset-0 z-10 flex items-center justify-center bg-black bg-opacity-50"
     >
       <div class="w-4/6 pb-10 -mt-48 bg-white rounded-lg">
         <div class="flex items-center justify-between px-4 bg-primary">

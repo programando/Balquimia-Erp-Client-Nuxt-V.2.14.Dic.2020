@@ -11,9 +11,8 @@
     </div>
     <div class="mx-20">
       <table class="w-full">
-        
         <thead class="flex w-full text-white ">
-          <tr class="flex w-full mr-3">
+          <tr class="flex w-full ">
             <th
               class="flex justify-center w-7/12 px-2 py-2 border-t border-b border-l border-gray-400 bg-primary"
             >
@@ -36,14 +35,13 @@
             </th>
           </tr>
         </thead>  
-
         <tbody
-          class="flex flex-col w-full overflow-y-scroll bg-grey-light"
+          class="flex flex-col w-full bg-grey-light"
           style="height: 50vh"
         >
           <tr
             v-for="producto in buscarProductos"   :key="producto.id_prdcto"
-            class="flex w-full bg-white cursor-pointer "
+            class="flex w-full text-sm bg-white cursor-pointer"
           >
             <td
               class="w-7/12 px-2 py-1 border-t border-b border-l border-gray-400"
