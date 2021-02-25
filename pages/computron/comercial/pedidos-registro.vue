@@ -34,13 +34,12 @@
           <div class="mx-12 mt-2 sm:ml-16 lg:ml-4 lg:mr-4">
             <!-- <InputDate textLabel="Fecha Despacho" width="w-full"></InputDate> -->
             <label>Fecha Despacho</label>
-            <VueTailWindPicker :init="false" @change="v => (value = v)">
-              <input
-                class="w-full px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"
-                v-model="value"
-                placeholder="fecha"
-              />
-            </VueTailWindPicker>
+            <Calendario />
+            
+
+
+
+
           </div>
         </div>
         <div class="grid gap-2 lg:gap-6 md:grid-cols-2 lg:grid-cols-5 ">
@@ -77,6 +76,8 @@ import InputLabel from "@/components/library/inputs/InputLabel";
 import InputDate from "@/components/library/inputs/InputDate";
 import ButtonIcon from "@/components/library/buttons/buttonIcon";
 import NavTabsOptions from "../comercial/pedidosPartials/navTabsOptions"
+import Calendario from "@/components/computron/terceros/calendario"
+
 export default {
   layout: "layoutComputron",
   name: "index",
@@ -86,7 +87,8 @@ export default {
     InputDate,
     ButtonIcon,
     NavTabsOptions,
-    VueTailWindPicker: () => import("vue-tailwind-picker")
+    Calendario
+    
   },
   data() {
     return {

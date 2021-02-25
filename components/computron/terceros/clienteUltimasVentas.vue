@@ -119,8 +119,12 @@
 </template>
 
 <script>
+import ButtonIcon from '@/components/library/buttons/buttonIcon'
 export default {
   name: "clienteUltimasVentas",
+  components:{
+    ButtonIcon
+  },
   props: {
     
   },
