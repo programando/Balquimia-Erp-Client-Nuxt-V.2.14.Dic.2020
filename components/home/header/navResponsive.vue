@@ -6,9 +6,7 @@
       <SimpleLink  textMenu='Productos' urlDestino='/'    :responisve = "true"></SimpleLink>    <!-- "/store/productos" -->
       <SimpleLink  textMenu='Servicios' urlDestino='/'    :responisve = "true"></SimpleLink>    <!-- "/home/servicios" -->
       <SimpleLink  textMenu='Experiencia' urlDestino='/'    :responisve = "true"></SimpleLink>    <!-- "/home/experiencia" -->
-      <SimpleLink  textMenu='Contacto'    urlDestino='/'    :responisve = "true"></SimpleLink>    <!-- "/home/contacto" -->
-      
-      
+      <SimpleLink  textMenu='Contacto'    urlDestino='/'    :responisve = "true"></SimpleLink>    <!-- "/home/contacto" --> 
     </ul>
     <ul class="mt-4">
       <Computron :responsive = "true"></Computron>

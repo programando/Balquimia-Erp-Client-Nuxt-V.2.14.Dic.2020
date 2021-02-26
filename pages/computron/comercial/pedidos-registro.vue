@@ -7,6 +7,7 @@
         >
           Registro de Pedidos
         </h2>
+        <!-- Formulario -->
         <div class="grid gap-2 lg:gap-6 md:grid-cols-2 lg:grid-cols-4">
           <div class="mx-12 mt-2 sm:ml-16 lg:ml-4 lg:mr-2">
             <InputSearch
@@ -32,14 +33,9 @@
             ></InputLabel>
           </div>
           <div class="mx-12 mt-2 sm:ml-16 lg:ml-4 lg:mr-4">
-            <!-- <InputDate textLabel="Fecha Despacho" width="w-full"></InputDate> -->
+            <!-- Calendario -->
             <label>Fecha Despacho</label>
             <Calendario />
-            
-
-
-
-
           </div>
         </div>
         <div class="grid gap-2 lg:gap-6 md:grid-cols-2 lg:grid-cols-5 ">
@@ -58,14 +54,12 @@
             ></InputLabel>
           </div>
         </div>
+        <!-- Fin Formulario -->
 
+        <!-- Navegacion -->
         <div class="mt-4 text-sm">
           <NavTabsOptions></NavTabsOptions>
-        </div>
-        
-        
-          
-        
+        </div>      
       </div>
     </div>
   </div>

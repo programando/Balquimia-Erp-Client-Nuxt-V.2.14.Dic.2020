@@ -1,8 +1,8 @@
 <template>
   <div>
-    <no-ssr>
+    <client-only>
       <date-picker v-model="time" valueType="format"></date-picker>
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 
