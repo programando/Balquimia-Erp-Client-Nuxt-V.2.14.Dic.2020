@@ -97,7 +97,7 @@ export default {
     return {
       productos: [
         { id: 0, fecha: '04/10/2015', factura: '256388', valor: '35000', plazo: '10', lleva: '40', treinta: '25', treintaMas: '40', sesentaMas: '65', noventaMas: '85'  },
-        { id: 0, fecha: '04/10/2015', factura: '256388', valor: '35000', plazo: '10', lleva: '40', treinta: '25', treintaMas: '40', sesentaMas: '65', noventaMas: '85'  }
+        { id: 1, fecha: '04/10/2015', factura: '256388', valor: '35000', plazo: '10', lleva: '40', treinta: '25', treintaMas: '40', sesentaMas: '65', noventaMas: '85'  }
       ]
     }
   },

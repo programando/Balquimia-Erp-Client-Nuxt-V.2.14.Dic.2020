@@ -3,11 +3,11 @@
     <div class="w-full">
       <ul class="flex flex-row flex-wrap pt-1 pb-2 mb-0 list-none">
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold leading-normal rounded shadow-lg"
+          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(1)"
                 :class="{
-                    'text-red-600 bg-white': openTab !== 1,
-                    'text-white bg-red-600': openTab === 1
+                    'text-primary bg-white border-b border-extra': openTab !== 1,
+                    'text-white bg-primary border border-extra': openTab === 1
                 }"
           >
             Ultimas Ventas
@@ -15,11 +15,11 @@
         </li>
        
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold leading-normal rounded shadow-lg"
+          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(2)"
                 :class="{
-                    'text-red-600 bg-white': openTab !== 2,
-                    'text-white bg-red-600': openTab === 2
+                    'text-primary bg-white border-b border-extra': openTab !== 2,
+                    'text-white bg-primary border border-extra': openTab === 2
                 }"
           >
             Pedido Generado
@@ -27,44 +27,44 @@
         </li>
 
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold leading-normal rounded shadow-lg"
+          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(3)"
                 :class="{
-                    'text-red-600 bg-white': openTab !== 3,
-                    'text-white bg-red-600': openTab === 3
+                    'text-primary bg-white border-b border-extra': openTab !== 3,
+                    'text-white bg-primary border border-extra': openTab === 3
                 }"
           >
             Estado de Cuenta
           </div>
         </li>
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold leading-normal rounded shadow-lg"
+          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(4)"
                 :class="{
-                    'text-red-600 bg-white': openTab !== 4,
-                    'text-white bg-red-600': openTab === 4
+                    'text-primary bg-white border-b border-extra': openTab !== 4,
+                    'text-white bg-primary border border-extra': openTab === 4
                 }"
           >
             Observaciones de Ventas
           </div>
         </li>
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold leading-normal rounded shadow-lg"
+          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(5)"
                 :class="{
-                    'text-red-600 bg-white': openTab !== 5,
-                    'text-white bg-red-600': openTab === 5
+                    'text-primary bg-white border-b border-extra': openTab !== 5,
+                    'text-white bg-primary border border-extra': openTab === 5
                 }"
           >
             Notas Cartera
           </div>
         </li>
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold leading-normal rounded shadow-lg"
+          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(6)"
                 :class="{
-                    'text-red-600 bg-white': openTab !== 6,
-                    'text-white bg-red-600': openTab === 6
+                    'text-primary bg-white border-b border-extra': openTab !== 6,
+                    'text-white bg-primary border border-extra': openTab === 6
                 }"
           >
             Contactos
