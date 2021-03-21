@@ -3,11 +3,16 @@ import Api  from "@/config/Axios";
 
 export default {
 
-      async contactoSendEmail( formData ) {
+  async contactoSendEmail( formData ) {
         return Api.post('contactos', formData);
   },
   
-  
+      async carteraClientes(idTercVendedor) {
+         return Api.get('/cartera/clientes', { params: { idTercVendedor } } );
+  },
  
+   async carteraFacturasPorCliente( nitCliente ) {
+         return Api.get('/cartera/cliente/facturas', { params: { nitCliente } } );
+  },
  
 }

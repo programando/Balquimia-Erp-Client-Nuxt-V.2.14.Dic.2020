@@ -85,9 +85,6 @@
     import InputBasic from "@/components/library/inputs/InputBasic";
     import ButtonBasic from "@/components/library/buttons/buttonBasic";
     import ButtonLoading   from "@/components/library/buttons/ButtonLoading";
-     
-     
-
     import User            from "@/models/User";
 
     export default {

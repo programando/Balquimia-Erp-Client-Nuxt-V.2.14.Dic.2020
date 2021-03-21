@@ -10,7 +10,7 @@
         <th
           class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
         >
-          Factu
+          Factura
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
@@ -25,7 +25,7 @@
         <th
           class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
         >
-          Lleva
+          Días
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
@@ -54,35 +54,34 @@
       class="flex flex-col w-full overflow-y-scroll bg-grey-light"
       style="height: 55vh;"
     >
-      <tr v-for="producto in productos" :key="producto.id" class="flex w-full bg-white ">
-        <td class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400">
-          {{ producto.fecha }}
-        </td>
+      <tr v-for="Factura in Facturas" :key="Factura.id" class="flex w-full bg-white ">
         <td class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400 ">
-          {{ producto.factura }}
+           {{ Factura.fcha_fact | FechaCorta }}
         </td>
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400">
-          {{ producto.valor }}
+          {{ Factura.prfjo }} - {{ Factura.id_fact}}
+        </td>
+        <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400">
+          {{ Factura.vr_saldo | NumeroEntero}} 
+        </td>
+
+        <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400 ">
+          {{ Factura.plazo_fact }}
         </td>
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400 ">
-          {{ producto.plazo }}
+          {{ Factura.dias_hoy }}
         </td>
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400 ">
-          {{ producto.lleva }}
+          {{ Factura._00_30  | NumeroEntero }}
         </td>
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400 ">
-          {{ producto.treinta }}
+          {{ Factura._31_60 | NumeroEntero }}
         </td>
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400 ">
-          {{ producto.treintaMas }}
+          {{ Factura._61_90 | NumeroEntero }}
         </td>
-        <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400 ">
-          {{ producto.sesentaMas }}
-        </td>
-        <td
-          class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-r border-gray-400 "
-        >
-          {{ producto.noventaMas }}
+        <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-r border-gray-400 " >
+          {{ Factura._91_180 | NumeroEntero }}
         </td>
       </tr>
     </tbody>
@@ -90,23 +89,26 @@
 </template>
 
 <script>
+
 export default {
   name: 'TableList',
+  props : { 
+           Facturas: {
+                type: Array,
+                default: () => []
+        },
+  },
 
   data() {
-    return {
-      productos: [
-        { id: 0, fecha: '04/10/2015', factura: '256388', valor: '35000', plazo: '10', lleva: '40', treinta: '25', treintaMas: '40', sesentaMas: '65', noventaMas: '85'  },
-        { id: 1, fecha: '04/10/2015', factura: '256388', valor: '35000', plazo: '10', lleva: '40', treinta: '25', treintaMas: '40', sesentaMas: '65', noventaMas: '85'  }
-      ]
-    }
+    return { }
   },
-};
+
+}
 </script>
 
 <style>
-.margen {
-  padding-right: 10px;
-  
-}
+  .margen {
+    padding-right: 10px;
+  }
+ 
 </style>

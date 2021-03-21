@@ -25,17 +25,17 @@
       >
         <tr
           v-for="cliente in buscarCliente"
-          :key="cliente.id"
+          :key="cliente.nro_identif"
           class="flex w-full bg-white cursor-pointer "
-          @click="buscarFaturasCliente(cliente.id)"
+          @click="facturasPorCliente( cliente.nro_identif,  cliente.nom_full )"
         >
           <td
             class="w-4/6 px-2 py-1 border-t border-b border-l border-gray-400"
           >
-            {{ cliente.nombre | Capitalize }}
+            {{ cliente.nom_full | Capitalize }}
           </td>
           <td class="w-2/6 px-2 py-1 text-right border border-gray-400">
-            {{ cliente.deuda | NumeroEntero }}
+            {{ cliente.vr_saldo | NumeroEntero }}
           </td>
         </tr>
       </tbody>
@@ -43,41 +43,55 @@
   </div>
 </template>
 <script>
+import Terceros from "@/models/Terceros";
 export default {
+    
   data: () => ({
-    clientes: [
-      { id: "0", nombre: "alfredo lopez", deuda: 452525 },
-      { id: "1", nombre: "jose gonzalez", deuda: 952525 },
-      { id: "2", nombre: "juan arribas", deuda: 952525 },
-      { id: "3", nombre: "carlos queiroz", deuda: 952525 },
-
-    ],
-    busqueda: ''
+    clientes: [],
+    busqueda: '',
+    Facturas:[],
+    
   }),
+  mounted() {
+      this.carteraClientes();
+  },
 
   methods: {
-    buscarFaturasCliente(idCliente) {
-      alert(idCliente);
+    carteraClientes() {
+        Terceros.carteraClientes( this.$store.state.User.User.id_terc  )
+        .then( response => {
+          this.clientes= response.data;
+        })
+    },
+    facturasPorCliente( nitCliente, nombreCliente) {
+        Terceros.carteraFacturasPorCliente( nitCliente)
+       .then ( response => {
+          this.Facturas = response.data;      
+          this.$emit('facturasPorCliente',  this.Facturas, nombreCliente); 
+       }) ;
+
     }
   },
 
   computed: {
-
     // pasar el varlo de la busqueda a minuscula
     busquedaMin(){
-      return this.busqueda.toLowerCase()
+      return this.busqueda.toUpperCase()
       
     },
 
     // aplicar un filtro con el valor de la busqueda ya en minuscula
     buscarCliente() {
       return this.clientes.filter((cliente)=> {
-        return cliente.nombre.match(this.busquedaMin);
+        return cliente.nom_full.match(this.busquedaMin);
       })
     }
   },
 };
 </script>
+
+
+
 <style scoped>
 .margen {
   /* margin-right: 40px; */

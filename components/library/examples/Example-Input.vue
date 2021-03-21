@@ -2,7 +2,7 @@
   <div>
     <label
       v-if="label"
-      class="form-label block mb-1 font-semibold text-gray-700"
+      class="block mb-1 font-semibold text-gray-700 form-label"
       :for="id"
     >
       {{ label }}
@@ -13,7 +13,7 @@
         :id="id"
         ref="input"
         v-bind="$attrs"
-        class="px-2 py-2 h-10 leading-normal block w-full text-gray-800 bg-white font-sans rounded-lg text-left appearance-none outline-none"
+        class="block w-full h-10 px-2 py-2 font-sans leading-normal text-left text-gray-800 bg-white rounded-lg outline-none appearance-none"
         :class="[
           {
             'border-red-400': errors.length,
@@ -28,7 +28,7 @@
         @blur="$emit('blur', $event)"
         @keyup="$emit('keyup', $event)"
       />
-      <div v-if="errors.length" class="text-red-600 mt-1 text-sm">
+      <div v-if="errors.length" class="mt-1 text-sm text-red-600">
         {{ errors[0] }}
       </div>
 
@@ -48,7 +48,7 @@
 
       <div
         v-if="withIcon"
-        class="absolute left-0 top-0 bottom-0 w-10 block ml-2"
+        class="absolute top-0 bottom-0 left-0 block w-10 ml-2"
       >
         <slot name="icon"></slot>
       </div>
