@@ -14,15 +14,13 @@
             <TableCustomers @facturasPorCliente="facturasPorCliente"></TableCustomers>
           </div>
         </div>
-        <div class="col-span-4 mt-10 text-sm bg-gray-300 lg:mt-0">
+        <div class="col-span-4 mt-10 text-sm bg-gray-300 lg:mt-0 ">
           <div class="container">
             <TableList :Facturas="Facturas"></TableList>
           </div>
         </div>
       </div>
-
-       <TableTotals :Totales="Totales"></TableTotals>
-
+       <!-- <TableTotals :Totales="Totales"></TableTotals> -->
     </div>
   </div>
 </template>

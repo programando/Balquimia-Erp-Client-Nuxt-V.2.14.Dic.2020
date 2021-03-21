@@ -1,4 +1,5 @@
 <template>
+<div>
   <table class="w-full text-left">
     <thead class="flex w-full text-white border margen">
       <tr class="flex w-full">
@@ -49,7 +50,6 @@
         </th>
       </tr>
     </thead>
-    
     <tbody
       class="flex flex-col w-full overflow-y-scroll bg-grey-light"
       style="height: 55vh;"
@@ -86,6 +86,108 @@
       </tr>
     </tbody>
   </table>
+  <table class="w-full text-left">
+    <thead class="flex w-full text-white margen">
+      <tr class="flex w-full">
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 "
+        >
+         
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 "
+        >
+          
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2"
+        >
+          
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2"
+        >
+        
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2"
+        >
+          
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+        >
+          0 - 30
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+        >
+          31 - 60
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+        >
+          61 - 90
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border border-black"
+        >
+          90 o Más
+        </th>
+      </tr>
+    </thead>
+    <tbody class="flex w-full text-white margen">
+      <tr class="flex w-full">
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 "
+        >
+         
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 "
+        >
+          
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2"
+        >
+          
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2"
+        >
+        
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2"
+        >
+          
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+        >
+          0 - 30
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+        >
+          31 - 60
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+        >
+          61 - 90
+        </th>
+        <th
+          class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border border-black"
+        >
+          90 o Más
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  
 </template>
 
 <script>

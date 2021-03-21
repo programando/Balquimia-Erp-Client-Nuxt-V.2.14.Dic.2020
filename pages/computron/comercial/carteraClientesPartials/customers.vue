@@ -40,6 +40,46 @@
         </tr>
       </tbody>
     </table>
+    <table class="w-full mr-6">
+        <thead class="w-full text-white">
+          <tr class="flex mr-4">
+            <th
+              class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
+            >
+              Total Cartera
+            </th>
+            <th
+              class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
+            >
+              Cartera Vencida
+            </th>
+            <th
+              class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
+            >
+              % Cartera
+            </th>
+          </tr>
+        </thead>
+        <tbody class="w-full text-white">
+          <tr class="flex mr-4">
+            <th
+              class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
+            >
+              Total Cartera
+            </th>
+            <th
+              class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
+            >
+              Cartera Vencida
+            </th>
+            <th
+              class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
+            >
+              % Cartera
+            </th>
+          </tr>
+        </tbody>
+      </table>
   </div>
 </template>
 <script>
