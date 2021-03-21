@@ -13,4 +13,9 @@ Vue.filter('Capitalize', (value) => {
    if (!value) return ''
     value = value.toString()
     return value.charAt(0).toUpperCase() + value.slice(1)
-   });
+});
+Vue.filter('NoShowZero', (value) => {
+if (!value) return ''
+   value = Numeral(value).format('0,0');
+   return value == 0 ? '' : value;
+});

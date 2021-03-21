@@ -40,7 +40,7 @@
 
         </div>
         <div class="mx-8 mt-10 ">
-          <h2 class="mb-4 text-lg font-bold text-center lg:text-xl">Porcentajes de ventas</h2>
+          <h2 class="mb-4 text-lg font-bold text-center lg:text-xl">Ventas últimos dos años</h2>
           <LineChart></LineChart>
         </div>
       </div>
