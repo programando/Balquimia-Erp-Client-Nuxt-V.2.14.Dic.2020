@@ -1,7 +1,7 @@
 <template>
 <div>
   <table class="w-full text-left">
-    <thead class="flex w-full text-white border margen">
+    <thead class="flex w-full text-xs text-white border margen">
       <tr class="flex w-full">
         <th
           class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
@@ -51,8 +51,8 @@
       </tr>
     </thead>
     <tbody
-      class="flex flex-col w-full overflow-y-scroll bg-grey-light"
-      style="height: 55vh;"
+      class="flex flex-col w-full overflow-y-scroll text-xs bg-white"
+      style="height: 64vh;"
     >
       <tr v-for="Factura in Facturas" :key="Factura.id" class="flex w-full bg-white ">
         <td class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400 ">
@@ -86,8 +86,8 @@
       </tr>
     </tbody>
   </table>
-  <table class="w-full text-left">
-    <thead class="flex w-full text-white margen">
+  <table class="w-full text-xs text-left">
+    <thead class="flex w-full text-white bg-white margen">
       <tr class="flex w-full">
         <th
           class="flex justify-center w-1/4 px-2 py-2 "
@@ -110,9 +110,9 @@
         
         </th>
         <th
-          class="flex justify-center w-1/4 px-2 py-2"
+          class="flex w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
         >
-          
+          Total 
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
@@ -136,7 +136,7 @@
         </th>
       </tr>
     </thead>
-    <tbody class="flex w-full text-white margen">
+    <tbody class="flex w-full text-white bg-white margen">
       <tr class="flex w-full">
         <th
           class="flex justify-center w-1/4 px-2 py-2 "
@@ -159,9 +159,9 @@
         
         </th>
         <th
-          class="flex justify-center w-1/4 px-2 py-2"
+          class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
         >
-          
+          Total Cliente
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"

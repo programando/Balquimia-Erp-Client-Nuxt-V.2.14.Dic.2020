@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="px-4 py-2 ">
+    <div class="px-4 py-2 bg-white">
       <label class="font-semibold text-extra">Buscar :</label>
       <input class="w-5/6 px-2 py-1 ml-2 rounded-lg focus:border-primary focus:outline-none focus:shadow-outline" type="text" v-model="busqueda" placeholder="Buscar Clientes" />
     </div>
-    <table class="w-full col-span-2 text-left">
+    <table class="w-full col-span-2 text-xs text-left">
       <thead class="flex w-full text-white margen">
         <tr class="flex w-full ">
           <th
@@ -20,8 +20,8 @@
         </tr>
       </thead>
       <tbody
-        class="flex flex-col w-full overflow-y-scroll bg-grey-light"
-        style="height: 50vh"
+        class="flex flex-col w-full overflow-y-scroll text-xs bg-white"
+        style="height: 60vh"
       >
         <tr
           v-for="cliente in buscarCliente"
@@ -40,7 +40,7 @@
         </tr>
       </tbody>
     </table>
-    <table class="w-full mr-6">
+    <table class="w-full mr-6 text-xs">
         <thead class="w-full text-white">
           <tr class="flex mr-4">
             <th
@@ -79,7 +79,7 @@
             </th>
           </tr>
         </tbody>
-      </table>
+    </table>
   </div>
 </template>
 <script>
@@ -136,6 +136,6 @@ export default {
 .margen {
   /* margin-right: 40px; */
   /* margin-left: 40px; */
-  padding-right: 11px;
+  padding-right: 15px;
 }
 </style>
