@@ -1,6 +1,6 @@
 <template>
   <div class="font-latos">
-    <div class="min-h-screen px-4 pt-24 pb-40 bg-gray-100">
+    <div class="min-h-screen px-4 pt-24 bg-gray-100 ">
       <div class="pb-4 mx-2 bg-white border-2 rounded-lg">
         <h2
           class="items-center py-2 text-lg font-semibold text-center text-white bg-primary"
