@@ -11,12 +11,12 @@
       <div class="mx-2 text-sm border rounded-lg lg:grid lg:grid-cols-6">
         <div class="col-span-2 mr-1 bg-gray-300">
           <div class="container col-span-2">
-            <TableCustomers @facturasPorCliente="facturasPorCliente"></TableCustomers>
+            <CustomersList @facturasPorCliente="facturasPorCliente" :TotalesVendedor="TotalesVendedor"></CustomersList>
           </div>
         </div>
         <div class="col-span-4 mt-10 text-sm bg-gray-300 lg:mt-0 ">
           <div class="container">
-            <TableList :Facturas="Facturas"></TableList>
+            <InvoicesList :Facturas="Facturas" :TotalesCliente="TotalesCliente" :TotalesVendedor="TotalesVendedor"></InvoicesList>
           </div>
         </div>
       </div>
@@ -26,23 +26,24 @@
 </template>
 
 <script>
-  import TableCustomers   from "../comercial/carteraClientesPartials/customers";
-  import TableList        from "../comercial/carteraClientesPartials/invoices";
+  import Terceros         from "@/models/Terceros";
+  import CustomersList   from "../comercial/carteraClientesPartials/customers";
+  import InvoicesList     from "../comercial/carteraClientesPartials/invoices";
   import TableTotals      from "../comercial/carteraClientesPartials/totals";
 
     export default {
           layout: "layoutComputron",
           name: "index",
-          components: { TableCustomers, TableList, TableTotals },
+          components: { CustomersList, InvoicesList, TableTotals },
           data: () => ({
                 Facturas:[],
                 nombreCliente:'Cartera Clientes',
-                Totales : {'_00_30' : 0, 
-                            '_31_60'  : 0, 
-                            '_61_90' : 0, 
-                            '_91_180' : 0    
-                  }
+                TotalesCliente : {'_00_30' : 0,       '_31_60'  : 0,        '_61_90' : 0,       '_91_180' : 0    },
+                TotalesVendedor :[],
           }),
+          mounted() {
+              this.carteraTotalPorVendedor();
+          },
           methods: {
               facturasPorCliente ( listadoFacturas, nombreCliente) {
                 this.nombreCliente = nombreCliente;
@@ -50,13 +51,24 @@
                 this.totalesCartera();
               },
               totalesCartera () {
+                  this.TotalesCliente['_00_30']=0;
+                  this.TotalesCliente['_31_60']=0;
+                  this.TotalesCliente['_61_90']=0;
+                  this.TotalesCliente['_91_180']=0;                  
                   this.Facturas.forEach((item) => {
-                      this.Totales['_00_30']  += parseFloat(item._00_30 )    ;
-                      this.Totales['_31_60']  += parseFloat(item._31_60 )    ;
-                      this.Totales['_61_90']  += parseFloat(item._61_90 )    ;
-                      this.Totales['_91_180'] += parseFloat(item._91_180 )    ;
-              });
-          },
+                      this.TotalesCliente['_00_30']  += parseFloat(item._00_30 )    ;
+                      this.TotalesCliente['_31_60']  += parseFloat(item._31_60 )    ;
+                      this.TotalesCliente['_61_90']  += parseFloat(item._61_90 )    ;
+                      this.TotalesCliente['_91_180'] += parseFloat(item._91_180 )    ;
+                  })
+              },
+              carteraTotalPorVendedor() {
+                  Terceros.carteraTotalPorVendedor ( this.$store.state.User.IdTercero  )
+                  .then( response => {
+                      this.TotalesVendedor = response.data[0]
+                  })
+              }
+        
       }
     }
 

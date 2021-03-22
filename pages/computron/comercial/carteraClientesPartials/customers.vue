@@ -56,7 +56,7 @@
             <th
               class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
             >
-              % Cartera
+              % Vencimiento
             </th>
           </tr>
         </thead>
@@ -65,17 +65,17 @@
             <th
               class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
             >
-              Total Cartera
+              {{ TotalesVendedor.TotalCartera | NumeroEntero }}
             </th>
             <th
               class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
             >
-              Cartera Vencida
+               {{ TotalesVendedor.vencido | NumeroEntero }}
             </th>
             <th
               class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
             >
-              % Cartera
+               {{ TotalesVendedor.pctjeCartera | NumeroDecimal }} %
             </th>
           </tr>
         </tbody>
@@ -85,6 +85,11 @@
 <script>
 import Terceros from "@/models/Terceros";
 export default {
+    name: 'customersList',
+    props: {
+            TotalesVendedor : Object,
+    },
+    
     
   data: () => ({
     clientes: [],
@@ -98,7 +103,7 @@ export default {
 
   methods: {
     carteraClientes() {
-        Terceros.carteraClientes( this.$store.state.User.User.id_terc  )
+        Terceros.carteraClientes( this.$store.state.User.IdTercero  )
         .then( response => {
           this.clientes= response.data;
         })
