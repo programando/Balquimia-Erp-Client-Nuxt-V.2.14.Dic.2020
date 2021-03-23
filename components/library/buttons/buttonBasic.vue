@@ -1,5 +1,5 @@
 <template>
-  <div :class="[setBorderColor, width, setSizeText]" class="px-4 py-2 rounded-lg">
+  <div :class="[setBorderColor, width, setSizeText, setBgColor]" class="flex justify-center px-4 py-2 rounded-lg">
     <nuxt-link :to="to">
       <p>{{ text }}</p>
     </nuxt-link>
@@ -13,7 +13,8 @@ export default {
     to: String,
     borderColor: String,
     width: String,
-    sizeText: String
+    sizeText: String,
+    bgColor: String
   },
   computed: {
     setBorderColor() {
@@ -45,6 +46,15 @@ export default {
         case "lg":
           return "text-lg";
           break;
+      }
+    },
+    setBgColor(){
+      switch (this.bgColor) {
+        case "primary":
+          return "hover:bg-primary hover:text-white";
+          break;
+
+        
       }
     }
   }

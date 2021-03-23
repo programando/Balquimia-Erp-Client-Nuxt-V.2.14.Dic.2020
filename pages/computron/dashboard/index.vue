@@ -21,7 +21,7 @@
           <CardLeftImage   
                 text    = "Ventas por clientes"
                 urlImg  = "/images/dashboard/sales.svg"
-                urlLink = "#">
+                urlLink = "/computron/comercial/ventas-clientes">
           </CardLeftImage>
 
           <CardLeftImage  
