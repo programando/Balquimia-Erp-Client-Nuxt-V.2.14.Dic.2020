@@ -54,7 +54,7 @@
       class="flex flex-col w-full overflow-y-scroll text-xs bg-white"
       style="height: 64vh;"
     >
-      <tr v-for="Factura in Facturas" :key="Factura.id" class="flex w-full bg-white ">
+      <tr v-for="Factura in Facturas" :key="Factura.id" class="flex w-full bg-white tr">
         <td class="w-1/4 px-2 py-1 border-t border-b border-l border-gray-400 ">
            {{ Factura.fcha_fact | FechaCorta }}
         </td>
@@ -220,5 +220,8 @@ export default {
   .margen {
     padding-right: 10px;
   }
- 
+  
+  .tr:nth-child(odd){
+  background-color: #E5E7EB
+}
 </style>
