@@ -112,7 +112,7 @@
         <th
           class="flex w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
         >
-          Total 
+          Total cliente
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
@@ -159,9 +159,10 @@
         
         </th>
         <th
-          class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+          class="flex w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
+         
         >
-          Total Cliente
+          Total vendedor
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
