@@ -13,6 +13,13 @@ export default {
  
    async carteraFacturasPorCliente( nitCliente ) {
          return Api.get('/cartera/cliente/facturas', { params: { nitCliente } } );
-  },
+      },
+   
+      async carteraTotalPorVendedor( idTercVendedor ) {
+         return Api.get('/cartera/vendedor/total', { params: { idTercVendedor } } );
+      },
+   
+      
+   
  
 }

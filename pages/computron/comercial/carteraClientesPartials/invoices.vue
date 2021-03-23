@@ -62,7 +62,7 @@
           {{ Factura.prfjo }} - {{ Factura.id_fact}}
         </td>
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400">
-          {{ Factura.vr_saldo | NumeroEntero}} 
+          {{ Factura.vr_saldo | NoShowZero}} 
         </td>
 
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400 ">
@@ -72,16 +72,16 @@
           {{ Factura.dias_hoy }}
         </td>
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400 ">
-          {{ Factura._00_30  | NumeroEntero }}
+          {{ Factura._00_30  | NoShowZero }}
         </td>
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400 ">
-          {{ Factura._31_60 | NumeroEntero }}
+          {{ Factura._31_60 | NoShowZero }}
         </td>
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-gray-400 ">
-          {{ Factura._61_90 | NumeroEntero }}
+          {{ Factura._61_90 | NoShowZero }}
         </td>
         <td class="w-1/4 px-2 py-1 text-right border-t border-b border-l border-r border-gray-400 " >
-          {{ Factura._91_180 | NumeroEntero }}
+          {{ Factura._91_180 | NoShowZero }}
         </td>
       </tr>
     </tbody>
@@ -92,7 +92,7 @@
         <th
           class="flex justify-center w-1/4 px-2 py-2 "
         >
-         
+
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 "
@@ -117,22 +117,22 @@
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
         >
-          0 - 30
+           {{ TotalesCliente._00_30 | NoShowZero }}
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
         >
-          31 - 60
+           {{ TotalesCliente._31_60 | NoShowZero }}
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
         >
-          61 - 90
+           {{ TotalesCliente._61_90 | NoShowZero }}
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border border-black"
         >
-          90 o Más
+           {{ TotalesCliente._91_180 | NoShowZero }}
         </th>
       </tr>
     </thead>
@@ -166,22 +166,22 @@
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
         >
-          0 - 30
+          {{ TotalesVendedor._00_30 | NoShowZero }}
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
         >
-          31 - 60
+          {{ TotalesVendedor._31_60 | NoShowZero }}
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border-t border-b border-l border-black"
         >
-          61 - 90
+         {{ TotalesVendedor._61_90 | NoShowZero }}
         </th>
         <th
           class="flex justify-center w-1/4 px-2 py-2 bg-gray-700 border border-black"
         >
-          90 o Más
+          {{ TotalesVendedor._91_180 | NoShowZero }}
         </th>
       </tr>
     </tbody>
@@ -197,6 +197,14 @@ export default {
   props : { 
            Facturas: {
                 type: Array,
+                default: () => []
+        },
+            TotalesCliente: {
+                type: Object,
+                default: () => []
+        },
+            TotalesVendedor: {
+                type: Object,
                 default: () => []
         },
   },
