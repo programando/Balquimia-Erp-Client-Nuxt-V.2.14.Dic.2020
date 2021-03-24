@@ -27,19 +27,6 @@
             Estado de Cuenta
           </div>
         </li>
-
-        <!-- <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div
-            class="block px-5 py-3 font-bold rounded-sm shadow-lg"
-            @click="toggleTabs(3)"
-            :class="{
-              'text-primary bg-white border-b border-extra': openTab !== 3,
-              'text-white bg-primary border border-extra': openTab === 3
-            }"
-          >
-            Consultas
-          </div>
-        </li> -->
       </ul>
 
       <div
@@ -51,18 +38,7 @@
               <HistoricoVentas></HistoricoVentas>
             </div>
             <div :class="{ hidden: openTab !== 2, block: openTab === 2 }">
-              
-            </div>
-            <div :class="{ hidden: openTab !== 3, block: openTab === 3 }">
-              <p>
-                Efficiently unleash cross-media information without cross-media
-                value. Quickly maximize timely deliverables for real-time
-                schemas.
-                <br />
-                <br />
-                Dramatically maintain clicks-and-mortar solutions without
-                functional solutions.
-              </p>
+              <EstadoCuenta></EstadoCuenta>
             </div>
           </div>
         </div>
@@ -73,11 +49,13 @@
 
 <script>
 import HistoricoVentas from "@/components/computron/terceros/historico-ventas";
+import EstadoCuenta from "@/components/computron/terceros/estado-cuenta";
 
 export default {
   name: "DataTable",
   components: {
-    HistoricoVentas
+    HistoricoVentas,
+    EstadoCuenta
   },
 
   data() {

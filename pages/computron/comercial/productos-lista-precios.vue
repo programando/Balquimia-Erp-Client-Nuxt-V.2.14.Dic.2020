@@ -11,7 +11,7 @@
     </div>
     <div class="mx-20">
       <table class="w-full">
-        <thead class="flex w-full text-white ">
+        <thead class="flex w-full text-sm text-white">
           <tr class="flex w-full ">
             <th
               class="flex justify-center w-7/12 px-2 py-2 border-t border-b border-l border-gray-400 bg-primary"
@@ -36,7 +36,7 @@
           </tr>
         </thead>  
         <tbody
-          class="flex flex-col w-full bg-grey-light"
+          class="flex flex-col w-full text-xs bg-grey-light"
           style="height: 50vh"
         >
           <tr
