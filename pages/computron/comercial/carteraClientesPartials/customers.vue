@@ -26,7 +26,7 @@
         <tr
           v-for="cliente in buscarCliente"
           :key="cliente.nro_identif"
-          class="flex w-full bg-white cursor-pointer "
+          class="flex w-full bg-white cursor-pointer tr"
           @click="facturasPorCliente( cliente.nro_identif,  cliente.nom_full )"
         >
           <td
@@ -142,5 +142,9 @@ export default {
   /* margin-right: 40px; */
   /* margin-left: 40px; */
   padding-right: 15px;
+}
+
+.tr:nth-child(odd){
+  background-color: #E5E7EB
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <table class="w-full text-left">
-      <thead class="flex w-full text-white border margen">
+      <thead class="flex w-full text-sm text-white border margen">
         <tr class="flex w-full">
           <th
             class="flex justify-center w-2/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"
@@ -53,7 +53,7 @@
         </tr>
       </thead>
       <tbody
-        class="flex flex-col w-full overflow-y-scroll text-sm bg-grey-light"
+        class="flex flex-col w-full overflow-y-scroll text-xs bg-grey-light"
         style="height: 55vh;"
       >
         <tr
