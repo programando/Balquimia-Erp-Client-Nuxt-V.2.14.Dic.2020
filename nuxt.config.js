@@ -1,4 +1,5 @@
-require('dotenv').config(); // process.env.variable-definida
+//require('dotenv').config(); // process.env.variable-definida
+import dotenv from "dotenv"; dotenv.config();
 
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -12,19 +13,12 @@ export default {
       { hid: 'http-equiv', name: 'X-UA-Compatible', content: 'IE=edge' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
-    // script: [
-    //   {
-    //     src: 'https://use.fontawesome.com/020bc864c9.js'
-    //   },
-    // ],
-        
-    // link: [
-    //   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    //   {
-    //     rel: 'stylesheet',
-    //     href: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap'
-    //   },
-    // ]
+  env: {
+      URL_BASE: process.env.URL_BASE,
+      URL_API: process.env.URL_API,
+      URL_WEB: process.env.URL_WEB,
+      URL_RESET_PASS: process.env.URL_RESET_PASS,
+    },
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
