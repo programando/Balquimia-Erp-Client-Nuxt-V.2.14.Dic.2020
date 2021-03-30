@@ -1,6 +1,6 @@
 export default function (contex) {
    if (!contex.store.state.User.Logueado) {
-    contex.redirect('/computron');
+    return contex.redirect('/computron');
   }
   
   //console.log(!contex.store.state.User.Logueado);

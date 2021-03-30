@@ -102,11 +102,12 @@
     }),
 
       
-/*         mounted() {
+      mounted() {
             if ( this.$store.state.User.Logueado) {
               this.$router.replace({ path: '/computron/dashboard' });
             } 
-        }, */
+        }, 
+
       methods: {
             login(){
                   this.$refs.ButtonLoading.startLoading();

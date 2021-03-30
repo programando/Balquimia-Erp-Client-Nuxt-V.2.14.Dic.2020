@@ -39,7 +39,7 @@
                 Facturas:[],
                 nombreCliente:'Cartera Clientes',
                 TotalesCliente : {'_00_30' : 0,       '_31_60'  : 0,        '_61_90' : 0,       '_91_180' : 0    },
-                TotalesVendedor :[],
+                TotalesVendedor :{},
           }),
           mounted() {
               this.carteraTotalPorVendedor();
@@ -63,7 +63,7 @@
                   })
               },
               carteraTotalPorVendedor() {
-                  Terceros.carteraTotalPorVendedor ( this.$store.state.User.IdTercero  )
+                  Terceros.carteraTotalPorVendedor ( this.$store.state.User.IdTercLogueado  )
                   .then( response => {
                       this.TotalesVendedor = response.data[0]
                   })

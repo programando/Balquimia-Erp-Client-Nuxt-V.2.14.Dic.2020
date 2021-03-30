@@ -1,6 +1,7 @@
 
 export const state = () => ({
-  IdTercero: 0,
+   IdTercero: 0,
+   IdTercLogueado:0,
   Logueado : false,
   User     : null,
   
@@ -29,7 +30,7 @@ export const mutations = {
    SET_USER(state, UserData) {
       state.User     = UserData
       state.Logueado = true;
-      state.IdTercero = UserData.id_terc;
+      state.IdTercLogueado = UserData.id_terc;
    },
    
    USER_LOGOUT(state) {

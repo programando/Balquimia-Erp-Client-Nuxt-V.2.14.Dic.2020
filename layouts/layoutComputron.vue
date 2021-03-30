@@ -63,7 +63,7 @@
   import UserAccount from "@/components/computron/terceros/userAccount";
 export default {
   name: "layoutComputron",
-    middleware: ['isAuthenticated'],
+    //middleware: ['isAuthenticated'],
     data() {
       return {
         
@@ -71,11 +71,11 @@ export default {
     },
     components: { UserAccount},
     
-/*     mounted() {
+   created()   {
         if ( !this.$store.state.User.Logueado) {
           this.$router.replace({ path: '/computron/' });
         }
-    }, */
+    },
 
 };
 </script>

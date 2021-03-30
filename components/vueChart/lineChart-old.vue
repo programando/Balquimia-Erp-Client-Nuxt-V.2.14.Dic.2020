@@ -18,7 +18,7 @@ export default {
         let DatosAnio1 =  Array();
         let DatosAnio2 = Array();
         let Data;
-        Ventas.VendedorUltimosDosAnios ( this.$store.state.User.IdTercero)
+        Ventas.VendedorUltimosDosAnios ( this.$store.state.User.IdTercLogueado )
         .then ( response => {
             Data = response.data[1] ;
             DatosAnio1Label = Data.anio;

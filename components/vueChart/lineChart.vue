@@ -12,10 +12,10 @@ export default {
   }),
 
   mounted() {
-/*         Ventas.VendedorUltimosDosAnios ( this.$store.state.User.IdTercero)
+/*         Ventas.VendedorUltimosDosAnios ( this.$store.state.User.IdTercLogueado)
         .then ( response => {
             console.log ( response.data );
-            console.log (this.$store.state.User.IdTercero );
+            console.log (this.$store.state.User.IdTercLogueado );
         }); */
      
 

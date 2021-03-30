@@ -56,7 +56,7 @@
             <th
               class="flex justify-center w-1/3 px-4 py-2 bg-gray-700 border-t border-b border-l border-black"
             >
-              % Vencimiento
+              % Vencido
             </th>
           </tr>
         </thead>
@@ -103,7 +103,7 @@ export default {
 
   methods: {
     carteraClientes() {
-        Terceros.carteraClientes( this.$store.state.User.IdTercero  )
+        Terceros.carteraClientes( this.$store.state.User.IdTercLogueado  )
         .then( response => {
           this.clientes= response.data;
         })
