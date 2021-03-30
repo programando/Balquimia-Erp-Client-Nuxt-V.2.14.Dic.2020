@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <label class="block"> {{ textLabel }}</label>
     <div @click="modal = !modal" class="relative z-10 inline cursor-pointer">
       <img
@@ -19,9 +19,9 @@
     <!-- Modal -->
     <div
       v-if="modal"
-      class="absolute inset-0 z-10 flex items-center justify-center bg-black bg-opacity-50"
+      class="absolute inset-0 z-20 flex items-center justify-center bg-black bg-opacity-50 max-h-lg "
     >
-      <div class="w-4/6 pb-10 -mt-48 bg-white rounded-lg">
+      <div class="w-4/6 mt-10 bg-white rounded-lg">
         <div class="flex items-center justify-between px-4 bg-primary">
           <h2 class="py-2 text-lg font-semibold text-white ">
             <strong><slot name='ModalTitle'>Búsqueda</slot></strong>
@@ -46,7 +46,7 @@
           ></InputLabel>
         </div>
 
-        <div class="">
+        <div class="h-90">
           <div class="w-full col-span-2 px-4 py-1 border-2">
              <table  >
                     <thead>
@@ -57,7 +57,9 @@
                           <th></th>
                       </tr>
                     </thead>
-                <tbody class="">
+                <tbody class="flex-col w-full overflow-y-scroll"
+                  style="height: 40vh"
+                >
                   <tr v-for="Tercero in tercerosEncontrados" :key="Tercero.id_terc"> 
                     <td> {{ Tercero.nro_identif}} </td>
                     <td> {{ Tercero.nom_full}} </td>
@@ -68,8 +70,8 @@
                           variant="success"
                         ></ButtonIcon>
                       </td>
-                 </tr>
-            </tbody>
+                  </tr>
+                </tbody>
           </table>
 
 
@@ -111,7 +113,17 @@ export default {
           filtroBusqueda: '',
           idTercVendedor:''
       },
-       tercerosEncontrados :[],
+       tercerosEncontrados :[
+         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
+         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
+         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
+         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
+         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
+         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
+         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
+         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
+         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'}, 
+       ],
     };
   },
 

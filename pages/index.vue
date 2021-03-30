@@ -2,7 +2,7 @@
   <div>
      
     
-    <div class="bg-gray-900 ">
+    <div class="bg-gray-900">
       <div
         class="pt-24 pb-10 bg-center bg-no-repeat bg-cover lg lg:pb-10"
         style="background-image: url(/images/comunes/malla2.webp)"
