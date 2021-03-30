@@ -9,12 +9,14 @@
         </h2>
         <!-- Formulario -->
         <div class="grid gap-2 lg:gap-6 md:grid-cols-2 lg:grid-cols-4">
+         
           <div class="mx-12 mt-2 sm:ml-16 lg:ml-4 lg:mr-2">
             <InputSearch
-              textLabel="Cliente"
               placeholder="Nombre del Cliente"
-              width="w-full"
-            ></InputSearch>
+              labelTitle='Puede realizar la búsqueda por: Nombre/Razón social, Nit, Sucursal, Nombre Comercial'
+              width="w-full" >
+              <template slot='ModalTitle'>Búsqueda de Clientes</template>
+            </InputSearch>
           </div>
 
           <div class="mx-12 mt-2 sm:ml-16 lg:ml-2 lg:mr-4">

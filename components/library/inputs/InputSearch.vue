@@ -24,7 +24,7 @@
       <div class="w-4/6 pb-10 -mt-48 bg-white rounded-lg">
         <div class="flex items-center justify-between px-4 bg-primary">
           <h2 class="py-2 text-lg font-semibold text-white ">
-            Búsqueda de Clientes
+            <strong><slot name='ModalTitle'>Búsqueda</slot></strong>
           </h2>
           <div @click="modal = false" class="cursor-pointer ">
             <img
@@ -37,44 +37,48 @@
 
         <div class="px-4 py-2">
           <InputLabel
-            textLabel="Puede realizar la busqueda por: Nombre/Razón Social, Nit, Sucursal, Nombre comercial"
+             @change     ="BuscarTercero()"
+             @input      ="BuscarTercero()"
+            :textLabel= "labelTitle"
             placeholder="Digite para iniciar la búsqueda..."
             width="w-5/6"
+            v-model="form.filtroBusqueda"
           ></InputLabel>
         </div>
 
-        <div class="grid px-4 lg:grid-cols-9">
+        <div class="">
           <div class="w-full col-span-2 px-4 py-1 border-2">
-            <p>Nit</p>
-          </div>
-          <div class="w-full col-span-4 px-4 py-1 border-t-2 border-b-2">
-            <p>Nombre/Razón Social</p>
-          </div>
-          <div class="w-full col-span-2 px-4 py-1 border-2">
-            <p>Sucursal</p>
-          </div>
-          <div class="border-t-2 border-b-2 border-r-2">
+             <table  >
+                    <thead>
+                      <tr>
+                          <th> Nit</th>
+                          <th> Nombre/Razón Soc.</th>
+                          <th> Sucursal</th>
+                          <th></th>
+                      </tr>
+                    </thead>
+                <tbody class="">
+                  <tr v-for="Tercero in tercerosEncontrados" :key="Tercero.id_terc"> 
+                    <td> {{ Tercero.nro_identif}} </td>
+                    <td> {{ Tercero.nom_full}} </td>
+                    <td> {{ Tercero.nom_suc}}</td>
+                      <td class="flex items-center justify-center border-t-2 border-b-2 border-r-2 ">
+                        <ButtonIcon
+                          urlIcon="/images/dashboard/left-arrow-repo.svg"
+                          variant="success"
+                        ></ButtonIcon>
+                      </td>
+                 </tr>
+            </tbody>
+          </table>
+
 
           </div>
         </div>
 
-        <div class="grid px-4 lg:grid-cols-9">
-          <div class="w-full col-span-2 px-4 py-1 text-gray-700 border-2">
-            <p> </p>
-          </div>
-          <div class="w-full col-span-4 px-4 py-1 text-gray-700 border-t-2 border-b-2">
-            <p> </p>
-          </div>
-          <div class="w-full col-span-2 px-4 py-1 text-gray-700 border-2">
-            <p> </p>
-          </div>
-          <div class="flex items-center justify-center border-t-2 border-b-2 border-r-2 ">
-            <ButtonIcon
-              urlIcon="/images/dashboard/left-arrow-repo.svg"
-              variant="success"
-            ></ButtonIcon>
-          </div>
-        </div>
+       
+
+
       </div>
     </div>
     
@@ -84,6 +88,7 @@
 <script>
 import InputLabel from "@/components/library/inputs/InputLabel";
 import ButtonIcon from "@/components/library/buttons/buttonIcon";
+import Terceros  from "@/models/Terceros";
 
 export default {
   name: "InputSearch",
@@ -92,18 +97,33 @@ export default {
     ButtonIcon
   },
   props: {
-    textLabel: String,
+    UrlBusqueda: String,
+    labelTitle: String,
     placeholder: String,
     width: String
   },
 
   data() {
     return {
-      modal: false
+      modal: false,
+      textLabel:'',
+      form :{
+          filtroBusqueda: '',
+          idTercVendedor:''
+      },
+       tercerosEncontrados :[],
     };
   },
 
-  methods: {}
+  methods: {
+    BuscarTercero() {
+      this.form.idTercVendedor = this.$store.state.User.IdTercLogueado;
+      Terceros.clientesBuscar ( this.form)
+      .then ( response => {
+          this.tercerosEncontrados= response.data;
+      })
+    }
+  }
 };
 </script>
 
