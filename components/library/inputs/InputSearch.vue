@@ -64,33 +64,35 @@
 
             <div class="h-90">
               <div class="w-full col-span-2 px-4 py-1 border-2">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Nit</th>
-                      <th>Nombre/Razón Soc.</th>
-                      <th>Sucursal</th>
-                      <th></th>
+                <table class="w-full text-left">
+                  <thead class="flex w-full text-xs text-white border margen">
+                    <tr class="flex w-full">
+                      <th class="flex justify-center w-1/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary">Nit</th>
+                      <th class="flex justify-center w-2/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary">Nombre/Razón Soc.</th>
+                      <th class="flex justify-center w-2/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary">Sucursal</th>
+                      <th class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"></th>
                     </tr>
                   </thead>
                   <tbody
-                    class="flex-col w-full overflow-y-scroll"
+                    class="flex flex-col w-full overflow-y-scroll text-xs bg-white"
                     style="height: 40vh"
                   >
-                    <tr
+                    <tr class="flex w-full bg-white tr"
                       v-for="Tercero in tercerosEncontrados"
                       :key="Tercero.id_terc"
                     >
-                      <td>{{ Tercero.nro_identif }}</td>
-                      <td>{{ Tercero.nom_full }}</td>
-                      <td>{{ Tercero.nom_suc }}</td>
+                      <td class="flex items-center w-1/6 px-2 py-1 border-t border-b border-l border-gray-400 ">{{ Tercero.nro_identif }}</td>
+                      <td class="flex items-center w-2/4 px-2 py-1 border-t border-b border-l border-gray-400">{{ Tercero.nom_full }}</td>
+                      <td class="flex items-center w-2/4 px-2 py-1 border-t border-b border-l border-gray-400">{{ Tercero.nom_suc }}</td>
                       <td
-                        class="flex items-center justify-center border-t-2 border-b-2 border-r-2 "
+                        class="flex items-center w-1/4 px-2 py-1 border-t border-b border-l border-gray-400"
                       >
-                        <ButtonIcon
-                          urlIcon="/images/dashboard/left-arrow-repo.svg"
+                        <div class="flex items-center w-3/6">
+                          <ButtonIcon
+                          urlIcon="/images/dashboard/elegir.svg"
                           variant="success"
                         ></ButtonIcon>
+                        </div>
                       </td>
                     </tr>
                   </tbody>
@@ -155,4 +157,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+ .margen {
+    padding-right: 16px;
+  }
+  
+  .tr:nth-child(odd){
+  background-color: #E5E7EB
+}
+</style>
