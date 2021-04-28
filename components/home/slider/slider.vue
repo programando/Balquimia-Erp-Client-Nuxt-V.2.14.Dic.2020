@@ -68,7 +68,7 @@ export default {
 }
 
 .slider1 {
-  background-image: url("/images/home/slider/1-slider.png");
+  background-image: url("/images/home/slider/productos.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
