@@ -16,7 +16,7 @@ export default {
     setVariant() {
       switch (this.variant) {
         case "success":
-          return "bg-green-600 hover:bg-green-800";
+          return "bg-green-400 hover:bg-green-800";
           break;
         case "primary":
           return "bg-primary hover:bg-red-900";

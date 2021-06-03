@@ -19,6 +19,7 @@
     "numeral": "^2.0.6",
     "nuxt": "^2.14.12",
     "nuxt-imagemin": "^1.0.0",
+    "swiper": "^6.5.8",
     "vue-chartjs": "^3.5.1",
     "vue-password-strength-meter": "^1.7.2",
     "vue2-datepicker": "^3.9.0",

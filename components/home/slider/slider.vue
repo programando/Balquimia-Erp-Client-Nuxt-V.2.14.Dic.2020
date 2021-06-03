@@ -1,58 +1,33 @@
 <template>
-  <div class="max-h-screen contenedor">
-    <div class="mt-16 leading-tight slider-contenedor lg:mt-20">
-      <div
-        v-for="image in images"
-        :key="image.id"
-        class="bg-center bg-no-repeat bg-cover contenido-slider"
-        :style="getImage(image.name)"
-      >
-        <!-- imagen de fondo de malla -->
-        <div
-          class="bg-no-repeat bg-cover "
-          style="background-image: url(/images/comunes/malla1.webp)"
-        >
-          <div
-            class="min-h-screen px-16 py-10 mt-40 md:pr-32 lg:py-32 lg:px-20 xl:px-32 lg:mt-20 "
-          >
-            <h1
-              class="ml-2 text-2xl font-semibold text-white md:ml-8 md:mt-5 md:mb-3 lg:ml-0 sm:text-2xl md:text-3xl lg:text-4xl lg:pr-40 xl:pr-32"
-            >
-              {{ image.primaryText }}
-            </h1>
-            <p
-              class="m-2 text-white md:my-2 md:ml-8 md:text-lg lg:text-xl lg:w-2/3 lg:ml-0 "
-            >
-              {{ image.secondText }}
-            </p>
-            <div
-              class="inline-block px-4 py-2 mx-2 mt-4 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 md:ml-8 lg:mt-4 lg:ml-0 "
-            >
-              <nuxt-link
-                :to="image.buttonLink"
-                class="flex items-center justify-center"
-              >
-                <p
-                  class="mr-4 text-base font-medium md:text-base lg:text-lg "
-                >
-                  {{ image.buttonText }}
-                </p>
-                <img
-                  class="h-5"
-                  src="/images/comunes/icono-flecha.png"
-                  alt="bandera"
-                />
-              </nuxt-link>
+  <div>
+    <div class="max-h-screen pt-20 contenedor">
+      <div class="">
+        <div class="swiper-container">
+          <div class="pt-2 swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="min-h-screen bg-center bg-no-repeat bg-cover contenido-slider slider1"
+              ></div>
             </div>
-            <div id="arrows-wrapper">
-              <p id="arrow-prev" class="slider-arrow center-y">
-                  &#10094;
-              </p>
-              <p id="arrow-next" class="slider-arrow center-y">
-                &#10095;
-              </p>
+            <div class="swiper-slide">
+              <div class="min-h-screen bg-center bg-no-repeat bg-cover contenido-slider slider2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="min-h-screen bg-center bg-no-repeat bg-cover contenido-slider slider3"
+              ></div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="min-h-screen bg-center bg-no-repeat bg-cover contenido-slider slider4"
+              ></div>
             </div>
           </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>
@@ -60,161 +35,58 @@
 </template>
 
 <script>
+import Swiper from "swiper/bundle";
+import "swiper/swiper-bundle.css";
 export default {
-  name: "landingPageSlider",
-  data: () => ({
-    intervalo: 3000,
-    contador: 1,
-    width: 0,
-    slider: "",
-    sliderIndividual: "",
-    images: [
-      {
-        idimage: 0,
-        name: "/images/home/slider/investigacion.webp",
-        primaryText:
-          "Fabricamos y formulamos productos químicos especializados para el mejoramiento de la eficiencia productiva empresarial",
-        secondText:
-          "Innovaciones y desarrollos basados en solicitudes específicas de años de atención personalizada a nuestros clientes",   
-        buttonText: "Conócenos",
-        buttonLink: "/store/productos",
-      },
-      {
-        idimage: 1,
-        name: "/images/home/slider/productos.webp",
-        primaryText:
-          "Ofrecemos un portafolio con más de un centenar de productos químicos comprobados en diversos sectores empresariales",
-        secondText:
-           "Detergentes, desinfectantes, desoxidantes, desmoldantes, desengrasantes, desencofrantes, destintantes y materias primas en procesos",
-        buttonText: "Sectores industriales",
-        buttonLink: "/store/productos"
-      },
-      {
-        idimage: 2,
-        name: "/images/home/slider/ambiente.webp",
-        primaryText: "Respeto al planeta",
-        secondText:
-          "Nuestras formulaciones están diseñadas para respetar al medio ambiente y cumplen las normas establecidas para la seguridad industrial ",
-        buttonText: "Conócenos",
-        buttonLink: "/store/productos"
-      },
-      {
-        idimage: 3,
-        name: "/images/home/slider/equipo.webp",
-        primaryText:
-          "Despachos a cualquier parte del mundo",
-        secondText:
-          "Su pedido es importante para nosotros porque trabajamos para usted.",
-        buttonText: "Conócenos",
-        buttonLink: "/store/productos"
-      },
-      {
-        idimage: 0,
-        name: "/images/home/slider/investigacion.webp",
-        primaryText:
-          "Fabricamos y formulamos productos químicos especializados para el mejoramiento de la eficiencia productiva empresarial",
-        secondText:
-          "Innovaciones y desarrollos basados en solicitudes específicas de años de atención personalizada a nuestros clientes",   
-        buttonText: "Conócenos",
-        buttonLink: "/store/productos"
-      },
-    ]
-  }),
+  name: "Slider",
 
   mounted() {
-    this.sliderPlay();
-  },
-
-  methods: {
-    getImage(imageName) {
-      return 'background-image: url("' + imageName + '")';
-    },
-
-    sliderPlay() {
-      this.sliderIndividual = "";
-      this.slider = document.querySelector(".slider-contenedor");
-      this.sliderIndividual = document.querySelectorAll(".contenido-slider");
-      this.width = this.sliderIndividual[0].clientWidth;
-
-      setInterval(() => {
-        this.slideMove();
-      }, this.intervalo);
-    },
-    clientResize() {
-      window.addEventListener("resize", () => {
-        this.width = sliderIndividual[0].clientWidth;
-      });
-    },
-
-    slideMove() {
-      this.slider.style.transform =
-        "translate(" + -this.width * this.contador + "px)";
-      this.slider.style.transition = "transform .8s";
-      this.contador++;
-
-      if (this.contador === this.sliderIndividual.length) {
-        setTimeout(() => {
-          this.slider.style.transform = "translate(0px)";
-          this.slider.style.transition = "transform .0s";
-          this.contador = 1;
-        }, 1500);
+    const swiper = new Swiper(".swiper-container", {
+      // Optional parameters
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
       }
-    }
+    });
   }
 };
 </script>
 
 <style>
-#menu-togle:checked + #menu {
-  display: block;
-}
-
-/* slider */
 .contenedor {
   overflow: hidden;
 }
 
-.slider-contenedor {
-  width: 100%;
-  display: flex;
+.slider1 {
+  background-image: url("/images/home/slider/1-slider.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.contenido-slider {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  flex-shrink: 0;
+.slider2 {
+  background-image: url("/images/home/slider/ambiente.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.center-y {
-    position: relative;
-    top: 50%;
-    transform: translateX(-50%);
+.slider3 {
+  background-image: url("/images/home/slider/equipo.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.center-x {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.slider4 {
+  background-image: url("/images/home/slider/investigacion.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.slider-arrow {
-    color: #fff;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-}
-
-#arrow-prev {
-    left: 20px;
-
-}
-
-#arrow-next {
-    right: 20px;
-
-}
-
 </style>
