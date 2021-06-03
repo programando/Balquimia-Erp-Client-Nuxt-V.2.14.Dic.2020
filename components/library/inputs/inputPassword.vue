@@ -5,9 +5,6 @@
       <img class="z-10 h-12 px-4 py-4 -mr-10 " src="/images/inputs/user-repo.svg" alt="">
       <Password class="w-full " :toggle="true" :placeholder="text" v-model="recordSource"></Password>
     </div>
-    
- 
-
   </div>
 </template>
 
@@ -41,20 +38,11 @@
 </script>
 
 <style>
-
-input.Password__field {
-  padding-left: 35px;
-  
-}
-
-
-
-.Password.w-full {
-    max-width: 100%;
-}
-
-
-
-
-
+    input.Password__field {
+      padding-left: 35px;
+      
+    }
+    .Password.w-full {
+        max-width: 100%;
+    }
 </style>

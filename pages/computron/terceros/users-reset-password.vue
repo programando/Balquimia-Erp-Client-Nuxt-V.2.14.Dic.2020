@@ -77,7 +77,7 @@ export default {
           Terceros.userResetPassword ( this.form)
           .then (response => {
               this.$refs.ButtonLoading.stopLoading();
-              this.MsgSuccess('Correo Enviado','Hemos enviado correo electrónico a la cuenta indicada. Siga las instrucciones. No olvide revisar la carpera de Spam', 10);
+              this.MsgSuccess('Correo Enviado','Hemos enviado correo electrónico a la cuenta indicada. Siga las instrucciones. No olvide revisar la carpeta de Spam', 10);
               this.routeRedirect();
           })   
           .catch( error => {

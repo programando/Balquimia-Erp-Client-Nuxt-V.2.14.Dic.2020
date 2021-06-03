@@ -1,9 +1,9 @@
 
 export const state = () => ({
-   IdTercero: 0,
-   IdTercLogueado:0,
-  Logueado : false,
-  User     : null,
+   IdTercero     : 0,
+   IdTercLogueado: 0,
+   Logueado      : false,
+   User          : null,
   
 });
 

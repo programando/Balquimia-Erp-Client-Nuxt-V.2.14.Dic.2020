@@ -78,9 +78,6 @@
           </div>
         </div>
 
-       
-
-
       </div>
     </div>
     
@@ -113,17 +110,7 @@ export default {
           filtroBusqueda: '',
           idTercVendedor:''
       },
-       tercerosEncontrados :[
-         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
-         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
-         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
-         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
-         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
-         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
-         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
-         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'},
-         {id: 1, nro_identif: 10, nom_full: 'Alfonzo Perez', nom_suc:'2'}, 
-       ],
+       tercerosEncontrados :[],
     };
   },
 
