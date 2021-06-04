@@ -19,13 +19,13 @@
  
 import Carrito        from "@/components/home/navOptions/carrito";
 import SimpleLink     from "@/components/library/links/simple";
- 
+ import Computron         from "@/components/home/navOptions/computron";
 
 export default {
   data: () => ({}),
   components: {
 
-    Carrito,
+    Carrito,Computron,
     SimpleLink
      
   }

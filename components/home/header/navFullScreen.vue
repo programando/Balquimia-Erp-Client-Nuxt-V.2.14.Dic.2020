@@ -24,6 +24,7 @@
 import SimpleLink     from "@/components/library/links/simple";
 import Carrito        from "@/components/home/navOptions/carrito";
 import Idioma         from "@/components/home/navOptions/idioma";
+import Computron         from "@/components/home/navOptions/computron";
 
   
 export default {
@@ -32,7 +33,7 @@ export default {
     
     Idioma,
     Carrito,
-    SimpleLink,
+    SimpleLink,Computron
      
   }
 };

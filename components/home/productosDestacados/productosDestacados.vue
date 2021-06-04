@@ -18,7 +18,9 @@
 </template>
 <script>
 import CardProductoDestacado from '@/components/home/productosDestacados/cardProductoDestacado'
-export default {};
+export default {
+    components: {CardProductoDestacado }
+};
 </script>
 <style>
 .fondo:hover {
