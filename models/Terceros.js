@@ -19,7 +19,7 @@ export default {
          return Api.get('/cartera/vendedor/total', { params: { idTercVendedor } } );
       },
    
-      async clientesBuscar(formData) {  
+      async clientesActivosPorVendedor(formData) {  
          return Api.get('/terceros/clientes/busqueda/', { params:   formData   }   );
       },
        

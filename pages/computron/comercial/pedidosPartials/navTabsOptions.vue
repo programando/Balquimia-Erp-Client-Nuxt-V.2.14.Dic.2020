@@ -3,7 +3,7 @@
     <div class="w-full">
       <ul class="flex flex-row flex-wrap pt-1 pb-2 mb-0 list-none">
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
+          <div class="block px-5 py-2 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(1)"
                 :class="{
                     'text-primary bg-white border-b border-extra': openTab !== 1,
@@ -15,7 +15,7 @@
         </li>
        
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
+          <div class="block px-5 py-2 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(2)"
                 :class="{
                     'text-primary bg-white border-b border-extra': openTab !== 2,
@@ -27,7 +27,7 @@
         </li>
 
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
+          <div class="block px-5 py-2 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(3)"
                 :class="{
                     'text-primary bg-white border-b border-extra': openTab !== 3,
@@ -38,7 +38,7 @@
           </div>
         </li>
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
+          <div class="block px-5 py-2 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(4)"
                 :class="{
                     'text-primary bg-white border-b border-extra': openTab !== 4,
@@ -49,7 +49,7 @@
           </div>
         </li>
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
+          <div class="block px-5 py-2 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(5)"
                 :class="{
                     'text-primary bg-white border-b border-extra': openTab !== 5,
@@ -60,7 +60,7 @@
           </div>
         </li>
         <li class="flex-auto -mb-px text-center cursor-pointer last:mr-0">
-          <div class="block px-5 py-3 font-bold rounded-sm shadow-lg"
+          <div class="block px-5 py-2 font-bold rounded-sm shadow-lg"
                 @click="toggleTabs(6)"
                 :class="{
                     'text-primary bg-white border-b border-extra': openTab !== 6,
@@ -78,7 +78,7 @@
         <div class="flex-auto">
           <div class="tab-content tab-space">
             <div :class="{ hidden: openTab !== 1, block: openTab === 1 }">
-              <ClienteUltimasVentas></ClienteUltimasVentas>
+              <ClienteUltimasVentas :IdTercero="IdTercero"> </ClienteUltimasVentas>
             </div>
             <div :class="{ hidden: openTab !== 2, block: openTab === 2 }">
               <ClientePedidosGenerados></ClientePedidosGenerados>
@@ -139,6 +139,7 @@ import ClienteUltimasVentas from '@/components/computron/terceros/clienteUltimas
 import ClientePedidosGenerados from '@/components/computron/terceros/clientePedidosGenerados'
 export default {
   name: "DataTable",
+  props: [ 'IdTercero'],
   components: {
     ClienteUltimasVentas,
     ClientePedidosGenerados

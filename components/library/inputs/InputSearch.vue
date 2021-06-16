@@ -8,13 +8,19 @@
         alt=""
       />
     </div>
-
-    <input
-      type="text"
-      class="py-1 pl-8 text-sm bg-gray-100 border rounded-lg focus:border-primary focus:outline-none focus:shadow-outline"
-      :class="width"
-      :placeholder="placeholder"
-    />
+            <input 
+             class="py-1 pl-8 text-xs bg-gray-100 border rounded-lg focus:border-primary focus:outline-none focus:shadow-outline"           
+                :id="id"    
+                :class="width"
+                type    = "text"
+                :value   = "value"
+                @input   = "$emit('input', $event.target.value)"
+                @keydown = "$emit('keydown', $event)"
+                @blur    = "$emit('blur', $event)"
+                @keyup   = "$emit('keyup', $event)"
+                :placeholder="placeholder" 
+                disabled="disabled"
+            />
 
     <!-- Modal -->
     <transition
@@ -51,14 +57,15 @@
               </div>
             </div>
 
-            <div class="px-4 py-2">
+            <div class="px-4 py-1 text-xs ">
               <InputLabel
-                @change="BuscarTercero()"
-                @input="BuscarTercero()"
+                @change="clientesActivosPorVendedor()"
+                @input="clientesActivosPorVendedor()"
                 :textLabel="labelTitle"
                 placeholder="Digite para iniciar la búsqueda..."
                 width="w-5/6"
                 v-model="form.filtroBusqueda"
+                :isUpperCase="true"
               ></InputLabel>
             </div>
 
@@ -70,7 +77,7 @@
                       <th class="flex justify-center w-1/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary">Nit</th>
                       <th class="flex justify-center w-2/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary">Nombre/Razón Soc.</th>
                       <th class="flex justify-center w-2/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary">Sucursal</th>
-                      <th class="flex justify-center w-1/4 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"></th>
+                      <th class="flex justify-center w-1/6 px-2 py-2 border-t border-b border-l border-gray-700 bg-primary"></th>
                     </tr>
                   </thead>
                   <tbody
@@ -85,13 +92,12 @@
                       <td class="flex items-center w-2/4 px-2 py-1 border-t border-b border-l border-gray-400">{{ Tercero.nom_full }}</td>
                       <td class="flex items-center w-2/4 px-2 py-1 border-t border-b border-l border-gray-400">{{ Tercero.nom_suc }}</td>
                       <td
-                        class="flex items-center w-1/4 px-2 py-1 border-t border-b border-l border-gray-400"
+                        class="flex items-center w-1/6 px-2 py-1 border-t border-b border-l border-gray-400"
                       >
-                        <div class="flex items-center w-3/6">
-                          <ButtonIcon
-                          urlIcon="/images/dashboard/elegir.svg"
-                          variant="success"
-                        ></ButtonIcon>
+                        <div class="flex items-center w-3/6 cursor-pointer ">
+                          <img src="/images/dashboard/elegir.svg"  class="block h-6 justify-items-center" alt="Click para seleccionar cliente..."
+                          @click="terceroSeleccionado(Tercero)"
+                          >
                         </div>
                       </td>
                     </tr>
@@ -118,42 +124,47 @@ export default {
     ButtonIcon
   },
   props: {
-    UrlBusqueda: String,
     labelTitle: String,
     placeholder: String,
-    width: String
+    width: String,
+    value: String,
+            id: {
+                type: String,
+                default() {
+                    return `text-input-${this._uid}`;
+                }
+            },    
   },
 
   data() {
     return {
       modal: false,
       textLabel: "",
+ 
       form: {
         filtroBusqueda: "",
         idTercVendedor: ""
       },
       tercerosEncontrados: [
-        { id: 1, nro_identif: 10, nom_full: "Alfonzo Perez", nom_suc: "2" },
-        { id: 1, nro_identif: 10, nom_full: "Alfonzo Perez", nom_suc: "2" },
-        { id: 1, nro_identif: 10, nom_full: "Alfonzo Perez", nom_suc: "2" },
-        { id: 1, nro_identif: 10, nom_full: "Alfonzo Perez", nom_suc: "2" },
-        { id: 1, nro_identif: 10, nom_full: "Alfonzo Perez", nom_suc: "2" },
-        { id: 1, nro_identif: 10, nom_full: "Alfonzo Perez", nom_suc: "2" },
-        { id: 1, nro_identif: 10, nom_full: "Alfonzo Perez", nom_suc: "2" },
-        { id: 1, nro_identif: 10, nom_full: "Alfonzo Perez", nom_suc: "2" },
-        { id: 1, nro_identif: 10, nom_full: "Alfonzo Perez", nom_suc: "2" }
       ]
     };
   },
 
   methods: {
-    BuscarTercero() {
+    clientesActivosPorVendedor() {
       this.form.idTercVendedor = this.$store.state.User.IdTercLogueado;
-      Terceros.clientesBuscar(this.form).then(response => {
+      Terceros.clientesActivosPorVendedor(this.form)
+      .then(response => {
         this.tercerosEncontrados = response.data;
       });
+    },
+    terceroSeleccionado( tercero ) {
+        this.modal  = false;
+        this.$emit('terceroSeleccionado', tercero);
     }
-  }
+  },
+ 
+    
 };
 </script>
 

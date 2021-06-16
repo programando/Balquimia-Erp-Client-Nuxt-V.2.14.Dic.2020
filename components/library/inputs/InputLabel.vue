@@ -1,12 +1,18 @@
 <template>
   <div>
-    <label class="block">{{ textLabel }}</label>
+    <label class="block text-xs">{{ textLabel }}</label>
     <input
       type="text"
-      class="px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"
-      :class="width"
-      :placeholder="placeholder"
-      v-model="recordSource"
+      class="px-4 py-1 text-xs bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"
+        @blur      = "$emit('blur', $event)"
+        @input     = "$emit('input', $event.target.value)"
+        @keydown   = "$emit('keydown', $event)"
+        @keyup     = "$emit('keyup', $event)"
+      :class       = [width,setUpperCase]
+      :id          = "id"
+      :placeholder = "placeholder"
+      :value       = "value"
+      :disabled="isdisabled"       
     />
   </div>
 </template>
@@ -17,23 +23,33 @@ export default {
   props: {
     placeholder: String,
     textLabel: String,
-    vmodel: String,
     width: String,
+    value: String,
+    isdisabled: {
+          type:Boolean,
+          default() { return false;}
+    },
+    isUpperCase: {
+          type:Boolean,
+          default() { return '';}
+    },
+    id: { type: String,
+          default() { return `text-inputLab-${this._uid}`; }
+        },
   },
   data() {
     return {
-      recordSource: this.vmodel,
+       
     };
   },
 
-  watch: {
-    recordSource(newDate) {
-      this.$emit("input", newDate);
-    },
-    vmodel(newDate) {
-      this.recordSource = newDate;
-    },
+  computed: {
+      setUpperCase() {
+         return  { 'uppercase': this.isUpperCase==true, }
+      }
   },
+
+ 
 };
 </script>
 

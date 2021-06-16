@@ -1,6 +1,6 @@
 <template>
   <div class="px-2 py-1 rounded-lg cursor-pointer " :class="[setVariant]">
-    <img class="h-5 " :src="urlIcon" alt="" />
+    <img class="h-5 " :src="urlIcon" alt="" :disabled="isdisabled"/>
   </div>
 </template>
 
@@ -9,7 +9,11 @@ export default {
   name: "ButtonIcon",
   props: {
     urlIcon: String,
-    variant: String
+    variant: String,
+    isdisabled: {
+          type:Boolean,
+          default() { return false;}
+    },
   },
 
   computed: {

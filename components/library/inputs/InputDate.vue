@@ -1,9 +1,9 @@
 <template>
   <div>
-    <label class="block">{{ textLabel }}</label>
+    <label class="block text-xs">{{ textLabel }}</label>
 
     <input
-        class       = "px-4 py-1 text-sm bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"
+        class       = "px-4 py-1 text-xs bg-gray-100 border rounded-lg focus:outline-none focus:shadow-outline focus:border-primary"
         placeholder = "Sucursal"
         type        = "date"
         v-model     = "recordSource"
