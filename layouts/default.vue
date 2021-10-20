@@ -3,7 +3,9 @@
     <Nuxt />
   </div>
 </template>
+
 <script>
+
 export default {
     name:'defaulLayout',
     data() {
@@ -11,7 +13,6 @@ export default {
         
       };
     },
- 
- 
+
 };
 </script>

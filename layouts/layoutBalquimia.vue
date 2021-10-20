@@ -7,6 +7,7 @@
     <Footer></Footer>
   </div>
 </template>
+
 <script>
   import Header from "@/components/home/header/indexHeader";
   import Footer from "@/components/home/footer/footer";
