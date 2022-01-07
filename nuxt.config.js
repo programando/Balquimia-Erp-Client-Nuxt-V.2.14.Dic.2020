@@ -24,6 +24,7 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
       '@/assets/css/app.css',
+      '@/assets/css/main.css',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -40,7 +41,7 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
     '@nuxtjs/dotenv',
     '@aceforth/nuxt-optimized-images',
   ],
@@ -94,31 +95,13 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-        /*
-    ** You can extend webpack config here
-    */
-    //extend (config, ctx) {
-    //},
-    //extractCSS: true,
-  build: {
     postcss: {
-      // Add plugin names as key and arguments as value
-      // Install them before as dependencies with npm or yarn
       plugins: {
-        // Disable a plugin by passing false as value
-        'postcss-url': false,
-        'postcss-nested': {},
-        'postcss-responsive-type': {},
-        'postcss-hexrgba': {}
+        tailwindcss: {},
+        autoprefixer: {},
       },
-      preset: {
-        // Change the postcss-preset-env settings
-        autoprefixer: {
-          grid: true
-        }
-      }
-    }
-  }
+    },
+  
     
   },
 
@@ -131,7 +114,7 @@ export default {
   
   purgeCSS: {
     //mode: 'postcss',
-    enabled: (process.env.NODE_ENV === 'production')
+    enabled: (process.env.NODE_ENV === 'dev')
   },
 
 

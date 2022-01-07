@@ -1,14 +1,10 @@
 module.exports = {
-  purge: [
-    './components/**/*.{vue,js}',
-     './layouts/**/*.vue',
-     './pages/**/*.vue',
-     './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
-     "./plugins/**/*.vue",
-     "./static/**/*.vue",
-     "./store/**/*.vue"
-     
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
   ],
   theme: {
     extend: {
@@ -28,13 +24,5 @@ module.exports = {
       }
     },
   },
-  variants: {},
   plugins: [],
-  future: {
-       removeDeprecatedGapUtilities: true,
-       purgeLayersByDefault: true
-  },
-  prefix: '',
-  important: false,
-  separator: ':',
 }
