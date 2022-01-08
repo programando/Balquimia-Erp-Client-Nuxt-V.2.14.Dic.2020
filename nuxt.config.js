@@ -32,6 +32,7 @@ export default {
       { src: '~/plugins/datepicker', ssr: false },
       { src: '~/plugins/persistedState.client.js' },
       { src: '~/plugins/filters.js' },
+      { src: '@/plugins/vue-awesome-swiper', mode: 'client' }
 
   ],
 

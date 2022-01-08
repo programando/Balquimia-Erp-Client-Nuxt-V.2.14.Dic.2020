@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed z-20 w-full ">
+  <div class="fixed z-20 w-full">
     <header class="bg-white">
       <!-- Icono de la empresa -->
       <div
