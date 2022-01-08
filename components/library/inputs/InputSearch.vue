@@ -22,7 +22,7 @@
                 disabled="disabled"
             />
 
-    <!-- Modal -->
+    <!-- Modal de ejemplo-->
     <transition
       enter-active-class="duration-300 ease-out"
       enter-class="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
