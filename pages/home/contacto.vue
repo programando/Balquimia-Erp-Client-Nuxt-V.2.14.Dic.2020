@@ -20,7 +20,7 @@
               class="px-4 pt-4 text-center text-white lg:pt-6 md:text-lg lg:text-xl lg:px-20 xl:px-40 xl:text-2xl"
             >
               En BALQUIMIA S.A.S. estamos comprometidos con el mejoramiento continuo de nuestros procesos. 
-              Actualmemnte nuestro sitio está siendo mejorado para brindarle el mejor servicio. Escríbanos, nos contactéremos con usted.
+              Escríbanos, para que nuestro departamento comercial se coloque en contacto con usted.
             </p>
           </div>
         </div>
