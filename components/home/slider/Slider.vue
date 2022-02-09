@@ -8,35 +8,21 @@
       <div class="swiper-slide">
         <div
           class="bg-center bg-cover py-96"
-          style="background-image: url('/images/home/slider/1.png')"
-        >
+          style="background-image: url('/images/home/slider/Slider-Alimentaria-1.png')"    >
           <div class="px-16">
-            <h2 class="text-4xl font-bold uppercase md:text-5xl">
-              Balquimia
-            </h2>
-            <h3 class="mx-4 mt-2 text-xl text-white md:text-2xl">
-             
-            </h3>
             <button
-              class="py-2 mx-4 mt-2 text-xl text-white uppercase rounded w-44 bg-azul"
-            >
-              
+              class="py-2 mx-4 mt-2 text-xl text-white uppercase rounded w-44 bg-azul" >
             </button>
           </div>
         </div>
       </div>
+
       <div class="swiper-slide">
         <div
           class="bg-center bg-cover py-96"
-          style="background-image: url('/images/home/slider/1.png')"
+          style="background-image: url('/images/home/slider/Alimentaria-2.jpg')"
         >
           <div class="px-16">
-            <h2 class="text-4xl font-bold text-white uppercase md:text-5xl">
-              Balquimia
-            </h2>
-            <h3 class="mx-4 mt-2 text-xl text-white md:text-2xl">
-              
-            </h3>
             <button
               class="py-2 mx-4 mt-2 text-xl text-white uppercase rounded w-44 bg-azul"
             >
@@ -48,15 +34,10 @@
       <div class="swiper-slide">
         <div
           class="bg-center bg-cover py-96"
-          style="background-image: url('/images/home/slider/2.png')"
+          style="background-image: url('/images/home/slider/Industrial-1.jpg')"
         >
           <div class="px-16">
-            <h2 class="text-4xl font-bold text-white uppercase md:text-5xl">
-              Balquimia
-            </h2>
-            <h3 class="mx-4 mt-2 text-xl text-white md:text-2xl">
-             
-            </h3>
+
             <button
               class="py-2 mx-4 mt-2 text-xl text-white uppercase rounded w-44 bg-azul"
             >
@@ -68,15 +49,10 @@
       <div class="swiper-slide">
         <div
           class="bg-center bg-cover py-96"
-          style="background-image: url('/images/home/slider/3.png')"
+          style="background-image: url('/images/home/slider/Industrial-2.jpg')"
         >
           <div class="px-16">
-            <h2 class="text-4xl font-bold text-white uppercase md:text-5xl">
-              Balquimia
-            </h2>
-            <h3 class="mx-4 mt-2 text-xl text-white md:text-2xl">
-              
-            </h3>
+
             <button
               class="py-2 mx-4 mt-2 text-xl text-white uppercase rounded w-44 bg-azul"
             >
@@ -88,15 +64,10 @@
       <div class="swiper-slide">
         <div
           class="bg-center bg-cover py-96"
-          style="background-image: url('/images/home/slider/4.png')"
+          style="background-image: url('/images/home/slider/Ferreterias-1.jpg')"
         >
           <div class="px-16">
-            <h2 class="text-4xl font-bold text-white uppercase md:text-5xl">
-              Balquimia
-            </h2>
-            <h3 class="mx-4 mt-2 text-xl text-white md:text-2xl">
-             
-            </h3>
+  
             <button
               class="py-2 mx-4 mt-2 text-xl text-white uppercase rounded w-44 bg-azul"
             >
@@ -127,7 +98,7 @@ export default {
         slidesPerGroup: 1,
         loop: true,
         autoplay: {
-          delay: 3000
+          delay: 4000
         },
         loopFillGroupWithBlank: true,
         pagination: {
