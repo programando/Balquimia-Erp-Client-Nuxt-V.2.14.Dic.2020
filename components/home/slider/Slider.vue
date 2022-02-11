@@ -7,7 +7,7 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div
-          class="bg-center bg-cover py-96"
+          class="w-full bg-center bg-cover py-80"
           style="background-image: url('/images/home/slider/Slider-Alimentaria-1.png')"    >
           <div class="px-16">
             <button
@@ -19,7 +19,7 @@
 
       <div class="swiper-slide">
         <div
-          class="bg-center bg-cover py-96"
+          class="bg-center bg-cover py-80"
           style="background-image: url('/images/home/slider/Alimentaria-2.jpg')"
         >
           <div class="px-16">
@@ -33,7 +33,7 @@
       </div>
       <div class="swiper-slide">
         <div
-          class="bg-center bg-cover py-96"
+          class="bg-center bg-cover py-80"
           style="background-image: url('/images/home/slider/Industrial-1.jpg')"
         >
           <div class="px-16">
@@ -48,7 +48,7 @@
       </div>
       <div class="swiper-slide">
         <div
-          class="bg-center bg-cover py-96"
+          class="bg-center bg-cover py-80"
           style="background-image: url('/images/home/slider/Industrial-2.jpg')"
         >
           <div class="px-16">
@@ -63,7 +63,7 @@
       </div>
       <div class="swiper-slide">
         <div
-          class="bg-center bg-cover py-96"
+          class="bg-center bg-cover py-80"
           style="background-image: url('/images/home/slider/Ferreterias-1.jpg')"
         >
           <div class="px-16">
