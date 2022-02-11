@@ -8,7 +8,7 @@
       <div class="swiper-slide">
         <div
           class="w-full bg-center bg-no-repeat bg-contain py-44 lg:py-80"
-          style="background-image: url('/images/home/slider/Slider-Alimentaria-1.png')"    >
+          style="background-image: url('/images/home/slider/1 - Tron 500 HD.jpg')"    >
           <div class="px-16">
             <button
               class="py-2 mx-4 mt-2 text-xl text-white uppercase rounded w-44 bg-azul" >
@@ -20,7 +20,7 @@
       <div class="swiper-slide">
         <div
           class="bg-center bg-no-repeat bg-contain py-44 lg:py-80"
-          style="background-image: url('/images/home/slider/Alimentaria-2.jpg')"
+          style="background-image: url('/images/home/slider/2 - Tron 20 - 20.jpg')"
         >
           <div class="px-16">
             <button
@@ -34,7 +34,7 @@
       <div class="swiper-slide">
         <div
           class="bg-center bg-no-repeat bg-contain py-44 lg:py-80"
-          style="background-image: url('/images/home/slider/Industrial-1.jpg')"
+          style="background-image: url('/images/home/slider/3 - Oxytron.jpg')"
         >
           <div class="px-16">
 
@@ -46,10 +46,11 @@
           </div>
         </div>
       </div>
+
       <div class="swiper-slide">
         <div
           class="bg-center bg-no-repeat bg-contain py-44 lg:py-80"
-          style="background-image: url('/images/home/slider/Industrial-2.jpg')"
+          style="background-image: url('/images/home/slider/6 - Rax 6-86.jpg')"
         >
           <div class="px-16">
 
@@ -61,10 +62,27 @@
           </div>
         </div>
       </div>
+
       <div class="swiper-slide">
         <div
           class="bg-center bg-no-repeat bg-contain py-44 lg:py-80"
-          style="background-image: url('/images/home/slider/Ferreterias-1.jpg')"
+          style="background-image: url('/images/home/slider/4 -  Ferreterias.jpg')"
+        >
+          <div class="px-16">
+
+            <button
+              class="py-2 mx-4 mt-2 text-xl text-white uppercase rounded w-44 bg-azul"
+            >
+              
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div
+          class="bg-center bg-no-repeat bg-contain py-44 lg:py-80"
+          style="background-image: url('/images/home/slider/5 - Iron Cleaner.jpg')"
         >
           <div class="px-16">
   

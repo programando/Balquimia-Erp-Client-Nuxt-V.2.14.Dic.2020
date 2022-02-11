@@ -9,21 +9,21 @@
         <div class="lg:flex lg:mt-10">
           <div class="lg:w-2/3 lg:px-10 xl:px-20">
             <div class="mt-8 lg:mb-2">
-              <h2 class="mb-4 -mt-10 text-2xl font-bold text-center lg:pr-24 lg:text-4xl text-primary ">¿Quénes somos?</h2>
+              <h2 class="mb-4 -mt-10 text-2xl font-bold text-center lg:pr-24 lg:text-4xl text-primary ">¿Quiénes somos?</h2>
               <h3 class="text-sm text-white sm:text-base md:text-xl xl:text-xl ">
-                BALQUIMIA S.A.S. empresa colombiana fabricante de productos químicos especializados enfocados a la limpieza, desinfección y mantenimiento en todas las áreas, equipos y superficies.  Innovamos y desarrollamos nuestros productos con énfasis al cuidado del medio ambiente y con altos estándares de calidad para satisfacer los requerimientos de todos los sectores industriales nacionales e internacionales.
+                BALQUIMIA S.A.S. es una empresa colombiana fabricante de productos químicos especializados y enfocados a la limpieza, desinfección y mantenimiento en todas las áreas, equipos y superficies.  Innovamos y desarrollamos nuestros productos con énfasis en el cuidado del medio ambiente y con altos estándares de calidad para satisfacer los requerimientos de todos los sectores industriales nacionales e internacionales.
               </h3>
             </div>
-            <div class="mt-2 sm:flex seccion-1">
+            <div class="mt-1 sm:flex seccion-1">
               <div class="hidden sm:block ">
                 <img
                   class="w-full h-full mr-40 "
-                  src="/images/home/experiencia/lab1.webp"
+                  src="/images/home/experiencia/Laboratorio.jpg"
                   alt="imagen-lab"
                 />
               </div>
               <div class="px-5 py-5 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 hover:text-white">
-                <nuxt-link to="/home/experiencia">
+                <nuxt-link to="/home/servicios">
                   <p class="mr-20">
                     Aplicamos calidad, eficiencia y durabilidad en nuestros
                     servicios para superar los objetivos de nuestros clientes.
