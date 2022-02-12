@@ -22,7 +22,7 @@
                   alt="imagen-lab"
                 />
               </div>
-              <div class="px-5 py-5 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 hover:text-white">
+              <div class="justify-center px-5 py-5 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 hover:text-white lg:flex">
                 <nuxt-link to="/home/servicios">
                   <p class="mr-20">
                     Aplicamos calidad, eficiencia y durabilidad en nuestros
@@ -37,6 +37,7 @@
                         alt=""
                     /></span>
                   </p>
+                  
                 </nuxt-link>
               </div>
             </div>
