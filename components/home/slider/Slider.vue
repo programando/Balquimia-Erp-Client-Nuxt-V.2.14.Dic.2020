@@ -1,5 +1,5 @@
 <template>
-  <div v-swiper="swiperOption" class="relative w-full z-100" :loadtheme="false">
+  <div v-swiper="swiperOption" class="relative w-full ml-auto" :loadtheme="false">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div

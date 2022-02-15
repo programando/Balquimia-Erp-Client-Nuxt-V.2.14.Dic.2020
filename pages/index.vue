@@ -1,13 +1,11 @@
 <template>
   <div >
-     
-    <!-- sliderss -->
+    
     <Slider></Slider>
 
-    <!-- aside -->
     <Experiencia></Experiencia>
 
-    <!-- section -->
+   
     <LineasProductos></LineasProductos>
 
     <Diferenciadores></Diferenciadores>
@@ -15,7 +13,7 @@
     <ProductosDestacados></ProductosDestacados>
 
     <Clientes></Clientes>
-
+ 
      
   </div>
 </template>
@@ -32,23 +30,18 @@ import Clientes             from "@/components/home/clientesList.vue";
  
 export default {
   layout:'layoutBalquimia',
+  name: 'index',
   components: {
-     
-    Slider,
     Experiencia,
     LineasProductos,
+    Slider,
     Diferenciadores,
     ProductosDestacados,
-    Clientes,
- 
+    Clientes
+
   },
 
-  data: () => ({}),
- 
- 
-  methods: {
-
-    },
+  
 
  
 };
