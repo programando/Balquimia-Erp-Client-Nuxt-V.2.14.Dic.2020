@@ -46,3 +46,9 @@ export default {
  
 };
 </script>
+
+<style>
+#toasts {
+  display: none;
+}
+</style>

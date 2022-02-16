@@ -22,9 +22,9 @@
                   alt="imagen-lab"
                 />
               </div>
-              <div class="justify-center px-5 py-5 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 hover:text-white lg:flex">
+              <div class="px-5 py-5 text-white transition duration-700 ease-in-out bg-primary hover:bg-indigo-900 hover:text-white">
                 <nuxt-link to="/home/servicios">
-                  <p class="mr-20">
+                  <p class="mr-20 xl:mt-8 2xl:mt-24">
                     Aplicamos calidad, eficiencia y durabilidad en nuestros
                     servicios para superar los objetivos de nuestros clientes.
                   </p>
