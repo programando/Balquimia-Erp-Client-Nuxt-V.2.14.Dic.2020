@@ -174,7 +174,7 @@ export default {
         slidesPerGroup: 1,
         loop: true,
          autoplay: {
-           delay: 5000
+           delay: 6000
          },
         loopFillGroupWithBlank: true,
         pagination: {
