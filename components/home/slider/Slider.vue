@@ -15,13 +15,13 @@
               <p
                 class="w-5/6 text-3xl font-bold text-center text-white 2xl:w-3/6 lg:text-4xl 2xl:text-6xl"
               >
-                Detergentes Liquidos Biodegradables
+                Detergentes líquidos biodegradables
               </p>
               <p
                 class="w-5/6 text-2xl text-center text-white xl:pt-40 xl:mt-20 mt-60 md:4/6 2xl:w-4/6 lg:text-4xl 2xl:text-5xl"
               >
                 Completo lavado y desinfección de instalaciones incluyendo
-                equipos e implementos
+                equipos e implementos usados para procesos productivos
               </p>
             </div>
           </div>
@@ -38,13 +38,13 @@
               <p
                 class="w-4/6 text-2xl text-center text-white lg:text-4xl 2xl:text-5xl "
               >
-                Detergentes Liquidos Biodegradables
+                Detergentes líquidos biodegradables
               </p>
               <p
                 class="w-4/6 mt-32 text-2xl text-center text-white xl:w-3/6 lg:text-4xl 2xl:text-5xl"
               >
                 Completo lavado y desinfección de instalaciones incluyendo
-                equipos e implementos
+                equipos e implementos usados para procesos productivos
               </p>
             </div>
           </div>
@@ -81,10 +81,10 @@
               <p
                 class="text-2xl text-right text-white lg:text-4xl 2xl:text-5xl"
               >
-                del oxigeno activo
+                del oxígeno activo
               </p>
               <p
-                class="text-3xl font-bold text-center text-white xl:mt-56 lg:text-4xl 2xl:text-5xl"
+                class="text-5xl font-bold text-center text-white xl:mt-56 lg:text-4xl 2xl:text-5xl"
               >
                 Inocuidad alimentaria
               </p>
@@ -119,14 +119,14 @@
           <div class="px-16 -mt-36">
             <div class="flex justify-center lg:mx-10">
               <p
-                class="mb-56 text-xl text-center text-white lg:text-4xl 2xl:text-5xl xl:w-4/6"
+                class="mb-56 text-3xl text-center text-white lg:text-4xl 2xl:text-5xl xl:w-4/6"
               >
-                Productos químico especializados para mentenimineto industrial
+                Productos químicos especializados para mentenimineto industrial
               </p>
             </div>
           </div>
           <p
-            class="mt-40 text-xl text-center text-white lg:text-4xl xl:mt-96 2xl:text-5xl"
+            class="mt-40 text-2xl text-center text-white lg:text-4xl xl:mt-96 2xl:text-5xl"
           >
             Ferretería
           </p>
@@ -141,7 +141,7 @@
           <div class="px-16">
             <div class="lg:mx-10">
               <p
-                class="text-xl text-center text-white mt-28 lg:text-4xl 2xl:text-5xl"
+                class="text-5xl text-center text-white mt-28 lg:text-4xl 2xl:text-5xl"
               >
                 Desoxidantes de superficies
               </p>
