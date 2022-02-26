@@ -5,7 +5,7 @@
       <SimpleLink  textMenu='Inicio'    urlDestino='/'    :responisve = "true"></SimpleLink>    <!-- / -->
       <SimpleLink  textMenu='Productos' urlDestino='/store/productos'    :responisve = "true"></SimpleLink>    <!-- "/store/productos" -->
       <SimpleLink  textMenu='Servicios' urlDestino='/home/servicios'    :responisve = "true"></SimpleLink>    <!-- "/home/servicios" -->
-      <SimpleLink  textMenu='Experiencia' urlDestino='/home/experiencia'    :responisve = "true"></SimpleLink>    <!-- "/home/experiencia" -->
+      
       <SimpleLink  textMenu='Contacto'    urlDestino='/home/contacto'    :responisve = "true"></SimpleLink>    <!-- "/home/contacto" --> 
     </ul>
     
