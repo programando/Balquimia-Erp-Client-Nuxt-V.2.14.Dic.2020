@@ -173,9 +173,9 @@ export default {
         spaceBetween: -10,
         slidesPerGroup: 1,
         loop: true,
-        // autoplay: {
-        //   delay: 4000
-        // },
+         autoplay: {
+           delay: 5000
+         },
         loopFillGroupWithBlank: true,
         pagination: {
           el: ".swiper-pagination",
