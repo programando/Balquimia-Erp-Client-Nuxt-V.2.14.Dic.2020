@@ -11,7 +11,12 @@
             <div class="mt-8 lg:mb-2">
               <h2 class="mb-4 -mt-10 text-2xl font-bold text-center lg:pr-24 lg:text-4xl text-primary ">¿Quiénes somos?</h2>
               <h3 class="text-sm text-white sm:text-base md:text-xl xl:text-xl ">
-                BALQUIMIA S.A.S. es una empresa colombiana fabricante de productos químicos especializados y enfocados a la limpieza, desinfección y mantenimiento en todas las áreas, equipos y superficies.  Innovamos y desarrollamos nuestros productos con énfasis en el cuidado del medio ambiente y con altos estándares de calidad para satisfacer los requerimientos de todos los sectores industriales nacionales e internacionales.
+                BALQUIMIA S.A.S., empresa colombiana fabricante de productos químicos especializados enfocados a la
+                limpieza, desinfección y mantenimiento en todas las áreas, equipos y superficies.
+                <br>
+                Innovamos y desarrollamos nuestros productos desde hace más de tres décadas con énfasis al cuidado del medio
+                ambiente y con altos estándares de calidad para satisfacer los requerimientos de todos los sectores industriales
+                nacionales e internacionales.
               </h3>
             </div>
             <div class="mt-1 sm:flex seccion-1">

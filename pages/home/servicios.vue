@@ -14,9 +14,9 @@
 
           <div class="my-20">
             <h2
-              class="px-4 text-3xl font-bold text-center lg:text-5xl xl:text-6xl"
+              class="px-4 text-3xl font-bold text-center lg:text-5xl xl:text-6xl text-white"
             >
-              Soluciones integrales de limpieza y mantenimiento industrial.
+              Soluciones integrales de limpieza,mantenimiento y desinfección.
             </h2>
           </div>
         </div>
@@ -28,9 +28,8 @@
         Ofrecemos calidad, eficiencia y durabilidad.
       </h2>
       <p class="mt-6 text-gray-700 lg:mt-0 lg:w-2/4 lg:text-xl lg:px-10">
-        En BALQUIMIA S.A.S. contamos con un equipo de profesionales idóneos,
-        orientados a la asesoría técnica de postventa, que garantizan la óptima
-        implementación y el manejo de nuestros productos y servicios.
+        En BALQUIMIA S.A.S. Contamos con un grupo de ingenieros capacitados y orientados a la asesoría técnica, garantizando
+una óptima implementación y manejo eficiente de nuestros productos en las empresas y clientes.
       </p>
     </div>
 
@@ -39,199 +38,128 @@
         <h2 class="text-xl font-bold text-black">Nuestros Servicios</h2>
       </div>
 
-      <div class="md:grid md:grid-cols-3 xl:mx-8">
+      <div class="md:grid md:grid-cols-4 xl:mx-8">
+
         <div class="relative py-4 mt-4 bg-white border hover">
           <img
             class="mx-6 my-6 imagen1"
-            src="/images/servicios/ser1.webp"
+            src="/images/servicios/capacidad-produccion.png"
             alt=""
           />
-          <img class="mx-6 imagen2" src="/images/servicios/ser11.webp" alt="" />
+          <img class="mx-6 imagen2" src="/images/servicios/capacidad-produccion-blanco.png" alt="" />
           <div class="mx-6 my-6">
             <h2 class="text-xl font-bold text-white uppercase">
-              Desarrollo tecnológico de productos químicos
+              Capacidad de producción
             </h2>
             <p class="pt-4 text-white">
-              Contamos con un departamento especializado en investigación y
-              desarrollo de productos para los diferentes sectores del mercado
-              industrial, ofreciendo alta calidad, eficiencia y durabilidad
+              Balquimia cuenta con amplias y complejas instalaciones, que le permiten cumplir con altos estándares de
+              calidad y facultadas para generar grandes volúmenes de producción.
             </p>
           </div>
           <h3 class="py-4 mx-4 text-lg font-bold">
-            Desarrollo tecnológico de Productos
+            Capacidad de producción
           </h3>
-          <div class="mt-8 opacity-0 ver-mas">
-            <nuxt-link to="/">
-              <div class="flex items-center">
-                <p class="mx-4 font-bold text-white">
-                  Ver sectores 
-                </p>
-                <img class="mx-4" src="/images/comunes/arrR.webp" alt="" />
-              </div>
-            </nuxt-link>
-          </div>
+ 
         </div>
+
+
         <div class="relative py-4 mt-4 bg-white border hover">
           <img
             class="mx-6 my-6 imagen1"
-            src="/images/servicios/ser2.webp"
+            src="/images/servicios/diversificacion.png"
             alt=""
           />
-          <img class="mx-6 imagen2" src="/images/servicios/ser22.webp" alt="" />
+         <img class="mx-6 imagen2" src="/images/servicios/diversificacion-blanco.png" alt="" /> 
           <div class="mx-6 my-6">
             <h2 class="text-xl font-bold text-white uppercase">
-              Elaboración soluciones personalizadas de acuerdo a su necesidad
+              Diversificación de productos
+            </h2>
+            <p class="pt-4 text-white">
+              Contamos con un amplio portafolio de productos químicos especializados que abarcan todos los sectores productivos del
+              sector real, desarrollados con los más altos estándares de calidad.
+            </p>
+          </div>
+          <h3 class="py-4 mx-4 text-lg font-bold">
+            Diversificación de productos
+          </h3>
+ 
+        </div>
+
+        <div class="relative py-4 mt-4 bg-white border hover">
+          <img
+            class="mx-6 my-6 imagen1"
+            src="/images/servicios/innovacion.png"
+            alt=""
+          />
+         <img class="mx-6 imagen2" src="/images/servicios/innovacion-blanco.png" alt="" /> 
+          <div class="mx-6 my-6">
+            <h2 class="text-xl font-bold text-white uppercase">
+              Innovación y desarrollo de productos
             </h2>
             <p class="pt-4 text-white">
               Contamos con un departamento especializado en investigación y
               desarrollo de productos para los diferentes sectores del mercado
-              industrial, ofreciendo alta calidad, eficiencia y durabilidad
+              industrial, ofreciendo alta calidad, eficiencia y durabilidad.
             </p>
           </div>
           <h3 class="py-4 mx-4 text-lg font-bold lg:-mt-8 xl:mt-0">
-            Elaboración soluciones personalizadas de acuerdo a su necesidad
+            Innovación y desarrollo de productos
           </h3>
-          <div class="opacity-0 ver-mas">
-            <nuxt-link to="/">
-              <div class="flex items-center">
-                <p class="mx-4 font-bold text-white">
-                  Ver sectores 
-                </p>
-                <img class="mx-4" src="/images/comunes/arrR.webp" alt="" />
-              </div>
-            </nuxt-link>
-          </div>
+ 
         </div>
         <div class="relative py-4 mt-4 bg-white border hover">
           <img
             class="mx-6 my-6 imagen1"
-            src="/images/servicios/ser3.webp"
+            src="/images/servicios/asesoria.png"
             alt=""
           />
-          <img class="mx-6 imagen2" src="/images/servicios/ser33.webp" alt="" />
+          <img class="mx-6 imagen2" src="/images/servicios/asesoria-blanco.png" alt="" /> 
           <div class="mx-6 my-6">
             <h2 class="text-xl font-bold text-white uppercase">
-              Programa de limpieza, desinfección y mantenimiento preventivo
+              Asesoría consultiva Pre &amp; Post venta.
             </h2>
             <p class="pt-4 text-white">
-              Contamos con un departamento especializado en investigación y
-              desarrollo de productos para los diferentes sectores del mercado
-              industrial, ofreciendo alta calidad, eficiencia y durabilidad
+              Contamos con un grupo de ingenieros capacitados y orientados a la asesoría técnica, garantizando
+              una óptima implementación y manejo eficiente de nuestros productos en las empresas de nuestros clientes.
             </p>
           </div>
           <h3 class="py-4 mx-4 text-lg font-bold md:-mt-6 lg:-mt-16 xl:mt-0">
-            Programa de limpieza, desinfeccion y mantenimiento preventivo
+            Asesoría consultiva Pre &amp; Post venta.
           </h3>
-          <div class="opacity-0 ver-mas">
-            <nuxt-link to="/">
-              <div class="flex items-center">
-                <p class="mx-4 font-bold text-white">
-                  Ver sectores de experiencia
-                </p>
-                <img class="mx-4" src="/images/comunes/arrR.webp" alt="" />
-              </div>
-            </nuxt-link>
-          </div>
+ 
         </div>
       </div>
     </div>
 
-    <div class="relative mt-20 bg-gray-900 lg:flex">
+    <div class="relative mt-10 bg-gray-900 lg:flex">
       <div
-        class="pt-48 pb-10 bg-center bg-no-repeat bg-cover"
+        class="pt-38 pb-10 bg-center bg-no-repeat bg-cover"
         style="background-image: url(/images/comunes/malla2.webp)"
       >
         <div class="px-10 md:px-16 lg:px-10">
  
-          <div class="my-20 lg:mx-8">
+          <div class="my-20 lg:mx-8 text-white">
             <h2
               class="px-4 text-2xl font-bold leading-8 sm:text-3xl lg:text-4xl xl:text-5xl lg:leading-tight"
             >
-              El Control de la calidad
-              <span class="text-primary">es el factor principal</span> en el
+              El control de la calidad
+              <span class="text-primary">es el principal factor</span> en el
               desarrollo e implementación de nuestros productos
             </h2>
-            <p class="px-4 mt-4 text-lg text-white">
+            <br><br>
+            <p class="px-4 mt-4 text-lg ">
               Trabajamos en nuestros productos para que superen sus objetivos de
-              uso y durabilidad. Para conseguir y garantizar este propósito
+              uso y durabilidad. Para conseguir y garantizar este propósito,
               poseemos y aplicamos lo mejor de la tecnología disponible.
             </p>
           </div>
         </div>
       </div>
       <div class="hidden w-full lg:block hexa2">
-        <img src="/images/servicios/hexa2.webp" alt="" />
+        <!-- <img src="/images/servicios/hexa2.webp" alt="" /> -->
       </div>
     </div>
 
-    <!-- diferenciadores -->
-    <div class="pt-20">
-      <div class="relative mx-8 md:-ml-16">
-       
-        <p
-          class="inline w-1/2 ml-16 text-2xl font-bold text-center md:text-3xl lg:ml-2"
-        >
-          Por qué contar con nuestros servicios?
-        </p>
-      </div>
-    </div>
-    <div class="mt-10 bg-gray-300 md:grid md:grid-cols-4 lg:grid-cols-3">
-      <div
-        class="col-span-2 md:ml-4 lg:ml-0 xl:ml-0 md:col-start-1 lg:col-span-1"
-      >
-        <div class="hexagon-wrapper">
-          <div class="items-center hexagon">
-            <div class="z-10">
-              <img
-                class="mx-auto mb-4"
-                src="/images/home/diferenciadores/fortaleza1.webp"
-                alt="fortaleza1"
-              />
-              <p class="z-10 px-4 leading-4 text-center">
-                Disminuimos el consumo de los recursos naturales para ayudar en
-                la protección del Medio Ambiente.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-span-2 -mt-20 md:mt-0 md:mr-4 lg:col-span-1">
-        <div class="hexagon-wrapper">
-          <div class="items-center hexagon">
-            <div class="z-10 px-2 my-10">
-              <img
-                class="z-10 mx-auto mb-4"
-                src="/images/home/diferenciadores/fortaleza2.webp"
-                alt="fortaleza1"
-              />
-              <p class="z-10 px-4 leading-4 text-center">
-                Realizamos acompañamiento técnico para optimizar la
-                implementación de los productos.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-span-2 -mt-20 md:mx-4 lg:mx-0 xl:mx-0 md:col-start-2 md:-mt-10 lg:mt-0 lg:col-span-1"
-      >
-        <div class="hexagon-wrapper">
-          <div class="items-center hexagon">
-            <div class="z-10 px-2 my-10">
-              <img
-                class="z-10 mx-auto mb-4"
-                src="/images/home/diferenciadores/fortaleza3.webp"
-                alt="fortaleza1"
-              />
-              <p class="z-10 px-4 leading-4 text-center">
-                Somos Garantía en resultados porque conocemos las dinámicas de
-                los sectores y las necesidades de nuestros clientes.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
  
   </div>

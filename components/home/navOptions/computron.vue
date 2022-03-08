@@ -7,7 +7,7 @@
       >
         <img
           class="w-10 h-8 ml-2 "
-          src="/images/servicios/ser2.webp"
+          src="/images/servicios/"
           alt="computron"
         />
         <span :class="[cssResponsiveSpan, cssNotResponsiveSpan]">

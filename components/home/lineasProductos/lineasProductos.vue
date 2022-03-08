@@ -38,7 +38,7 @@ export default {
         orden_web: 1,
         imagen: "/images/home/industrias/_inocuidad_alimentaria.png",
         slogan:
-          "Texto alusivo a la linea Texto alusivo a la linea Texto alusivo a la linea",
+          "Brindamos garantías en los resultados de limpieza y desinfección.",
         inactivo: 0,
       },
       {
@@ -49,7 +49,7 @@ export default {
         orden_web: 2,
         imagen: "/images/home/industrias/_artes-graficas.png",
         slogan:
-          "Texto alusivo a la linea Texto alusivo a la linea Texto alusivo a la linea",
+          "Optimizamos sus alistamientos.",
         inactivo: 0,
       },
       {
@@ -60,7 +60,7 @@ export default {
         orden_web: 3,
         imagen: "/images/home/industrias/materias_primas.jpg",
         slogan:
-          "Texto alusivo a la linea Texto alusivo a la linea Texto alusivo a la linea",
+          "Productos para ser incorporados como marca blanca en sus portafolios.",
         inactivo: 0,
       },
       {
@@ -71,7 +71,7 @@ export default {
         orden_web: 4,
         imagen: "/images/home/industrias/_mantenimiento-industrial.png",
         slogan:
-          "Texto alusivo a la linea Texto alusivo a la linea Texto alusivo a la linea",
+          "Diseñados para el cuidado preventivo y/o correctivo de su empresa, sin contaminar el medio ambiente.",
         inactivo: 0,
       },
             {
@@ -80,9 +80,9 @@ export default {
         nom_linea: "SANIDAD PORTÁTIL",
         orden_local: 4,
         orden_web: 4,
-        imagen: "/images/home/industrias/_sanidad-portatil.png",
+        imagen: "/images/home/industrias/_sanidad-portatil.jpg",
         slogan:
-          "Texto alusivo a la linea Texto alusivo a la linea Texto alusivo a la linea",
+          "Productos químicos especializados para mantenimiento de baños portátiles ",
         inactivo: 0,
       },
       {
@@ -93,7 +93,7 @@ export default {
         orden_web: 93,
         imagen: "/images/home/industrias/_automotriz.png",
         slogan:
-          "Texto alusivo a la linea Texto alusivo a la linea Texto alusivo a la linea",
+          "Diseñados especialmente para el cuidado de sus vehículos.",
         inactivo: 0,
       },
       {
@@ -104,7 +104,7 @@ export default {
         orden_web: 94,
         imagen: "/images/home/industrias/_construccion.png",
         slogan:
-          "Texto alusivo a la linea Texto alusivo a la linea Texto alusivo a la linea",
+          "Productos biodegradables que contribuyen a que pueda seguir construyendo.",
         inactivo: 0,
       },
       {
@@ -115,7 +115,7 @@ export default {
         orden_web: 95,
         imagen: "/images/home/industrias/_motos_bicicletas.png",
         slogan:
-          "Texto alusivo a la linea Texto alusivo a la linea Texto alusivo a la linea",
+          "Diseñados especialmente para el cuidado de sus vehículos.",
         inactivo: 0,
       },
             {
@@ -137,7 +137,7 @@ export default {
         orden_web: 4,
         imagen: "/images/home/industrias/_institucional.png",
         slogan:
-          "Texto alusivo a la linea Texto alusivo a la linea Texto alusivo a la linea",
+          "Productos ideales para la limpieza de vidrios, espejos y vitrinas",
         inactivo: 0,
       },
        {
@@ -148,7 +148,7 @@ export default {
         orden_web: 4,
         imagen: "/images/home/industrias/_reencauche.png",
         slogan:
-          "Texto alusivo a la linea Texto alusivo a la linea Texto alusivo a la linea",
+          "Productos químicos especialmente desarrollados para extender durabilidad en los procesos de reencauche",
         inactivo: 0,
       },   
        {
@@ -159,7 +159,7 @@ export default {
         orden_web: 4,
         imagen: "/images/home/industrias/_retail.png",
         slogan:
-          "Germicidas de elevado poder, efectivo frente a un amplio espectro de microorganismos ",
+          "Exigencias industriales al alcance de su hogar.",
         inactivo: 0,
       },         
     ],
