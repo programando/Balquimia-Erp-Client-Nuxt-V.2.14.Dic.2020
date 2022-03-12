@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-10 bg-white mt-20">
+  <div class="pb-10 bg-white">
     <div
       class="bg-center bg-no-repeat bg-cover lg:py-20 "
       style="background-image:url(/images/home/footer/footer.jpg)"
@@ -28,9 +28,9 @@
     <div class="-mt-10 ">
       <img class="mx-auto " src="/images/home/footer/arr2.webp" alt="" />
     </div>
-    <div class="relative">
+    <div class="relative -mt-8 -ml-14">
       <img
-        class="mx-auto logo"
+        class="mx-auto"
         src="/images/home/footer/balquimia-logo.webp"
         alt=""
       />

@@ -14,7 +14,7 @@
 
           <div class="my-20">
             <h2
-              class="px-4 text-3xl font-bold text-center lg:text-5xl xl:text-6xl text-white"
+              class="px-4 text-3xl font-bold text-center text-white lg:text-5xl xl:text-6xl"
             >
               Soluciones integrales de limpieza,mantenimiento y desinfección.
             </h2>
@@ -29,7 +29,7 @@
       </h2>
       <p class="mt-6 text-gray-700 lg:mt-0 lg:w-2/4 lg:text-xl lg:px-10">
         En BALQUIMIA S.A.S. Contamos con un grupo de ingenieros capacitados y orientados a la asesoría técnica, garantizando
-una óptima implementación y manejo eficiente de nuestros productos en las empresas y clientes.
+        una óptima implementación y manejo eficiente de nuestros productos en las empresas y clientes.
       </p>
     </div>
 
@@ -42,16 +42,16 @@ una óptima implementación y manejo eficiente de nuestros productos en las empr
 
         <div class="relative py-4 mt-4 bg-white border hover">
           <img
-            class="mx-6 my-6 imagen1"
+            class="h-40 mx-6 my-6 imagen1"
             src="/images/servicios/capacidad-produccion.png"
             alt=""
           />
-          <img class="mx-6 imagen2" src="/images/servicios/capacidad-produccion-blanco.png" alt="" />
+          <img class="hidden mx-6 imagen2" src="/images/servicios/capacidad-produccion-blanco.png" alt="" />
           <div class="mx-6 my-6">
-            <h2 class="text-xl font-bold text-white uppercase">
+            <h2 class="h-10 text-xl font-bold text-white uppercase">
               Capacidad de producción
             </h2>
-            <p class="pt-4 text-white">
+            <p class="h-40 pt-4 text-white">
               Balquimia cuenta con amplias y complejas instalaciones, que le permiten cumplir con altos estándares de
               calidad y facultadas para generar grandes volúmenes de producción.
             </p>
@@ -65,16 +65,16 @@ una óptima implementación y manejo eficiente de nuestros productos en las empr
 
         <div class="relative py-4 mt-4 bg-white border hover">
           <img
-            class="mx-6 my-6 imagen1"
+            class="h-40 mx-6 my-6 imagen1"
             src="/images/servicios/diversificacion.png"
             alt=""
           />
-         <img class="mx-6 imagen2" src="/images/servicios/diversificacion-blanco.png" alt="" /> 
+         <img class="hidden mx-6 imagen2" src="/images/servicios/diversificacion-blanco.png" alt="" /> 
           <div class="mx-6 my-6">
-            <h2 class="text-xl font-bold text-white uppercase">
+            <h2 class="h-10 text-xl font-bold text-white uppercase">
               Diversificación de productos
             </h2>
-            <p class="pt-4 text-white">
+            <p class="h-40 pt-4 text-white">
               Contamos con un amplio portafolio de productos químicos especializados que abarcan todos los sectores productivos del
               sector real, desarrollados con los más altos estándares de calidad.
             </p>
@@ -87,16 +87,16 @@ una óptima implementación y manejo eficiente de nuestros productos en las empr
 
         <div class="relative py-4 mt-4 bg-white border hover">
           <img
-            class="mx-6 my-6 imagen1"
+            class="h-40 mx-6 my-6 imagen1"
             src="/images/servicios/innovacion.png"
             alt=""
           />
-         <img class="mx-6 imagen2" src="/images/servicios/innovacion-blanco.png" alt="" /> 
+         <img class="hidden mx-6 imagen2" src="/images/servicios/innovacion-blanco.png" alt="" /> 
           <div class="mx-6 my-6">
-            <h2 class="text-xl font-bold text-white uppercase">
+            <h2 class="h-10 text-xl font-bold text-white uppercase">
               Innovación y desarrollo de productos
             </h2>
-            <p class="pt-4 text-white">
+            <p class="h-40 pt-4 text-white">
               Contamos con un departamento especializado en investigación y
               desarrollo de productos para los diferentes sectores del mercado
               industrial, ofreciendo alta calidad, eficiencia y durabilidad.
@@ -109,16 +109,16 @@ una óptima implementación y manejo eficiente de nuestros productos en las empr
         </div>
         <div class="relative py-4 mt-4 bg-white border hover">
           <img
-            class="mx-6 my-6 imagen1"
+            class="h-40 mx-6 my-6 imagen1"
             src="/images/servicios/asesoria.png"
             alt=""
           />
-          <img class="mx-6 imagen2" src="/images/servicios/asesoria-blanco.png" alt="" /> 
+          <img class="hidden mx-6 imagen2" src="/images/servicios/asesoria-blanco.png" alt="" /> 
           <div class="mx-6 my-6">
-            <h2 class="text-xl font-bold text-white uppercase">
+            <h2 class="h-10 text-xl font-bold text-white uppercase">
               Asesoría consultiva Pre &amp; Post venta.
             </h2>
-            <p class="pt-4 text-white">
+            <p class="h-40 pt-4 text-white">
               Contamos con un grupo de ingenieros capacitados y orientados a la asesoría técnica, garantizando
               una óptima implementación y manejo eficiente de nuestros productos en las empresas de nuestros clientes.
             </p>
@@ -133,12 +133,12 @@ una óptima implementación y manejo eficiente de nuestros productos en las empr
 
     <div class="relative mt-10 bg-gray-900 lg:flex">
       <div
-        class="pt-38 pb-10 bg-center bg-no-repeat bg-cover"
+        class="bg-center bg-no-repeat bg-cover  pt-38"
         style="background-image: url(/images/comunes/malla2.webp)"
       >
         <div class="px-10 md:px-16 lg:px-10">
  
-          <div class="my-20 lg:mx-8 text-white">
+          <div class="my-20 text-white lg:mx-8">
             <h2
               class="px-4 text-2xl font-bold leading-8 sm:text-3xl lg:text-4xl xl:text-5xl lg:leading-tight"
             >
