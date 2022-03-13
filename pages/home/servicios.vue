@@ -46,8 +46,8 @@
             src="/images/servicios/capacidad-produccion.png"
             alt=""
           />
-          <img class="hidden mx-6 imagen2" src="/images/servicios/capacidad-produccion-blanco.png" alt="" />
-          <div class="mx-6 my-6">
+          <img class="h-40 mx-6 -mt-4 imagen2" src="/images/servicios/capacidad-produccion-blanco.png" alt="" />
+          <div class="mx-6 my-6 mt-20">
             <h2 class="h-10 text-xl font-bold text-white uppercase">
               Capacidad de producción
             </h2>
@@ -69,8 +69,8 @@
             src="/images/servicios/diversificacion.png"
             alt=""
           />
-         <img class="hidden mx-6 imagen2" src="/images/servicios/diversificacion-blanco.png" alt="" /> 
-          <div class="mx-6 my-6">
+         <img class="h-40 mx-6 -mt-4 imagen2" src="/images/servicios/diversificacion-blanco.png" alt="" /> 
+          <div class="mx-6 my-6 mt-20">
             <h2 class="h-10 text-xl font-bold text-white uppercase">
               Diversificación de productos
             </h2>
@@ -91,8 +91,8 @@
             src="/images/servicios/innovacion.png"
             alt=""
           />
-         <img class="hidden mx-6 imagen2" src="/images/servicios/innovacion-blanco.png" alt="" /> 
-          <div class="mx-6 my-6">
+         <img class="h-40 mx-6 -mt-4 imagen2" src="/images/servicios/innovacion-blanco.png" alt="" /> 
+          <div class="mx-6 my-6 mt-20">
             <h2 class="h-10 text-xl font-bold text-white uppercase">
               Innovación y desarrollo de productos
             </h2>
@@ -113,8 +113,8 @@
             src="/images/servicios/asesoria.png"
             alt=""
           />
-          <img class="hidden mx-6 imagen2" src="/images/servicios/asesoria-blanco.png" alt="" /> 
-          <div class="mx-6 my-6">
+          <img class="h-40 mx-6 -mt-4 imagen2" src="/images/servicios/asesoria-blanco.png" alt="" /> 
+          <div class="mx-6 my-6 mt-20">
             <h2 class="h-10 text-xl font-bold text-white uppercase">
               Asesoría consultiva Pre &amp; Post venta.
             </h2>
@@ -133,7 +133,7 @@
 
     <div class="relative mt-10 bg-gray-900 lg:flex">
       <div
-        class="bg-center bg-no-repeat bg-cover  pt-38"
+        class="bg-center bg-no-repeat bg-cover pt-38"
         style="background-image: url(/images/comunes/malla2.webp)"
       >
         <div class="px-10 md:px-16 lg:px-10">
@@ -181,16 +181,18 @@ export default {
   background-color: #ce3b0a;
 }
 
-.hover:hover > .imgen1 {
-  opacity: 0;
+.hover:hover > .imagen1 {
+  display: none;
 }
 
 .imagen2 {
-  position: absolute;
+  position: relative;
+  display: none;
 }
 
 .hover:hover > .imagen2 {
   top: 40px;
+  display: block;
 }
 
 .hover:hover > h3 {
