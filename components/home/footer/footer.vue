@@ -2,16 +2,16 @@
   <div class="pb-10 bg-white">
     <div
       class="bg-center bg-no-repeat bg-cover lg:py-20 "
-      style="background-image:url(/images/home/footer/footer-contact.webp)"
+      style="background-image:url(/images/home/footer/footer.jpg)"
     >
       <div
         class="bg-center bg-no-repeat bg-cover "
-        style="background-image:url(/images/comunes/malla1.webp)"
+        
       >
         <div class="py-20">
           <div class="mx-10">
-            <h2 class="text-2xl font-bold text-center">
-              Estamos listos, ¿Qué necesidad tienes en tu empresa?
+            <h2 class="text-2xl font-bold text-center text-white">
+              Estamos listos para asesorate, ¿Qué necesidad tienes en tu empresa?
             </h2>
 
             <AppButton
@@ -28,9 +28,9 @@
     <div class="-mt-10 ">
       <img class="mx-auto " src="/images/home/footer/arr2.webp" alt="" />
     </div>
-    <div class="relative">
+    <div class="relative -mt-8 -ml-14">
       <img
-        class="mx-auto logo"
+        class="mx-auto"
         src="/images/home/footer/balquimia-logo.webp"
         alt=""
       />
@@ -38,31 +38,53 @@
     <div class="gap-20 sm:grid sm:grid-cols-1 lg:grid-cols-3 lg:mx-20 ">
       <div class="mt-10 text-gray-700 sm:mt-4 ">
         <div class="flex justify-center lg:justify-start lg:ml-10">
-          <h3 class="font-bold uppercase">Líneas de productos</h3>
+          <h3 class="font-bold uppercase">Sectores industrilaes</h3>
         </div>
         <div class="flex justify-center mt-2 lg:justify-start lg:ml-10 lg:mt-1">
           <nuxt-link to="/store/productos"
-            > Inocuidad Alimentaria</nuxt-link
+            > Inocuidad alimentaria</nuxt-link
           >
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
           <nuxt-link to="/store/productos"> Artes gráficas</nuxt-link>
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <nuxt-link to="/store/productos"> Automotriz</nuxt-link>
+          <nuxt-link to="/store/productos"> Materias primas</nuxt-link>
         </div>
  
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
           <nuxt-link to="/store/productos"
-            > Mantenimiento Industrial</nuxt-link
+            > Mantenimiento industrial</nuxt-link
           >
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <nuxt-link to="/store/productos"> Materias Primas</nuxt-link>
+          <nuxt-link to="/store/productos">Sanidad portátil</nuxt-link>
+        </div>
+        
+        <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
+          <nuxt-link to="/store/productos"> Automotriz</nuxt-link>
+        </div>
+
+        <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
+          <nuxt-link to="/store/productos"> Construcción y obras civiles</nuxt-link>
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <nuxt-link to="/store/productos"> Sanidad Portátil</nuxt-link>
+          <nuxt-link to="/store/productos"> Motos y bicicletas</nuxt-link>
         </div>
+        <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
+          <nuxt-link to="/store/productos"> Ferreterías</nuxt-link>
+        </div>
+        <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
+          <nuxt-link to="/store/productos"> Institucional</nuxt-link>
+        </div>
+        <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
+          <nuxt-link to="/store/productos"> Reencauche de llantas</nuxt-link>
+        </div>
+        <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
+          <nuxt-link to="/store/productos"> Retail</nuxt-link>
+        </div>
+
+
       </div>
       <div class="mt-10 text-gray-700 sm:mt-8 lg:mt-4 ">
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">

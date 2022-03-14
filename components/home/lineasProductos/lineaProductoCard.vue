@@ -4,9 +4,12 @@
       <div class="card">
         <div class="image">
           <div
-            class="relative px-10 py-10 bg-center bg-no-repeat bg-cover border-2 md:px-6 lg:px-4 md:py-8 hover:text-white img"
+            class="relative flex items-center justify-center px-10 py-10 bg-center bg-no-repeat bg-cover border-2 md:px-6 lg:px-4 md:py-8 hover:text-white img"
             :style="getImage(imagen)"
-          ></div>
+          >
+            <h1 class="text-xl text-white">{{nom_linea}}</h1>
+           
+          </div>
         </div>
         <div class="details bg-primary">
           <div class="px-2 py-2 center">
@@ -93,6 +96,7 @@ export default {
 .card .details .center {
   /* padding: 20px; */
   text-align: center;
+  width: 100%;
   background: #fff;
   position: absolute;
   top: 50%;

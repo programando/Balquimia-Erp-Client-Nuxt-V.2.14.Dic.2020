@@ -13,6 +13,7 @@ export default {
       { hid: 'http-equiv', name: 'X-UA-Compatible', content: 'IE=edge' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
+
   env: {
       URL_BASE: process.env.URL_BASE,
       URL_API: process.env.URL_API,
@@ -20,9 +21,11 @@ export default {
       URL_RESET_PASS: process.env.URL_RESET_PASS,
     },
   },
-  server :{
-      port: 3001,
-  },
+ 
+ server: {
+    port: process.env.PORT
+ },
+ 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
       '@/assets/css/app.css',
