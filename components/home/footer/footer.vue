@@ -11,7 +11,7 @@
         <div class="py-20">
           <div class="mx-10">
             <h2 class="text-2xl font-bold text-center text-white">
-              Estamos listos para asesorate, ¿Qué necesidad tienes en tu empresa?
+              Estamos listos para asesorarte, ¿Qué necesidad tienes en tu empresa?
             </h2>
 
             <AppButton
@@ -38,7 +38,7 @@
     <div class="gap-20 sm:grid sm:grid-cols-1 lg:grid-cols-3 lg:mx-20 ">
       <div class="mt-10 text-gray-700 sm:mt-4 ">
         <div class="flex justify-center lg:justify-start lg:ml-10">
-          <h3 class="font-bold uppercase">Sectores industrilaes</h3>
+          <h3 class="font-bold uppercase">Sectores industriales</h3>
         </div>
         <div class="flex justify-center mt-2 lg:justify-start lg:ml-10 lg:mt-1">
           <nuxt-link to="/store/productos"
@@ -112,7 +112,7 @@
           <p class="font-bold">01 8000 18 8766</p>
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
-          <p>Dirección: Cll 35 #4-31</p>
+          <p>Dirección: Cll 35 # 4-31</p>
         </div>
         <div class="flex justify-center lg:justify-start lg:ml-10 lg:mt-1">
           <p>Cali - Colombia</p>
@@ -137,7 +137,7 @@
       </nuxt-link>
     </div>
     <div class="flex justify-center">
-      <p class="text-xs text-gray-700">© Balquimia Chemical Solutions 2021</p>
+      <p class="text-xs text-gray-700">© Balquimia Chemical Solutions 2022</p>
     </div>
   </div>
 </template>

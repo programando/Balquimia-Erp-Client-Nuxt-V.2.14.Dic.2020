@@ -21,9 +21,11 @@ export default {
       URL_RESET_PASS: process.env.URL_RESET_PASS,
     },
   },
+ 
  server: {
     port: process.env.PORT
-  },
+ },
+ 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
       '@/assets/css/app.css',
