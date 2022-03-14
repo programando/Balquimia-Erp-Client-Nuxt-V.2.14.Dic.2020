@@ -7,11 +7,11 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div
-          class="py-10 bg-center bg-no-repeat bg-cover lg:py-52"
+          class="relative h-screen bg-center bg-no-repeat bg-cover"
           style="background-image: url('/images/home/slider/1 - Tron 500 HD.jpg')"
         >
-          <div class="px-16 pt-20">
-            <div class="lg:ml-56">
+          <div class="absolute px-16 pt-20 top-40">
+            <div class="lg:ml-56 ">
               <p
                 class="w-5/6 text-3xl font-bold text-center text-white 2xl:w-3/6 lg:text-4xl 2xl:text-6xl"
               >
@@ -30,10 +30,10 @@
 
       <div class="swiper-slide">
         <div
-          class="py-48 bg-center bg-no-repeat bg-cover lg:py-80"
+          class="relative h-screen bg-center bg-no-repeat bg-cover"
           style="background-image: url('/images/home/slider/2 - Tron 20 - 20.jpg')"
         >
-          <div class="px-16">
+          <div class="absolute px-16 top-40">
             <div class="lg:mx-10">
               <p
                 class="w-4/6 text-2xl text-center text-white lg:text-4xl 2xl:text-5xl "
@@ -52,10 +52,10 @@
       </div>
       <div class="swiper-slide">
         <div
-          class="py-32 bg-center bg-no-repeat bg-cover lg:py-44"
+          class="relative h-screen bg-center bg-no-repeat bg-cover"
           style="background-image: url('/images/home/slider/3 - Oxytron.jpg')"
         >
-          <div class="px-16">
+          <div class="absolute right-0 px-16 top-40">
             <div class="lg:mx-10">
               <p
                 class="mt-24 text-2xl text-right text-white lg:text-4xl 2xl:text-5xl"
@@ -113,7 +113,7 @@
 
       <div class="swiper-slide">
         <div
-          class="pt-64 pb-10 bg-center bg-no-repeat bg-cover lg:pt-80"
+          class="h-screen pt-64 pb-10 bg-center bg-no-repeat bg-cover lg:pt-80"
           style="background-image: url('/images/home/slider/4 -  Ferreterias.jpg')"
         >
           <div class="px-16 -mt-36">
@@ -135,11 +135,11 @@
 
       <div class="swiper-slide">
         <div
-          class="py-40 bg-center bg-no-repeat bg-cover lg:py-80"
+          class="relative h-screen bg-center bg-no-repeat bg-cover"
           style="background-image: url('/images/home/slider/5 - Iron Cleaner.jpg')"
         >
-          <div class="px-16">
-            <div class="lg:mx-10">
+          <div class="absolute px-16 inset-x-1/4 inset-y-1/4">
+            <div class="">
               <p
                 class="text-5xl text-center text-white mt-28 lg:text-4xl 2xl:text-5xl"
               >
@@ -173,9 +173,9 @@ export default {
         spaceBetween: -10,
         slidesPerGroup: 1,
         loop: true,
-         autoplay: {
-           delay: 6000
-         },
+        //  autoplay: {
+        //    delay: 6000
+        //  },
         loopFillGroupWithBlank: true,
         pagination: {
           el: ".swiper-pagination",
