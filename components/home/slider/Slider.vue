@@ -95,7 +95,7 @@
 
       <div class="swiper-slide">
         <div
-          class="py-56 bg-center bg-no-repeat bg-cover lg:py-96"
+          class="h-screen py-56 bg-center bg-no-repeat bg-cover lg:py-96"
           style="background-image: url('/images/home/slider/6 - Rax 6-86.jpg')"
         >
           <div class="px-16 py-20">
