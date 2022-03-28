@@ -20,8 +20,11 @@
                     </h2>
                     <div class="mx-4 my-4 border"></div>
                     <p class="px-4 text-lg leading-6 text-gray-700">
-                      Sistema de limpieza, desinfección y mantenimiento
-                      preventivo
+
+                       <span v-for="claseProducto in clasesProductos" :key="claseProducto.id_clse_prdcto"> 
+                          <div @click="getProductosPorClase(claseProducto.id_clse_prdcto)">  {{ claseProducto.nom_clse_prdcto }} </div>
+                       </span>
+
                     </p>
                   </div>
                   <div class="relative flex mr-16 -ml-10 lg:ml-4">
@@ -41,23 +44,6 @@
             </div>
           </div>
 
-          <div class="flex justify-between mx-10 mb-4">
-            <h2 class="text-2xl font-bold text-primary ">
-              Lista de Productos
-            </h2>
-            <div class="hidden mr-10 lg:inline">
-              <img
-                class="inline"
-                src="/images/comunes/arrL.webp"
-                alt="fecha-izquierda"
-              />
-              <img
-                class="inline"
-                src="/images/comunes/arrR.webp"
-                alt="fecha-derecha"
-              />
-            </div>
-          </div>
 
           <div class="my-10 sm:grid sm:grid-cols-3 xl:grid-cols-4 sm:gap-1">
             <CardProductoDestacado></CardProductoDestacado>
@@ -75,53 +61,16 @@
               Por Sectores
             </h3>
           </div>
+          
           <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"  >
-            <nuxt-link to="/"> Inocuidad alimentaria</nuxt-link>
+            <table>
+              <tr  v-for="linea in lineasProductos" :key="linea.idlinea">
+                  <td @click="getClasesProductosPorLinea (linea.id_linea )">  {{ linea.nom_linea}}      </td>
+              </tr>
+   
+            </table>
           </div>
 
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300" >
-            <nuxt-link to="/"> Artes gráficas</nuxt-link>
-          </div>
-
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300">
-            <nuxt-link to="/"> Materias primas</nuxt-link>
-          </div>
- 
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300" >
-            <nuxt-link to="/"> Mantenimiento industrial</nuxt-link>
-          </div>
-
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300" >
-            <nuxt-link to="/"> Sanidad portátils</nuxt-link>
-          </div>
-
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300" >
-            <nuxt-link to="/"> Automotriz</nuxt-link>
-          </div>
-
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300" >
-            <nuxt-link to="/"> Construcción y obras civiles</nuxt-link>
-          </div>
-
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300" >
-            <nuxt-link to="/"> Motos y bicicletas</nuxt-link>
-          </div>
-
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300" >
-            <nuxt-link to="/"> Ferreterías</nuxt-link>
-          </div>
-
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300" >
-            <nuxt-link to="/"> Institucional</nuxt-link>
-          </div>
-
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300" >
-            <nuxt-link to="/"> Reencauche de llantas</nuxt-link>
-          </div>
-
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300" >
-            <nuxt-link to="/"> Retail</nuxt-link>
-          </div>
 
 
         </div>
@@ -135,13 +84,49 @@
 import HeaderProductos from "@/components/productos/headerProductos";
 import Footer from "@/components/home/footer/footer";
 import CardProductoDestacado from "@/components/home/productosDestacados/cardProductoDestacado";
+import Lineas from "@/models/MstroLinea";
+import ClasesProductos from "@/models/MstroClasesPrdcto" ;
 export default {
   
   components: {
     HeaderProductos,
     Footer,
     CardProductoDestacado
-  }
+  },
+
+    data: () => ({
+        formData: {  idlinea :0, },
+        errors: [],
+        clasesProductos:[],
+        lineasProductos:[],
+    }),
+
+
+    mounted() {
+        Lineas.activas()
+        .then( response => {
+            this.lineasProductos = response.data ;
+        });
+      
+    },
+
+    methods:{
+        getClasesProductosPorLinea ( idLinea ) {
+           this.formData.idlinea = idLinea
+           ClasesProductos.getClasesPorLinea ( this.formData )
+            .then ( response => {
+                this.clasesProductos = response.data ;
+            });
+        },
+
+        getProductosPorClase ( IdClaseProducto ){
+          console.log (IdClaseProducto );
+        }
+    },
+    
+
+
+
 };
 </script>
 <style>
