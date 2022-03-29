@@ -46,12 +46,8 @@
 
 
           <div class="my-10 sm:grid sm:grid-cols-3 xl:grid-cols-4 sm:gap-1">
-            <CardProductoDestacado></CardProductoDestacado>
-            <CardProductoDestacado></CardProductoDestacado>
-            <CardProductoDestacado></CardProductoDestacado>
-            <CardProductoDestacado></CardProductoDestacado>
-            <CardProductoDestacado></CardProductoDestacado>
-            <CardProductoDestacado></CardProductoDestacado>
+            <CardProductoDestacado :productos="productos"></CardProductoDestacado>
+
           </div>
         </div>
 
@@ -81,11 +77,12 @@
   </div>
 </template>
 <script>
-import HeaderProductos from "@/components/productos/headerProductos";
-import Footer from "@/components/home/footer/footer";
-import CardProductoDestacado from "@/components/home/productosDestacados/cardProductoDestacado";
-import Lineas from "@/models/MstroLinea";
-import ClasesProductos from "@/models/MstroClasesPrdcto" ;
+import CardProductoDestacado    from "@/components/home/productosDestacados/cardProductoDestacado";
+import ClasesProductos          from "@/models/MstroClasesPrdcto" ;
+import Footer                   from "@/components/home/footer/footer";
+import HeaderProductos          from "@/components/productos/headerProductos";
+import Lineas                   from "@/models/MstroLinea";
+import Productos                from "@/models/Prdcto";
 export default {
   
   components: {
@@ -99,6 +96,7 @@ export default {
         errors: [],
         clasesProductos:[],
         lineasProductos:[],
+        productos:      [],
     }),
 
 
@@ -107,7 +105,7 @@ export default {
         .then( response => {
             this.lineasProductos = response.data ;
         });
-      
+       this.getClasesProductosPorLinea (3); // Linea inocuida alimentaria
     },
 
     methods:{
@@ -117,10 +115,22 @@ export default {
             .then ( response => {
                 this.clasesProductos = response.data ;
             });
+            this.getProductosPorLinea ( idLinea);
         },
 
         getProductosPorClase ( IdClaseProducto ){
-          console.log (IdClaseProducto );
+           Productos.porClaseProducto( IdClaseProducto)
+           .then ( response => {
+              this.productos = response.data;
+           });
+           
+        },
+
+        getProductosPorLinea (idLinea ) {
+          Productos.porLineaProducto ( idLinea )
+          .then ( response => {
+              this.productos = response.data;
+          });
         }
     },
     
