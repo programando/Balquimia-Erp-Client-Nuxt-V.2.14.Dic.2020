@@ -1,0 +1,47 @@
+<template>
+  <div class="my-10 ml-2 mr-4 bg-white border lg:ml-2 lg:mr-4 ">
+    <div
+      class="bg-center bg-no-repeat bg-cover"
+      style="background-image: url(/images/comunes/malla2.webp)"
+    >
+      <div class="flex justify-between">
+        <div class="my-6 ml-4 md:ml-8">
+          <h2
+            class="px-4 mt-4 text-2xl font-bold leading-5 text-primary md:leading-none md:text-3xl lg:text-4xl "
+          >
+            {{ title }}
+          </h2>
+          <div class="mx-4 my-4 border"></div>
+          <p class="px-4 text-lg leading-6 text-gray-700">
+            <span
+              v-for="claseProducto in clasesProductos"
+              :key="claseProducto.id_clse_prdcto"
+            >
+              <div class="py-2 cursor-pointer" @click="getProductosPorClase(claseProducto.id_clse_prdcto)">
+                {{ claseProducto.nom_clse_prdcto }}
+              </div>
+            </span>
+          </p>
+        </div>
+        <div class="relative flex -ml-10">
+          <img class="h-64 pico" :src="img" alt="" />
+          <img class="h-64" src="/images/comunes/linea0.webp" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "SectoresMain",
+  props: {
+    clasesProductos: Array,
+    title: String,
+    img: String
+  }
+  
+};
+</script>
+
+<style></style>

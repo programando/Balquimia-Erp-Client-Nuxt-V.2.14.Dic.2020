@@ -1,142 +1,104 @@
 <template>
   <div>
-    <HeaderProductos></HeaderProductos>
-
-    <div class="pb-8 bg-gray-200 ">
+    <div class="h-screen pb-8 bg-gray-200">
       <div class="grid-cols-4 gap-4 lg:grid lg:mx-0 ">
         <div class="col-start-2 col-end-5 mx-4 lg:-ml-2 lg:mx-0 ">
           <div class="pt-20 bg-gray-200">
-            <div class="my-10 ml-2 mr-4 bg-white border lg:ml-2 lg:mr-4">
-              <div
-                class="bg-center bg-no-repeat bg-cover"
-                style="background-image: url(/images/comunes/malla2.webp)"
-              >
-                <div class="flex">
-                  <div class="mx-4 my-6 md:mx-8">
-                    <h2
-                      class="px-4 mt-4 text-2xl font-bold leading-5 text-primary md:leading-none md:text-3xl lg:text-4xl "
-                    >
-                      Productos para el sector Inocuidad de Alimentos
-                    </h2>
-                    <div class="mx-4 my-4 border"></div>
-                    <p class="px-4 text-lg leading-6 text-gray-700">
-
-                       <span v-for="claseProducto in clasesProductos" :key="claseProducto.id_clse_prdcto"> 
-                          <div @click="getProductosPorClase(claseProducto.id_clse_prdcto)">  {{ claseProducto.nom_clse_prdcto }} </div>
-                       </span>
-
-                    </p>
-                  </div>
-                  <div class="relative flex mr-16 -ml-10 lg:ml-4">
-                    <img
-                      class="h-64 pico"
-                      src="/images/comunes/eu.webp"
-                      alt=""
-                    />
-                    <img
-                      class="h-64"
-                      src="/images/comunes/linea0.webp"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <SectoresMain
+              :clasesProductos="clasesProductos"
+              title="Productos para el sector Inocuidad de Alimentos"
+              img="/images/comunes/eu.webp"
+            ></SectoresMain>
           </div>
-
-
-          <div class="my-10 sm:grid sm:grid-cols-3 xl:grid-cols-4 sm:gap-1">
-            <CardProductoDestacado :productos="productos"></CardProductoDestacado>
-
-          </div>
+          <CardProductoDestacado :productos="productos"></CardProductoDestacado>
         </div>
 
-        <div class="px-4 mx-4 mb-4 lg:mt-12 xl:mt-16 lg:py-5 lg:mx-0 xl:ml-10 lg:fixed">
+        <div
+          class="px-4 mx-4 mb-4 lg:mt-12 xl:mt-16 lg:py-5 lg:mx-0 xl:ml-10 lg:fixed"
+        >
           <div class="flex justify-center bg-black border lg:pt-10 xl:pt-6">
             <h3 class="px-3 py-2 text-xl font-bold text-white lg:py-5">
               Por Sectores
             </h3>
           </div>
-          
-          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border hover:bg-gray-300"  >
+
+          <div
+            class="flex justify-start px-3 py-2 text-gray-700 bg-white border"
+          >
             <table>
-              <tr  v-for="linea in lineasProductos" :key="linea.idlinea">
-                  <td @click="getClasesProductosPorLinea (linea.id_linea )">  {{ linea.nom_linea}}      </td>
+              <tr
+                class=""
+                v-for="linea in lineasProductos"
+                :key="linea.idlinea"
+              >
+                <td
+                  class="px-2 py-2 cursor-pointer hover:bg-primary hover:text-white"
+                  @click="getClasesProductosPorLinea(linea.id_linea)"
+                >
+                  {{ linea.nom_linea }}
+                </td>
               </tr>
-   
             </table>
           </div>
-
-
-
         </div>
-
-   
       </div>
     </div>
   </div>
 </template>
 <script>
-import CardProductoDestacado    from "@/components/home/productosDestacados/cardProductoDestacado";
-import ClasesProductos          from "@/models/MstroClasesPrdcto" ;
-import Footer                   from "@/components/home/footer/footer";
-import HeaderProductos          from "@/components/productos/headerProductos";
-import Lineas                   from "@/models/MstroLinea";
-import Productos                from "@/models/Prdcto";
+import CardProductoDestacado from "@/components/home/productosDestacados/cardProductoDestacado";
+import ClasesProductos from "@/models/MstroClasesPrdcto";
+import Footer from "@/components/home/footer/footer";
+import HeaderProductos from "@/components/productos/headerProductos";
+import Lineas from "@/models/MstroLinea";
+import Productos from "@/models/Prdcto";
+import SectoresMain from "@/components/productos/SectoresMain.vue";
+
 export default {
-  
+  layout: "layoutBalquimia",
   components: {
     HeaderProductos,
     Footer,
-    CardProductoDestacado
+    CardProductoDestacado,
+    SectoresMain
   },
 
-    data: () => ({
-        formData: {  idlinea :0, },
-        errors: [],
-        clasesProductos:[],
-        lineasProductos:[],
-        productos:      [],
-    }),
+  data: () => ({
+    formData: { idlinea: 0 },
+    errors: [],
+    clasesProductos: [],
+    lineasProductos: [],
+    productos: []
+  }),
 
+  mounted() {
+    Lineas.activas().then(response => {
+      this.lineasProductos = response.data;
+    });
+    this.getClasesProductosPorLinea(3); // Linea inocuida alimentaria
+  },
 
-    mounted() {
-        Lineas.activas()
-        .then( response => {
-            this.lineasProductos = response.data ;
-        });
-       this.getClasesProductosPorLinea (3); // Linea inocuida alimentaria
+  methods: {
+    getClasesProductosPorLinea(idLinea) {
+      this.formData.idlinea = idLinea;
+      ClasesProductos.getClasesPorLinea(this.formData).then(response => {
+        this.clasesProductos = response.data;
+      });
+      this.getProductosPorLinea(idLinea);
     },
 
-    methods:{
-        getClasesProductosPorLinea ( idLinea ) {
-           this.formData.idlinea = idLinea
-           ClasesProductos.getClasesPorLinea ( this.formData )
-            .then ( response => {
-                this.clasesProductos = response.data ;
-            });
-            this.getProductosPorLinea ( idLinea);
-        },
-
-        getProductosPorClase ( IdClaseProducto ){
-           Productos.porClaseProducto( IdClaseProducto)
-           .then ( response => {
-              this.productos = response.data;
-           });
-           
-        },
-
-        getProductosPorLinea (idLinea ) {
-          Productos.porLineaProducto ( idLinea )
-          .then ( response => {
-              this.productos = response.data;
-          });
-        }
+    getProductosPorClase(IdClaseProducto) {
+      Productos.porClaseProducto(IdClaseProducto).then(response => {
+        this.productos = response.data;
+      });
     },
-    
 
-
-
+    getProductosPorLinea(idLinea) {
+      Productos.porLineaProducto(idLinea).then(response => {
+        this.productos = response.data;
+      });
+    }
+  }
 };
 </script>
 <style>
