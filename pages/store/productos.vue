@@ -4,13 +4,16 @@
       <div class="grid-cols-4 gap-4 lg:grid lg:mx-0 ">
         <div class="col-start-2 col-end-5 mx-4 lg:-ml-2 lg:mx-0 ">
           <div class="pt-20 bg-gray-200">
-            <SectoresMain
+
+            <ClasesProductosPorLinea
               :clasesProductos="clasesProductos"
-              title="Productos para el sector Inocuidad de Alimentos"
-              img="/images/comunes/eu.webp"
-            ></SectoresMain>
+              :title="cardNomLinea"
+              :img="cardImagen"
+              @getProductosPorClase="getProductosPorClase"
+            ></ClasesProductosPorLinea>
+
           </div>
-          <CardProductoDestacado :productos="productos"></CardProductoDestacado>
+          <CardProductoDestacado :productos="productos" ></CardProductoDestacado>
         </div>
 
         <div
@@ -33,7 +36,7 @@
               >
                 <td
                   class="px-2 py-2 cursor-pointer hover:bg-primary hover:text-white"
-                  @click="getClasesProductosPorLinea(linea.id_linea)"
+                  @click="getClasesProductosPorLinea( linea) "
                 >
                   {{ linea.nom_linea }}
                 </td>
@@ -52,7 +55,8 @@ import Footer from "@/components/home/footer/footer";
 import HeaderProductos from "@/components/productos/headerProductos";
 import Lineas from "@/models/MstroLinea";
 import Productos from "@/models/Prdcto";
-import SectoresMain from "@/components/productos/SectoresMain.vue";
+import ClasesProductosPorLinea from "@/components/productos/ClasesProductosPorLinea.vue";
+import { address } from '@/config/address';
 
 export default {
   layout: "layoutBalquimia",
@@ -60,7 +64,7 @@ export default {
     HeaderProductos,
     Footer,
     CardProductoDestacado,
-    SectoresMain
+    ClasesProductosPorLinea
   },
 
   data: () => ({
@@ -68,28 +72,40 @@ export default {
     errors: [],
     clasesProductos: [],
     lineasProductos: [],
-    productos: []
+    productos: [],
+    defaultLinea : {
+        'id_linea' : 3,
+        'nom_linea' : 'INOCUIDAD ALIMENTARIA',
+        'imagen' :  address.apiUrl+'storage/images/lineas/inocuidad_alimentaria.jpg',
+    },
+     cardNomLinea :'',
+     cardImagen:''
   }),
 
   mounted() {
     Lineas.activas().then(response => {
       this.lineasProductos = response.data;
     });
-    this.getClasesProductosPorLinea(3); // Linea inocuida alimentaria
+    this.getClasesProductosPorLinea( this.defaultLinea); // Linea inocuida alimentaria
   },
 
   methods: {
-    getClasesProductosPorLinea(idLinea) {
-      this.formData.idlinea = idLinea;
+    getClasesProductosPorLinea ( Linea ) {
+      this.formData.idlinea = Linea.id_linea;
       ClasesProductos.getClasesPorLinea(this.formData).then(response => {
         this.clasesProductos = response.data;
       });
-      this.getProductosPorLinea(idLinea);
+      
+      //if ( nomLinea == undefined){ nomLinea='INOCUIDAD ALIMENTARIA'}
+      this.cardNomLinea = Linea.nom_linea;
+      this.cardImagen   = Linea.imagen;
+      this.getProductosPorLinea(Linea.id_linea);
     },
 
     getProductosPorClase(IdClaseProducto) {
       Productos.porClaseProducto(IdClaseProducto).then(response => {
         this.productos = response.data;
+        console.log (this.productos  );
       });
     },
 

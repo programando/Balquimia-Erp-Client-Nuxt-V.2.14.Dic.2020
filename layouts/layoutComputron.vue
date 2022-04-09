@@ -7,7 +7,7 @@
         
         <div class="flex flex-grow lg:flex-grow-0">
           <div class="">
-          <nuxt-link to="">
+          <nuxt-link to="/">
             <img
               class="h-16 md:h-20 logo lg:ml-10 lg:h-auto"
               src="/images/home/header/balquimia-logo.png"

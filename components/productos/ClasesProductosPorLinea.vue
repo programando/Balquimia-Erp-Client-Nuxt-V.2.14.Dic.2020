@@ -1,16 +1,15 @@
 <template>
   <div class="my-10 ml-2 mr-4 bg-white border lg:ml-2 lg:mr-4 ">
-    <div
-      class="bg-center bg-no-repeat bg-cover"
-      style="background-image: url(/images/comunes/malla2.webp)"
-    >
+    <div class="bg-center bg-no-repeat bg-cover"
+         style="background-image: url(/images/comunes/malla2.webp)" >
+
       <div class="flex justify-between">
         <div class="my-6 ml-4 md:ml-8">
-          <h2
-            class="px-4 mt-4 text-2xl font-bold leading-5 text-primary md:leading-none md:text-3xl lg:text-4xl "
-          >
+        <!-- 
+          <h2 class="px-4 mt-4 text-2xl font-bold leading-5 text-primary md:leading-none md:text-3xl lg:text-4xl "  >
             {{ title }}
           </h2>
+  -->
           <div class="mx-4 my-4 border"></div>
           <p class="px-4 text-lg leading-6 text-gray-700">
             <span
@@ -23,23 +22,33 @@
             </span>
           </p>
         </div>
-        <div class="relative flex -ml-10">
-          <img class="h-64 pico" :src="img" alt="" />
-          <img class="h-64" src="/images/comunes/linea0.webp" alt="" />
+       
+        <div class="absolute flex -ml-10">
+          <img class="h-64" :src="img" alt="" />
         </div>
+
       </div>
+
     </div>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: "SectoresMain",
+  name: "clasesProductosPorLinea",
   props: {
     clasesProductos: Array,
     title: String,
     img: String
-  }
+  },
+
+  methods: {
+    getProductosPorClase (id_clse_prdcto ) {
+
+        this.$emit('getProductosPorClase', id_clse_prdcto);
+    },
+  }, 
   
 };
 </script>
