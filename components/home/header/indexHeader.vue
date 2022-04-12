@@ -6,6 +6,7 @@
         class="flex justify-center -mt-3 lg:flex lg:justify-between lg:mt:0 lg:py-0"
       >
         <div class="flex justify-center flex-grow lg:flex-grow-0" >
+          <nuxt-link to="/">
           <div class="">
             <img
               class="h-20 logo lg:ml-10 lg:h-auto"
@@ -13,6 +14,7 @@
               alt="logo"
             />
           </div>
+          </nuxt-link>
         </div>
 
         <!-- Navbar en pantalla completa, en pantalla pequeña esta oculto -->
