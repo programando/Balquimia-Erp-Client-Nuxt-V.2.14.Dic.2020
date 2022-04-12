@@ -131,6 +131,8 @@ export default {
         return cliente.nom_full.match(this.busquedaMin);
       })
     }
+
+    
   },
 };
 </script>
