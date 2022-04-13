@@ -1,27 +1,31 @@
 <template>
-  <div class="my-10 sm:grid sm:grid-cols-3 xl:grid-cols-4 sm:gap-1">
+  <div class="my-10 sm:grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4  sm:gap-1">
 
     <div
-      class="px-4 mx-2 my-4 bg-white"
+      class="px-4 mx-2 my-4 bg-white width"
       v-for="producto in productos"
       :key="producto.id_prdcto"
     >
-      <h2 class="p-2 mt-2 text-xl font-bold uppercase text-primary">
+      <h2 class="p-2 mt-2 text-lg font-bold uppercase text-primary h-20">
         {{ producto.nom_prdcto }}
       </h2>
-      <img class="inline w-2/3"
+      <div class="flex justify-center">
+        <img class="h-48 w-56"
         :src="producto.imagen"
         alt=""
       />
+      </div>
       <div class="inline w-1/3">
-        <div class="px-2 py-2 -mt-4 fondo">
-          <p class="p-2"> {{ producto.dscrpcion}}</p>
+        <div class="px-2 py-2">
+          <p class="p-2 text-sm h-20"> {{ producto.dscrpcion}}</p>
           <div class="px-2 mt-2 mb-2 text-sm">
             <div> Presentaciones: </div>
-            <div class="px-4" v-for="( prdctoPrsntcion) in producto.prdctos_prsntciones" :key="prdctoPrsntcion.id_prdcto">
-              <p> {{ prdctoPrsntcion.presentaciones.nom_prsntcion  }} </p>
-               
+            <div class="flex flex-wrap">
+              <div class="px-2" v-for="( prdctoPrsntcion) in producto.prdctos_prsntciones" :key="prdctoPrsntcion.id_prdcto">
+                <p class="mr-4"> {{ prdctoPrsntcion.presentaciones.nom_prsntcion  }} </p>  
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
@@ -40,4 +44,11 @@ export default {
   }
 };
 </script>
-<style></style>
+<style>
+.width {
+  width: 270px;
+  
+
+}
+
+</style>
