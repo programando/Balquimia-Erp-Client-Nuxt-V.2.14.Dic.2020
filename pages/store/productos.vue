@@ -96,7 +96,6 @@ export default {
         this.clasesProductos = response.data;
       });
       
-      //if ( nomLinea == undefined){ nomLinea='INOCUIDAD ALIMENTARIA'}
       this.cardNomLinea = Linea.nom_linea;
       this.cardImagen   = Linea.imagen;
       this.getProductosPorLinea(Linea.id_linea);
@@ -105,7 +104,6 @@ export default {
     getProductosPorClase(IdClaseProducto) {
       Productos.porClaseProducto(IdClaseProducto).then(response => {
         this.productos = response.data;
-        console.log (this.productos  );
       });
     },
 
