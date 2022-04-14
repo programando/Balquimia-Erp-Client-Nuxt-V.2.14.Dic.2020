@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="h-screen pb-8 bg-gray-200">
-      <div class="grid-cols-4 gap-4 lg:grid lg:mx-0 ">
-        <div class="col-start-2 col-end-5 mx-4 lg:-ml-2 lg:mx-0 ">
+    <div class=" pb-8 bg-gray-200">
+      <div class="grid-cols-12 gap-4 lg:grid lg:mx-0 ">
+        <div class="md:col-start-5 col-end-13 2xl:col-start-4 mx-4 lg:mx-0 ">
           <div class="pt-20 bg-gray-200">
 
             <ClasesProductosPorLinea
@@ -133,4 +133,13 @@ export default {
   bottom: 30px;
   right: 30px;
 }
+
+/* @media (min-width: 1660px) { 
+  .responsive {
+    grid-column-start: 4;
+  }
+
+ } */
+
+
 </style>
