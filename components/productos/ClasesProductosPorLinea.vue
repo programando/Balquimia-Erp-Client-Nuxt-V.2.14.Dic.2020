@@ -5,17 +5,20 @@
       style="background-image: url(/images/comunes/malla2.webp)"
     >
       <div class="flex justify-between">
-        <div class="my-6 ml-4 md:ml-8">
-    
-        </div>
-
-        <div class="flex -ml-10">
-          <img class="h-64" :src="img" alt="" />
+        <div class="w-full ">
+          <img class="w-full h-64" :src="img" alt="" />
         </div>
       </div>
-      <p class="px-2 text-lg text-gray-700 flex flex-wrap">
-        <span class="mr-10" v-for="claseProducto in clasesProductos" :key="claseProducto.id_clse_prdcto" >
-          <div class="py-1 cursor-pointer hover:text-primary" @click="getProductosPorClase(claseProducto.id_clse_prdcto )" >
+      <p class="flex flex-wrap px-2 text-lg text-gray-700">
+        <span
+          class="mr-10"
+          v-for="claseProducto in clasesProductos"
+          :key="claseProducto.id_clse_prdcto"
+        >
+          <div
+            class="py-1 cursor-pointer hover:text-primary"
+            @click="getProductosPorClase(claseProducto.id_clse_prdcto)"
+          >
             {{ claseProducto.nom_clse_prdcto }}
           </div>
         </span>
@@ -34,9 +37,9 @@ export default {
   },
 
   methods: {
-    getProductosPorClase(id_clse_prdcto ) {
+    getProductosPorClase(id_clse_prdcto) {
       this.$emit("getProductosPorClase", id_clse_prdcto);
-       
+      
     }
   }
 };
@@ -46,5 +49,4 @@ export default {
 .active {
   color: blue;
 }
-
 </style>

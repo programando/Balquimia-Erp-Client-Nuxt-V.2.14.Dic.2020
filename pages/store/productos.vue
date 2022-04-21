@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class=" pb-8 bg-gray-200">
+    <div class="pb-8 bg-gray-200 ">
       <div class="grid-cols-12 gap-4 lg:grid lg:mx-0 ">
-        <div class="md:col-start-5 col-end-13 2xl:col-start-4 mx-4 lg:mx-0 ">
+        <div class="col-end-13 mr-14 md:col-start-5 lg:mx-0 lg:-ml-10 xl:-ml-20 2xl:ml-0 2xl:col-start-4 responsive">
           <div class="pt-20 bg-gray-200">
 
             <ClasesProductosPorLinea
@@ -17,7 +17,7 @@
         </div>
 
         <div
-          class="px-4 mx-4 mb-4 lg:mt-12 xl:mt-16 lg:py-5 lg:mx-0 xl:ml-10 lg:fixed"
+          class="col-span-4 px-4 mx-4 mb-4 lg:mt-12 xl:mt-16 lg:py-5 lg:mx-0 xl:ml-10 lg:fixed"
         >
           <div class="flex justify-center bg-black border lg:pt-10 xl:pt-6">
             <h3 class="px-3 py-2 text-xl font-bold text-white lg:py-5">
@@ -35,7 +35,7 @@
                 :key="linea.idlinea"
               >
                 <td
-                  class="px-2 py-2 cursor-pointer hover:bg-primary hover:text-white"
+                  class="px-4 py-2 text-sm cursor-pointer hover:bg-primary hover:text-white"
                   @click="getClasesProductosPorLinea( linea) "
                 >
                   {{ linea.nom_linea }}
@@ -139,5 +139,13 @@ export default {
 
  } */
 
+@media (min-width: 1700px) { 
+  .responsive {
+    margin-left: -90px;
+  }
+
+
+
+}
 
 </style>
