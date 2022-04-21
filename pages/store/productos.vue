@@ -76,7 +76,7 @@ export default {
     defaultLinea : {
         'id_linea' : 3,
         'nom_linea' : 'INOCUIDAD ALIMENTARIA',
-        'imagen' :  address.apiUrl+'storage/images/lineas/inocuidad_alimentaria.jpg',
+        'imagen' :  address.apiUrl+'/storage/images/lineas/inocuidad_alimentaria.jpg',
     },
      cardNomLinea :'',
      cardImagen:''
