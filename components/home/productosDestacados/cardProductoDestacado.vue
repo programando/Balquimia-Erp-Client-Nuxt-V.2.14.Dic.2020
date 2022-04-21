@@ -6,7 +6,7 @@
       v-for="producto in productos"
       :key="producto.id_prdcto"
     >
-      <h2 class="p-2 mt-2 text-lg font-bold uppercase text-primary h-20">
+      <h2 class="p-2 mt-2 text-sm font-bold uppercase text-primary h-20">
         {{ producto.nom_prdcto }}
       </h2>
       <div class="flex justify-center">
