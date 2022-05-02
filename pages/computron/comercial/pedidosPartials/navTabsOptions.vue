@@ -76,6 +76,7 @@
         class="relative flex flex-col w-full min-w-0 mb-2 break-words bg-white rounded shadow-lg"
       >
         <div class="flex-auto">
+          
           <div class="tab-content tab-space">
             <div :class="{ hidden: openTab !== 1, block: openTab === 1 }">
               <ClienteUltimasVentas :IdTercero="IdTercero"> </ClienteUltimasVentas>
