@@ -101,9 +101,11 @@ export default {
       this.getProductosPorLinea(Linea.id_linea);
     },
 
+
     getProductosPorClase(IdClaseProducto) {
       Productos.porClaseProducto(IdClaseProducto).then(response => {
         this.productos = response.data;
+        
       });
     },
 

@@ -10,14 +10,13 @@
         </div>
       </div>
 
-      <p class="flex flex-wrap px-2 text-lg text-gray-700 text-xs">
+      <p class="flex flex-wrap px-2 text-lg text-gray-700">
         <span class="mr-10"
-              v-for="claseProducto in clasesProductos"
-             :key="claseProducto.id_clse_prdcto" >
-
+          v-for="claseProducto in clasesProductos"
+          :key="claseProducto.id_clse_prdcto" >
           <div class="py-1 cursor-pointer hover:text-primary"
-               @click="getProductosPorClase(claseProducto.id_clse_prdcto)">
-                {{ claseProducto.nom_clse_prdcto }}
+            @click="getProductosPorClase(claseProducto.id_clse_prdcto)">
+            {{ claseProducto.nom_clse_prdcto }}
           </div>
         </span>
       </p>
@@ -32,13 +31,16 @@ export default {
   props: {
     clasesProductos: Array,
     title: String,
-    img: String
+    img: String,
+    
   },
+
+  
 
   methods: {
     getProductosPorClase(id_clse_prdcto) {
       this.$emit("getProductosPorClase", id_clse_prdcto);
-      
+
     }
   }
 };
@@ -47,5 +49,9 @@ export default {
 <style>
 .active {
   color: blue;
+}
+
+.active {
+  color: #D3500A
 }
 </style>
