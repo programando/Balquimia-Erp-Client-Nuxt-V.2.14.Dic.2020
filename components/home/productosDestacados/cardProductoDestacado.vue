@@ -19,7 +19,7 @@
         <div class="px-2 py-2">
           <p class="p-2 text-sm h-20"> {{ producto.dscrpcion}}</p>
           <div class="px-2 mt-2 mb-2 text-sm">
-            <div> Presentaciones: </div>
+            <div> <strong> Presentaciones: </strong></div>
             <div class="flex flex-wrap">
               <div class="px-2" v-for="( prdctoPrsntcion) in producto.prdctos_prsntciones" :key="prdctoPrsntcion.id_prdcto">
                 <p class="mr-4"> {{ prdctoPrsntcion.presentaciones.nom_prsntcion  }} </p>  

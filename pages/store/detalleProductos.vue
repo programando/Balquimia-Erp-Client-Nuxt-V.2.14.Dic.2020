@@ -26,7 +26,7 @@
             instalaciones en general de la industria alimenticia
           </p>
           <div class="py-2 my-6">
-            <p class="text-center">Presentaciones</p>
+            <p class="text-center"><strong> Presentaciones </strong></p>
             <div class="flex justify-center">
               <button
                 class="py-2 mx-1 px-8 border bg-red-600 text-white border-gray-400 font-semibold"
