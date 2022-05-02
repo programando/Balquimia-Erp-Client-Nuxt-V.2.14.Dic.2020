@@ -28,7 +28,7 @@
           <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border">
             <table>
               <tr class=""  v-for="linea in lineasProductos" :key="linea.idlinea" >
-                <td class="px-4 py-2 text-sm cursor-pointer hover:bg-primary hover:text-white" 
+                <td class="px-4 py-2 text-xs cursor-pointer hover:bg-primary hover:text-white" 
                      @click="getClasesProductosPorLinea(  $event, linea,)">
                   {{ linea.nom_linea }}
                 </td>

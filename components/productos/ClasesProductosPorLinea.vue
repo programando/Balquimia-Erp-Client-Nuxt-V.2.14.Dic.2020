@@ -11,11 +11,11 @@
       </div>
 
       <p class="flex flex-wrap px-2 text-lg text-gray-700">
-        <span class="mr-10"
+        <span class="mr-4"
           v-for="claseProducto in clasesProductos"
           :key="claseProducto.id_clse_prdcto" >
-          <div class="py-1 cursor-pointer hover:text-primary"
-            @click="getProductosPorClase(claseProducto.id_clse_prdcto)">
+          <div class="px-2 py-1 cursor-pointer "
+            @click="getProductosPorClase(claseProducto.id_clse_prdcto, $event)">
             {{ claseProducto.nom_clse_prdcto }}
           </div>
         </span>
@@ -38,10 +38,25 @@ export default {
   
 
   methods: {
-    getProductosPorClase(id_clse_prdcto) {
+    getProductosPorClase(id_clse_prdcto, event) {
       this.$emit("getProductosPorClase", id_clse_prdcto);
 
-    }
+      
+      this.removeColorProducto()
+      this.setColorProducto(event)
+    },
+
+    setColorProducto ( event ){
+      if ( event != null ) {
+        event.currentTarget.classList.add("linea-activa-productos")
+      }
+    },
+    removeColorProducto (){
+      let lineasActivas = [].slice.call(document.getElementsByClassName('linea-activa-productos'));
+          for (var i = 0; i < lineasActivas.length; i++) {
+              lineasActivas[i].classList.remove("linea-activa-productos");
+          }
+    },
   }
 };
 </script>
@@ -54,4 +69,9 @@ export default {
 .active {
   color: #D3500A
 }
+
+.linea-activa-productos {
+   color:  white;
+   background-color: #D3500A;
+  }
 </style>
