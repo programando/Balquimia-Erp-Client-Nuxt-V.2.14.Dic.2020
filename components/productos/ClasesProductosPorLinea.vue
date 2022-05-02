@@ -9,7 +9,7 @@
           <img class="w-full h-64" :src="img" alt="" />
         </div>
       </div>
-      <p class="flex flex-wrap px-2 text-lg text-gray-700">
+      <p class="flex flex-wrap px-2 text-lg text-gray-700 text-xs">
         <span
           class="mr-10"
           v-for="claseProducto in clasesProductos"
