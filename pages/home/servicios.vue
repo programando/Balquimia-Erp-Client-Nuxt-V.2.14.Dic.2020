@@ -23,18 +23,18 @@
       </div>
     </div>
 
-    <div class="px-6 py-6 mx-10 bg-white contenedor lg:flex xl:mx-20">
-      <h2 class="w-2/3 text-xl text-primary lg:text-3xl lg:w-2/4 lg:px-10">
+    <div class="w-full px-6 py-6 mx-10 bg-white lg:flex">
+      <h2 class="text-xl text-primary lg:text-3xl lg:w-2/4 lg:px-10">
         Ofrecemos calidad, eficiencia y durabilidad.
       </h2>
-      <p class="mt-6 text-gray-700 lg:mt-0 lg:w-2/4 lg:text-xl lg:px-10">
+      <p class="mt-6 text-gray-700 lg:mt-0 lg:text-xl lg:px-10">
         En BALQUIMIA S.A.S. Contamos con un grupo de ingenieros capacitados y orientados a la asesoría técnica, garantizando
         una óptima implementación y manejo eficiente de nuestros productos en las empresas y clientes.
       </p>
     </div>
 
-    <div class="mx-6 -mt-10">
-      <div>
+    <div class="mx-6">
+      <div class="xl:mx-8">
         <h2 class="text-xl font-bold text-black">Nuestros Servicios</h2>
       </div>
 

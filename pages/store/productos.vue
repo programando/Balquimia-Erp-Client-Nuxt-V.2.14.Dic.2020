@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="h-screen pb-8 bg-gray-200">
-      <div class="grid-cols-4 gap-4 lg:grid lg:mx-0 ">
-        <div class="col-start-2 col-end-5 mx-4 lg:-ml-2 lg:mx-0 ">
+    <div class="pb-8 bg-gray-200 ">
+      <div class="grid-cols-12 gap-4 lg:grid lg:mx-0 ">
+        <div class="col-end-13 mr-14 md:col-start-5 lg:mx-0 lg:-ml-10 xl:-ml-20 2xl:ml-0 2xl:col-start-4 responsive">
           <div class="pt-20 bg-gray-200">
 
             <ClasesProductosPorLinea
@@ -17,7 +17,7 @@
         </div>
 
         <div
-          class="px-4 mx-4 mb-4 lg:mt-12 xl:mt-16 lg:py-5 lg:mx-0 xl:ml-10 lg:fixed"
+          class="col-span-4 px-4 mx-4 mb-4 lg:mt-12 xl:mt-16 lg:py-5 lg:mx-0 xl:ml-10 lg:fixed"
         >
           <div class="flex justify-center bg-black border lg:pt-10 xl:pt-6">
             <h3 class="px-3 py-2 text-xl font-bold text-white lg:py-5">
@@ -35,7 +35,7 @@
                 :key="linea.idlinea"
               >
                 <td
-                  class="px-2 py-2 cursor-pointer hover:bg-primary hover:text-white"
+                  class="px-4 py-2 text-sm cursor-pointer hover:bg-primary hover:text-white"
                   @click="getClasesProductosPorLinea( linea) "
                 >
                   {{ linea.nom_linea }}
@@ -76,7 +76,7 @@ export default {
     defaultLinea : {
         'id_linea' : 3,
         'nom_linea' : 'INOCUIDAD ALIMENTARIA',
-        'imagen' :  address.apiUrl+'storage/images/lineas/inocuidad_alimentaria.jpg',
+        'imagen' :  address.apiUrl+'/storage/images/lineas/inocuidad_alimentaria.jpg',
     },
      cardNomLinea :'',
      cardImagen:''
@@ -96,7 +96,6 @@ export default {
         this.clasesProductos = response.data;
       });
       
-      //if ( nomLinea == undefined){ nomLinea='INOCUIDAD ALIMENTARIA'}
       this.cardNomLinea = Linea.nom_linea;
       this.cardImagen   = Linea.imagen;
       this.getProductosPorLinea(Linea.id_linea);
@@ -105,7 +104,6 @@ export default {
     getProductosPorClase(IdClaseProducto) {
       Productos.porClaseProducto(IdClaseProducto).then(response => {
         this.productos = response.data;
-        console.log (this.productos  );
       });
     },
 
@@ -133,4 +131,21 @@ export default {
   bottom: 30px;
   right: 30px;
 }
+
+/* @media (min-width: 1660px) { 
+  .responsive {
+    grid-column-start: 4;
+  }
+
+ } */
+
+@media (min-width: 1700px) { 
+  .responsive {
+    margin-left: -90px;
+  }
+
+
+
+}
+
 </style>
