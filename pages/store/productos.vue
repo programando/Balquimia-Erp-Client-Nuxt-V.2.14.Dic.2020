@@ -99,9 +99,11 @@ export default {
       this.setColorLinea (event );
     },
 
+
     getProductosPorClase(IdClaseProducto) {
       Productos.porClaseProducto(IdClaseProducto).then(response => {
         this.productos = response.data;
+        
       });
     },
 
