@@ -29,19 +29,14 @@
             class="flex justify-start px-3 py-2 text-gray-700 bg-white border"
           >
             <table>
-              <tr
-                class=""
-                v-for="linea in lineasProductos"
-                :key="linea.idlinea"
-              >
-                <td
-                  class="px-4 py-2 text-sm cursor-pointer hover:bg-primary hover:text-white"
-                  @click="getClasesProductosPorLinea( linea) "
-                >
+              <tr class=""  v-for="linea in lineasProductos" :key="linea.idlinea" >
+                <td class="px-4 py-2 text-sm cursor-pointer hover:bg-primary hover:text-white" 
+                     @click="getClasesProductosPorLinea(  $event, linea,)">
                   {{ linea.nom_linea }}
                 </td>
               </tr>
             </table>
+
           </div>
         </div>
       </div>
@@ -86,19 +81,22 @@ export default {
     Lineas.activas().then(response => {
       this.lineasProductos = response.data;
     });
-    this.getClasesProductosPorLinea( this.defaultLinea); // Linea inocuida alimentaria
+    this.removeColorLinea();
+    this.getClasesProductosPorLinea( null, this.defaultLinea); // Linea inocuida alimentaria
   },
 
   methods: {
-    getClasesProductosPorLinea ( Linea ) {
-      this.formData.idlinea = Linea.id_linea;
+    getClasesProductosPorLinea (  event, Linea ) {
+     
+     this.formData.idlinea = Linea.id_linea;
       ClasesProductos.getClasesPorLinea(this.formData).then(response => {
         this.clasesProductos = response.data;
       });
-      
       this.cardNomLinea = Linea.nom_linea;
       this.cardImagen   = Linea.imagen;
       this.getProductosPorLinea(Linea.id_linea);
+      this.removeColorLinea();
+      this.setColorLinea (event );
     },
 
     getProductosPorClase(IdClaseProducto) {
@@ -111,11 +109,29 @@ export default {
       Productos.porLineaProducto(idLinea).then(response => {
         this.productos = response.data;
       });
-    }
+    },
+
+    setColorLinea ( event ){
+      if ( event != null ) {
+        event.currentTarget.classList.add("linea-activa")
+      }
+    },
+    removeColorLinea (){
+      let lineasActivas = [].slice.call(document.getElementsByClassName('linea-activa'));
+          for (var i = 0; i < lineasActivas.length; i++) {
+              lineasActivas[i].classList.remove("linea-activa");
+          }
+    },
+
   }
 };
 </script>
 <style>
+  .linea-activa {
+   color:  white;
+   background-color: #D3500A;
+  }
+  
 .pico {
   position: relative;
   left: 73px;
