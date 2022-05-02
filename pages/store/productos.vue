@@ -9,25 +9,23 @@
               :clasesProductos="clasesProductos"
               :title="cardNomLinea"
               :img="cardImagen"
-              @getProductosPorClase="getProductosPorClase"
-            ></ClasesProductosPorLinea>
+              @getProductosPorClase="getProductosPorClase">
+            </ClasesProductosPorLinea>
 
           </div>
+
           <CardProductoDestacado :productos="productos" ></CardProductoDestacado>
+          
         </div>
 
-        <div
-          class="col-span-4 px-4 mx-4 mb-4 lg:mt-12 xl:mt-16 lg:py-5 lg:mx-0 xl:ml-10 lg:fixed"
-        >
+        <div class="col-span-4 px-4 mx-4 mb-4 lg:mt-12 xl:mt-16 lg:py-5 lg:mx-0 xl:ml-10 lg:fixed">
           <div class="flex justify-center bg-black border lg:pt-10 xl:pt-6">
             <h3 class="px-3 py-2 text-xl font-bold text-white lg:py-5">
               Por Sectores
             </h3>
           </div>
 
-          <div
-            class="flex justify-start px-3 py-2 text-gray-700 bg-white border"
-          >
+          <div class="flex justify-start px-3 py-2 text-gray-700 bg-white border">
             <table>
               <tr class=""  v-for="linea in lineasProductos" :key="linea.idlinea" >
                 <td class="px-4 py-2 text-sm cursor-pointer hover:bg-primary hover:text-white" 
@@ -46,8 +44,6 @@
 <script>
 import CardProductoDestacado from "@/components/home/productosDestacados/cardProductoDestacado";
 import ClasesProductos from "@/models/MstroClasesPrdcto";
-import Footer from "@/components/home/footer/footer";
-import HeaderProductos from "@/components/productos/headerProductos";
 import Lineas from "@/models/MstroLinea";
 import Productos from "@/models/Prdcto";
 import ClasesProductosPorLinea from "@/components/productos/ClasesProductosPorLinea.vue";
@@ -55,12 +51,7 @@ import { address } from '@/config/address';
 
 export default {
   layout: "layoutBalquimia",
-  components: {
-    HeaderProductos,
-    Footer,
-    CardProductoDestacado,
-    ClasesProductosPorLinea
-  },
+  components: {  CardProductoDestacado,  ClasesProductosPorLinea },
 
   data: () => ({
     formData: { idlinea: 0 },
@@ -86,24 +77,22 @@ export default {
   },
 
   methods: {
-    getClasesProductosPorLinea (  event, Linea ) {
-     
-     this.formData.idlinea = Linea.id_linea;
-      ClasesProductos.getClasesPorLinea(this.formData).then(response => {
-        this.clasesProductos = response.data;
-      });
-      this.cardNomLinea = Linea.nom_linea;
-      this.cardImagen   = Linea.imagen;
-      this.getProductosPorLinea(Linea.id_linea);
-      this.removeColorLinea();
-      this.setColorLinea (event );
+    getClasesProductosPorLinea (  event, Linea ) { 
+        this.formData.idlinea = Linea.id_linea;
+        ClasesProductos.getClasesPorLinea(this.formData).then(response => {
+          this.clasesProductos = response.data;
+        });
+        this.cardNomLinea = Linea.nom_linea;
+        this.cardImagen   = Linea.imagen;
+        this.getProductosPorLinea(Linea.id_linea);
+        this.removeColorLinea();
+        this.setColorLinea (event );
     },
 
 
     getProductosPorClase(IdClaseProducto) {
       Productos.porClaseProducto(IdClaseProducto).then(response => {
         this.productos = response.data;
-        
       });
     },
 
@@ -143,26 +132,11 @@ export default {
   position: fixed;
 }
 
-/* footer */
-.logo {
-  position: relative;
-  bottom: 30px;
-  right: 30px;
-}
-
-/* @media (min-width: 1660px) { 
-  .responsive {
-    grid-column-start: 4;
-  }
-
- } */
-
+ 
 @media (min-width: 1700px) { 
   .responsive {
     margin-left: -90px;
   }
-
-
 
 }
 
