@@ -9,20 +9,19 @@
           <img class="w-full h-64" :src="img" alt="" />
         </div>
       </div>
+
       <p class="flex flex-wrap px-2 text-lg text-gray-700 text-xs">
-        <span
-          class="mr-10"
-          v-for="claseProducto in clasesProductos"
-          :key="claseProducto.id_clse_prdcto"
-        >
-          <div
-            class="py-1 cursor-pointer hover:text-primary"
-            @click="getProductosPorClase(claseProducto.id_clse_prdcto)"
-          >
-            {{ claseProducto.nom_clse_prdcto }}
+        <span class="mr-10"
+              v-for="claseProducto in clasesProductos"
+             :key="claseProducto.id_clse_prdcto" >
+
+          <div class="py-1 cursor-pointer hover:text-primary"
+               @click="getProductosPorClase(claseProducto.id_clse_prdcto)">
+                {{ claseProducto.nom_clse_prdcto }}
           </div>
         </span>
       </p>
+
     </div>
   </div>
 </template>
