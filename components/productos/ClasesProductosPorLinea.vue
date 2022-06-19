@@ -10,7 +10,7 @@
         </div>
       </div>
 
-      <p class="flex flex-wrap px-2 text-lg text-gray-700">
+      <p class="flex flex-wrap px-2 text-sm text-gray-700">
         <span class="mr-4"
           v-for="claseProducto in clasesProductos"
           :key="claseProducto.id_clse_prdcto" >

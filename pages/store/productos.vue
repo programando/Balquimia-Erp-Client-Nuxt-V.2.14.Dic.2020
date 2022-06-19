@@ -54,15 +54,15 @@ export default {
   components: {  CardProductoDestacado,  ClasesProductosPorLinea },
 
   data: () => ({
-    formData: { idlinea: 0 },
-    errors: [],
+    formData       : { idlinea: 0 },
+    errors         : [],
     clasesProductos: [],
     lineasProductos: [],
-    productos: [],
-    defaultLinea : {
+    productos      : [],
+    defaultLinea   : {
         'id_linea' : 3,
         'nom_linea' : 'INOCUIDAD ALIMENTARIA',
-        'imagen' :  address.apiUrl+'/storage/images/lineas/inocuidad_alimentaria.jpg',
+        'imagen' :  address.apiUrl+'storage/images/lineas/inocuidad alimentaria 090622.jpg',
     },
      cardNomLinea :'',
      cardImagen:''
@@ -73,14 +73,17 @@ export default {
       this.lineasProductos = response.data;
     });
     this.removeColorLinea();
-    this.getClasesProductosPorLinea( null, this.defaultLinea); // Linea inocuida alimentaria
+    this.getClasesProductosPorLinea( null, this.defaultLinea.id_linea); // Linea inocuida alimentaria
+    this.getProductosPorLinea(this.defaultLinea.id_linea);
+     this.cardImagen   = this.defaultLinea.imagen;
   },
 
   methods: {
     getClasesProductosPorLinea (  event, Linea ) { 
         this.formData.idlinea = Linea.id_linea;
-        ClasesProductos.getClasesPorLinea(this.formData).then(response => {
-          this.clasesProductos = response.data;
+        ClasesProductos.getClasesPorLinea(this.formData)
+          .then(response => {
+           this.clasesProductos = response.data;
         });
         this.cardNomLinea = Linea.nom_linea;
         this.cardImagen   = Linea.imagen;
